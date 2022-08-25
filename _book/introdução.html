@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 1 Introdução | GED-13: Probabilidade e Estatística</title>
+  <meta name="description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 1 Introdução | GED-13: Probabilidade e Estatística" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 1 Introdução | GED-13: Probabilidade e Estatística" />
+  
+  <meta name="twitter:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+<meta name="author" content="Prof. Denise Beatriz Ferrari" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="introdução-à-teoria-de-probabilidades.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Probabilidade e Estatística</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Objetivos do Curso</a></li>
+<li class="chapter" data-level="1" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="introdução.html"><a href="introdução.html#estatística-e-o-raciocínio-científico"><i class="fa fa-check"></i><b>1.1</b> Estatística e o Raciocínio Científico</a></li>
+<li class="chapter" data-level="1.2" data-path="introdução.html"><a href="introdução.html#o-que-é-estatística"><i class="fa fa-check"></i><b>1.2</b> O que é Estatística?</a></li>
+<li class="chapter" data-level="1.3" data-path="introdução.html"><a href="introdução.html#o-papel-da-probabilidade-em-estatística"><i class="fa fa-check"></i><b>1.3</b> O Papel da Probabilidade em Estatística</a></li>
+<li class="chapter" data-level="1.4" data-path="introdução.html"><a href="introdução.html#elementos-fundamentais-em-estatística"><i class="fa fa-check"></i><b>1.4</b> Elementos Fundamentais em Estatística</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#população-e-amostra"><i class="fa fa-check"></i>População e Amostra</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#variáveis"><i class="fa fa-check"></i>Variáveis</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#dados-e-fontes-de-dados"><i class="fa fa-check"></i>Dados e Fontes de Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introdução.html"><a href="introdução.html#tipos-de-problemas"><i class="fa fa-check"></i><b>1.5</b> Tipos de Problemas</a></li>
+<li class="chapter" data-level="1.6" data-path="introdução.html"><a href="introdução.html#o-processo-de-análise-de-dados"><i class="fa fa-check"></i><b>1.6</b> O Processo de Análise de Dados</a></li>
+<li class="chapter" data-level="1.7" data-path="introdução.html"><a href="introdução.html#métodos-para-exploração-resumo-e-descrição-de-dados"><i class="fa fa-check"></i><b>1.7</b> Métodos para Exploração, Resumo e Descrição de Dados</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#análise-exploratória-de-dados-exploratory-data-analysis-eda"><i class="fa fa-check"></i>Análise Exploratória de Dados (“Exploratory Data Analysis”, EDA)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html"><i class="fa fa-check"></i><b>2</b> Introdução à Teoria de Probabilidades</a><ul>
+<li class="chapter" data-level="2.1" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#breve-histórico"><i class="fa fa-check"></i><b>2.1</b> Breve Histórico</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#chance-e-incerteza"><i class="fa fa-check"></i>Chance e Incerteza</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#jogos-de-azar"><i class="fa fa-check"></i>Jogos de Azar</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#origem-da-teoria-matemática-de-probabilidades"><i class="fa fa-check"></i>Origem da Teoria Matemática de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#formalização-matemática"><i class="fa fa-check"></i>Formalização Matemática</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definições-iniciais"><i class="fa fa-check"></i><b>2.2</b> Definições Iniciais</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#experimento-aleatório"><i class="fa fa-check"></i>Experimento Aleatório</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#espaço-amostral-e-evento"><i class="fa fa-check"></i>Espaço Amostral e Evento</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#lei-de-probabilidade"><i class="fa fa-check"></i>Lei de Probabilidade</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretações-de-probabilidade"><i class="fa fa-check"></i><b>2.3</b> Interpretações de Probabilidade</a><ul>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-clássica-a-priori-laplace-1812">Interpretação Clássica (<em>a priori</em>): Laplace, 1812</a></li>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-empírica-ou-de-frequência-relativa-a-posteriori-richard-v.-mises-1919">Interpretação Empírica ou de Frequência Relativa (<em>a posteriori</em>): Richard V. Mises, 1919</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretação-subjetiva"><i class="fa fa-check"></i>Interpretação Subjetiva</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#resumo"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definição-axiomática"><i class="fa fa-check"></i><b>2.4</b> Definição Axiomática</a></li>
+<li class="chapter" data-level="2.5" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#revisitando-o-paradoxo-de-de-méré-o-problema-dos-dados"><i class="fa fa-check"></i><b>2.5</b> Revisitando o Paradoxo de De Méré: O Problema dos Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html"><i class="fa fa-check"></i><b>3</b> Probabilidade Condicional e Independência</a><ul>
+<li class="chapter" data-level="3.1" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#probabilidade-condicional"><i class="fa fa-check"></i><b>3.1</b> Probabilidade Condicional</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades"><i class="fa fa-check"></i>Propriedades</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-de-eventos"><i class="fa fa-check"></i><b>3.2</b> Independência de Eventos</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades-1"><i class="fa fa-check"></i>Propriedades</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-condicional"><i class="fa fa-check"></i>Independência Condicional</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#eventos-independentes-x-eventos-mutuamente-exclusivos"><i class="fa fa-check"></i>Eventos Independentes x Eventos Mutuamente Exclusivos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html"><i class="fa fa-check"></i><b>4</b> Teoremas Fundamentais da Probabilidade</a><ul>
+<li class="chapter" data-level="4.1" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-da-probabilidade-total-dividir-para-conquistar"><i class="fa fa-check"></i><b>4.1</b> Teorema da Probabilidade Total: …dividir para conquistar!</a></li>
+<li class="chapter" data-level="4.2" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-de-bayes-aprendendo-pela-experiência"><i class="fa fa-check"></i><b>4.2</b> Teorema de Bayes: …aprendendo pela experiência</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html"><i class="fa fa-check"></i><b>5</b> Variáveis Aleatórias e Distribuições</a><ul>
+<li class="chapter" data-level="5.1" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variáveis-aleatórias"><i class="fa fa-check"></i><b>5.1</b> Variáveis Aleatórias</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#definição-caso-unidimensional"><i class="fa fa-check"></i>Definição (caso unidimensional)</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#tipos-de-variáveis-aleatórias"><i class="fa fa-check"></i>Tipos de Variáveis Aleatórias</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#distribuições-de-probabilidade"><i class="fa fa-check"></i><b>5.2</b> Distribuições de Probabilidade</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-discreto"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso discreto</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-contínuo"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso contínuo</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-acumulada-fda"><i class="fa fa-check"></i>Função Distribuição Acumulada (FDA)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado-e-variância"><i class="fa fa-check"></i><b>5.3</b> Valor Esperado e Variância</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado"><i class="fa fa-check"></i>Valor Esperado</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#o-problema-dos-pontos-e-a-aposta-de-pascal"><i class="fa fa-check"></i>O Problema dos Pontos e a Aposta de Pascal</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variância"><i class="fa fa-check"></i>Variância</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desvio-padrão"><i class="fa fa-check"></i>Desvio-padrão</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#momentos"><i class="fa fa-check"></i><b>5.4</b> Momentos</a><ul>
+<li><a href="variáveis-aleatórias-e-distribuições.html#assimetria-skewness-e-excesso-kurtosis">Assimetria (<em>skewness</em>) e Excesso (<em>kurtosis</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdades-de-markov-e-chebyshev"><i class="fa fa-check"></i><b>5.5</b> Desigualdades de Markov e Chebyshev</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-markov"><i class="fa fa-check"></i>Desigualdade de Markov</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-chebyshev"><i class="fa fa-check"></i>Desigualdade de Chebyshev</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><i class="fa fa-check"></i><b>6</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Bernoulli</a><ul>
+<li class="chapter" data-level="6.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#o-experimento-de-bernoulli"><i class="fa fa-check"></i><b>6.1</b> O Experimento de Bernoulli</a></li>
+<li class="chapter" data-level="6.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-de-bernoulli"><i class="fa fa-check"></i><b>6.2</b> Distribuição de Bernoulli</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-2"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial"><i class="fa fa-check"></i><b>6.3</b> Distribuição Binomial</a></li>
+<li class="chapter" data-level="6.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#um-problema-de-tomada-de-decisão"><i class="fa fa-check"></i><b>6.4</b> Um Problema de Tomada de Decisão</a></li>
+<li class="chapter" data-level="6.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-geométrica"><i class="fa fa-check"></i><b>6.5</b> Distribuição Geométrica</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#propriedade-de-ausência-de-memória"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#outras-distribuições"><i class="fa fa-check"></i><b>6.6</b> Outras Distribuições</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial-negativa-ou-distribuição-de-pascal"><i class="fa fa-check"></i>Distribuição Binomial Negativa (ou Distribuição de Pascal)</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial"><i class="fa fa-check"></i>Distribuição Multinomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial-negativa"><i class="fa fa-check"></i>Distribuição Multinomial Negativa</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica"><i class="fa fa-check"></i>Distribuição Hipergeométrica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica-negativa"><i class="fa fa-check"></i>Distribuição Hipergeométrica Negativa</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-4"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><i class="fa fa-check"></i><b>7</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Poisson</a><ul>
+<li class="chapter" data-level="7.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i><b>7.1</b> Uma aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="7.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-poisson"><i class="fa fa-check"></i><b>7.2</b> Distribuição de Poisson</a></li>
+<li class="chapter" data-level="7.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#o-processo-de-poisson"><i class="fa fa-check"></i><b>7.3</b> O Processo de Poisson</a></li>
+<li class="chapter" data-level="7.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-exponencial"><i class="fa fa-check"></i><b>7.4</b> Distribuição Exponencial</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#propriedade-de-ausência-de-memória-1"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-weibull"><i class="fa fa-check"></i>Distribuição de Weibull:</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-gama"><i class="fa fa-check"></i><b>7.5</b> Distribuição Gama</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html"><i class="fa fa-check"></i><b>8</b> Modelos Probabilísticos: Distribuição Normal</a><ul>
+<li class="chapter" data-level="8.1" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#distribuição-normal"><i class="fa fa-check"></i><b>8.1</b> Distribuição Normal</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#mais-uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>…(Mais) Uma Aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#cálculo-de-probabilidades"><i class="fa fa-check"></i>Cálculo de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#padronização-1"><i class="fa fa-check"></i>Padronização</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#regra-empírica"><i class="fa fa-check"></i>Regra Empírica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#coeficiente-de-variação"><i class="fa fa-check"></i>Coeficiente de Variação</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-distribuições-discretas"><i class="fa fa-check"></i><b>8.2</b> Aproximação para Distribuições Discretas</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>Aproximação para a Distribuição Binomial</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#métodos-descritivos-para-avaliar-normalidade"><i class="fa fa-check"></i><b>8.3</b> Métodos Descritivos para Avaliar Normalidade</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html"><i class="fa fa-check"></i><b>9</b> Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="9.1" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#introdução-à-inferência-estatística"><i class="fa fa-check"></i><b>9.1</b> Introdução à Inferência Estatística</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#inferência-estatística"><i class="fa fa-check"></i>Inferência Estatística</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostras-e-distribuições-amostrais"><i class="fa fa-check"></i><b>9.2</b> Amostras e Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostra-aleatória"><i class="fa fa-check"></i>Amostra Aleatória</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#parâmetos-vs.-estatísticas"><i class="fa fa-check"></i>Parâmetos vs. Estatísticas</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-amostral"><i class="fa fa-check"></i>Distribuição Amostral</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-da-média-amostral"><i class="fa fa-check"></i><b>9.3</b> Distribuição da Média Amostral</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#propriedades-da-média-amostral"><i class="fa fa-check"></i>Propriedades da Média Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#lei-dos-grandes-números"><i class="fa fa-check"></i>Lei dos Grandes Números</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#teorema-do-limite-central"><i class="fa fa-check"></i><b>9.4</b> Teorema do Limite Central</a></li>
+<li class="chapter" data-level="9.5" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuições-amostrais-associadas-a-populações-normais"><i class="fa fa-check"></i><b>9.5</b> Distribuições Amostrais Associadas a Populações Normais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-qui-quadrado"><i class="fa fa-check"></i>Distribuição Qui-Quadrado</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-t-student"><i class="fa fa-check"></i>Distribuição t-Student</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#aproximando-distribuições-amostrais-via-simulação-de-monte-carlo"><i class="fa fa-check"></i><b>9.6</b> Aproximando Distribuições Amostrais via Simulação de Monte Carlo</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-mediana-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Mediana Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-desvio-padrão-amostral"><i class="fa fa-check"></i>Distribuição Aproximada do Desvio-Padrão Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-variância-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Variância Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-mad-desvio-mediano-absoluto"><i class="fa fa-check"></i>Distribuição Aproximada do MAD (Desvio Mediano Absoluto)</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-amplitude-inter-quartis-iqr"><i class="fa fa-check"></i>Distribuição Aproximada da Amplitude Inter-Quartis (IQR)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="estimação-pontual.html"><a href="estimação-pontual.html"><i class="fa fa-check"></i><b>10</b> Estimação Pontual</a><ul>
+<li class="chapter" data-level="10.1" data-path="estimação-pontual.html"><a href="estimação-pontual.html#estimador-e-estimativa"><i class="fa fa-check"></i><b>10.1</b> Estimador e Estimativa</a></li>
+<li class="chapter" data-level="10.2" data-path="estimação-pontual.html"><a href="estimação-pontual.html#propriedades-de-estimadores"><i class="fa fa-check"></i><b>10.2</b> Propriedades de Estimadores</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#não-tendeciosidade-exatidão"><i class="fa fa-check"></i>Não-Tendeciosidade (exatidão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#eficiência-precisão"><i class="fa fa-check"></i>Eficiência (precisão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#consistência"><i class="fa fa-check"></i>Consistência</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#erro-médio-quadrático"><i class="fa fa-check"></i>Erro Médio Quadrático</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="estimação-pontual.html"><a href="estimação-pontual.html#métodos-clássicos-de-estimação-de-parâmetros"><i class="fa fa-check"></i><b>10.3</b> Métodos Clássicos de Estimação de Parâmetros</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-dos-momentos"><i class="fa fa-check"></i>Método dos Momentos</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-da-máxima-verossimilhança"><i class="fa fa-check"></i>Método da Máxima Verossimilhança</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html"><i class="fa fa-check"></i><b>11</b> Intervalos de Confiança</a><ul>
+<li class="chapter" data-level="11.1" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#estimação-por-intervalos"><i class="fa fa-check"></i><b>11.1</b> Estimação por Intervalos</a></li>
+<li class="chapter" data-level="11.2" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#procedimento-para-construção-de-ics"><i class="fa fa-check"></i><b>11.2</b> Procedimento para Construção de IC’s</a><ul>
+<li><a href="intervalos-de-confiança.html#caso-1-ic-para-mu-com-sigma2-conhecida">CASO 1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> conhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.1-ic-para-mu-com-sigma2-desconhecida">CASO 2.1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.2-ic-para-mu-com-sigma2-desconhecida-amostras-grandes">CASO 2.2: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida (amostras grandes)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-p-proporção-populacional">CASO 3: IC para <span class="math inline">\(p\)</span> (proporção populacional)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-sigma2">CASO 3: IC para <span class="math inline">\(\sigma^2\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html"><i class="fa fa-check"></i><b>12</b> Testes de Hipóteses</a><ul>
+<li class="chapter" data-level="12.1" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#formulação-de-hipóteses-estatísticas"><i class="fa fa-check"></i><b>12.1</b> Formulação de Hipóteses Estatísticas</a></li>
+<li class="chapter" data-level="12.2" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#estatística-do-teste"><i class="fa fa-check"></i><b>12.2</b> Estatística do Teste</a></li>
+<li class="chapter" data-level="12.3" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#erros-de-decisão"><i class="fa fa-check"></i><b>12.3</b> Erros de Decisão</a></li>
+<li class="chapter" data-level="12.4" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-crítica"><i class="fa fa-check"></i><b>12.4</b> Região Crítica</a></li>
+<li class="chapter" data-level="12.5" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#valor-p"><i class="fa fa-check"></i><b>12.5</b> Valor-p</a></li>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#qual-a-probabilidade-de-cometer-erro-do-tipo-ii"><i class="fa fa-check"></i>Qual a probabilidade de cometer erro do tipo II?</a></li>
+<li class="chapter" data-level="12.6" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#poder-do-teste"><i class="fa fa-check"></i><b>12.6</b> Poder do Teste</a></li>
+<li class="chapter" data-level="12.7" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#resumo-gráfico"><i class="fa fa-check"></i><b>12.7</b> Resumo Gráfico</a></li>
+<li class="chapter" data-level="12.8" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#testes-mono--e-bi-caudais"><i class="fa fa-check"></i><b>12.8</b> Testes Mono- e Bi-Caudais</a><ul>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-de-rejeição-para-um-teste-bi-caudal"><i class="fa fa-check"></i>Região de Rejeição para um Teste Bi-caudal</a></li>
+</ul></li>
+<li class="chapter" data-level="12.9" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-o-nível-de-significância"><i class="fa fa-check"></i><b>12.9</b> Procedimento para Testes de Hipóteses (utilizando o nível de significância)</a></li>
+<li class="chapter" data-level="12.10" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-valor-p"><i class="fa fa-check"></i><b>12.10</b> Procedimento para Testes de Hipóteses (utilizando valor-p)</a></li>
+<li class="chapter" data-level="12.11" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#ic-vs-th"><i class="fa fa-check"></i><b>12.11</b> IC vs TH</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GED-13: Probabilidade e Estatística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introdução" class="section level1">
+<h1><span class="header-section-number">Capítulo 1</span> Introdução</h1>
+<div id="estatística-e-o-raciocínio-científico" class="section level2">
+<h2><span class="header-section-number">1.1</span> Estatística e o Raciocínio Científico</h2>
+<p>A prática Científica e de Engenharia comumente envolve o uso de dados experimentais para chegar a alguma conclusão a respeito do fenômeno de interesse do investigador. Este é um processo de inferência, que constitui parte fundamental do método científico. E o papel da Estatística nesse processo é justamente o que veremos a seguir.</p>
+<div class="figure"><span id="fig:ch1-metodo-cientifico"></span>
+<img src="img/metodo-cientifico.png" alt="Método Científico: processo iterativo indutivo-dedutivo." width="100%" />
+<p class="caption">
+Figura 1.1: Método Científico: processo iterativo indutivo-dedutivo.
+</p>
+</div>
+<p>Podemos definir Ciência como sendo um corpo de conhecimentos sistematizados adquiridos via observação, identificação, pesquisa e explicação de determinados fenômenos e fatos, e formulados de maneira metódica e racional.</p>
+<p>O método de investigação científica sempre começa por uma pergunta. Formula-se uma hipótese, que nada mais é que uma conjectura a respeito de como determinado fenômeno funciona. A partir do pensamento crítico, então, a hipótese é desafiada e testada objetivamente através de observações e experimentos, ou seja, através de evidências. Se a explicação original sobreviver ao teste, pode ser aceita como válida; caso contrário, novas conjecturas ou hipóteses precisam ser formuladas para explicar o fenômeno sendo investigado e novamente o ciclo se repete; este é, portanto, um processo iterativo.</p>
+<p>O raciocínio dedutivo é utilizado para chegar a uma conclusão lógica a partir de premissas verdadeiras. No método científico, empregamos o raciocínio dedutivo quando dada a hipótese considerada, criagmos a expectativa de observar um certo resultado para o experimento. Se a hipótese for verdadeira, o resultado é uma consequência lógica verdadeira. Parte-se do geral (a teoria, a hipótese) para o específico (as observações, as evidências empíricas).</p>
+<p>Já através do raciocínio indutivo, tenta-se chegar a generalizações a partir de um conjunto de observações, um conjunto de dados. Portanto, indução consiste na elaboração de hipóteses e teorias para explicar um determinado fenômeno que se observa; esta atividade sempre envolve incertezas, devido às imperfeições do processo de observação e experimentação e também à incompletude e imperfeição da informação que temos disponível (afinal de contas, observamos apenas uma seleção, um subconjunto, de todos os resultados possíveis e, muitas vezes, é impossível reproduzir de maneira exata o fenômeno sendo investigado através de um experimento planejado).</p>
+<p>Sendo assim, as práticas científicas apóiam-se no emprego do Método Científico para construir novos conhecimentos. Note que o método científico em si não produz as respostas à questão científica, mas propõe um método sistemático para chegar a essas respostas.</p>
+<p>O método científico é caracterizado pela formulação e avaliação de hipóteses e teorias, a observação e experimentação sistemática do fenômeno sendo investigado, além do emprego dos raciocínios dedutivo e indutivo para chegar a conclusões objetivas e válidas.</p>
+<p>A função da Estatística, como disciplina, consiste em tornar os estágios de experimentação e conclusão objetivos, rigorosos e eficientes. A Estatística permite responder de maneira satisfatória a três perguntas:</p>
+<ol style="list-style-type: decimal">
+<li><p>Qual a melhor maneira de coletar os dados?</p></li>
+<li><p>Como os dados devem ser analisados?</p></li>
+<li><p>O que se pode concluir a partir da análise?</p></li>
+</ol>
+</div>
+<div id="o-que-é-estatística" class="section level2">
+<h2><span class="header-section-number">1.2</span> O que é Estatística?</h2>
+<p>O uso corriqueiro da palavra “estatística” normalmente se refere a uma coleção de números ou valores relativos a nascimentos, mortes, populações, acidentes, esportes e assim por diante… ou seja, coloquialmente, acabamos utilizando a palavra estatística como um sinônimo de “dados”. Porém, nosso entendimento será um pouco mais amplo: entendemos Estatística como a ciência responsável por planejar estudos e experimentos, coletar dados, classificar, resumir, modelar e analisar esses dados com o propósito de auxiliar o processo de tomada de decisão e de descoberta científica, quando a informação disponível é limitada e variável (ou seja, quando há informação incompleta e imperfeita). Por este motivo, podemos definir Estatística como sendo a ciência do aprendizado pela experiência, isto é, aprendemos a partir de evidências, a partir da análise de dados.</p>
+<p>Vivemos em um mundo cada vez mais sofisticado quantitativamente. À medida em que engenheiros e cientistas se deparam com o desafio de manipular, analisar e extrair informação de uma quantidade cada vez maior de dados, a Estatística assume um papel científico proporcionalmente importante na fusão de dados, quantificação de incertezas e, principalmente, como ferramenta de apoio ao processo de tomada de decisão com base em evidências.</p>
+<p>Sendo assim, neste curso estudaremos ferramentas estatísticas para gerar informação a partir de dados, a fim de auxiliar o processo de tomada de decisão na presença de incertezas e variabilidade, ou seja, quando a informação é incompleta e imperfeita.</p>
+<p>Esse processo de transformação de dados em informação envolve coletar, organizar, processar e disponibilizar essa informação obtida para torná-la compreensível e útil.</p>
+</div>
+<div id="o-papel-da-probabilidade-em-estatística" class="section level2">
+<h2><span class="header-section-number">1.3</span> O Papel da Probabilidade em Estatística</h2>
+<p>A teoria de probabilidades teve origem no século XVII com a troca de correspondência entre os dois grandes matemáticos franceses, Blaise Pascal e Pierre de Fermat, que na tentativa de resolver dois problemas envolvendo jogos de azar acabaram desenvolvendo as bases matemáticas para a teoria. Embora o início dessa disciplina não pareça muito nobre ou digno, o fato é que esses estudos iniciais acabaram por chamar a atenção de outros matemáticos ilustres como Huyghens, Bernoulli e DeMoivre para a necessidade de estabelecer uma teoria matemática de probabilidades.</p>
+<p>Hoje, a teoria de probabilidades é um ramo da matemática bem estabelecido e encontra aplicações em praticamente todas as áreas do conhecimento humano, de física às artes, além de estar presente em nossa experiência cotidiana, desde a previsão do tempo diária, à avaliação de riscos associados a novos tratamentos médicos.</p>
+<p>Essa ampla aplicação da teoria de probabilidades, em parte, decorre do princípio fundamental da inferência estatística, que se resume à seguinte frase: ESTATÍSTICA utiliza PROBABILIDADE para descrever, compreender e quantificar incertezas.</p>
+<p>Bem, claro que essa não é a única coisa que os estatísticos fazem; também desenhamos algumas figuras de vez em quando, mas calcular probabilidades definitivamente é algo que todos os estatísticos fazem e é algo em que investimos uma quantidade significativa do nosso tempo.</p>
+<p>Como nós veremos adiante, probabilidade é um conceito matemático bem definido. Já o que se entende por incerteza pode ter diferentes interpretações. Na verdade, este é um conceito sutil que divide o mundo da estatística em dois:</p>
+<ul>
+<li><p>o mundo da Estatística Clássica (ou frequentista); e</p></li>
+<li><p>o mundo da Estatística Bayesiana.</p></li>
+</ul>
+<p>Neste curso, estudaremos métodos de inferência estatística segundo o paradigma clássico.</p>
+</div>
+<div id="elementos-fundamentais-em-estatística" class="section level2">
+<h2><span class="header-section-number">1.4</span> Elementos Fundamentais em Estatística</h2>
+<div id="população-e-amostra" class="section level3 unnumbered">
+<h3>População e Amostra</h3>
+<p>Na terminologia estatística, o conjunto de dados que desejamos descrever, aquele que caracteriza em sua totalidade o fenômeno sendo investigado é chamado <strong>população</strong>. A população pode ser finita ou infinita, real ou conceitual.</p>
+<p>Uma <strong>população finita</strong> é aquela em que é possível determinar o número de elementos que a compõe. Um exemplo de população finita é o conjunto dos alunos do 2o ano de engenharia de uma determinada escola.</p>
+<p>Em uma <strong>população infinita</strong> não é possível enumerar todos os seus elementos. Por exemplo, os itens produzidos (existentes ou não) por um certo processo industrial constitui uma população infinita. O conjunto de todas as estrelas no universo também pode ser considerado uma população infinita.</p>
+<p>Uma população conceitual é aquela que não necessariamente existe de maneira concreta na ocasião em que os dados são coletados (talvez porque seja uma população crescente, como a coleção de todos os indivíduos nascidos ou que ainda nascerão em uma determinada localidade). Quando os elementos que compõe a população existem de maneira tangível ou concreta, esta é dita uma população real.</p>
+<p>Podemos definir <strong>amostra</strong> como sendo um subconjunto de indivíduos selecionados a partir da população de interesse. A fim de que as inferências estatísticas realizadas com base na amostra sejam confiáveis, é necessário que a amostra seja representativa da população de onde foi retirada. Para isso, é necessário que os elementos que compõe a amostra, os dados que serão utilizados para realizar inferência, sejam selecionados de uma maneira adequada. Como é possível fazer isso? É possível evitar introdução de viés na amostra utilizando uma estratégia chamada aleatorização; isso significa que os indivíduos que comporão a amostra devem ser sorteados. A maneira mais simples de selecionar aleatoriamente uma amostra é através de um processo de amostragem aleatória simples, em cada indivíduo na população tem a mesma chance de ser selecionado para compor a amostra e não existe relação intencional entre os indivíduos na amostra.</p>
+<p>É fundamental notar que inferências realizadas com base em dados amostrais são sujeitas a incertezas, pois uma amostra, por mais representativa que seja, não é capaz de fornecer uma imagem perfeita da população de interesse.</p>
+<p>As <strong>unidades experimentais</strong> correspondem aos elementos, os objetos ou indivíduos que compõe a amostra e a partir dos quais são coletadas as medidas que compõe o conjunto de dados a ser analisado. Uma unidade experimental pode ser um paciente num teste clínico, uma combinação de tipo de solo + fertilizante num estudo agronômico e, assim por diante. Uma <strong>observação</strong> consiste no conjunto de medidas registradas para uma unidade experimental; representa, portanto toda a informação relativa a uma certa unidade experimental. Em um paciente submetido a um teste clínico, podemos estar interessados em monitorar o nível de glicose no sangue, o nível de colesterol e o peso, por exemplo; a observação para o i-ésimo paciente corresponde ao conjunto de valores apresentados pelo paciente para cada uma dessas quantidades.</p>
+</div>
+<div id="variáveis" class="section level3 unnumbered">
+<h3>Variáveis</h3>
+<p>As variáveis correspondem aos atributos monitorados nas unidades experimentais.
+Para o nosso teste clínico, as variáveis seriam nível de glicose no sangue, nível de colesterol e peso. As variáveis podem ter diferentes níveis de refinamento em suas medidas.</p>
+<p><strong>Variáveis categóricas</strong> (qualitativas) são aquelas que podem ser divididas em classes ou categorias. Elas são ditas nominais quando não há ordenamento intrínseco entre as classes. Por exemplo, para um carro, modelo é uma variável categórica, em que cada modelo corresponde a uma classe diferente e, como não há um ordenamento natural das diferentes classes, esta é uma variável <strong>nominal</strong>. Quando há ordenamento intrínseco entre as classes, a variável categórica é dita <strong>ordinal</strong>. Por exemplo, a variável nível educacional assumindo três níveis (fundamental, médio, superior, pós-graduação) pressupõe uma ordem, em que o nível superior é mais alto que o nível médio que, por sua vez, é mais alto que o nível fundamental. Note que as distâncias entre os níveis não são iguais.</p>
+<p>Quando distâncias iguais entre diferentes níveis de uma variável tem mesmo valor, teríamos uma <strong>variável numérica</strong>, ou quantitativa. Por exemplo, a variável renda medida em números de salários mínimos é uma variável numérica. As variáveis numéricas são ditas discretas quando assumem uma quantidade finita ou infinita e enumerável de valores distintos; e contínuas, se assumem um número infinito não enumerável de valores. Essa classificação é importante pois os procedimentos estatísticos adequados dependem da natureza das variáveis sendo analisadas.</p>
+</div>
+<div id="dados-e-fontes-de-dados" class="section level3 unnumbered">
+<h3>Dados e Fontes de Dados</h3>
+<p>Os dados utilizados na análise podem ser originados de fontes primárias (quando a coleta dos dados faz parte da investigação científica, por exemplo através de experimentos planejados ou estudos observacionais) ou fontes secundárias (quando os dados foram obtidos a partir de outras fontes, tais como relatórios, periódicos, publicações oficiais, entre outros). Os dados podem ser obtidos de diversas maneiras, incluindo experimentos planejados e estudos observacionais.</p>
+<p>Em um <strong>estudo experimental</strong>, o investigador ativamente manipula certas variáveis associadas ao estudo (os chamados fatores) e, então, registra os valores observados para as respostas associadas aos indivíduos investigados. Um esforço ativo é realizado para controlar todas as outras fontes de variabilidade que podem afetar a resposta sendo investigada. Por este motivo, um efeito observado na resposta pode ter causa atribuída à variação dos fatores controlados. A partir de estudos experimentais é possível estabelecer relações de causa-e-efeito entre variáveis. Por exemplo, é possível conduzir um experimento para avaliar se a inclusão de um certo aditivo exerce influência na resistência de um material. Se o experimento tiver sido realizado de maneira controlada de forma a eliminar efeitos de perturbações espúrias, é possível concluir que variações observadas na resistência do material são decorrentes da inclusão do aditivo, ou seja, foram provocadas pela presença do aditivo.</p>
+<p>Em um <strong>estudo observacional</strong>, por outro lado, o pesquisador registra a informação a respeito dos indivíduos investigados sem nenhuma interferência no processo que gera a informação. O pesquisador é um observador passivo dos eventos. Neste caso, muito cuidado é necessário para evitar vieses e problemas de amostragem que podem comprometer a qualidade dos dados, com relação a sua representatividade. Estudos observacionais podem ser comparativos ou descritivos. Nos estudos comparativos, vários grupos são comparados com relação a um atributo em comum, por exemplo, podemos desejar realizar a comparação dos salários inicias de engenheiros graduados em faculdades publicas ou privadas. Já nos estudos descritivos o objetivo é caracterizar uma população ou processo com base em certos atributos nesta população ou processo, como por exemplo, estudar as condições de saúde das crianças menores de 5 anos em famílias sem plano de saúde.</p>
+<p>Uma limitação severa dos estudos observacionais está associada ao fato de que as respostas observadas podem ter sido afetadas por outras variáveis não incluídas no estudo. Sendo assim, dados obtidos a partir de estudos observacionais não permitem estabelecer relações de causa-e-efeito entre fatores, apenas associações (pois como o investigador não tem controle sobre as circunstâncias em que os dados foram gerados, muitas fontes espúrias, desconhecidas, de variabilidade podem ser as causadoras do efeito observado).</p>
+<p>Por exemplo, imagine que um estudo observacional que monitorou o uso de protetor solar e a ocorrência de câncer de pele, tenha levado à conclusão de que quanto maior o uso de protetor solar, maior a chance de a pessoa desenvolver cancer de pele. É possível concluir que o uso de protetor solar <em>causa</em> cancer de pele? Há evidências científicas de que, na verdade, o uso de protetor solar reduz o risco de desenvolver câncer de pele. Então, pode ser que haja uma outra variável não incluída no estudo que explique essa aparente associação entre uso de protetor solar e ocorrência de cancer de pele. Uma informação não registrada, por exemplo, é a exposição do indivíduo ao sol. Quanto maior a exposição ao sol, maior a chance de que o indivíduo utilize proteção solar e, também, maior a chance de que desenvolva cancer de pele. Exposição ao sol foi uma variável omitida do estudo que se relaciona a ambas as variáveis para as quais se tenta estabelecer uma relação; esta é uma variável chamada variável de confusão.</p>
+</div>
+</div>
+<div id="tipos-de-problemas" class="section level2">
+<h2><span class="header-section-number">1.5</span> Tipos de Problemas</h2>
+<p>A ciência Estatística comumente é aplicada a dois tipos de problemas:</p>
+<p><strong>Exploração:</strong> as atividades associadas ao que se chama hoje no mundo de <em>data science</em>, ou ciência de dados, de <em>analytics</em>. Basicamente, essas atividades estão associadas ao primeiro encontro com os dados, em que desejamos resumir, descrever, explorar e formular hipóteses ou conjecturas a respeito dos dados.</p>
+<p><strong>Inferência:</strong> temos acesso a um conjunto de dados, que de maneira alguma representa a totalidade ou população de interesse (isto é, temos uma amostra) e, com base nas observações dessa amostra queremos chegar a conclusões que sejam válidas para toda a população de que essa amostra faz parte, queremos generalizar, estimar uma quantidade populacional desconhecida, prever um comportamento não observado do sistema investigado e, finalmente, tomar uma decisão em um cenário de incerteza.</p>
+</div>
+<div id="o-processo-de-análise-de-dados" class="section level2">
+<h2><span class="header-section-number">1.6</span> O Processo de Análise de Dados</h2>
+<p>O processo de análise de dados é aquele através do qual dados são transformados em informação para dar suporte à tomada de decisões.</p>
+<p>Nosso estudo de Estatística será conduzido considerando uma sequência de passos normalmente realizados quando tentamos aprender algo a partir de evidências empíricas (isto é, a partir de dados). E, como podemos imaginar, este ciclo de aprendizado tem conexões fortes com o método científico, compreendendo a formulação da questão científica, planejamento da coleta de dados (ou seja, o protocolo experimental), a coleta de dados propriamente dita, análise e interpretação dos dados e, finalmente, a comunicação dos resultados.</p>
+<!--IMG-->
+<div class="figure"><span id="fig:ch1-analise-dados"></span>
+<img src="img/analise-dados.png" alt="O processo de análise de dados." width="100%" />
+<p class="caption">
+Figura 1.2: O processo de análise de dados.
+</p>
+</div>
+<p>O processo inicia com a definição do problema (ou da pergunta científica que se deseja responder). Com vistas a fornecer respostas para a pergunta formulada ou o objetivo do estudo é necessário desenvolver um plano para obtenção dos dados, quer por meio de um estudo observacional ou de um experimento. Tendo os dados disponíveis, é necessário prepará-los para a análise; e esta etapa normalmente envolve algum tipo de resumo e exploração dos dados. Em seguida os dados precisam então passar por um processo de modelagem e análise, dentro do contexto dos objetivos da investigação a fim de que seja possível obter uma interpretação para os resultados obtidos da análise e, assim, comunicá-los à audiência de interesse.</p>
+<p>De fato, a menos que o problema esteja claramente definido e que os dados tenham sido coletados da maneira adequada, a interpretação dos resultados da análise realizada pode acabar sendo comprometida por ser baseada em dados que não têm relação com o problema, ou que porventura sejam incompletos ou contenham informações incorretas. Com isso, informações enganosas podem levar a ações equivocadas por parte do tomador de decisão. Para cada uma dessas atividades é de suma importância que o método científico seja aplicado, ou seja, gera-se uma expectativa (constrói-se uma hipótese), submete-se essa expectativa a uma prova (confronta-se evidências e expectativas) e chega-se a uma conclusão (é necessário rever expectativas ou obter mais evidências, ou modificar os métodos de se obter as evidências). O ciclo do método científico é repetido até que expectativas e evidências estejam de acordo.</p>
+<p>Por exemplo, na etapa da formulação da pergunta científica, devemos avaliar se a pergunta científica considerada é relevante para a audiência de interesse. Essa hipótese precisa ser colocada à prova através de observação ou experimentação (neste caso, deve-se consultar a literatura ou especialistas a fim de avaliar a relevância da pergunta). Caso se chegue a conclusão de que a pergunta é irrelevante, pode ser necessário revisar a pergunta científica.</p>
+<p>Na etapa de exploração dos dados, devemos nos questionar se os dados são apropriados para responder à pergunta de interesse. Para isso, realiza-se análise exploratória dos dados; a partir daí, pode-se chegar à conclusão de que é necessário rever a pergunta científica, ou coletar mais dados.</p>
+<p>A análise dos dados geralmente envolve a construção de modelos estatísticos formais. Neste caso é preciso questionar se o modelo inicial é satisfatório. Essa hipótese é desafiada ajustando-se outros modelos, ou através de análise de sensibilidade. Caso a hipótese de adequação do modelo seja derrotada, o modelo inicial deve ser revisto e, assim por diante.</p>
+<p>A primeira etapa do processo é a exploração dos dados. Vejamos então alguns métodos para a exploração, resumo e descrição de dados.</p>
+</div>
+<div id="métodos-para-exploração-resumo-e-descrição-de-dados" class="section level2">
+<h2><span class="header-section-number">1.7</span> Métodos para Exploração, Resumo e Descrição de Dados</h2>
+<p>Vamos assumir, então, que temos em mãos um conjunto de dados de interesse, e que desejamos extrair informação a partir deles.</p>
+<p>Consideraremos apenas de dados <em>estruturados</em>, que são aqueles podem ser organizados em uma tabela. No entanto, tentar obter informação a partir de dados tabulados nem sempre é uma tarefa simples, quando por exemplo, o conjunto de dados é muito grande.</p>
+<p>Antes de mais nada, precisamos fazer a distinção entre parâmetros e estatísticas.</p>
+<p><strong>Parâmetros</strong> são quantidades relativas a uma população, que normalmente são desconhecidas, pois é comum não observarmos a totalidade dos elementos que compõe a população.</p>
+<p><strong>Estatísticas</strong>, por sua vez, são quantidades calculadas a partir de uma amostra. Portanto, não representam de maneira perfeita a população.</p>
+<p>Se o conjunto de dados representa uma população, ferramentas exploratórias podem ser muito úteis para caracterizar essa população. Mas, como frequentemente, os dados constituem uma amostra, tais ferramentas exploratórias também podem ser utilizadas para auxiliar o processo de inferência, através da formulação de hipóteses (e, note, apenas para esse propósito).</p>
+<div id="análise-exploratória-de-dados-exploratory-data-analysis-eda" class="section level3 unnumbered">
+<h3>Análise Exploratória de Dados (“Exploratory Data Analysis”, EDA)</h3>
+<p>O objetivo de realizar análise exploratória de dados é o de ganhar uma melhor compreensão sobre os dados que se têm disponíveis.</p>
+<p>Análise Exploratória de Dados envolve examinar:</p>
+<ol style="list-style-type: decimal">
+<li><p>a estrutura e componentes do conjunto de dados (isto é, observamos que variáveis temos disponíveis, quantas observações há na massa de dados, como estão formatados e outras características da massa de dados);</p></li>
+<li><p>como se caracteriza a variabilidade (ou distribuição) das variáveis observadas; e</p></li>
+<li><p>se há indícios de associações ou relações entre diferentes variáveis.</p></li>
+</ol>
+<p>Esta análise preliminar deve ser realizada com 3 propósitos fundamentais:</p>
+<ol style="list-style-type: decimal">
+<li><p>determinar se existem problemas com os dados (e aqui é necessário avaliar se as medidas estão de acordo com o que deveriam? se as ordens de magnitude são compatíveis com o esperado, se a gama de valores observados é adequada? se há dados faltantes? se há erros de registro evidentes?).</p></li>
+<li><p>EDA também serve para determinar se a pergunta de interesse pode ser respondida com os dados disponíveis (isto é, os dados são adequados, são suficientes para responder à pergunta original? podem ser utilizados para responder a outras questões? é necessário obter mais dados ou outros dados? outras perguntas são mais interessantes?) e, finalmente</p></li>
+<li><p>Obter respostas preliminares à pergunta científica.</p></li>
+</ol>
+<p>Note que EDA não deve ser utilizada para realizar inferência (generalizações) ou previsões, ou seja, não serve para chegar a conclusões científicas definitivas.</p>
+<div id="resumos-exploratórios" class="section level4 unnumbered">
+<h4>Resumos Exploratórios</h4>
+<p>Podemos construir resumos exploratórios numéricos ou gráficos. O principal objetivo de obter resumos exploratórios é o de melhorar a compreensão dos dados que se tem disponíveis para análise, a fim de priorizar as análises a serem realizadas em sequência. Os procedimentos mais adequados dependem da natureza das variáveis analisada, isto é, se se tratam de variáveis categóricas ou numéricas.</p>
+<p>Resumos numéricos correspondem a estatísticas, ou seja, são valores calculados a partir do conjunto de dados em análise que nos permitem adquirir conhecimento a respeito de características importantes dos dados.</p>
+<p>Ao descrever variáveis qualitativas, são definidas categorias ou classes de forma que cada observação pertence a apenas uma classe. Sendo assim, este tipo de variável pode ser explorado numericamente através de tabelas de frequência, que registram o número de observações (ou a proporção de observações) em cada categoria diferente.</p>
+<p>Resumos gráficos permitem visualizar os dados e ganhar noções sobre sua natureza de maneira muito intuitiva.</p>
+<p>Veremos a seguir diversas ferramentas estatísticas básicas utilizadas para explorar um conjunto de dados, utilizando para isso o ambiente computacional R/RStudio.</p>
+<p><strong>Medidas de Localização (Centro da Distribuição)</strong></p>
+<ol style="list-style-type: lower-alpha">
+<li>Média (aritmética)</li>
+</ol>
+<p>A média aritmética ou, simplesmente, média, é uma maneira muito comum de representar o centro da distribuição dos dados. Ela representa o centro de massa ou ponto de equilíbrio dos dados, mas é uma medida muito sensível a assimetrias na distribuição, ou à presença de pontos extremos que exercem influência no valor da soma, de forma que sua interpretação pode acabar sendo enganosa.</p>
+<p><span class="math display">\[\begin{align*}
+  \bar{X} = \frac{1}{n}\sum_{i=1}^{n}X_i
+\end{align*}\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Mediana</li>
+</ol>
+<p>Se os dados são ordenados em ordem crescente, a mediana é o valor que divide os valores observados em duas metades, ou seja, 50% das observações apresentam valor inferior à mediana e 50% das observações apresentam valor superior à mediana. Essa é uma medida de centro resistente a assimetrias e pontos extremos, pois cada observação apresenta o mesmo peso na determinação da mediana. Por este motivo, esta é uma estatística chamada robusta.</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Moda</li>
+</ol>
+<p>A moda é uma medida bem menos utilizada que as outras duas, exceto em situações em que a frequência relativa de ocorrências é importante, e ela representa o pico da distribuição, ou seja, o valor mais frequentemente observado no conjunto de dados.</p>
+<p>Em suma, a medida de localização adequada para um certo conjunto de dados depende exatamente do tipo de informação descritiva que se deseja obter.</p>
+<!--IMG-->
+<div class="figure"><span id="fig:ch1-medidas-localizacao"></span>
+<img src="img/medidas-de-centro.png" alt="Medidas de centro ou localização." width="100%" />
+<p class="caption">
+Figura 1.3: Medidas de centro ou localização.
+</p>
+</div>
+<p><strong>Medidas de Dispersão (Variabilidade)</strong></p>
+<p>Além de descrever o centro da distribuição, é importante compreender como os dados se espalham ou variam em torno desse centro. Para isso podemos utilizar as medidas de dispersão variância, desvio-padrão e amplitude.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Variância</li>
+</ol>
+<p>A variância corresponde à distância média quadrática das observação à média, ou seja, é a soma das distâncias (ou desvios) quadráticas de cada observação à média, dividida por n-1, não por n. A razão disso ficará mais clara no futuro.</p>
+<p><span class="math display">\[\begin{align*}
+  S^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \bar{X})^2
+\end{align*}\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Desvio-padrão</li>
+</ol>
+<p>O desvio-padrão é dado pela raiz quadrada da variância e representa quão próximo em média os dados estão do centro da distribuição.</p>
+<p><span class="math display">\[\begin{align*}
+  S = \sqrt{S^2} = \sqrt{\frac{1}{n-1}\sum_{i=1}^n (X_i - \bar{X})^2}
+\end{align*}\]</span></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Amplitude</li>
+</ol>
+<p>A amplitude é a diferença entre o máximo e o mínimo valor observado para os dados. Esta é uma medida de dispersão também robusta, pois diferentes conjuntos de dados podem apresentar mesma amplitude e diferentes comportamentos para a variabilidade. Em geral, a amplitude é útil como medida de dispersão no caso de amostras pequenas, em que se tem poucas observações.</p>
+<p><strong>Medidas de Posição Relativa</strong></p>
+<p>Com os dados ordenados em ordem crescente, é possível descrever a posição de uma observação com relação às demais observações no conjunto de dados.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Quantis/percentis/quartis</li>
+</ol>
+<p>Os quartis são as posições que dividem a massa de dados em quartos. Sendo assim, 1/4 (ou 25%) das observações se encontram abaixo do 1o quartil (também chamado quartil inferior ou Q1) e 1/4 (ou 25%) das observações se encontram acima do 3o. quartil (o quartil superior, também chamado de Qo). A diferença entre o 3o e o 1o quartis é chamada amplitude inter-quartis. O primeiro quartil também é chamado de percentil 25% ou quantil 0,25. Note que a mediana corresponde ao 2o quartil ou ao percentil 50% ou ao quantil 0,5.</p>
+<!--IMG-->
+<div class="figure"><span id="fig:ch1-medidas-posicao-relativa"></span>
+<img src="img/medidas-posicao-relativa.jpg" alt="Quantis, percentis, quartis." width="70%" />
+<p class="caption">
+Figura 1.4: Quantis, percentis, quartis.
+</p>
+</div>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Escores-z</li>
+</ol>
+<p>Já os escores-z medem a posição das observações com relação a média, em números de desvios-padrão. Valores negativos para o escore-z indicam que a observação correspondente encontra-se abaixo da média. Valores positivos, indicam que a observação se encontra acima da média. Quanto maior o valor do escore-z em módulo, mais distante da média se encontra a observação.</p>
+<p><span class="math display">\[\begin{align*}
+  z_i = \frac{X_i - \bar{X}}{S}
+\end{align*}\]</span></p>
+<p>Segundo a Regra Empírica, a maior parte das observações em um conjunto de dados deve se encontrar a uma distância de dois desvios-padrão da média (isto é, os escores-z serão menores que 2, em valor absoluto) e quase a totalidade das observações deve estar a uma distância de 3 desvios-padrão da média (ou seja, terão escores-z inferiores a 3, em valor absoluto).</p>
+<p><strong>Observações Extremas (<em>Outliers</em>)</strong></p>
+<p>Por vezes, observações inconsistentes estão presentes da massa de dados. Essa inconsistência pode se manifestar através de um valor de observação atipicamente grande ou pequeno, relativamente às demais observações no conjunto de dados. Tais observações são chamadas <em>outliers</em>, pontos extremos ou observações extremas.</p>
+<p><em>Outliers</em> normalmente podem ter uma das possíveis causas:</p>
+<ol style="list-style-type: decimal">
+<li>A observação pode ter sido incorretamente medida, registrada ou lida pelo computador;<br />
+</li>
+<li>A observação pode pertencer a uma população distinta; ou<br />
+</li>
+<li>A observação é correta, mas representa um evento raro.</li>
+</ol>
+<p>O método mais usual para detecção de <em>outliers</em> é o cálculo do escore-z. Desta maneira, <em>outliers</em> apresentam valores absolutos de escore-z maiores que 3. Outro procedimento é baseado na ferramenta gráfica chamada <em>boxplot</em>, que veremos com mais detalhes em seguida.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-1" class="example"><strong>Exemplo 1.1  (Prevalência de Diabetes Mellitus entre as mulheres indígenas Pima)  </strong></span>
+</div>
+
+<p>Fonte: Smith, JW; Everhat, JE; Dickson, WC; Knowler, WC; Johhannes, RS (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In: <em>Proceedings of the Symposium on Computer Applications and Medical Care (pp. 261-265).</em></p>
+<p>Vamos utilizar a massa de dados <code>pima</code> para ilustrar o processo de análise exploratória de dados. Diversas restrições foram aplicadas na seleção das observações a partir de um conjunto contendo um número maior de observações. Todas as pacientes têm idade superior a 21 anos e são de origem Pima.</p>
+<!--IMG-->
+<div class="figure"><span id="fig:ch1-pima-uci"></span>
+<img src="img/pima.png" alt="Conjunto de dados `pima`, disponível no repositório de dados da UCI." width="100%" />
+<p class="caption">
+Figura 1.5: Conjunto de dados <code>pima</code>, disponível no repositório de dados da UCI.
+</p>
+</div>
+<p>Este conjunto de dados foi obtido a partir do repositório de dados da Universidade da Californa Irvine, que contém uma grande quandidade de conjuntos de dados disponíveis para diversos tipos de análise. O objetivo inicial desse estudo era construir um algoritmo capaz de prever se a paciente mostra sinais de diabetes mellitus, de acordo com os critérios estabelecidos pela OMS, isto é se o teste oral de tolerância a glicose, ou TTOG, apresenta resultado igual ou superior a 200mg/dl. Os dados disponíveis foram pré-selecionados a partir de uma massa de dados que continha um número maior de observações.</p>
+<p>Temos aqui algumas informações preliminares: Há um total de 768 observações registradas para 8 variáveis de interesse. E precisamos estar preparados para lidar com dados faltantes, conforme nos informa o resumo dos dados.</p>
+<p><strong>Variáveis</strong></p>
+<p><code>times_pregnant</code>: número de gravidezes<br />
+<code>glucose_tot</code>: concentração de glicose no plasma a 2h no TTOG<br />
+<code>diastolic_pb</code>: pressão sanguínea diastólica (mmHg)<br />
+<code>triceps</code>: espessura de dobra cutânea de tríceps (mm)<br />
+<code>insulin</code>: dosagem de insulina 2h em soro (µU/ml)<br />
+<code>mass_index</code>: índice de massa corporal (kg/m^2)<br />
+<code>pedigree</code>: função de pedigree para diabetes<br />
+<code>age</code>: idade (anos)<br />
+<code>class</code>: diabetes (0 ou 1)</p>
+<p>As variáveis são estas. A princípio podemos identificar algumas variáveis numéricas e uma variável categórica (que corresponde à classificação da paciente em diabética ou não).</p>
+</div>
+<div id="análise-exploratória-da-base-da-dados-pima" class="section level4 unnumbered">
+<h4>Análise Exploratória da Base da Dados <code>pima</code></h4>
+<p>O primeiro passo consiste em limpar a área de trabalho, utilizando o comando <code>rm(list = ls())</code>, para então ler os dados que se encontram no arquivo <code>pima-indians-diabetes.data</code>. Nota que os dados estão dentro de uma pasta chamada <code>pima-indians-diabetes</code>, que por sua vez, encontra-se dentro de uma pasta chamada <code>data</code>, que é o local onde eu armazeno minhas massas de dados.
+Eu leio esses dados e os armazeno em um objeto do tipo tabela, chamada <code>pima</code>. Eu sei, de antemão, que não há cabeçalho no arquivo de entrada, ou seja, a primeira linha do arquivo não corresponde aos nomes das variáveis; as colunas não têm nomes - por isso, faço <code>col_names = FALSE</code>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="introdução.html#cb1-1"></a><span class="co"># Limpa área de trabalho</span></span>
+<span id="cb1-2"><a href="introdução.html#cb1-2"></a><span class="kw">rm</span>(<span class="dt">list=</span><span class="kw">ls</span>())</span>
+<span id="cb1-3"><a href="introdução.html#cb1-3"></a></span>
+<span id="cb1-4"><a href="introdução.html#cb1-4"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb1-5"><a href="introdução.html#cb1-5"></a></span>
+<span id="cb1-6"><a href="introdução.html#cb1-6"></a><span class="co"># Carrega os dados e armazena em um objeto do tipo tabela</span></span>
+<span id="cb1-7"><a href="introdução.html#cb1-7"></a>pima &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;data/pima-indians-diabetes/pima-indians-diabetes.data&quot;</span>, </span>
+<span id="cb1-8"><a href="introdução.html#cb1-8"></a>                 <span class="dt">col_names =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
+<p>Veja que podemos obter algumas informações do objeto <code>pima</code>, simplesmente digitando <code>pima</code>. Verificamos que há um total de 768 linhas e 9 colunas. Cada coluna da tabela corresponde a uma variável (atributo) e as linhas correspondem a diferentes observações, ou seja, toda informação coletada para cada um dos indivíduos avaliados. As variáveis não tem nomes que façam sentido e todas foram codificadas como variáveis numéricas contínuas, doubles, ou números reais <code>&lt;dbl&gt;</code>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="introdução.html#cb2-1"></a>pima</span></code></pre></div>
+<pre><code>## # A tibble: 768 x 9
+##       X1    X2    X3    X4    X5    X6    X7    X8    X9
+##    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1     6   148    72    35     0  33.6 0.627    50     1
+##  2     1    85    66    29     0  26.6 0.351    31     0
+##  3     8   183    64     0     0  23.3 0.672    32     1
+##  4     1    89    66    23    94  28.1 0.167    21     0
+##  5     0   137    40    35   168  43.1 2.29     33     1
+##  6     5   116    74     0     0  25.6 0.201    30     0
+##  7     3    78    50    32    88  31   0.248    26     1
+##  8    10   115     0     0     0  35.3 0.134    29     0
+##  9     2   197    70    45   543  30.5 0.158    53     1
+## 10     8   125    96     0     0   0   0.232    54     1
+## # … with 758 more rows</code></pre>
+<p>Vamos dar nomes às variáveis. Para isso, utilizamos o comando <code>colnames</code> no objeto <code>pima</code> e atribuímos a esse objeto o vetor contendo os nomes das variáveis.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="introdução.html#cb4-1"></a><span class="co"># Atribui nomes às colunas da tabela</span></span>
+<span id="cb4-2"><a href="introdução.html#cb4-2"></a><span class="kw">colnames</span>(pima) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;times_pregnant&quot;</span>,<span class="st">&quot;glucose_tot&quot;</span>, <span class="st">&quot;diastolic_pb&quot;</span>,</span>
+<span id="cb4-3"><a href="introdução.html#cb4-3"></a>                    <span class="st">&quot;triceps&quot;</span>, <span class="st">&quot;insulin&quot;</span>, <span class="st">&quot;mass_index&quot;</span>, <span class="st">&quot;pedigree&quot;</span>,</span>
+<span id="cb4-4"><a href="introdução.html#cb4-4"></a>                    <span class="st">&quot;age&quot;</span>, <span class="st">&quot;class&quot;</span>)</span>
+<span id="cb4-5"><a href="introdução.html#cb4-5"></a>pima</span></code></pre></div>
+<pre><code>## # A tibble: 768 x 9
+##    times_pregnant glucose_tot diastolic_pb triceps insulin mass_index pedigree
+##             &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt;
+##  1              6         148           72      35       0       33.6    0.627
+##  2              1          85           66      29       0       26.6    0.351
+##  3              8         183           64       0       0       23.3    0.672
+##  4              1          89           66      23      94       28.1    0.167
+##  5              0         137           40      35     168       43.1    2.29 
+##  6              5         116           74       0       0       25.6    0.201
+##  7              3          78           50      32      88       31      0.248
+##  8             10         115            0       0       0       35.3    0.134
+##  9              2         197           70      45     543       30.5    0.158
+## 10              8         125           96       0       0        0      0.232
+## # … with 758 more rows, and 2 more variables: age &lt;dbl&gt;, class &lt;dbl&gt;</code></pre>
+<p>Também percebemos que há valores medidos para as variáveis <code>diastolic_pb</code>, <code>insulin</code>, <code>triceps</code> e <code>mass_index</code> iguais a zero. Será que correspondem a erro de codificação? Valores não observados? Há mais um problema com os dados: a variável <code>class</code> é categórica e precisa ser codificada adequadamente como fator; precisamos corrigir isto, bem como os outros problemas com a massa de dados.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="introdução.html#cb6-1"></a><span class="co"># recodifica `class` como sendo fator</span></span>
+<span id="cb6-2"><a href="introdução.html#cb6-2"></a>pima<span class="op">$</span>class &lt;-<span class="st"> </span><span class="kw">as.factor</span>(pima<span class="op">$</span>class) </span>
+<span id="cb6-3"><a href="introdução.html#cb6-3"></a></span>
+<span id="cb6-4"><a href="introdução.html#cb6-4"></a><span class="co"># muda os rótulos dos níveis do fator</span></span>
+<span id="cb6-5"><a href="introdução.html#cb6-5"></a><span class="kw">levels</span>(pima<span class="op">$</span>class) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;neg&quot;</span>, <span class="st">&quot;pos&quot;</span>)</span>
+<span id="cb6-6"><a href="introdução.html#cb6-6"></a></span>
+<span id="cb6-7"><a href="introdução.html#cb6-7"></a><span class="co"># Verifica recodificação  </span></span>
+<span id="cb6-8"><a href="introdução.html#cb6-8"></a>pima</span></code></pre></div>
+<pre><code>## # A tibble: 768 x 9
+##    times_pregnant glucose_tot diastolic_pb triceps insulin mass_index pedigree
+##             &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt;
+##  1              6         148           72      35       0       33.6    0.627
+##  2              1          85           66      29       0       26.6    0.351
+##  3              8         183           64       0       0       23.3    0.672
+##  4              1          89           66      23      94       28.1    0.167
+##  5              0         137           40      35     168       43.1    2.29 
+##  6              5         116           74       0       0       25.6    0.201
+##  7              3          78           50      32      88       31      0.248
+##  8             10         115            0       0       0       35.3    0.134
+##  9              2         197           70      45     543       30.5    0.158
+## 10              8         125           96       0       0        0      0.232
+## # … with 758 more rows, and 2 more variables: age &lt;dbl&gt;, class &lt;fct&gt;</code></pre>
+</div>
+<div id="resumos-numéricos" class="section level4 unnumbered">
+<h4>Resumos numéricos</h4>
+<p>Um resumo numérico simples pode ser obtido utilizando a função <code>summary</code>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="introdução.html#cb8-1"></a><span class="kw">summary</span>(pima)</span></code></pre></div>
+<pre><code>##  times_pregnant    glucose_tot     diastolic_pb       triceps     
+##  Min.   : 0.000   Min.   :  0.0   Min.   :  0.00   Min.   : 0.00  
+##  1st Qu.: 1.000   1st Qu.: 99.0   1st Qu.: 62.00   1st Qu.: 0.00  
+##  Median : 3.000   Median :117.0   Median : 72.00   Median :23.00  
+##  Mean   : 3.845   Mean   :120.9   Mean   : 69.11   Mean   :20.54  
+##  3rd Qu.: 6.000   3rd Qu.:140.2   3rd Qu.: 80.00   3rd Qu.:32.00  
+##  Max.   :17.000   Max.   :199.0   Max.   :122.00   Max.   :99.00  
+##     insulin        mass_index       pedigree           age        class    
+##  Min.   :  0.0   Min.   : 0.00   Min.   :0.0780   Min.   :21.00   neg:500  
+##  1st Qu.:  0.0   1st Qu.:27.30   1st Qu.:0.2437   1st Qu.:24.00   pos:268  
+##  Median : 30.5   Median :32.00   Median :0.3725   Median :29.00            
+##  Mean   : 79.8   Mean   :31.99   Mean   :0.4719   Mean   :33.24            
+##  3rd Qu.:127.2   3rd Qu.:36.60   3rd Qu.:0.6262   3rd Qu.:41.00            
+##  Max.   :846.0   Max.   :67.10   Max.   :2.4200   Max.   :81.00</code></pre>
+<p>Para a variável categórica, a função <code>summary</code> retorna o número de observações em cada classe.</p>
+<p>Para as variáveis quantitativas, a função <code>summary</code> fornece o chamado resumo de 5-números (mais a média) . Temos valores mínimo, máximo, 1o. e 3o. quartis, mediana e média. Para os dados analisados, observamos 5 variáveis com valor mínimo igual a zero: <code>times_pregnant</code>, <code>glucose_tot</code>, <code>diastolic_pb</code>, <code>triceps</code>, <code>insulin</code>, <code>mass_index</code>.</p>
+<p>Num exercício de validação externa, podemos concluir que possivelmente há algo de errado com as variáveis <code>glucose_tot</code>, <code>diastolic_pb</code>, <code>triceps</code>, <code>insulin</code>, <code>mass_index</code>, pois não seria natural observar valores iguais a zero para essas quantidades. Provavalmente há erro na codificação de valores faltantes. Antes de corrigir este problema, vejamos como utilizar ferramentas gráficas para visualizar dados qualitativos.</p>
+<p><strong>Tabela de Frequência e Barplot</strong></p>
+<p>Podemos também contar as ocorrências de todos os valores que a variável assume e incluir uma representação gráfica.</p>
+<p>Essa visualização é especialmente útil quando temos uma variável categórica com mais de duas classes.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="introdução.html#cb10-1"></a><span class="co"># Conta ocorrências em cada uma das classes</span></span>
+<span id="cb10-2"><a href="introdução.html#cb10-2"></a>pima <span class="op">%&gt;%</span></span>
+<span id="cb10-3"><a href="introdução.html#cb10-3"></a><span class="st">  </span><span class="kw">select</span>(class) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb10-4"><a href="introdução.html#cb10-4"></a><span class="st">  </span>table <span class="op">%&gt;%</span></span>
+<span id="cb10-5"><a href="introdução.html#cb10-5"></a><span class="st">  </span>print <span class="op">%&gt;%</span></span>
+<span id="cb10-6"><a href="introdução.html#cb10-6"></a><span class="st">  </span>barplot</span></code></pre></div>
+<pre><code>## .
+## neg pos 
+## 500 268</code></pre>
+<div class="figure"><span id="fig:bar-plot-pima"></span>
+<img src="01-ch1_files/figure-html/bar-plot-pima-1.png" alt="Número de ocorrências em cada classe." width="33%" />
+<p class="caption">
+Figura 1.6: Número de ocorrências em cada classe.
+</p>
+</div>
+<p><strong>Não utilize gráficos de pizza para visualizar dados!</strong> Gráficos de pizza não são muito úteis para gerar visualizações de dados, pois é mais difícil comparar os tamanhos dos grupos em uma escala não linear do que utilizando um barplot, especialmente quando as categorias têm proporções muito parecidas.</p>
+<p>Vamos analisar agora as variáveis quantitativas. Iniciemos com a investigação da variável <code>diastolic_pb</code>:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="introdução.html#cb12-1"></a><span class="co"># Conta ocorrências de zeros</span></span>
+<span id="cb12-2"><a href="introdução.html#cb12-2"></a>pima <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">summarise</span>(<span class="dt">count =</span> <span class="kw">sum</span>(diastolic_pb <span class="op">==</span><span class="st"> </span><span class="dv">0</span>))</span></code></pre></div>
+<pre><code>## # A tibble: 1 x 1
+##   count
+##   &lt;int&gt;
+## 1    35</code></pre>
+<p>Temos um total de 35 observações faltantes para a variável <code>diastolic_pb</code>. Podemos, ainda, identificar quantos valores únicos há para essa variável (neste caso, 47).</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="introdução.html#cb14-1"></a><span class="co"># Conta quantidade de valores distintos</span></span>
+<span id="cb14-2"><a href="introdução.html#cb14-2"></a>pima <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n_distinct</span>(diastolic_pb))</span></code></pre></div>
+<pre><code>## # A tibble: 1 x 1
+##       n
+##   &lt;int&gt;
+## 1    47</code></pre>
+<p>É possível realizar procedimento análogo para as demais variáveis.</p>
+<p>Vamos recodificar os zeros para representar valores não observados, onde couber e, em seguida, podemos verificar novamente o resumo dos dados.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="introdução.html#cb16-1"></a><span class="co"># Recodifica dados faltantes como &#39;NA&#39; (not available)</span></span>
+<span id="cb16-2"><a href="introdução.html#cb16-2"></a>pima &lt;-<span class="st"> </span>pima <span class="op">%&gt;%</span></span>
+<span id="cb16-3"><a href="introdução.html#cb16-3"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">diastolic_pb =</span> <span class="kw">replace</span>(diastolic_pb, diastolic_pb <span class="op">==</span><span class="st"> </span><span class="dv">0</span>, <span class="ot">NA</span>)) <span class="op">%&gt;%</span></span>
+<span id="cb16-4"><a href="introdução.html#cb16-4"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">glucose_tot =</span> <span class="kw">replace</span>(glucose_tot, glucose_tot <span class="op">==</span><span class="st"> </span><span class="dv">0</span>, <span class="ot">NA</span>)) <span class="op">%&gt;%</span></span>
+<span id="cb16-5"><a href="introdução.html#cb16-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">triceps =</span> <span class="kw">replace</span>(triceps, triceps <span class="op">==</span><span class="st"> </span><span class="dv">0</span>, <span class="ot">NA</span>)) <span class="op">%&gt;%</span></span>
+<span id="cb16-6"><a href="introdução.html#cb16-6"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">insulin =</span> <span class="kw">replace</span>(insulin, insulin <span class="op">==</span><span class="st"> </span><span class="dv">0</span>, <span class="ot">NA</span>)) <span class="op">%&gt;%</span></span>
+<span id="cb16-7"><a href="introdução.html#cb16-7"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mass_index =</span> <span class="kw">replace</span>(mass_index, mass_index <span class="op">==</span><span class="st"> </span><span class="dv">0</span>, <span class="ot">NA</span>))</span>
+<span id="cb16-8"><a href="introdução.html#cb16-8"></a><span class="kw">summary</span>(pima) <span class="co"># resumo</span></span></code></pre></div>
+<pre><code>##  times_pregnant    glucose_tot     diastolic_pb       triceps     
+##  Min.   : 0.000   Min.   : 44.0   Min.   : 24.00   Min.   : 7.00  
+##  1st Qu.: 1.000   1st Qu.: 99.0   1st Qu.: 64.00   1st Qu.:22.00  
+##  Median : 3.000   Median :117.0   Median : 72.00   Median :29.00  
+##  Mean   : 3.845   Mean   :121.7   Mean   : 72.41   Mean   :29.15  
+##  3rd Qu.: 6.000   3rd Qu.:141.0   3rd Qu.: 80.00   3rd Qu.:36.00  
+##  Max.   :17.000   Max.   :199.0   Max.   :122.00   Max.   :99.00  
+##                   NA&#39;s   :5       NA&#39;s   :35       NA&#39;s   :227    
+##     insulin         mass_index       pedigree           age        class    
+##  Min.   : 14.00   Min.   :18.20   Min.   :0.0780   Min.   :21.00   neg:500  
+##  1st Qu.: 76.25   1st Qu.:27.50   1st Qu.:0.2437   1st Qu.:24.00   pos:268  
+##  Median :125.00   Median :32.30   Median :0.3725   Median :29.00            
+##  Mean   :155.55   Mean   :32.46   Mean   :0.4719   Mean   :33.24            
+##  3rd Qu.:190.00   3rd Qu.:36.60   3rd Qu.:0.6262   3rd Qu.:41.00            
+##  Max.   :846.00   Max.   :67.10   Max.   :2.4200   Max.   :81.00            
+##  NA&#39;s   :374      NA&#39;s   :11</code></pre>
+<p>Aparentemente, o problema foi resolvido. Podemos agora construir alguns resumos gráficos.</p>
+</div>
+<div id="resumos-gráficos" class="section level4 unnumbered">
+<h4>Resumos Gráficos</h4>
+<p><strong>Boxplots</strong></p>
+<p>O <em>boxplot</em> é uma ferramenta gráfica, que fornece um resumo da distribuição dos valores da variável sendo analisada. O <em>boxplot</em> nos dá 5 estatísticas e também mostra possíveis valores extremos (os chamados <em>outliers</em>). A linha no centro da caixa corresponde à mediana. A caixa é delimitada pelos quartis inferior e superior. Portanto, 50% das observações se encontram entre os valores que determinam as extremidades da caixa. O comprimento da caixa é chamado distância ou amplitude inter-quartis (ou IQR) e corresponde à diferença entre os quartis superior e inferior.</p>
+<p>As linhas horizontais que se afastam da caixa são os <em>whiskers</em>, cujo comprimento máximo vale 1,5 * IQR em cada direção, de forma que a distância máxima entre as extremidades dos <em>whiskers</em> vale 4 * IQR (comprimento máximo do <em>whisker</em> inferior vale 1,5 IQR, a caixa tem largura IQR e o comprimento máximo do <em>whisker</em> superior vale 1,5 IQR). Se a observação mais extrema em qualquer das direções estiver a uma distância da caixa menor que 1,5 * IQR, então o alcance do respectivo <em>whisker</em> vai até essa observação. Qualquer valor além dos <em>whiskers</em> é marcado como um ponto extremo, ou outlier.</p>
+<!--IMG-->
+<div class="figure"><span id="fig:ch1-elementos-boxplot"></span>
+<img src="img/boxplot-outliers.png" alt="Elementos de um boxplot." width="100%" />
+<p class="caption">
+Figura 1.7: Elementos de um boxplot.
+</p>
+</div>
+<p>Vamos construir boxplots para a variável <code>insulin</code>, utilizando a função <code>boxplot.</code></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="introdução.html#cb18-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin)) <span class="op">+</span></span>
+<span id="cb18-2"><a href="introdução.html#cb18-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>() <span class="op">+</span></span>
+<span id="cb18-3"><a href="introdução.html#cb18-3"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>)</span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-boxplot-isulin-1.png" width="100%" /></p>
+<p>No gráfico, percebemos alguns valores de insulina bastante elevados (e pode até valer a pena uma análise mais cuidadosa em um momento posterior). Para o exemplo, já tínhamos calculado anteriormente na tabela de resumos numéricos o valor do 1o quartil, que vale Q1 = 76.25. Esse valor está representado pela extremidade inferior da caixa (localizada à esquerda). A mediana vale Q2 = 125 e está representada graficamente pela linha no interior da caixa. O 3o quartil, cujo valor é Q3 = 190 corresponde à extremidade superior da caixa (à direita). A amplitude interquartis é dada pela diferença entre o 3o e o 1o quartil e vale IQR = Q3(190) - Q1(76,25) = 113,75. Esse é o comprimento da caixa. Como não há pontos extremos à esquerda, o whisker inferior corresponde ao menor valor observado para os dados, o valor mínimo, igual 14. No caso do whisker superior, há alguns possíveis outliers à direita, portanto, o whisker superior vale 1,5*IQR igual a 360,625. O valor máximo observado para esses dados é 846, e está representado como o ponto mais extremo à direita.</p>
+<p>É importante examinar os dados com relação à existência de possíveis outliers pois eles podem indicar:</p>
+<ol style="list-style-type: decimal">
+<li>forte assimetria na distribuição das observações;<br />
+</li>
+<li>erros (de medida, de registro ou leitura);<br />
+</li>
+<li>ou mesmo, podem revelar propriedades interessantes e inesperadas da massa de dados (talvez a observação pertença a uma outra população).</li>
+</ol>
+<p><strong>Histogramas</strong></p>
+<p>Uma outra maneira de representar a distribuição dos valores observados para uma variável é através de um histograma, que pode ser gerado utilizando a função <code>hist</code>. O histograma é útil para descrever a forma da distribuição.</p>
+<p>Por exemplo, vemos que a distribuição de insulina é assimétrica; a maioria das mulheres observadas apresenta valores de insulina abaixo de 250, mas há algumas poucas observações com valores de insulina bastante elevados. A distribuição de insulina apresenta cauda longa à direita. Já a distribuição de glicose apresenta maior simetria.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="introdução.html#cb19-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin)) <span class="op">+</span></span>
+<span id="cb19-2"><a href="introdução.html#cb19-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>() <span class="op">+</span></span>
+<span id="cb19-3"><a href="introdução.html#cb19-3"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>)</span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-hist-insulin-1.png" width="100%" /></p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="introdução.html#cb20-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> glucose_tot)) <span class="op">+</span></span>
+<span id="cb20-2"><a href="introdução.html#cb20-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>() <span class="op">+</span></span>
+<span id="cb20-3"><a href="introdução.html#cb20-3"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;glucose_tot&quot;</span>)</span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-hist-insulin-2.png" width="100%" /></p>
+<p>Podemos adicionar marcações nos gráficos. Por exemplo, vamos adicionar uma reta vertical marcando o valor da média dos valores observados para cada uma das variáveis analisadas.</p>
+<p>Aqui, a média está sinalizada pelas retas verticais vermelhas:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="introdução.html#cb21-1"></a>xbar &lt;-<span class="st"> </span><span class="kw">mean</span>(pima<span class="op">$</span>insulin, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb21-2"><a href="introdução.html#cb21-2"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin)) <span class="op">+</span></span>
+<span id="cb21-3"><a href="introdução.html#cb21-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>() <span class="op">+</span></span>
+<span id="cb21-4"><a href="introdução.html#cb21-4"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>) <span class="op">+</span></span>
+<span id="cb21-5"><a href="introdução.html#cb21-5"></a><span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> xbar), <span class="dt">col =</span> <span class="st">&#39;red&#39;</span>)                            <span class="co">#&lt;&lt;</span></span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-hist-insulin-retas-1.png" width="100%" /></p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="introdução.html#cb22-1"></a>xbar &lt;-<span class="st"> </span><span class="kw">mean</span>(pima<span class="op">$</span>glucose_tot, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb22-2"><a href="introdução.html#cb22-2"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> glucose_tot)) <span class="op">+</span></span>
+<span id="cb22-3"><a href="introdução.html#cb22-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>() <span class="op">+</span></span>
+<span id="cb22-4"><a href="introdução.html#cb22-4"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;glucose_tot&quot;</span>) <span class="op">+</span></span>
+<span id="cb22-5"><a href="introdução.html#cb22-5"></a><span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> xbar), <span class="dt">col =</span> <span class="st">&#39;red&#39;</span>)                            <span class="co">#&lt;&lt;</span></span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-hist-insulin-retas-2.png" width="100%" /></p>
+<p><strong>Histogramas e Gráficos de Densidade</strong></p>
+<p>Que tal obter um pouco mais de detalhes com a função <code>rug()</code>, que nos mostra cada uma das observações? Aqui, além de adicionarmos as observações na margem inferior, também ajustamos a largura das bandas. Note que o histograma é muito sensível à largura (ou discretização) das bandas, de forma que se não for adequadamente ajustado, pode trazer informações enganosas. No caso de glicose, o histograma resultante perdeu muito de sua informação. Tente gerar outros histogramas, variando o valor de <code>binwidth</code>.</p>
+<p>Também temos sobreposição a cada histograma da respectiva curva de densidade, que corresponde a uma suavização do histograma. Para isso, também foi modificado o eixo vertical que, em vez de representar o número de observações em cada faixa, agora apresenta a frequencia relativa (isto é, o no. de observações na faixa, didivido pelo no. total de observações).</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="introdução.html#cb23-1"></a>xbar &lt;-<span class="st"> </span><span class="kw">mean</span>(pima<span class="op">$</span>insulin, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb23-2"><a href="introdução.html#cb23-2"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin)) <span class="op">+</span></span>
+<span id="cb23-3"><a href="introdução.html#cb23-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..density..),                                       <span class="co">#&lt;&lt;</span></span>
+<span id="cb23-4"><a href="introdução.html#cb23-4"></a>                 <span class="dt">binwidth =</span> <span class="dv">45</span>) <span class="op">+</span><span class="st">                                            </span><span class="co">#&lt;&lt;</span></span>
+<span id="cb23-5"><a href="introdução.html#cb23-5"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>) <span class="op">+</span></span>
+<span id="cb23-6"><a href="introdução.html#cb23-6"></a><span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> xbar), <span class="dt">col =</span> <span class="st">&#39;red&#39;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb23-7"><a href="introdução.html#cb23-7"></a><span class="st">  </span><span class="kw">geom_rug</span>(<span class="dt">sides =</span> <span class="st">&#39;b&#39;</span>, <span class="dt">col =</span> <span class="st">&#39;blue&#39;</span>) <span class="op">+</span><span class="st">                                      </span><span class="co">#&lt;&lt;</span></span>
+<span id="cb23-8"><a href="introdução.html#cb23-8"></a><span class="st">  </span><span class="kw">geom_density</span>(<span class="dt">alpha =</span> <span class="fl">0.1</span>, <span class="dt">fill =</span> <span class="st">&#39;blue&#39;</span>)                                   <span class="co">#&lt;&lt;</span></span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-hist-insulin-anotado-1.png" width="100%" /></p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="introdução.html#cb24-1"></a>xbar &lt;-<span class="st"> </span><span class="kw">mean</span>(pima<span class="op">$</span>glucose_tot, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb24-2"><a href="introdução.html#cb24-2"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> glucose_tot)) <span class="op">+</span></span>
+<span id="cb24-3"><a href="introdução.html#cb24-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..density..),                                       <span class="co">#&lt;&lt;</span></span>
+<span id="cb24-4"><a href="introdução.html#cb24-4"></a>                 <span class="dt">binwidth =</span> <span class="dv">45</span>) <span class="op">+</span><span class="st">                                            </span><span class="co">#&lt;&lt;</span></span>
+<span id="cb24-5"><a href="introdução.html#cb24-5"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;glucose_tot&quot;</span>) <span class="op">+</span></span>
+<span id="cb24-6"><a href="introdução.html#cb24-6"></a><span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> xbar), <span class="dt">col =</span> <span class="st">&#39;red&#39;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb24-7"><a href="introdução.html#cb24-7"></a><span class="st">  </span><span class="kw">geom_rug</span>(<span class="dt">sides =</span> <span class="st">&#39;b&#39;</span>, <span class="dt">col =</span> <span class="st">&#39;blue&#39;</span>) <span class="op">+</span><span class="st">                                      </span><span class="co">#&lt;&lt;</span></span>
+<span id="cb24-8"><a href="introdução.html#cb24-8"></a><span class="st">  </span><span class="kw">geom_density</span>(<span class="dt">alpha =</span> <span class="fl">0.1</span>, <span class="dt">fill =</span> <span class="st">&#39;blue&#39;</span>)                                   <span class="co">#&lt;&lt;</span></span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-density-insulin-1.png" width="100%" /></p>
+<p><strong>Resumos Multidimensionais</strong></p>
+<p>Podemos também utilizar boxplots para comparar duas distribuições. Por exemplo, podemos querer saber como se comparam os valores de insulina para mulheres diabéticas e não-diabéticas.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="introdução.html#cb25-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin, <span class="dt">y =</span> class, <span class="dt">fill =</span> class)) <span class="op">+</span></span>
+<span id="cb25-2"><a href="introdução.html#cb25-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>() <span class="op">+</span></span>
+<span id="cb25-3"><a href="introdução.html#cb25-3"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;class&quot;</span>)</span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-boxplot-insulin-class-1.png" width="100%" /></p>
+<p>Podemos perceber que a mediana observada para os valores de insulina para mulheres diabéticas é um pouco maior que aquela para mulheres não-diabéticas. Embora não seja possível afirmar que existe uma diferença estatisticamente significativa entre os dois grupos, esta é uma hipótese interessante, que pode ser testada formalmente posteriormente. Vamos adicionar uma reta no valor de glicose igual a 200 mg/dl (valor de referência no TTOG):</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="introdução.html#cb26-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin, <span class="dt">y =</span> class, <span class="dt">fill =</span> class)) <span class="op">+</span></span>
+<span id="cb26-2"><a href="introdução.html#cb26-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>() <span class="op">+</span></span>
+<span id="cb26-3"><a href="introdução.html#cb26-3"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;class&quot;</span>) <span class="op">+</span></span>
+<span id="cb26-4"><a href="introdução.html#cb26-4"></a><span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="dv">200</span>), <span class="dt">lwd =</span> <span class="dv">1</span>, <span class="dt">lty =</span> <span class="st">&#39;dashed&#39;</span>, <span class="dt">col =</span> <span class="dv">1</span>)</span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-boxplot-insulin-anotado-1.png" width="100%" /></p>
+<p>É possível modificar a cor, espessura e tipo dessa reta. Fica como exercício.</p>
+<p>Pode ser útil construir múltiplos histogramas ou curvas de densidade, para diferentes categorias. Podemos sobrepor as duas distribuições, para tornar a comparação imediata.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="introdução.html#cb27-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(insulin, <span class="dt">fill =</span> class)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb27-2"><a href="introdução.html#cb27-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..density..), <span class="dt">binwidth =</span> <span class="dv">40</span>) </span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-density-insulin-mult-1.png" width="100%" /></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="introdução.html#cb28-1"></a><span class="kw">ggplot</span>(pima,  <span class="kw">aes</span>(insulin, <span class="dt">fill =</span> class)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb28-2"><a href="introdução.html#cb28-2"></a><span class="st">  </span><span class="kw">geom_density</span>(<span class="dt">alpha =</span> <span class="fl">0.2</span>) </span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-density-insulin-mult-2.png" width="100%" /></p>
+<p><strong>Relações entre Variáveis</strong></p>
+<p>Para variáveis contínuas, é interessante observar gráficos de dispersão, a fim de avaliar relações entre pares de variáveis:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="introdução.html#cb29-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin, <span class="dt">y =</span> glucose_tot)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb29-2"><a href="introdução.html#cb29-2"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
+<span id="cb29-3"><a href="introdução.html#cb29-3"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;glucose_tot&quot;</span>)</span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-dispersao-2d-1.png" width="100%" /></p>
+<p>Podemos adicionar mais informação ao gráfico, com retas:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="introdução.html#cb30-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin, <span class="dt">y =</span> glucose_tot)) <span class="op">+</span><span class="st">  </span></span>
+<span id="cb30-2"><a href="introdução.html#cb30-2"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
+<span id="cb30-3"><a href="introdução.html#cb30-3"></a><span class="st">  </span><span class="kw">geom_vline</span>(<span class="kw">aes</span>(<span class="dt">xintercept =</span> <span class="dv">200</span>), <span class="dt">col =</span> <span class="dv">1</span>) <span class="op">+</span><span class="st">                               </span><span class="co">#&lt;&lt;</span></span>
+<span id="cb30-4"><a href="introdução.html#cb30-4"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;glucose_tot&quot;</span>)</span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-dispersao-2d-reta-1.png" width="100%" /></p>
+<p>Podemos adicionar uma terceira dimensão, utilizando cores:</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="introdução.html#cb31-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin, <span class="dt">y =</span> glucose_tot, </span>
+<span id="cb31-2"><a href="introdução.html#cb31-2"></a>                 <span class="dt">color =</span> class)) <span class="op">+</span><span class="st">                                           </span><span class="co">#&lt;&lt;</span></span>
+<span id="cb31-3"><a href="introdução.html#cb31-3"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
+<span id="cb31-4"><a href="introdução.html#cb31-4"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;glucose_tot&quot;</span>)</span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-dispersao-3d-1.png" width="100%" /></p>
+<p>Podemos adicionar uma quarta dimensão com diferentes tamanhos para os pontos:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="introdução.html#cb32-1"></a><span class="kw">ggplot</span>(pima, <span class="kw">aes</span>(<span class="dt">x =</span> insulin, <span class="dt">y =</span> glucose_tot,                               <span class="co">#&lt;&lt;</span></span>
+<span id="cb32-2"><a href="introdução.html#cb32-2"></a>                 <span class="dt">color =</span> class, <span class="dt">size =</span> age)) <span class="op">+</span><span class="st">                               </span><span class="co">#&lt;&lt;</span></span>
+<span id="cb32-3"><a href="introdução.html#cb32-3"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
+<span id="cb32-4"><a href="introdução.html#cb32-4"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;insulin&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;glucose_tot&quot;</span>)</span></code></pre></div>
+<p><img src="01-ch1_files/figure-html/ch1-dispersao-4d-1.png" width="100%" /></p>
+<p>Assim, chegamos ao fim de nossa primeira análise exploratória de dados.<br />
+E este é apenas o começo…</p>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introdução-à-teoria-de-probabilidades.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["apostila-GED13.pdf", "apostila-GED13.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

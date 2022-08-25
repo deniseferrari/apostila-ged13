@@ -1,0 +1,2611 @@
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.3)  3 MAR 2021 18:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**apostila-GED13.tex
+(./apostila-GED13.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (/Users/denise/Library/TinyTeX/texmf-dist/tex
+/latex/base/book.cls
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@chapter=\count176
+\c@section=\count177
+\c@subsection=\count178
+\c@subsubsection=\count179
+\c@paragraph=\count180
+\c@subparagraph=\count181
+\c@figure=\count182
+\c@table=\count183
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+For additional information on amsmath, use the `?' option.
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen139
+)) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count184
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count185
+\leftroot@=\count186
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count187
+\DOTSCASE@=\count188
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count189
+\c@MaxMatrixCols=\count190
+\dotsspace@=\muskip16
+\c@parentequation=\count191
+\dspbrk@lvl=\count192
+\tag@help=\toks17
+\row@=\count193
+\column@=\count194
+\maxfields@=\count195
+\andhelp@=\toks18
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)) (/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.s
+ty (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.d
+ef
+File: l3backend-xetex.def 2021-03-02 L3 backend support: XeTeX
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count196
+\l__color_backend_stack_int=\count197
+\g__graphics_track_int=\count198
+\l__pdf_internal_box=\box49
+\g__pdf_backend_object_int=\count199
+\g__pdf_backend_annotation_int=\count266
+\g__pdf_backend_link_int=\count267
+))
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-x
+etex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.st
+y
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse-20
+20-10-01.sty
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse-ge
+neric.tex)))
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2
+e.sty
+Package: l3keys2e 2021-02-02 LaTeX2e option processing using LaTeX3 keys
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count268
+\l__fontspec_language_int=\count269
+\l__fontspec_strnum_int=\count270
+\l__fontspec_tmp_int=\count271
+\l__fontspec_tmpa_int=\count272
+\l__fontspec_tmpb_int=\count273
+\l__fontspec_tmpc_int=\count274
+\l__fontspec_em_int=\count275
+\l__fontspec_emdef_int=\count276
+\l__fontspec_strong_int=\count277
+\l__fontspec_strongdef_int=\count278
+\l__fontspec_tmpa_dim=\dimen148
+\l__fontspec_tmpb_dim=\dimen149
+\l__fontspec_tmpc_dim=\dimen150
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) 
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\g__um_fam_int=\count279
+\g__um_fonts_used_int=\count280
+\l__um_primecount_int=\count281
+\g__um_primekern_muskip=\muskip17
+
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-t
+able.tex))) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.s
+ty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys
+.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen151
+\Hy@linkcounter=\count282
+\Hy@pagecounter=\count283
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatch
+es.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count284
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count285
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen152
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count286
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count287
+\c@Item=\count288
+\c@Hfootnote=\count289
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2021-02-27 v7.00k Hyperref driver for XeTeX
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box50
+\c@Hy@AnnotLevel=\count290
+\HyField@AnnotCount=\count291
+\Fld@listcount=\count292
+\c@bookmark@seq@number=\count293
+
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfileche
+ck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecount
+er.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip52
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count294
+\FV@InFile=\read2
+\FV@TabBox=\box51
+\c@FancyVerbLine=\count295
+\FV@StepNumber=\count296
+\FV@OutFile=\write3
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip53
+\fb@frw=\dimen155
+\fb@frh=\dimen156
+\FrameRule=\dimen157
+\FrameSep=\dimen158
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count297
+\LTcapwidth=\dimen159
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@cols=\count298
+\LT@rows=\count299
+\c@LT@tables=\count300
+\c@LT@chunks=\count301
+\LT@p@ftn=\toks22
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count302
+\@cmidlb=\count303
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count304
+\@lastruleclass=\count305
+\@thisrulewidth=\dimen172
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count306
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box56
+\fn@width=\dimen173
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+)
+\Gin@req@height=\dimen174
+\Gin@req@width=\dimen175
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/grffile/grffile.sty
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
+y)
+Package grffile Info: This package is an empty stub for compatibility on input 
+line 40.
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
+\dth@everypar=\toks28
+) (/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip61
+\bibsep=\skip62
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count307
+)
+\c@theorem=\count308
+\c@lemma=\count309
+\c@corollary=\count310
+\c@proposition=\count311
+\c@conjecture=\count312
+\c@definition=\count313
+\c@example=\count314
+\c@exercise=\count315
+(./apostila-GED13.aux
+
+LaTeX Warning: Label `exm:unnamed-chunk-1' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-1' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-2' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-1' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-1' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-2' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-3' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-4' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-5' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-1' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-3' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-1' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-2' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-5' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-7' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-5' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-1' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-2' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-9' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-20' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-23' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-10' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-11' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-12' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-3' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-9' multiply defined.
+
+
+LaTeX Warning: Label `exm:unnamed-chunk-12' multiply defined.
+
+)
+\openout1 = `apostila-GED13.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 140.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 140.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 140.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 140.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 140.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 140.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 140.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:scri
+pt=math;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:scri
+pt=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 140.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:s
+cript=math;language=dflt;"<6-8.5>s*[0.9999964596882403]"[latinmodern-math.otf]/
+OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9999964596882403]"[latinmodern-m
+ath.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:scri
+pt=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 140.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 140.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
+ line 140.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 140.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
+t line 140.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =6.77pt\relax \fontdimen 9\font =3.94pt\relax
+(fontspec)             \fontdimen 10\font =4.44pt\relax \fontdimen 11\font
+(fontspec)             =6.86pt\relax \fontdimen 12\font =3.45pt\relax
+(fontspec)             \fontdimen 13\font =3.63pt\relax \fontdimen 14\font
+(fontspec)             =3.63pt\relax \fontdimen 15\font =2.89pt\relax
+(fontspec)             \fontdimen 16\font =2.47pt\relax \fontdimen 17\font
+(fontspec)             =2.47pt\relax \fontdimen 18\font =2.5pt\relax
+(fontspec)             \fontdimen 19\font =2.0pt\relax \fontdimen 22\font
+(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.000096459334209]"[latinmodern-math.otf]/OT:sc
+ript=math;language=dflt;"<6-8.5>s*[1.000096459334209]"[latinmodern-math.otf]/OT
+:script=math;language=dflt;+ssty=0;"<-6>s*[1.000096459334209]"[latinmodern-math
+.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.000096459334209]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 140.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 140.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 140.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
+t line 140.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =0.4pt\relax \fontdimen 9\font =2.0pt\relax
+(fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
+(fontspec)             =1.11pt\relax \fontdimen 12\font =6.0pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:s
+cript=math;language=dflt;"<6-8.5>s*[0.9998964600422715]"[latinmodern-math.otf]/
+OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9998964600422715]"[latinmodern-m
+ath.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:scri
+pt=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+40.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 140.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 140
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
+t line 140.
+Package hyperref Info: Link coloring OFF on input line 140.
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlest
+ring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count316
+)
+LaTeX Info: Redefining \ref on input line 140.
+LaTeX Info: Redefining \pageref on input line 140.
+LaTeX Info: Redefining \nameref on input line 140.
+(./apostila-GED13.out) (./apostila-GED13.out)
+\@outlinefile=\write4
+\openout4 = `apostila-GED13.out'.
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 142.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 142.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 142.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+42.
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.0011pt on input line 142.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00073pt on input line 142.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 142.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 142.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 142.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 142.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 142
+.
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 142
+.
+(/Users/denise/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+] [2
+
+] (./apostila-GED13.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 3.
+[3] [4])
+\tf@toc=\write5
+\openout5 = `apostila-GED13.toc'.
+
+[5] [6
+
+]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[7] [8
+
+]
+Chapter 1.
+File: img/metodo-cientifico.png Graphic file (type bmp)
+<img/metodo-cientifico.png>
+[9] [10] [11] [12] [13] [14]
+File: img/analise-dados.png Graphic file (type bmp)
+<img/analise-dados.png>
+[15] [16]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 17
+ []
+
+[17] [18]
+File: img/medidas-de-centro.png Graphic file (type bmp)
+<img/medidas-de-centro.png>
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 19
+ []
+
+[19] [20]
+File: img/medidas-posicao-relativa.jpg Graphic file (type bmp)
+<img/medidas-posicao-relativa.jpg>
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 21
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 495--497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--499
+
+ []
+
+File: img/pima.png Graphic file (type bmp)
+<img/pima.png>
+[22]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 535.
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 23
+ []
+
+[23]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##    times_pregnant glucose_tot diastolic_pb triceps insulin
+ mass_index pedigree[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##             <dbl>       <dbl>        <dbl>   <dbl>   <dbl>
+      <dbl>    <dbl>[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##  1              6         148           72      35       0
+       33.6    0.627[] 
+ []
+
+[24]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##  2              1          85           66      29       0
+       26.6    0.351[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##  3              8         183           64       0       0
+       23.3    0.672[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##  4              1          89           66      23      94
+       28.1    0.167[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##  5              0         137           40      35     168
+       43.1    2.29[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##  6              5         116           74       0       0
+       25.6    0.201[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##  7              3          78           50      32      88
+       31      0.248[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##  8             10         115            0       0       0
+       35.3    0.134[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ##  9              2         197           70      45     543
+       30.5    0.158[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ## 10              8         125           96       0       0
+        0      0.232[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 606--606
+[]\TU/lmtt/m/n/10 ## # ... with 758 more rows, and 2 more variables: age <dbl>,
+ class <dbl>[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##    times_pregnant glucose_tot diastolic_pb triceps insulin
+ mass_index pedigree[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##             <dbl>       <dbl>        <dbl>   <dbl>   <dbl>
+      <dbl>    <dbl>[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##  1              6         148           72      35       0
+       33.6    0.627[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##  2              1          85           66      29       0
+       26.6    0.351[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##  3              8         183           64       0       0
+       23.3    0.672[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##  4              1          89           66      23      94
+       28.1    0.167[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##  5              0         137           40      35     168
+       43.1    2.29[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##  6              5         116           74       0       0
+       25.6    0.201[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##  7              3          78           50      32      88
+       31      0.248[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##  8             10         115            0       0       0
+       35.3    0.134[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ##  9              2         197           70      45     543
+       30.5    0.158[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ## 10              8         125           96       0       0
+        0      0.232[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 638--638
+[]\TU/lmtt/m/n/10 ## # ... with 758 more rows, and 2 more variables: age <dbl>,
+ class <fct>[] 
+ []
+
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 25
+ []
+
+[25]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  Min.   : 0.000   Min.   :  0.0   Min.   :  0.00   Min.   
+: 0.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  1st Qu.: 1.000   1st Qu.: 99.0   1st Qu.: 62.00   1st Qu.
+: 0.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  Median : 3.000   Median :117.0   Median : 72.00   Median 
+:23.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  Mean   : 3.845   Mean   :120.9   Mean   : 69.11   Mean   
+:20.54[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  3rd Qu.: 6.000   3rd Qu.:140.2   3rd Qu.: 80.00   3rd Qu.
+:32.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  Max.   :17.000   Max.   :199.0   Max.   :122.00   Max.   
+:99.00[] 
+ []
+
+
+Overfull \hbox (43.5pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##     insulin        mass_index       pedigree           age
+        class[] 
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  Min.   :  0.0   Min.   : 0.00   Min.   :0.0780   Min.   :
+21.00   neg:500[] 
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  1st Qu.:  0.0   1st Qu.:27.30   1st Qu.:0.2437   1st Qu.:
+24.00   pos:268[] 
+ []
+
+
+Overfull \hbox (1.5pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  Median : 30.5   Median :32.00   Median :0.3725   Median :
+29.00[] 
+ []
+
+
+Overfull \hbox (1.5pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  Mean   : 79.8   Mean   :31.99   Mean   :0.4719   Mean   :
+33.24[] 
+ []
+
+
+Overfull \hbox (1.5pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  3rd Qu.:127.2   3rd Qu.:36.60   3rd Qu.:0.6262   3rd Qu.:
+41.00[] 
+ []
+
+
+Overfull \hbox (1.5pt too wide) in paragraph at lines 667--667
+[]\TU/lmtt/m/n/10 ##  Max.   :846.0   Max.   :67.10   Max.   :2.4200   Max.   :
+81.00[] 
+ []
+
+[26]
+File: 01-ch1_files/figure-latex/bar-plot-pima-1.pdf Graphic file (type pdf)
+<use 01-ch1_files/figure-latex/bar-plot-pima-1.pdf>
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 27
+ []
+
+[27]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  Min.   : 0.000   Min.   : 44.0   Min.   : 24.00   Min.   
+: 7.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  1st Qu.: 1.000   1st Qu.: 99.0   1st Qu.: 64.00   1st Qu.
+:22.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  Median : 3.000   Median :117.0   Median : 72.00   Median 
+:29.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  Mean   : 3.845   Mean   :121.7   Mean   : 72.41   Mean   
+:29.15[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  3rd Qu.: 6.000   3rd Qu.:141.0   3rd Qu.: 80.00   3rd Qu.
+:36.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  Max.   :17.000   Max.   :199.0   Max.   :122.00   Max.   
+:99.00[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##     insulin         mass_index       pedigree           ag
+e        class[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  Min.   : 14.00   Min.   :18.20   Min.   :0.0780   Min.   
+:21.00   neg:500[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  1st Qu.: 76.25   1st Qu.:27.50   1st Qu.:0.2437   1st Qu.
+:24.00   pos:268[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  Median :125.00   Median :32.30   Median :0.3725   Median 
+:29.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  Mean   :155.55   Mean   :32.46   Mean   :0.4719   Mean   
+:33.24[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  3rd Qu.:190.00   3rd Qu.:36.60   3rd Qu.:0.6262   3rd Qu.
+:41.00[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 770--770
+[]\TU/lmtt/m/n/10 ##  Max.   :846.00   Max.   :67.10   Max.   :2.4200   Max.   
+:81.00[] 
+ []
+
+[28]
+File: img/boxplot-outliers.png Graphic file (type bmp)
+<img/boxplot-outliers.png>
+File: 01-ch1_files/figure-latex/ch1-boxplot-isulin-1.pdf Graphic file (type pdf
+)
+<use 01-ch1_files/figure-latex/ch1-boxplot-isulin-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 29
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 810--812
+
+ []
+
+[30]
+File: 01-ch1_files/figure-latex/ch1-hist-insulin-1.pdf Graphic file (type pdf)
+<use 01-ch1_files/figure-latex/ch1-hist-insulin-1.pdf>
+File: 01-ch1_files/figure-latex/ch1-hist-insulin-2.pdf Graphic file (type pdf)
+<use 01-ch1_files/figure-latex/ch1-hist-insulin-2.pdf>
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 31
+ []
+
+[31]
+File: 01-ch1_files/figure-latex/ch1-hist-insulin-retas-1.pdf Graphic file (type
+ pdf)
+<use 01-ch1_files/figure-latex/ch1-hist-insulin-retas-1.pdf>
+File: 01-ch1_files/figure-latex/ch1-hist-insulin-retas-2.pdf Graphic file (type
+ pdf)
+<use 01-ch1_files/figure-latex/ch1-hist-insulin-retas-2.pdf>
+[32]
+File: 01-ch1_files/figure-latex/ch1-hist-insulin-anotado-1.pdf Graphic file (ty
+pe pdf)
+<use 01-ch1_files/figure-latex/ch1-hist-insulin-anotado-1.pdf>
+File: 01-ch1_files/figure-latex/ch1-density-insulin-1.pdf Graphic file (type pd
+f)
+<use 01-ch1_files/figure-latex/ch1-density-insulin-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 33
+ []
+
+[33]
+File: 01-ch1_files/figure-latex/ch1-boxplot-insulin-class-1.pdf Graphic file (t
+ype pdf)
+<use 01-ch1_files/figure-latex/ch1-boxplot-insulin-class-1.pdf>
+[34]
+File: 01-ch1_files/figure-latex/ch1-boxplot-insulin-anotado-1.pdf Graphic file 
+(type pdf)
+<use 01-ch1_files/figure-latex/ch1-boxplot-insulin-anotado-1.pdf>
+File: 01-ch1_files/figure-latex/ch1-density-insulin-mult-1.pdf Graphic file (ty
+pe pdf)
+<use 01-ch1_files/figure-latex/ch1-density-insulin-mult-1.pdf>
+File: 01-ch1_files/figure-latex/ch1-density-insulin-mult-2.pdf Graphic file (ty
+pe pdf)
+<use 01-ch1_files/figure-latex/ch1-density-insulin-mult-2.pdf>
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 35
+ []
+
+[35]
+File: 01-ch1_files/figure-latex/ch1-dispersao-2d-1.pdf Graphic file (type pdf)
+<use 01-ch1_files/figure-latex/ch1-dispersao-2d-1.pdf>
+File: 01-ch1_files/figure-latex/ch1-dispersao-2d-reta-1.pdf Graphic file (type 
+pdf)
+<use 01-ch1_files/figure-latex/ch1-dispersao-2d-reta-1.pdf>
+
+Underfull \vbox (badness 2538) has occurred while \output is active []
+
+[36]
+File: 01-ch1_files/figure-latex/ch1-dispersao-3d-1.pdf Graphic file (type pdf)
+<use 01-ch1_files/figure-latex/ch1-dispersao-3d-1.pdf>
+File: 01-ch1_files/figure-latex/ch1-dispersao-4d-1.pdf Graphic file (type pdf)
+<use 01-ch1_files/figure-latex/ch1-dispersao-4d-1.pdf>
+
+Underfull \vbox (badness 6063) has occurred while \output is active []
+
+
+Overfull \hbox (19.11343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.7.  MÉTODOS PARA EXPLORAÇÃO, RESUMO E DESCRIÇÃO DE DADOS \TU/
+lmr/m/n/10 37
+ []
+
+[37] [38]
+Chapter 2.
+[39
+
+] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
+
+ []
+
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[41]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+File: img/probabilidade-modelo.pdf Graphic file (type pdf)
+<use img/probabilidade-modelo.pdf>
+[42]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1129--1131
+
+ []
+
+[43]
+File: img/experimento-aleatorio-moedas.png Graphic file (type bmp)
+<img/experimento-aleatorio-moedas.png>
+[44] [45]
+File: img/probabilidade-conjuntos.png Graphic file (type bmp)
+<img/probabilidade-conjuntos.png>
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1254--1256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1258--1260
+
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 1283--1285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1287
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 1315--1317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1317--1319
+
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 1327--1329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1331
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1377
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1387
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1407
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1407--1409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1417--1419
+
+ []
+
+[52] [53]
+Missing character: There is no ̧ in font [lmroman10-italic]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-italic]:mapping=tex-text;!
+[54]
+Overfull \hbox (29.25122pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.5.  REVISITANDO O PARADOXO DE DE MÉRÉ: O PROBLEMA DOS DADOS \
+TU/lmr/m/n/10 55
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 1550--1552
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1552--1554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1554--1556
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1556--1558
+
+ []
+
+[56]
+Overfull \hbox (29.25122pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.5.  REVISITANDO O PARADOXO DE DE MÉRÉ: O PROBLEMA DOS DADOS \
+TU/lmr/m/n/10 57
+ []
+
+[57] [58]
+Overfull \hbox (29.25122pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.5.  REVISITANDO O PARADOXO DE DE MÉRÉ: O PROBLEMA DOS DADOS \
+TU/lmr/m/n/10 59
+ []
+
+[59] [60]
+Overfull \hbox (29.25122pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.5.  REVISITANDO O PARADOXO DE DE MÉRÉ: O PROBLEMA DOS DADOS \
+TU/lmr/m/n/10 61
+ []
+
+[61]
+File: 02-ch2_files/figure-latex/ch2-demere-experimento1-res-1.pdf Graphic file 
+(type pdf)
+<use 02-ch2_files/figure-latex/ch2-demere-experimento1-res-1.pdf>
+[62]
+File: 02-ch2_files/figure-latex/ch2-demere-experimento2-res-1.pdf Graphic file 
+(type pdf)
+<use 02-ch2_files/figure-latex/ch2-demere-experimento2-res-1.pdf>
+
+Overfull \hbox (29.25122pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.5.  REVISITANDO O PARADOXO DE DE MÉRÉ: O PROBLEMA DOS DADOS \
+TU/lmr/m/n/10 63
+ []
+
+[63]
+File: 02-ch2_files/figure-latex/ch2-regularidade-experimento1-1.pdf Graphic fil
+e (type pdf)
+<use 02-ch2_files/figure-latex/ch2-regularidade-experimento1-1.pdf>
+[64]
+File: 02-ch2_files/figure-latex/ch2-regularidade-experimento2-1.pdf Graphic fil
+e (type pdf)
+<use 02-ch2_files/figure-latex/ch2-regularidade-experimento2-1.pdf>
+
+Overfull \hbox (29.25122pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.5.  REVISITANDO O PARADOXO DE DE MÉRÉ: O PROBLEMA DOS DADOS \
+TU/lmr/m/n/10 65
+ []
+
+[65] [66
+
+]
+Chapter 3.
+[67]
+File: img/pcondicional-soma-dados.png Graphic file (type bmp)
+<img/pcondicional-soma-dados.png>
+[68] [69] [70] [71]
+Underfull \hbox (badness 10000) in paragraph at lines 1995--1996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2001--2003
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2019
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2019--2021
+
+ []
+
+[72] [73]
+File: img/confiabilidade.png Graphic file (type bmp)
+<img/confiabilidade.png>
+[74] [75]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 2136.
+
+
+Overfull \hbox (10.22044pt too wide) detected at line 2147
+[]
+ []
+
+File: 03-ch3_files/figure-latex/ch3-confiabilidade-sol-analitica-1.pdf Graphic 
+file (type pdf)
+<use 03-ch3_files/figure-latex/ch3-confiabilidade-sol-analitica-1.pdf>
+[76] [77] [78] [79]
+File: 03-ch3_files/figure-latex/ch3-confiabilidade-sol-comp-0-5-1.pdf Graphic f
+ile (type pdf)
+<use 03-ch3_files/figure-latex/ch3-confiabilidade-sol-comp-0-5-1.pdf>
+[80]
+File: 03-ch3_files/figure-latex/ch3-confiabilidade-sol-comp-2-3-1.pdf Graphic f
+ile (type pdf)
+<use 03-ch3_files/figure-latex/ch3-confiabilidade-sol-comp-2-3-1.pdf>
+File: 03-ch3_files/figure-latex/ch3-confiabilidade-sol-comp-0-8-1.pdf Graphic f
+ile (type pdf)
+<use 03-ch3_files/figure-latex/ch3-confiabilidade-sol-comp-0-8-1.pdf>
+[81]
+File: 03-ch3_files/figure-latex/ch3-confiabilidade-sol-comp-0-9-1.pdf Graphic f
+ile (type pdf)
+<use 03-ch3_files/figure-latex/ch3-confiabilidade-sol-comp-0-9-1.pdf>
+[82]
+Chapter 4.
+File: img/particao.png Graphic file (type bmp)
+<img/particao.png>
+
+Underfull \vbox (badness 2310) has occurred while \output is active []
+
+[83
+
+]
+File: img/TPT.png Graphic file (type bmp)
+<img/TPT.png>
+[84] [85]
+File: img/TBayes.png Graphic file (type bmp)
+<img/TBayes.png>
+[86]
+Underfull \hbox (badness 10000) in paragraph at lines 2431--2433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2433--2435
+
+ []
+
+[87]
+File: img/raio-x-venn.png Graphic file (type bmp)
+<img/raio-x-venn.png>
+[88] [89] [90
+
+]
+Chapter 5.
+[91]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[92]
+File: img/va/va.pdf Graphic file (type pdf)
+<use img/va/va.pdf>
+[93]
+File: img/va/va-tipos.pdf Graphic file (type pdf)
+<use img/va/va-tipos.pdf>
+[94] [95]
+Underfull \hbox (badness 10000) in paragraph at lines 2630--2632
+
+ []
+
+[96]
+Underfull \hbox (badness 10000) in paragraph at lines 2698--2700
+
+ []
+
+[97]
+Underfull \hbox (badness 10000) in paragraph at lines 2700--2702
+
+ []
+
+[98]
+File: img/comp-fdp.png Graphic file (type bmp)
+<img/comp-fdp.png>
+File: img/comp.png Graphic file (type bmp)
+<img/comp.png>
+[99] [100]
+Underfull \hbox (badness 10000) in paragraph at lines 2781--2783
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2783--2785
+
+ []
+
+File: img/fdp-cont.png Graphic file (type bmp)
+<img/fdp-cont.png>
+[101]
+File: img/fdp-cont-2.png Graphic file (type bmp)
+<img/fdp-cont-2.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 2824--2826
+
+ []
+
+[102] [103]
+File: img/FDA.png Graphic file (type bmp)
+<img/FDA.png>
+[104]
+File: img/comp-fda.png Graphic file (type bmp)
+<img/comp-fda.png>
+[105] [106]
+File: img/comp-fdp.png Graphic file (type bmp)
+<img/comp-fdp.png>
+[107] [108] [109] [110] [111]
+Underfull \hbox (badness 10000) in paragraph at lines 3275--3276
+
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 3282--3283
+\TU/lmr/m/n/10 existem outras medidas que descrevem diferentes características 
+de uma
+ []
+
+[112] [113]
+File: img/skewness-kurtosis.jpg Graphic file (type bmp)
+<img/skewness-kurtosis.jpg>
+
+Overfull \hbox (78.28503pt too wide) in paragraph at lines 3316--3316
+[]\TU/lmr/m/n/10 Figure 5.2: []Assimetria e Excesso. [Fonte](https://dataanalyt
+icsedge.com/2017/06/16/descriptive-
+ []
+
+[114] [115] [116] [117] [118]
+Chapter 6.
+[119
+
+]
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 120 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[120] [121]
+Underfull \hbox (badness 10000) in paragraph at lines 3549--3550
+
+ []
+
+
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 122 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[122] [123]
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 124 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[124] [125]
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 126 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[126]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[127]
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 128 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[128]
+File: img/vaccine-decision-table.png Graphic file (type bmp)
+<img/vaccine-decision-table.png>
+[129]
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 130 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[130]
+File: img/vaccine-decisoes.png Graphic file (type bmp)
+<img/vaccine-decisoes.png>
+[131]
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 132 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[132] [133]
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 134 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[134] [135]
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 136 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[136] [137]
+Underfull \hbox (badness 10000) in paragraph at lines 4081--4083
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4083--4085
+
+ []
+
+
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 138 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[138] [139]
+Overfull \hbox (187.72343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 140 \TU/lmr/m/sl/10 CHAPTER 6.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE BERNOULLI
+ []
+
+[140]
+Chapter 7.
+[141
+
+]
+Overfull \hbox (172.18344pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 142 \TU/lmr/m/sl/10 CHAPTER 7.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE POISSON
+ []
+
+[142]
+File: img/prussian-cavalry-horse-kick-table.png Graphic file (type bmp)
+<img/prussian-cavalry-horse-kick-table.png>
+[143]
+Overfull \hbox (172.18344pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 144 \TU/lmr/m/sl/10 CHAPTER 7.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE POISSON
+ []
+
+[144]
+File: img/processo-poisson-tempo.png Graphic file (type bmp)
+<img/processo-poisson-tempo.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4258--4260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4260--4262
+
+ []
+
+[145]
+File: img/processo-poisson-tempo-2.png Graphic file (type bmp)
+<img/processo-poisson-tempo-2.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4274--4276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4276--4278
+
+ []
+
+
+Overfull \hbox (172.18344pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 146 \TU/lmr/m/sl/10 CHAPTER 7.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE POISSON
+ []
+
+[146]
+Overfull \hbox (13.30708pt too wide) detected at line 4328
+[]
+ []
+
+[147]
+Overfull \hbox (172.18344pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 148 \TU/lmr/m/sl/10 CHAPTER 7.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE POISSON
+ []
+
+[148] [149]
+Overfull \hbox (172.18344pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 150 \TU/lmr/m/sl/10 CHAPTER 7.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE POISSON
+ []
+
+[150] [151]
+Overfull \hbox (172.18344pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 152 \TU/lmr/m/sl/10 CHAPTER 7.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE POISSON
+ []
+
+[152] [153]
+Overfull \hbox (172.18344pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 154 \TU/lmr/m/sl/10 CHAPTER 7.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE POISSON
+ []
+
+[154]
+Overfull \hbox (12.21758pt too wide) detected at line 4612
+[][][][] [] [][] [][][][][][][]  [] [] [] [] []
+ []
+
+[155]
+Overfull \hbox (172.18344pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 156 \TU/lmr/m/sl/10 CHAPTER 7.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE POISSON
+ []
+
+[156] [157]
+Overfull \hbox (172.18344pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 158 \TU/lmr/m/sl/10 CHAPTER 7.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÕES ASSOCIADAS A PROCESSOS DE POISSON
+ []
+
+[158
+
+]
+Chapter 8.
+
+Underfull \hbox (badness 1242) in paragraph at lines 4700--4701
+[]\TU/lmr/m/n/10 Abraham De Moivre (1667-1754) foi o primeiro a chegar à formul
+ação
+ []
+
+[159]
+File: 08-ch8_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-1-1.pdf>
+
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 160 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[160]
+File: 08-ch8_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-2-1.pdf>
+[161]
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 162 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[162]
+File: 08-ch8_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-3-1.pdf>
+[163]
+File: 08-ch8_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-4-1.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4782--4784
+
+ []
+
+File: img/distr-normal-a.png Graphic file (type bmp)
+<img/distr-normal-a.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 164 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[164]
+File: img/distr-normal-b.png Graphic file (type bmp)
+<img/distr-normal-b.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[165]
+File: img/distr-normal-c.png Graphic file (type bmp)
+<img/distr-normal-c.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 166 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[166]
+File: img/distr-normal-d.png Graphic file (type bmp)
+<img/distr-normal-d.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[167]
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 168 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[168]
+File: img/distr-normal-regra-empirica.png Graphic file (type bmp)
+<img/distr-normal-regra-empirica.png>
+File: img/distr-normal-regra-empirica-tabela.png Graphic file (type bmp)
+<img/distr-normal-regra-empirica-tabela.png>
+[169]
+Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 170 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[170]
+File: 08-ch8_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-13-1.pdf>
+
+Underfull \hbox (badness 1590) in paragraph at lines 4977--4978
+[]\TU/lmr/m/n/10 Do histograma, pode-se determinar esta probabilidade de maneir
+a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4977--4978
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4980--4981
+
+ []
+
+[171]
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 172 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[172]
+File: 08-ch8_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-17-1.pdf>
+[173]
+Underfull \hbox (badness 10000) in paragraph at lines 5060--5061
+
+ []
+
+
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 174 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[174]
+File: 08-ch8_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-20-1.pdf>
+[175]
+File: 08-ch8_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-22-1.pdf>
+
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 176 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[176]
+File: 08-ch8_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-26-1.pdf>
+[177]
+File: 08-ch8_files/figure-latex/unnamed-chunk-29-1.pdf Graphic file (type pdf)
+<use 08-ch8_files/figure-latex/unnamed-chunk-29-1.pdf>
+
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 178 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[178] [179]
+Overfull \hbox (11.85782pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 180 \TU/lmr/m/sl/10 CHAPTER 8.  MODELOS PROBABILÍSTICOS: DISTRIB
+UIÇÃO NORMAL
+ []
+
+[180
+
+]
+Chapter 9.
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[181]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-bold]:mapping=tex-text;!
+[182]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[183]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 5334--5336
+
+ []
+
+[184]
+Underfull \hbox (badness 10000) in paragraph at lines 5355--5357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5379--5383
+
+ []
+
+[185]
+Underfull \hbox (badness 10000) in paragraph at lines 5396--5398
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5398--5400
+
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5440--5440
+[]\TU/lmtt/m/n/10 ##   [1] 17.3 18.4 20.9 16.8 18.7 20.5 17.9 20.4 18.3 20.5 19
+.0 17.5 18.1 17.1 18.8[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5440--5440
+[]\TU/lmtt/m/n/10 ##  [16] 20.0 19.1 19.1 17.9 18.3 18.2 18.9 19.4 18.9 19.4 20
+.8 17.3 18.5 18.3 19.4[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5440--5440
+[]\TU/lmtt/m/n/10 ##  [31] 19.0 19.0 20.5 19.7 18.5 17.7 19.4 18.3 19.6 21.4 19
+.0 20.5 20.4 19.7 18.6[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5440--5440
+[]\TU/lmtt/m/n/10 ##  [46] 19.9 18.3 19.8 19.6 19.0 20.4 17.3 16.1 19.2 19.6 18
+.8 19.3 19.1 21.0 18.6[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5440--5440
+[]\TU/lmtt/m/n/10 ##  [61] 18.3 18.3 18.7 20.6 18.5 16.4 17.2 17.5 18.0 19.5 19
+.9 18.4 18.8 20.1 20.0[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5440--5440
+[]\TU/lmtt/m/n/10 ##  [76] 18.5 17.5 18.5 17.9 17.4 18.7 18.6 17.3 18.8 17.8 19
+.0 19.6 19.3 18.1 18.5[] 
+ []
+
+[186]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5440--5440
+[]\TU/lmtt/m/n/10 ##  [91] 20.9 19.8 18.1 17.1 19.8 20.6 17.6 19.1 19.5 18.4 17
+.7 20.2 19.9 18.6 16.6[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5440--5440
+[]\TU/lmtt/m/n/10 ## [106] 19.2 20.0 17.4 17.1 18.3 19.1 18.5 19.6 18.0 19.4 17
+.1 19.9 16.3 18.9 20.7[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5440--5440
+[]\TU/lmtt/m/n/10 ## [121] 19.7 18.5 18.4 18.7 19.3 16.3 16.9 18.2 18.5 19.3 18
+.1 18.0 19.5 20.3 20.1[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 5485--5485
+[]\TU/lmtt/m/n/10 ##   [1] 18.68 18.83 18.62 18.83 18.37 19.24 18.86 18.28 18.9
+7 17.87 18.66 18.52[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 5485--5485
+[]\TU/lmtt/m/n/10 ##  [13] 18.57 18.85 18.35 18.59 18.50 18.75 18.87 19.11 18.9
+7 18.77 18.91 19.45[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 5485--5485
+[]\TU/lmtt/m/n/10 ##  [25] 18.33 19.38 18.96 18.64 18.73 18.71 18.73 18.83 19.0
+2 18.78 19.11 19.00[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 5485--5485
+[]\TU/lmtt/m/n/10 ##  [37] 18.73 18.24 19.13 18.47 19.06 18.88 18.72 18.13 18.6
+0 19.22 18.71 18.40[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 5485--5485
+[]\TU/lmtt/m/n/10 ##  [49] 18.92 18.49 19.04 18.08 18.87 18.68 18.73 18.70 19.0
+8 19.09 18.94 18.73[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 5485--5485
+[]\TU/lmtt/m/n/10 ##  [61] 18.28 18.70 18.45 18.85 17.81 18.69 18.35 18.93 19.1
+1 18.82 18.49 18.75[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 5485--5485
+[]\TU/lmtt/m/n/10 ##  [73] 18.78 18.68 18.46 18.96 18.90 18.55 18.09 18.60 18.8
+0 18.83 19.50 18.33[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 5485--5485
+[]\TU/lmtt/m/n/10 ##  [85] 18.85 19.51 18.92 18.82 18.19 19.21 19.08 19.32 19.1
+6 18.87 18.64 18.89[] 
+ []
+
+[187]
+File: 09-ch9_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-8-1.pdf>
+[188]
+Underfull \hbox (badness 10000) in paragraph at lines 5551--5553
+
+ []
+
+[189] [190]
+File: 09-ch9_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-11-1.pdf>
+[191]
+File: 09-ch9_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-13-1.pdf>
+[192]
+File: 09-ch9_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-15-1.pdf>
+[193]
+Underfull \hbox (badness 10000) in paragraph at lines 5720--5722
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5722--5724
+
+ []
+
+File: 09-ch9_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-17-1.pdf>
+[194]
+File: 09-ch9_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-18-1.pdf>
+File: 09-ch9_files/figure-latex/unnamed-chunk-19-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-19-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[195]
+Underfull \hbox (badness 2384) in paragraph at lines 5741--5742
+[]\TU/lmr/m/n/10 Essas ilustrações permitem perceber como as distribuições das 
+médias
+ []
+
+[196] [197]
+File: 09-ch9_files/figure-latex/unnamed-chunk-25-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-25-1.pdf>
+[198]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \hbox (35.63452pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.5.  DISTRIBUIÇÕES AMOSTRAIS ASSOCIADAS A POPULAÇÕES NORMAIS \
+TU/lmr/m/n/10 199
+ []
+
+[199]
+File: img/distr-chi2.png Graphic file (type bmp)
+<img/distr-chi2.png>
+[200]
+Underfull \hbox (badness 10000) in paragraph at lines 5923--5925
+
+ []
+
+
+Overfull \hbox (35.63452pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.5.  DISTRIBUIÇÕES AMOSTRAIS ASSOCIADAS A POPULAÇÕES NORMAIS \
+TU/lmr/m/n/10 201
+ []
+
+[201]
+File: img/distr-t-Student.png Graphic file (type bmp)
+<img/distr-t-Student.png>
+[202]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \hbox (35.63452pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.5.  DISTRIBUIÇÕES AMOSTRAIS ASSOCIADAS A POPULAÇÕES NORMAIS \
+TU/lmr/m/n/10 203
+ []
+
+[203]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[204]
+File: 09-ch9_files/figure-latex/unnamed-chunk-36-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-36-1.pdf>
+File: 09-ch9_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-37-1.pdf>
+
+Underfull \vbox (badness 6775) has occurred while \output is active []
+
+
+Overfull \hbox (97.9723pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.6.  APROXIMANDO DISTRIBUIÇÕES AMOSTRAIS VIA SIMULAÇÃO DE MONT
+E CARLO \TU/lmr/m/n/10 205
+ []
+
+[205]
+File: 09-ch9_files/figure-latex/unnamed-chunk-38-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-38-1.pdf>
+File: 09-ch9_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-39-1.pdf>
+File: 09-ch9_files/figure-latex/unnamed-chunk-40-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-40-1.pdf>
+[206]
+File: 09-ch9_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-41-1.pdf>
+File: 09-ch9_files/figure-latex/unnamed-chunk-42-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-42-1.pdf>
+File: 09-ch9_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-43-1.pdf>
+
+Underfull \vbox (badness 1655) has occurred while \output is active []
+
+
+Overfull \hbox (97.9723pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.6.  APROXIMANDO DISTRIBUIÇÕES AMOSTRAIS VIA SIMULAÇÃO DE MONT
+E CARLO \TU/lmr/m/n/10 207
+ []
+
+[207]
+File: 09-ch9_files/figure-latex/unnamed-chunk-44-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-44-1.pdf>
+File: 09-ch9_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-45-1.pdf>
+File: 09-ch9_files/figure-latex/unnamed-chunk-46-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-46-1.pdf>
+[208]
+File: 09-ch9_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-47-1.pdf>
+
+Underfull \hbox (badness 3000) in paragraph at lines 6178--6178
+[][]\TU/lmr/bx/n/12 Distribuição Aproximada da Amplitude Inter-Quartis
+ []
+
+File: 09-ch9_files/figure-latex/unnamed-chunk-48-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-48-1.pdf>
+File: 09-ch9_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-49-1.pdf>
+
+Overfull \hbox (97.9723pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.6.  APROXIMANDO DISTRIBUIÇÕES AMOSTRAIS VIA SIMULAÇÃO DE MONT
+E CARLO \TU/lmr/m/n/10 209
+ []
+
+[209]
+File: 09-ch9_files/figure-latex/unnamed-chunk-50-1.pdf Graphic file (type pdf)
+<use 09-ch9_files/figure-latex/unnamed-chunk-50-1.pdf>
+[210]
+Chapter 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6219--6221
+
+ []
+
+[211
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6246--6248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6276--6278
+
+ []
+
+[212] [213] [214]
+Underfull \hbox (badness 10000) in paragraph at lines 6337--6339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6339--6341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6341--6343
+
+ []
+
+[215]
+Underfull \hbox (badness 10000) in paragraph at lines 6374--6376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6376--6378
+
+ []
+
+[216]
+File: 10-ch10_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use 10-ch10_files/figure-latex/unnamed-chunk-2-1.pdf>
+[217]
+File: img/biased-estimator.png Graphic file (type bmp)
+<img/biased-estimator.png>
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+File: 10-ch10_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use 10-ch10_files/figure-latex/unnamed-chunk-3-1.pdf>
+[218]
+File: img/efficient-estimator.png Graphic file (type bmp)
+<img/efficient-estimator.png>
+[219]
+Underfull \hbox (badness 10000) in paragraph at lines 6499--6501
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6501--6503
+
+ []
+
+[220]
+File: 10-ch10_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+<use 10-ch10_files/figure-latex/unnamed-chunk-5-1.pdf>
+[221]
+File: img/consistent-estimator.png Graphic file (type bmp)
+<img/consistent-estimator.png>
+File: 10-ch10_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
+<use 10-ch10_files/figure-latex/unnamed-chunk-7-1.pdf>
+[222]
+Underfull \hbox (badness 10000) in paragraph at lines 6612--6614
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6614--6616
+
+ []
+
+[223]
+File: img/MSE.png Graphic file (type bmp)
+<img/MSE.png>
+[224]
+Underfull \hbox (badness 10000) in paragraph at lines 6703--6703
+[]\TU/lmr/bx/n/14.4 Métodos Clássicos de Estimação de
+ []
+
+[225]
+Underfull \hbox (badness 10000) in paragraph at lines 6740--6741
+
+ []
+
+[226] [227]
+Underfull \hbox (badness 10000) in paragraph at lines 6778--6780
+
+ []
+
+[228] [229] [230
+
+]
+Chapter 11.
+[231] [232] [233]
+File: img/IC-mean-norm-sigma.png Graphic file (type bmp)
+<img/IC-mean-norm-sigma.png>
+[234]
+File: 11-ch11_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
+<use 11-ch11_files/figure-latex/unnamed-chunk-1-1.pdf>
+[235]
+File: 11-ch11_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use 11-ch11_files/figure-latex/unnamed-chunk-2-1.pdf>
+[236] [237] [238]
+Underfull \hbox (badness 10000) in paragraph at lines 7057--7059
+
+ []
+
+[239]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[240] [241]
+File: img/IC-var-norm.png Graphic file (type bmp)
+<img/IC-var-norm.png>
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[242]
+Missing character: There is no ̧ in font [lmroman10-regular]:mapping=tex-text;!
+[243] [244
+
+]
+Chapter 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7252--7254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7268--7271
+
+ []
+
+[245] [246] [247] [248]
+File: img/TH-erros-decisao.png Graphic file (type bmp)
+<img/TH-erros-decisao.png>
+[249]
+File: img/regiao-critica.png Graphic file (type bmp)
+<img/regiao-critica.png>
+
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+[250] [251]
+File: 12-ch12_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
+<use 12-ch12_files/figure-latex/unnamed-chunk-1-1.pdf>
+Missing character: There is no 𝜇 in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \vbox (badness 1226) has occurred while \output is active []
+
+[252]
+File: 12-ch12_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use 12-ch12_files/figure-latex/unnamed-chunk-2-1.pdf>
+[253] [254] [255]
+Missing character: There is no ≥ in font [lmroman10-regular]:mapping=tex-text;!
+File: 12-ch12_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
+<use 12-ch12_files/figure-latex/unnamed-chunk-6-1.pdf>
+[256] [257]
+Underfull \hbox (badness 10000) in paragraph at lines 7636--7638
+
+ []
+
+File: img/TH-regiao-rej-Ho.png Graphic file (type bmp)
+<img/TH-regiao-rej-Ho.png>
+[258]
+Overfull \hbox (147.10014pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 12.9.  PROCEDIMENTO PARA TESTES DE HIPÓTESES (UTILIZANDO O NÍVE
+L DE SIGNIFICÂNCIA) \TU/lmr/m/n/10 259
+ []
+
+[259]
+Underfull \hbox (badness 10000) in paragraph at lines 7669--7670
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7675--7677
+
+ []
+
+[260]
+Overfull \hbox (58.14343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 12.10.  PROCEDIMENTO PARA TESTES DE HIPÓTESES (UTILIZANDO VALOR
+-P) \TU/lmr/m/n/10 261
+ []
+
+[261]
+No file apostila-GED13.bbl.
+[262] (./apostila-GED13.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `apostila-GED13.out' has not changed.
+(rerunfilecheck)             Checksum: 9035A4FA55EACFD295A04E3C73A54BEC;15940.
+ ) 
+Here is how much of TeX's memory you used:
+ 17937 strings out of 478931
+ 337821 string characters out of 5866197
+ 806810 words of memory out of 5000000
+ 37390 multiletter control sequences out of 15000+600000
+ 410073 words of font info for 104 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 98i,20n,122p,1468b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on apostila-GED13.pdf (262 pages).

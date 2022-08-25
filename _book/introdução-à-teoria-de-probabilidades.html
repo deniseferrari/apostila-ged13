@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 2 Introdução à Teoria de Probabilidades | GED-13: Probabilidade e Estatística</title>
+  <meta name="description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 2 Introdução à Teoria de Probabilidades | GED-13: Probabilidade e Estatística" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 2 Introdução à Teoria de Probabilidades | GED-13: Probabilidade e Estatística" />
+  
+  <meta name="twitter:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+<meta name="author" content="Prof. Denise Beatriz Ferrari" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introdução.html"/>
+<link rel="next" href="probabilidade-condicional-e-independência.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Probabilidade e Estatística</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Objetivos do Curso</a></li>
+<li class="chapter" data-level="1" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="introdução.html"><a href="introdução.html#estatística-e-o-raciocínio-científico"><i class="fa fa-check"></i><b>1.1</b> Estatística e o Raciocínio Científico</a></li>
+<li class="chapter" data-level="1.2" data-path="introdução.html"><a href="introdução.html#o-que-é-estatística"><i class="fa fa-check"></i><b>1.2</b> O que é Estatística?</a></li>
+<li class="chapter" data-level="1.3" data-path="introdução.html"><a href="introdução.html#o-papel-da-probabilidade-em-estatística"><i class="fa fa-check"></i><b>1.3</b> O Papel da Probabilidade em Estatística</a></li>
+<li class="chapter" data-level="1.4" data-path="introdução.html"><a href="introdução.html#elementos-fundamentais-em-estatística"><i class="fa fa-check"></i><b>1.4</b> Elementos Fundamentais em Estatística</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#população-e-amostra"><i class="fa fa-check"></i>População e Amostra</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#variáveis"><i class="fa fa-check"></i>Variáveis</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#dados-e-fontes-de-dados"><i class="fa fa-check"></i>Dados e Fontes de Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introdução.html"><a href="introdução.html#tipos-de-problemas"><i class="fa fa-check"></i><b>1.5</b> Tipos de Problemas</a></li>
+<li class="chapter" data-level="1.6" data-path="introdução.html"><a href="introdução.html#o-processo-de-análise-de-dados"><i class="fa fa-check"></i><b>1.6</b> O Processo de Análise de Dados</a></li>
+<li class="chapter" data-level="1.7" data-path="introdução.html"><a href="introdução.html#métodos-para-exploração-resumo-e-descrição-de-dados"><i class="fa fa-check"></i><b>1.7</b> Métodos para Exploração, Resumo e Descrição de Dados</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#análise-exploratória-de-dados-exploratory-data-analysis-eda"><i class="fa fa-check"></i>Análise Exploratória de Dados (“Exploratory Data Analysis”, EDA)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html"><i class="fa fa-check"></i><b>2</b> Introdução à Teoria de Probabilidades</a><ul>
+<li class="chapter" data-level="2.1" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#breve-histórico"><i class="fa fa-check"></i><b>2.1</b> Breve Histórico</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#chance-e-incerteza"><i class="fa fa-check"></i>Chance e Incerteza</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#jogos-de-azar"><i class="fa fa-check"></i>Jogos de Azar</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#origem-da-teoria-matemática-de-probabilidades"><i class="fa fa-check"></i>Origem da Teoria Matemática de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#formalização-matemática"><i class="fa fa-check"></i>Formalização Matemática</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definições-iniciais"><i class="fa fa-check"></i><b>2.2</b> Definições Iniciais</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#experimento-aleatório"><i class="fa fa-check"></i>Experimento Aleatório</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#espaço-amostral-e-evento"><i class="fa fa-check"></i>Espaço Amostral e Evento</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#lei-de-probabilidade"><i class="fa fa-check"></i>Lei de Probabilidade</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretações-de-probabilidade"><i class="fa fa-check"></i><b>2.3</b> Interpretações de Probabilidade</a><ul>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-clássica-a-priori-laplace-1812">Interpretação Clássica (<em>a priori</em>): Laplace, 1812</a></li>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-empírica-ou-de-frequência-relativa-a-posteriori-richard-v.-mises-1919">Interpretação Empírica ou de Frequência Relativa (<em>a posteriori</em>): Richard V. Mises, 1919</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretação-subjetiva"><i class="fa fa-check"></i>Interpretação Subjetiva</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#resumo"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definição-axiomática"><i class="fa fa-check"></i><b>2.4</b> Definição Axiomática</a></li>
+<li class="chapter" data-level="2.5" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#revisitando-o-paradoxo-de-de-méré-o-problema-dos-dados"><i class="fa fa-check"></i><b>2.5</b> Revisitando o Paradoxo de De Méré: O Problema dos Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html"><i class="fa fa-check"></i><b>3</b> Probabilidade Condicional e Independência</a><ul>
+<li class="chapter" data-level="3.1" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#probabilidade-condicional"><i class="fa fa-check"></i><b>3.1</b> Probabilidade Condicional</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades"><i class="fa fa-check"></i>Propriedades</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-de-eventos"><i class="fa fa-check"></i><b>3.2</b> Independência de Eventos</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades-1"><i class="fa fa-check"></i>Propriedades</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-condicional"><i class="fa fa-check"></i>Independência Condicional</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#eventos-independentes-x-eventos-mutuamente-exclusivos"><i class="fa fa-check"></i>Eventos Independentes x Eventos Mutuamente Exclusivos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html"><i class="fa fa-check"></i><b>4</b> Teoremas Fundamentais da Probabilidade</a><ul>
+<li class="chapter" data-level="4.1" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-da-probabilidade-total-dividir-para-conquistar"><i class="fa fa-check"></i><b>4.1</b> Teorema da Probabilidade Total: …dividir para conquistar!</a></li>
+<li class="chapter" data-level="4.2" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-de-bayes-aprendendo-pela-experiência"><i class="fa fa-check"></i><b>4.2</b> Teorema de Bayes: …aprendendo pela experiência</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html"><i class="fa fa-check"></i><b>5</b> Variáveis Aleatórias e Distribuições</a><ul>
+<li class="chapter" data-level="5.1" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variáveis-aleatórias"><i class="fa fa-check"></i><b>5.1</b> Variáveis Aleatórias</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#definição-caso-unidimensional"><i class="fa fa-check"></i>Definição (caso unidimensional)</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#tipos-de-variáveis-aleatórias"><i class="fa fa-check"></i>Tipos de Variáveis Aleatórias</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#distribuições-de-probabilidade"><i class="fa fa-check"></i><b>5.2</b> Distribuições de Probabilidade</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-discreto"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso discreto</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-contínuo"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso contínuo</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-acumulada-fda"><i class="fa fa-check"></i>Função Distribuição Acumulada (FDA)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado-e-variância"><i class="fa fa-check"></i><b>5.3</b> Valor Esperado e Variância</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado"><i class="fa fa-check"></i>Valor Esperado</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#o-problema-dos-pontos-e-a-aposta-de-pascal"><i class="fa fa-check"></i>O Problema dos Pontos e a Aposta de Pascal</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variância"><i class="fa fa-check"></i>Variância</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desvio-padrão"><i class="fa fa-check"></i>Desvio-padrão</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#momentos"><i class="fa fa-check"></i><b>5.4</b> Momentos</a><ul>
+<li><a href="variáveis-aleatórias-e-distribuições.html#assimetria-skewness-e-excesso-kurtosis">Assimetria (<em>skewness</em>) e Excesso (<em>kurtosis</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdades-de-markov-e-chebyshev"><i class="fa fa-check"></i><b>5.5</b> Desigualdades de Markov e Chebyshev</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-markov"><i class="fa fa-check"></i>Desigualdade de Markov</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-chebyshev"><i class="fa fa-check"></i>Desigualdade de Chebyshev</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><i class="fa fa-check"></i><b>6</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Bernoulli</a><ul>
+<li class="chapter" data-level="6.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#o-experimento-de-bernoulli"><i class="fa fa-check"></i><b>6.1</b> O Experimento de Bernoulli</a></li>
+<li class="chapter" data-level="6.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-de-bernoulli"><i class="fa fa-check"></i><b>6.2</b> Distribuição de Bernoulli</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-2"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial"><i class="fa fa-check"></i><b>6.3</b> Distribuição Binomial</a></li>
+<li class="chapter" data-level="6.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#um-problema-de-tomada-de-decisão"><i class="fa fa-check"></i><b>6.4</b> Um Problema de Tomada de Decisão</a></li>
+<li class="chapter" data-level="6.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-geométrica"><i class="fa fa-check"></i><b>6.5</b> Distribuição Geométrica</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#propriedade-de-ausência-de-memória"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#outras-distribuições"><i class="fa fa-check"></i><b>6.6</b> Outras Distribuições</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial-negativa-ou-distribuição-de-pascal"><i class="fa fa-check"></i>Distribuição Binomial Negativa (ou Distribuição de Pascal)</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial"><i class="fa fa-check"></i>Distribuição Multinomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial-negativa"><i class="fa fa-check"></i>Distribuição Multinomial Negativa</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica"><i class="fa fa-check"></i>Distribuição Hipergeométrica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica-negativa"><i class="fa fa-check"></i>Distribuição Hipergeométrica Negativa</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-4"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><i class="fa fa-check"></i><b>7</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Poisson</a><ul>
+<li class="chapter" data-level="7.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i><b>7.1</b> Uma aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="7.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-poisson"><i class="fa fa-check"></i><b>7.2</b> Distribuição de Poisson</a></li>
+<li class="chapter" data-level="7.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#o-processo-de-poisson"><i class="fa fa-check"></i><b>7.3</b> O Processo de Poisson</a></li>
+<li class="chapter" data-level="7.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-exponencial"><i class="fa fa-check"></i><b>7.4</b> Distribuição Exponencial</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#propriedade-de-ausência-de-memória-1"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-weibull"><i class="fa fa-check"></i>Distribuição de Weibull:</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-gama"><i class="fa fa-check"></i><b>7.5</b> Distribuição Gama</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html"><i class="fa fa-check"></i><b>8</b> Modelos Probabilísticos: Distribuição Normal</a><ul>
+<li class="chapter" data-level="8.1" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#distribuição-normal"><i class="fa fa-check"></i><b>8.1</b> Distribuição Normal</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#mais-uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>…(Mais) Uma Aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#cálculo-de-probabilidades"><i class="fa fa-check"></i>Cálculo de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#padronização-1"><i class="fa fa-check"></i>Padronização</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#regra-empírica"><i class="fa fa-check"></i>Regra Empírica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#coeficiente-de-variação"><i class="fa fa-check"></i>Coeficiente de Variação</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-distribuições-discretas"><i class="fa fa-check"></i><b>8.2</b> Aproximação para Distribuições Discretas</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>Aproximação para a Distribuição Binomial</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#métodos-descritivos-para-avaliar-normalidade"><i class="fa fa-check"></i><b>8.3</b> Métodos Descritivos para Avaliar Normalidade</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html"><i class="fa fa-check"></i><b>9</b> Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="9.1" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#introdução-à-inferência-estatística"><i class="fa fa-check"></i><b>9.1</b> Introdução à Inferência Estatística</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#inferência-estatística"><i class="fa fa-check"></i>Inferência Estatística</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostras-e-distribuições-amostrais"><i class="fa fa-check"></i><b>9.2</b> Amostras e Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostra-aleatória"><i class="fa fa-check"></i>Amostra Aleatória</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#parâmetos-vs.-estatísticas"><i class="fa fa-check"></i>Parâmetos vs. Estatísticas</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-amostral"><i class="fa fa-check"></i>Distribuição Amostral</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-da-média-amostral"><i class="fa fa-check"></i><b>9.3</b> Distribuição da Média Amostral</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#propriedades-da-média-amostral"><i class="fa fa-check"></i>Propriedades da Média Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#lei-dos-grandes-números"><i class="fa fa-check"></i>Lei dos Grandes Números</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#teorema-do-limite-central"><i class="fa fa-check"></i><b>9.4</b> Teorema do Limite Central</a></li>
+<li class="chapter" data-level="9.5" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuições-amostrais-associadas-a-populações-normais"><i class="fa fa-check"></i><b>9.5</b> Distribuições Amostrais Associadas a Populações Normais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-qui-quadrado"><i class="fa fa-check"></i>Distribuição Qui-Quadrado</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-t-student"><i class="fa fa-check"></i>Distribuição t-Student</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#aproximando-distribuições-amostrais-via-simulação-de-monte-carlo"><i class="fa fa-check"></i><b>9.6</b> Aproximando Distribuições Amostrais via Simulação de Monte Carlo</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-mediana-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Mediana Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-desvio-padrão-amostral"><i class="fa fa-check"></i>Distribuição Aproximada do Desvio-Padrão Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-variância-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Variância Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-mad-desvio-mediano-absoluto"><i class="fa fa-check"></i>Distribuição Aproximada do MAD (Desvio Mediano Absoluto)</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-amplitude-inter-quartis-iqr"><i class="fa fa-check"></i>Distribuição Aproximada da Amplitude Inter-Quartis (IQR)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="estimação-pontual.html"><a href="estimação-pontual.html"><i class="fa fa-check"></i><b>10</b> Estimação Pontual</a><ul>
+<li class="chapter" data-level="10.1" data-path="estimação-pontual.html"><a href="estimação-pontual.html#estimador-e-estimativa"><i class="fa fa-check"></i><b>10.1</b> Estimador e Estimativa</a></li>
+<li class="chapter" data-level="10.2" data-path="estimação-pontual.html"><a href="estimação-pontual.html#propriedades-de-estimadores"><i class="fa fa-check"></i><b>10.2</b> Propriedades de Estimadores</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#não-tendeciosidade-exatidão"><i class="fa fa-check"></i>Não-Tendeciosidade (exatidão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#eficiência-precisão"><i class="fa fa-check"></i>Eficiência (precisão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#consistência"><i class="fa fa-check"></i>Consistência</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#erro-médio-quadrático"><i class="fa fa-check"></i>Erro Médio Quadrático</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="estimação-pontual.html"><a href="estimação-pontual.html#métodos-clássicos-de-estimação-de-parâmetros"><i class="fa fa-check"></i><b>10.3</b> Métodos Clássicos de Estimação de Parâmetros</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-dos-momentos"><i class="fa fa-check"></i>Método dos Momentos</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-da-máxima-verossimilhança"><i class="fa fa-check"></i>Método da Máxima Verossimilhança</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html"><i class="fa fa-check"></i><b>11</b> Intervalos de Confiança</a><ul>
+<li class="chapter" data-level="11.1" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#estimação-por-intervalos"><i class="fa fa-check"></i><b>11.1</b> Estimação por Intervalos</a></li>
+<li class="chapter" data-level="11.2" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#procedimento-para-construção-de-ics"><i class="fa fa-check"></i><b>11.2</b> Procedimento para Construção de IC’s</a><ul>
+<li><a href="intervalos-de-confiança.html#caso-1-ic-para-mu-com-sigma2-conhecida">CASO 1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> conhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.1-ic-para-mu-com-sigma2-desconhecida">CASO 2.1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.2-ic-para-mu-com-sigma2-desconhecida-amostras-grandes">CASO 2.2: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida (amostras grandes)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-p-proporção-populacional">CASO 3: IC para <span class="math inline">\(p\)</span> (proporção populacional)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-sigma2">CASO 3: IC para <span class="math inline">\(\sigma^2\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html"><i class="fa fa-check"></i><b>12</b> Testes de Hipóteses</a><ul>
+<li class="chapter" data-level="12.1" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#formulação-de-hipóteses-estatísticas"><i class="fa fa-check"></i><b>12.1</b> Formulação de Hipóteses Estatísticas</a></li>
+<li class="chapter" data-level="12.2" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#estatística-do-teste"><i class="fa fa-check"></i><b>12.2</b> Estatística do Teste</a></li>
+<li class="chapter" data-level="12.3" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#erros-de-decisão"><i class="fa fa-check"></i><b>12.3</b> Erros de Decisão</a></li>
+<li class="chapter" data-level="12.4" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-crítica"><i class="fa fa-check"></i><b>12.4</b> Região Crítica</a></li>
+<li class="chapter" data-level="12.5" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#valor-p"><i class="fa fa-check"></i><b>12.5</b> Valor-p</a></li>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#qual-a-probabilidade-de-cometer-erro-do-tipo-ii"><i class="fa fa-check"></i>Qual a probabilidade de cometer erro do tipo II?</a></li>
+<li class="chapter" data-level="12.6" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#poder-do-teste"><i class="fa fa-check"></i><b>12.6</b> Poder do Teste</a></li>
+<li class="chapter" data-level="12.7" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#resumo-gráfico"><i class="fa fa-check"></i><b>12.7</b> Resumo Gráfico</a></li>
+<li class="chapter" data-level="12.8" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#testes-mono--e-bi-caudais"><i class="fa fa-check"></i><b>12.8</b> Testes Mono- e Bi-Caudais</a><ul>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-de-rejeição-para-um-teste-bi-caudal"><i class="fa fa-check"></i>Região de Rejeição para um Teste Bi-caudal</a></li>
+</ul></li>
+<li class="chapter" data-level="12.9" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-o-nível-de-significância"><i class="fa fa-check"></i><b>12.9</b> Procedimento para Testes de Hipóteses (utilizando o nível de significância)</a></li>
+<li class="chapter" data-level="12.10" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-valor-p"><i class="fa fa-check"></i><b>12.10</b> Procedimento para Testes de Hipóteses (utilizando valor-p)</a></li>
+<li class="chapter" data-level="12.11" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#ic-vs-th"><i class="fa fa-check"></i><b>12.11</b> IC vs TH</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GED-13: Probabilidade e Estatística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introdução-à-teoria-de-probabilidades" class="section level1">
+<h1><span class="header-section-number">Capítulo 2</span> Introdução à Teoria de Probabilidades</h1>
+<div id="breve-histórico" class="section level2">
+<h2><span class="header-section-number">2.1</span> Breve Histórico</h2>
+<p>A Teoria de Probabilidades é a disciplina matemática que trata de fenômenos aleatórios, através da construção dos chamados modelos probabilísticos.</p>
+<p>Atribui-se a Aristóteles a declaração de que, para a melhor compreensão de algo, é necessário observar suas origens e seu desenvolvimento. Sendo assim, para que tenhamos uma melhor apreciação da Teoria Matemática de Probabilidades, é interessante observar suas origens.</p>
+<div id="chance-e-incerteza" class="section level3 unnumbered">
+<h3>Chance e Incerteza</h3>
+<p>Chance e incerteza são conceitos tão antigos quanto a civilização; os seres humanos sempre estiveram sujeitos e, por este motivo, sempre se esforçaram para compreender e reduzir as incertezas presentes em seu ambiente, a fim de garantir sua sobrevivência.</p>
+<p>As primeiras civilizações agrícolas, por exemplo, eram profundamente sensíveis a flutuações climáticas. Uma enchente poderia destruir toda a reserva de grãos necessária para alimentar um povoado; uma seca poderia ser igualmente destrutiva, tornando os estoques de água insuficientes para atender de maneira satisfatória as necessidades locais. Doenças, conflitos e escassez de recursos necessários tornavam a existência humana extremamente incerta e frágil. E, assim, em resposta a essas vulnerabilidades, com o tempo, os seres humanos passaram a desenvolver meios de prever mudanças em seu ambiente a fim de melhor se proteger.</p>
+</div>
+<div id="jogos-de-azar" class="section level3 unnumbered">
+<h3>Jogos de Azar</h3>
+<p>Também, desde tempos remotos, os seres humanos conscientemente e intencionalmente produziram aleatoriedade utilizando dados, ossos de animais, conchas ou outros objetos com diversas finalidades, como para proporcionar entretenimento, para prever o futuro ou como uma maneira de se comunicar com o sobrenatural.</p>
+<p>As civilizações antigas da Grécia, Roma e Egito, por exemplo, utilizavam astrágalos (pequenos ossos do calcanhar de certos animais que serviam como dados assimétricos de 4 lados) para realizar divinações ou previsões; e era popular entre os antigos egípcios (e me refiro a um período por volta de 2000 anos AC) um jogo de azar chamado “cães e chacais”;</p>
+<p>O dado cúbico foi desenvolvido por volta de 1500 AC. Os jogos de azar envolvendo dados eram uma obsessão tão grande entre os antigos romanos, que se tornaram ilegais, exceto em ocasiões especiais, como durante grandes eventos como o festival Saturnalia, torneios de gladiadores ou corridas.</p>
+<p>O fato é que, através da prática de jogos de azar, os seres humanos desenvolveram intuição a respeito da aleatoriedade e das probabilidades, associadas, neste caso, à frequência de observação de certos eventos imprevisíveis. No entanto, apesar desse envolvimento com processos aleatórios controlados, as pessoas ainda não compreendiam a aleatoriedade em termos matemáticos.</p>
+</div>
+<div id="origem-da-teoria-matemática-de-probabilidades" class="section level3 unnumbered">
+<h3>Origem da Teoria Matemática de Probabilidades</h3>
+<p>O desenvolvimento de uma teoria matemática de probabilidades é um evento muito mais recente na história humana. Apenas no século XVI é que surgiram os primeiros estudos matemáticos a respeito de eventos envolvendo incertezas ou o acaso. Luca Paccioli (1445-1514), Nicolò Tartaglia (1499-1557), Girolamo Cardano (1501-1576) e Galileu Galilei (1564-1642) foram os primeiros matemáticos proeminentes que calcularam probabilidades associadas a diferentes jogos de azar; eles também tentaram construir bases matemáticas para o cálculo de probabilidades.</p>
+<p>Ainda assim, a primeira contribuição significativa para a construção de fundamentos matemáticos para a teoria de probabilidades se deu em 1654, através de uma troca de correspondência entre os matemáticos franceses Blaise Pascal (1623-1662) e Pierre de Fermat (1601-1665) que, na necessidade de determinar a probabilidade de certos resultados obtidos em jogos de azar, acabaram construindo métodos para a enumeração combinatória das possibilidades.</p>
+<p>Tal discussão foi motivada por um desafio proposto por Antoine Gombaud, autodenominado Chevalier de Méré, ao seu amigo Blaise Pascal. De Méré foi um escritor e filósofo conhecido, uma figura importante na corte do rei Luis XIV, além de um aficcionado por jogos de azar.</p>
+<p>De Méré apresentou a Pascal dois problemas para os quais não conseguia encontrar a solução correta:</p>
+<ol style="list-style-type: decimal">
+<li>O problema dos dados e;<br />
+</li>
+<li>O problema dos pontos.</li>
+</ol>
+<p>No problema dos dados, de Méré desejava determinar o número crítico de lançamentos, isto é, o número de jogadas necessárias para alcançar 50% de chance de obter pelo menos um sucesso em dois jogos de dados. Ele não compreendia “Por que era mais fácil obter pelo menos um ‘6’ em 4 lançamentos de um dado do que pelo menos um ‘duplo 6’ em 24 lançamentos de um par de dados?” Este problema ficou conhecido como “O Paradoxo de de Méré”.</p>
+<p>Já no problema dos pontos, a questão colocada era como repartir de maneira justa, entre dois jogadores, o prêmio de um torneio que é interrompido antes que chegue ao fim. Diferentes noções de justiça podem ser utilizadas para determinar como o prêmio deve ser dividido; por exemplo, os jogadores podem partilhar igualmente o prêmio; ou, o jogador com maior pontuação pode levar todo o dinheiro… A solução proposta por Pascal foi absolutamente revolucionária na história da teoria de probabilidades. Ele sugeriu que o prêmio fosse dividido de acordo com a expectativa de vitória de cada jogador, com base em suas pontuações no momento em que o jogo foi interrompido, ou seja, deveria ser calculada considerando a probabilidade de cada um dos jogadores vencer, dado o atual estágio do torneio, em que há ainda um certo número de jogos ou pontos para atingir.</p>
+<p>No futuro, nós falaremos mais sobre esta e também a respeito de outras contribuições de Pascal tanto para a Teoria Matemática de Probabilidades, bem como para a Teoria de Decisão.</p>
+</div>
+<div id="formalização-matemática" class="section level3 unnumbered">
+<h3>Formalização Matemática</h3>
+<p>Como veremos mais adiante, há várias maneiras de interpretar o conceito probabilidade e, a partir do século XVII, diversos matemáticos se debruçaram sobre o problema de como formalizá-lo, alcançando maior ou menor sucesso.</p>
+<p>Uma das dificuldades no desenvolvimento de uma teoria matemática das probabilidades consistia em obter uma definição de probabilidade precisa o bastante para ser usada em matemática, e abrangente o suficiente para ser aplicável a uma grande variedade de problemas.</p>
+<p>Este objetivo só foi finalmente alcançado com a definição axiomática, proposta por Andrei Kolmogorov e publicada em 1933 no livro “Fundamentos de Teoria de Probabilidades”. Neste trabalho, ele declara acreditar que “a Teoria das Probabilidades, como disciplina matemática, poderia e deveria ser desenvolvida exatamente como a Geometria ou a Álgebra, a partir de axiomas”, com base nos quais todos os desenvolvimentos subsequentes deveriam ser obtidos.</p>
+<p>Contando com uma definição formal e abrangente, a teoria de probabilidades passou a ser aplicada nas mais diversas áreas do conhecimento e atividade humanos, incluindo engenharia, economia, negócios, ciêcias, psicologia e tantas outras, de forma que o conhecimento de Teoria de Probabilidades é algo indispensável nos dias de hoje.</p>
+</div>
+</div>
+<div id="definições-iniciais" class="section level2">
+<h2><span class="header-section-number">2.2</span> Definições Iniciais</h2>
+<p>Um modelo probabilístico consiste em uma descrição matemática de uma situação de incerteza. Isto significa que podemos utilizá-lo para:</p>
+<ol style="list-style-type: decimal">
+<li><p>Investigar e descobrir padrões regulares em eventos aleatórios — eventos que, a princípio, são imprevisíveis; e também para</p></li>
+<li><p>Descrever incerteza em termos matemáticos; quer dizer, queremos ser capazes de quantificar as incertezas.</p></li>
+</ol>
+<p>A fim de descrever a estrutura geral de tais modelos e suas propriedades, precisamos ter claras algumas definições iniciais.</p>
+<p>Os modelos probabilísticos são descritos a partir de alguns ingredientes básicos, representados neste diagrama. São eles: um experimento aleatório, associado a um espaço amostral, que por sua vez é composto por uma coleção de eventos, e uma lei de probabilidade definida em todos os eventos.</p>
+<p>Examinaremos, a seguir, cada um desses elementos.</p>
+<div class="figure"><span id="fig:ch2-probabilidade-modelo"></span>
+<img src="img/probabilidade-modelo.png" alt="Elementos básicos de um modelo probabilístico." width="100%" />
+<p class="caption">
+Figura 2.1: Elementos básicos de um modelo probabilístico.
+</p>
+</div>
+<div id="experimento-aleatório" class="section level3 unnumbered">
+<h3>Experimento Aleatório</h3>
+<p>O primeiro elemento é o chamado experimento aleatório, que vamos representar de maneira genérica pela letra “E”. Um experimento aleatório representa um processo cujo resultado a ser obtido é desconhecido e imprevisível e que pode (pelo menos conceitualmente) ser repetido indefinidamente sob condições idênticas. As condições em que o experimento é realizado não garantem a ocorrência de um certo resultado, ou seja, a ocorrência do resultado é incerta. Vamos considerar que sempre é possível obter um resultado que pertence a um conjunto fixo e conhecido de possibilidades.</p>
+<p>Vamos considerar o seguinte experimento aleatório, que consiste em lançar um dado e registrar o resultado obtido. Bem, nós conhecemos os resultados possíveis deste experimento; sabemos que podemos obter qualquer um dos resultados 1 ou 2 ou 3 ou 4 ou 5 ou 6. Porém, antes de o dado ser lançado, e observarmos o número efetivamente obtido, é impossível prever com certeza qual será o resultado do lançamento do dado. Percebemos também que, a princípio, ou pelo menos mentalmente, é possível repetir um experimento como esse indefinidamente, nas mesmas condições. Isto quer dizer que poderíamos, em teoria, lançar um dado uma quantidade interminável de vezes e registrar os resultados obtidos. Note que ao realizar esse experimento apenas uma vez, apenas um desses resultados é observado. Isso nos leva à próxima definição.</p>
+</div>
+<div id="espaço-amostral-e-evento" class="section level3 unnumbered">
+<h3>Espaço Amostral e Evento</h3>
+<p>A coleção de todos os resultados elementares possíveis de um experimento aleatório constituem um conjunto chamado espaço amostral, representado pela letra grega <span class="math inline">\(\Omega\)</span>. Qualquer conjunto contendo resultados possíveis do experimento aleatório (isto é, qualquer subconjunto do espaço amostral) constitui um evento, que representaremos pelas letras maiúsculas do alfabeto latino (A, B, C, D etc.).</p>
+<p>Esses eventos podem ser simples (quando não podem ser decompostos em eventos mais elementares) ou compostos. De forma geral, um certo evento (A) corresponde a um conjunto de resultados de um experimento aleatório que satisfaz determinadas condições.</p>
+<ul>
+<li>evento impossível<br />
+</li>
+<li>evento união<br />
+</li>
+<li>envento interseção<br />
+</li>
+<li>evento complementar<br />
+</li>
+<li>eventos mutuamente exclusivos<br />
+</li>
+<li>partição do espaço amostral</li>
+</ul>
+
+<div class="example">
+<span id="exm:unnamed-chunk-1" class="example"><strong>Exemplo 1.1  </strong></span>
+</div>
+
+<p>Experimento Aleatório: E = lançar um dado e observar o resultado<br />
+Eventos simples: 1, 2, 3, 4, 5, 6<br />
+Espaço Amostral: <span class="math inline">\(\Omega\)</span> = {1, 2, 3, 4, 5, 6}</p>
+<p>Neste exemplo do lançamento de um dado, o espaço amostral é composto por todos os resultados possíveis, ou seja, é o conjunto que contém os elementos 1, 2, 3, 4, 5 e 6.</p>
+<p>Outros Eventos:</p>
+<p>A = resultado par = {2, 4, 6}<br />
+B = resultado ímpar = {1, 3, 5}<br />
+C = resultado &gt; 3 = {4, 5, 6}<br />
+D = resultado igual a 1 = {1}<br />
+G = resultado &lt; 2 e par = { }</p>
+<p>Para esse experimento, podemos estar interessados na situação em que o resultado obtido é um número par. Vamos representar esta situação pelo evento A, que consiste no conjunto contendo os valores 2, 4 e 6. Um outro evento B pode representar a situação em que o resultado é um número ímpar. Então, o evento B corresponde ao conjunto contendo os valores 1, 3 e 5. Podemos definir outros eventos, tais como (1) um evento C, que representa a situação em que o resultado obtido é um número maior que 3 (2) ou um outro evento D, que representa a situação em que o resultado é igual a 1 ou, ainda, (3) um evento G, que representa a situação em que o resultado é menor que 2 e, ao mesmo tempo, par. Note que o evento G é impossível de ser observado e constitui um conjunto vazio, que não contém nenhum elemento.</p>
+<p>Descrevemos o espaço amostral em termos da definição matemática de conjunto. Portanto, podemos manipular matematicamente os eventos utilizando álgebra de conjuntos. É desejável, então, neste ponto, fazer uma revisão de álgebra de conjuntos, que nós não abordaremos aqui. Fica como tarefa para casa.</p>
+<p>Mesmo para um experimento aleatório trivial, é importante identificar corretamente os eventos simples. Por exemplo, imagine o experimento aleatório que consiste em lançar duas moedas e registrar todos os eventos simples associados a esse experimento. A primeira impressão é de que os eventos possíveis são observar duas caras, observar duas coroas e observar uma cara e uma coroa. No entanto, o último evento pode ser decomposto em dois eventos simples: (Cara e Coroa) e (Coroa e Cara). Portanto, os eventos simples associados a este experimento são: (cara,cara), (coroa, coroa), (cara, coroa) e (coroa, cara).</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-2" class="example"><strong>Exemplo 2.1  </strong></span>
+</div>
+
+<p>Experimento Aleatório: E = lançar duas moedas e observar os resultados</p>
+<div class="figure"><span id="fig:ch2-experimento-moeda"></span>
+<img src="img/experimento-aleatorio-moedas.png" alt="Eventos simples associados ao experimento." width="60%" />
+<p class="caption">
+Figura 2.2: Eventos simples associados ao experimento.
+</p>
+</div>
+<div id="eventos-especiais" class="section level4 unnumbered">
+<h4>Eventos Especiais</h4>
+<p>Alguns eventos são especiais:</p>
+<p><strong>Evento Impossível</strong> <span class="math inline">\(\varnothing\)</span></p>
+<p>O evento impossível (também chamado evento nulo) é aquele representado por um conjunto vazio (por exemplo, o resultado do lançamento do dado ser maior que 6 — sabemos que não é possível obter esse resultado);</p>
+<p><strong>União</strong> <span class="math inline">\(A \cup B\)</span></p>
+<p>A união de dois eventos A e B corresponde à ocorrência simultânea dos eventos A e B OU quando apenas um dos dois eventos ocorre, ou seja:<br />
+OU ocorre apenas A OU ocorre apenas B OU ocorrem simultaneamente A e B.<br />
+Por exemplo, se o evento A corresponde a dizer que o resultado do lançamento de um dado é par, A é o conjunto dos elementos {2, 4, 6}. Se o evento B corresponder aos resultados ímpares, B é o conjunto dos elementos {1, 3, 5}. Então A U B é o conjunto dos resultados {1, 2, 3, 4, 5, 6}.</p>
+<p>A = {2, 4, 6}<br />
+B = {1, 3, 5} <span class="math inline">\(\qquad \Rightarrow {A\cup B}\)</span> = {1, 2, 3, 4, 5, 6} = <span class="math inline">\(\Omega\)</span></p>
+<p><strong>Interseção</strong> <span class="math inline">\(A \cap B\)</span></p>
+<p>Já a interseção de dois eventos A e C corresponde à ocorrência simultânea dos eventos A e C.<br />
+Se A é o conjunto dos resultados pares e C é o conjunto dos resultados maiores que 3, então A interseção C corresponde ao conjunto dos resultados {4, 6}</p>
+<p>A = {2, 4, 6}<br />
+C = {4, 5, 6} <span class="math inline">\(\qquad \Rightarrow {A\cup C}\)</span> = {4, 6}</p>
+<p><strong>Eventos Mutuamente Exclusivos</strong> <span class="math inline">\(A \cap B = \varnothing\)</span></p>
+<p>Dois eventos A e B são ditos mutuamente exclusivos quando a ocorrência de um deles implica na não ocorrência do outro. Neste caso, é impossível observar a ocorrência simultânea de A e B. Assim, a intersecção entre os conjuntos que os definem é o conjunto vazio.
+Os eventos A (= o resultado é par) e B (= o resultado é ímpar) são mutuamente exclusivos:</p>
+<p><span class="math inline">\(A \cap B = \{2, 4, 6\} \cap \{1, 3, 5\} = \{ \}\)</span>, pois observar um resultado par implica em não observar um resultado ímpar.</p>
+<p><strong>Partição do Espaço Amostral</strong></p>
+<p>Os eventos A e B definidos anteriormente apresentam uma característica especial: são mutuamente exclusivos e coletivamente exaustivos (ou seja,a interseção de A e B é o conjunto vazio e a união de A e B corresponde ao espaço amostral). Neste caso, dizemos que A e B formam uma partição do espaço amostral.</p>
+<p><span class="math inline">\(A \cap B = \{\}\)</span><br />
+<span class="math inline">\(A \cup B = \Omega\)</span></p>
+<p>Duas definições adicionais importantes para Teoria de Probabilidades são idênticas àquelas correspondentes em Teoria de Conjuntos:</p>
+<p><strong>Evento Complementar</strong> <span class="math inline">\(A^\prime = A^C\)</span></p>
+<p>O complementar de um evento A, representado por (<span class="math inline">\(A^\prime\)</span> ou <span class="math inline">\(A^C\)</span>), corresponde ao evento que ocorre apenas se A não ocorrer.</p>
+<p><strong>Diferença entre Eventos</strong> <span class="math inline">\(A - B = A \cap B^C\)</span></p>
+<p>A diferença entre dois eventos A e B, representada por <span class="math inline">\(A-B\)</span> corresponde ao evento que ocorre quando A ocorre mas B não ocorre.
+A diferença <span class="math inline">\(A-B\)</span> pode ser representada matematicamente pela interseção entre o evento A e o complementar de B.</p>
+<p>A = {2, 4, 6}<br />
+B = {1, 3, 5} <span class="math inline">\(\qquad \Rightarrow {A - B}\)</span> = {2, 4, 6} <span class="math inline">\(\cap\)</span> {2, 4, 6} = {2, 4, 6}</p>
+<p>A tabela abaixo mostra a equivalência entre os conceitos fundamentais de teoria de conjuntos e a terminologia utilizada em teoria de probabilidades.</p>
+<p><img src="img/probabilidade-conjuntos.png" width="100%" /></p>
+</div>
+</div>
+<div id="lei-de-probabilidade" class="section level3 unnumbered">
+<h3>Lei de Probabilidade</h3>
+<p>A Lei de Probabilidade <span class="math inline">\(P[A]\)</span> atribui a todo evento no espaço amostral um número não negativo que codifica, isto é, que define a medida de incerteza associada a cada evento no espaço amostral. Na ilustração, altura da barra está associada à propensão da ocorrência dos eventos A e B, ou seja, das probabilidades de observar os eventos A e B, respectivamente.</p>
+<p>Precisamos definir qual medida de incerteza será utilizada para a análise de um determinado experimento aleatório. É importante uma escolha cuidadosa, pois tudo que a teoria matemática faz é calcular valores com base na medida definida. Diferentes interpretações são possíveis e veremos algumas a seguir.</p>
+</div>
+</div>
+<div id="interpretações-de-probabilidade" class="section level2">
+<h2><span class="header-section-number">2.3</span> Interpretações de Probabilidade</h2>
+<blockquote>
+<p><em>“Probability is the most important concept in modern science, especially as nobody has the slightest notion what it means.”</em></p>
+<p>—Bertrand Russell, 1929 Lecture<br><br></p>
+</blockquote>
+<p>Vimos que probabilidade é utilizada como uma medida de incerteza. No entanto, existem diferentes maneiras de pensar a respeito de probabilidades e é preciso compreender que interpretações são adequadas a cada situação, ou seja, é necessário definir qual medida de incerteza será utilizada para a análise de uma determinada situação aleatória. É importante uma escolha cuidadosa, pois tudo que a teoria matemática de probabilidades faz é calcular valores com base na medida definida.</p>
+<p>Vamos fazer um exercício de imaginar qual seria a resposta para cada uma das perguntas a seguir:</p>
+<ol style="list-style-type: decimal">
+<li>Suponha que você tenha uma caixa com 4 bolas brancas e 8 bolas vermelhas. Você retira uma bola da caixa, selecionada ao acaso. Qual a probabilidade de que a bola sorteada seja branca?<br />
+</li>
+<li>Você lança uma moeda 20 vezes e obtém 19 caras. Qual a probabilidade de que o resultado do próximo lançamento seja cara?<br />
+</li>
+<li>Qual a probabilidade de que você consiga ser aprovado num processo seletivo para estágio de verão, dado que o outro candidato também parece ser muito qualificado?</li>
+<li>Qual a probabilidade de chover amanhã?<br />
+</li>
+<li>Qual a probabilidade de que existam civilizações parecidas com a nossa em outras partes do universo?</li>
+</ol>
+<p>Corriqueiramente ouvimos perguntas como essas. Mas o que elas significam?</p>
+<p>É possível perceber que, nas perguntas formuladas, não temos o mesmo entendimento do que significa probabilidade em cada uma das situações consideradas; e, além disso, pode ser muito difícil quantificar a incerteza associada a algumas dessas perguntas.</p>
+<p>É importante compreender como o nosso entendimento a respeito do significado da probabilidade se relaciona com o mundo real e, mais ainda, como o conhecimento da probabilidade de um determinado evento pode ser útil ao tomar decisões relacionadas a esse evento. Veremos a seguir diferentes interpretações do conceito de probabilidade, que podem ser úteis para responder a diferentes tipos de pergunta que envolvem situações de incerteza.</p>
+<div id="interpretação-clássica-a-priori-laplace-1812" class="section level3 unnumbered">
+<h3>Interpretação Clássica (<em>a priori</em>): Laplace, 1812</h3>
+<p><span class="math display">\[P_N(A) = \frac{n_A}{N}\]</span></p>
+<p>onde:</p>
+<p><span class="math inline">\(n_A\)</span>: número de resultados favoráveis<br />
+<span class="math inline">\(N\)</span>: número de resultados possíveis</p>
+<ul>
+<li>igualmente prováveis<br />
+</li>
+<li>mutuamente exclusivos e<br />
+</li>
+<li>coletivamente exaustivos</li>
+</ul>
+<p>A interpretação clássica, ou a priori, de probabilidade deve-se a Laplace e constitui a primeira tentativa rigorosa de definir probabilidade.</p>
+<p>Antes de Laplace, a teoria de probabilidades consistia apenas na análise matemática de jogos de azar específicos. Laplace introduziu uma grande quantidade de novas idéias e técnicas matemáticas em seu livro “Teoria Analítica das Probabilidades” e mostrou aplicações científicas e práticas, como teoria dos erros, mecânica estatística, ciências atuariais, entre outros. Laplace foi um matemático prodigioso, que deu contribuições a todos os problemas matemáticos existentes em sua época.</p>
+<p>De acordo com a interpretação clássica, o primeiro passo consiste em representar o espaço amostral (o espaço de possibilidades) como um conjunto de eventos igualmente prováveis, mutuamente exclusivos e coletivamente exausivos, isto é, devemos ter uma partição do espaço amostral em eventos equiprováveis. Desta forma, a probabilidade de observar um certo evento A é definida como a razão entre o número de resultados favoráveis (em que se observa A) e o número total de resultados possíveis. Como o espaço amostral é definido antes (ou independentemente) da realização do experimento aleatório, esta definição determina probabilidades <em>a priori</em>.</p>
+<p>O que significa dizer que um resultado é “favorável”?</p>
+<p>Vamos supor que um dado honesto seja lançado e deseja-se determinar a probabilidade de observar um resultado ímpar. Este experimento aleatório está associado a um espaço amostral, que pode ser definido de diversas maneiras: resultado ímpar ou par; resultado menor ou maior ou igual a 4, e assim por diante. No entanto, se quisermos ser capazes de utilizar a definição clássica de probabilidade, precisamos de uma representação do espaço amostral formada por uma partição de eventos equiprováveis.</p>
+<p>Como o dado é honesto, é conveniente representar o espaço amostral como sendo composto pelos números de um a seis. A definição clássica de probabilidade pode, então, ser utilizada, pois estes resultados têm a mesma chance de manifestar-se, a ocorrência de qualquer um dessses resultados implica na não ocorrência dos demais; e eles representam todas as possibilidades (assumindo que o dado não possa parar de maneira estável em um vértice ou aresta). Os resultados favoráveis ao evento “o resultado é ímpar” são 1, 3 e 5; que correspondem a 3 dos 6 resultados possíveis; portanto, a probabilidade de obter resultado ímpar é 3/6 = 0,5.</p>
+<p>Note que a definição clássica toma por hipóteses uma série de condições para o experimento aleatório em análise:</p>
+<p>Primeiro, que o número de resultados possíveis deve ser finito.</p>
+<p>Outra questão a se considerar é como decidir se os resultados individuais que compõe o espaço amostral são realmente equiprováveis. Isto é determinado pelo chamado “princípio da indiferença” que afirma que: dois resultados devem ter a mesma probabilidade de ocorrência se não podem ser diferenciados a não ser por seus nomes ou rótulos. Como esse argumento pode ser utilizado para quaisquer dois resultados do experimento com o dado, chega-se à conclusão de todos os resultados devem ter mesma probabilidade.</p>
+<p>Essa definição, embora seja matematicamente consistente, apresenta algumas limitações: não pode ser aplicada para calcular a probabilidade de eventos associados a um experimento com um número infinito de resultados possíveis; não é capaz de definir a probabilidade de eventos supostamente não equiprovávesi e note que esta é também uma definição circular: o conceito de equiprobabilidade de resultados é baseado no conceito de probabilidade que queremos definir.</p>
+<p><strong>Premissas:</strong></p>
+<ul>
+<li>Número N finito de resultados possíveis<br />
+</li>
+<li>Hipótese de equiprobabilidade de resultados<br />
+</li>
+<li>Princípio da “Indiferença”</li>
+</ul>
+<p><strong>Dificuldades:</strong></p>
+<ul>
+<li>Não faz sentido para N infinito<br />
+</li>
+<li>Definição circular<br />
+</li>
+<li>Não se aplica a eventos supostamente não equiprováveis</li>
+</ul>
+</div>
+<div id="interpretação-empírica-ou-de-frequência-relativa-a-posteriori-richard-v.-mises-1919" class="section level3 unnumbered">
+<h3>Interpretação Empírica ou de Frequência Relativa (<em>a posteriori</em>): Richard V. Mises, 1919</h3>
+<p><span class="math display">\[P_N(A) = \lim_{N\to\infty}\frac{n(A)}{N}\]</span></p>
+<p>onde:<br />
+<span class="math inline">\(n_A:\)</span> número de ocorrências do evento <span class="math inline">\(A\)</span><br />
+<span class="math inline">\(N:\)</span> número de realizações do experimento aleatório</p>
+<p>De acordo com a definição empírica, a probabilidade de um certo evento A corresponde à frequência relativa da ocorrência deste evento quando o experimento aleatório é realizado um número suficientemente grande de vezes, em condições uniformes.</p>
+<p>Segundo esta definição, a fim de calcular a probabilidade de obter um resultado ímpar no lançamento de um dado, deveríamos repetir este experimento um grande número de vezes e calcular a razão entre o número de vezes em que foi observado um resultado ímpar e o número de vezes que o experimento foi realizado.</p>
+<p>Este é o tipo de interpretação de probabilidade que implicitamente está sendo utilizado ao realizarmos testes clínicos para determinar a eficácia de uma nova vacina, por exemplo.</p>
+<p>A definição de frequência relativa difere da definição clássica das seguintes maneiras:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Ela não se refere ao princípio da indiferença; pelo contrário, as probabilidades de ocorrência dos eventos não podem ser determinadas antes da realização do experimento, através da simples análise do espaço amostral e, por esta razão, as probabilidades nesta definição são determinadas ‘a posteriori’.</p></li>
+<li><p>Probabilidades não podem ser definidas para uma única realização do experimento. Não existe probabilidade de obter um resultado ímpar em um único lançamento de um dado honesto.</p></li>
+</ol>
+<p>Esta definição se apóia no “princípio da regularidade estatística”, que determina que eventos aleatórios apresentam uma certa regularidade ao serem realizados um número muito grande de vezes.</p>
+<p>Quando um experimento aleatório é replicado, os resultados diferem de maneira imprevisível de uma realização para outra. Uma sequência de realizações constitui, então, um caminho aleatório; e diferentes caminhos aleatórios (isto é, diferentes sequências de realizações do mesmo experimento) são únicos, distintos entre si, mas apresentam um comportamento estável no longo prazo; desta forma, a frequência relativa de ocorrência de um certo evento se estabiliza quando o número total de realizações do experimento aumenta e, assim se aproxima de um limite, que define a probabilidade deste evento.</p>
+<p>Von Mises acreditava que um valor numérico de probabilidade somente fazia sentido no caso de um experimento replicável. Sendo assim, para ele, a teoria de probabilidades não tinha nada a ver com a probabilidade de o seu time de futebol preferido vencer o campeonato brasileiro. No entanto, é claro que as pessoas associam valores numéricos para as probabilidades em tais situações, na hora de fazerem suas apostas, por exemplo. Para Von Mises, porém, probabilidades desta natureza estão fora do domínio da teoria de probabilidades.</p>
+<p>E este é exatamente o tipo de situação tratado pelo conceito subjetivo de probabilidade, apresentada em seguida.</p>
+<p><strong>Premissas:</strong></p>
+<ul>
+<li>Número “suficientemente” grande de realizações do experimento aleatório<br />
+</li>
+<li>Condições uniformes para realização do experimento<br />
+</li>
+<li>Princípio da “Regularidade Estatística”</li>
+</ul>
+<p><strong>Dificuldades:</strong></p>
+<ul>
+<li>Definição de um número “suficientemente” grande<br />
+</li>
+<li>Não se aplica a eventos que não podem ser repetidos</li>
+</ul>
+</div>
+<div id="interpretação-subjetiva" class="section level3 unnumbered">
+<h3>Interpretação Subjetiva</h3>
+<p>De acordo com a interpretação subjetiva, probabilidades correspondem a níveis de convicção (ou crença) a respeito da ocorrência de acontecimentos imprevisíveis, ou da veracidade de uma hipótese ou de uma afirmação. Em outras palavras, probabilidades representam um julgamento individual a respeito da chance de ocorrência do evento.</p>
+<p>De acordo com este paradigma, as probabilidades devem refletir o conhecimento e a experiência pessoal do indivíduo que faz a afirmação probabilística. Por este mesmo motivo, não há garantias de que um único valor seja atribuído para a probabilidade de um certo evento por diferentes sujeitos.</p>
+<p>Por exemplo, um médico cirurgião, baseado em sua experiência e nas informações de que dispõe, afirma que a chance de um determinado procedimento ser bem sucedido é de 90%. Já um outro especialista poderia atribuir um valor diferente de probabilidade para o mesmo evento.</p>
+<p><strong>Premissas:</strong></p>
+<ul>
+<li>Probabilidade assinalada a um determinado evento é baseada nas experiências pessoais e informação individual sobre o processo<br />
+</li>
+<li>Não há aferição do resultado<br />
+</li>
+<li>Pode ser matematicamente formalizado sob determinadas condições de consistência</li>
+</ul>
+<p><strong>Dificuldades</strong></p>
+<ul>
+<li>Humanos são seres inconsistentes e contraditórios<br />
+</li>
+<li>Não há garantias de obtenção de resultados únicos</li>
+</ul>
+</div>
+<div id="resumo" class="section level3 unnumbered">
+<h3>Resumo</h3>
+<p>Vimos três interpretações para o conceiro de probabilidade.</p>
+<p>A interpretação clássica de probabilidade permite o cálculo de probabilidades com base na análise da estrutura do problema. Para que seja possível utilizar essa interpretação, é preciso definir de antemão o espaço amostral associado ao experimento aleatório em termos de eventos equiprováveis.</p>
+<p>A interpretação de frequência relativa é útil quando a situação aleatória em análise pode ser entendida como um experimento possível de ser realizado repetidas vezes em condições idênticas. Neste caso a probabilidade de um evento corresponde à proporção dos experimentos em que o evento ocorre.</p>
+<p>Já a interpretação subjetiva corresponde ao julgamento pessoal que pode ser empregado para avaliar a chance de ocorrência única de um evento, de acordo com a experiência do avaliador e das informações de que dispõe.</p>
+<p>As três maneiras de interpretar probabilidades permitem quantificar incertezas em uma grande variedade de situações. O fato é que as diferentes interpretações de probabilidade não competem entre si; pelo contrário, são complementares no sentido em que nos auxiliam a quantificar as incertezas associadas a diferentes tipos de situações imprevisíveis, e nos permitem uma melhor compreensão intuitiva de como os valores numéricos de probabilidade se relacionam ao o mundo real e como podem ser utilizados para nos auxiliar no processo de tomada de decisão.</p>
+</div>
+</div>
+<div id="definição-axiomática" class="section level2">
+<h2><span class="header-section-number">2.4</span> Definição Axiomática</h2>
+<p>A definição matemática (ou axiomática) de probabilidade foi proposta por Andrey Kolmogorov em 1933. Esta definição estabelece um conjunto de regras universais, que se aplicam a qualquer interpretação de probabilidade. Essa é, portanto, uma definição matemática, que estabelece as condições para uma função matemática qualquer ser considerada uma função probabilidade.</p>
+<p>Para definir função probabilidade, é necessário definir o espaço de eventos, que corresponde ao conjunto que contém todos os eventos possíveis de um experimento aleatório.</p>
+<p><strong>Espaço de Eventos</strong> <span class="math inline">\(\mathcal{A}\)</span></p>
+<p>Uma coleção de eventos é <span class="math inline">\(\mathcal{A}\)</span> quando são satisfeitas as seguintes condições:</p>
+<ul>
+<li><span class="math inline">\(\Omega \in \mathcal{A}\)</span></li>
+<li>Se <span class="math inline">\(A \in \mathcal{A} \Longrightarrow A^C \in \mathcal{A}\)</span></li>
+<li>Se <span class="math inline">\(A, B \in \mathcal{A}\)</span> <span class="math inline">\(\Longrightarrow A \cup B \in \mathcal{A}\)</span></li>
+</ul>
+<p>O espaço de eventos <span class="math inline">\(\mathcal{A}\)</span> não deve ser confundido com o espaço amostral <span class="math inline">\(\Omega\)</span>, pois enquanto o espaço amostral de um experimento aleatório contém todos os resultados possíveis deste experimento (isto é, a coleção de todos os eventos simples), o espaço de eventos contém todos os conjuntos de resultados do experimento, isto é, todos os subconjuntos do espaço amostral. O espaço de eventos e inclui o espaço amostral <span class="math inline">\(\Omega\)</span> e é fechado para o complemento e para a união de eventos.</p>
+<p><strong>Função Probabilidade</strong></p>
+<p><span class="math inline">\(P: \mathcal{A} \longrightarrow \Re\)</span></p>
+<ol style="list-style-type: lower-roman">
+<li><p>Se <span class="math inline">\(A \in \mathcal{A} \Longrightarrow P[A] \geq 0\)</span></p></li>
+<li><p><span class="math inline">\(P[\Omega] = 1\)</span></p></li>
+<li><p><span class="math inline">\(A_1, A_2, \ldots,\)</span> eventos tais que <span class="math inline">\(A_i \cap_{i \neq j} A_j = \varnothing\)</span><br />
+<span class="math inline">\(\Longrightarrow P\left[ \cup_{i=1}^\infty A_i\right] = \sum_{i=1}^{\infty} P[A_i]\)</span></p></li>
+</ol>
+<p>Então, uma função real <span class="math inline">\(P\)</span> definida no espaço de eventos do experimento aleatório é função probabilidade se satisfaz as seguintes condições: (i). a probabilidade de ocorrência de qualquer evento é sempre um número não negativo; (ii). se um evento é certo, então sua probabilidade vale 1 (em outras palavras, toda vez que o experimento aleatório é realizado, alguma coisa acontece); e, finalmente, (iii). para qualquer sequência infinita de eventos mutuamente exclusivos, vale a propriedade adiditva de probabilidade, isto é, a probabilidade de algum deles ocorrer é igual à soma das probabilidades individuais.</p>
+<p>Note que a definição axiomática não nos ensina como escolher essa função; ela não nos ensina como calcular o valor de <span class="math inline">\(P\)</span> para um determinado evento conhecido <span class="math inline">\(\mathcal{A}\)</span>; e também não nos revela a natureza de processos aleatórios.</p>
+<p>A definição matemática garante, no entanto, que qualquer função que satisfaça os três axiomas, terá certas propriedades que intuitivamente associamos a uma probabilidade, sob quaisquer das interpretações descritas anteriormente.</p>
+<p><strong>Propriedades de Função Probabilidade</strong></p>
+<p>A partir dos três axiomas que definem função probabilidade, é possível deduzir outras propriedades dessa função.</p>
+<ol style="list-style-type: lower-roman">
+<li><p><span class="math inline">\(P[\varnothing] = 0\)</span></p></li>
+<li><p><span class="math inline">\(P\left[\cup_{i=1}^{n}A_i\right] = \sum_{i=1}^{n} P[A_i]\quad\)</span> (se <span class="math inline">\(A_1, A_2, \ldots, A_n\)</span> mutuamente exclusivos)<br />
+<span class="math inline">\(\Rightarrow \quad P[B] = P[B\cap A] + P[B\cap A^C]\)</span></p></li>
+<li><p><span class="math inline">\(P[A] + P[A^C] = 1\)</span></p></li>
+<li><p><span class="math inline">\(0 \leq P[A] \leq 1\)</span></p></li>
+<li><p><span class="math inline">\(P[A \cup B] = P[A] + P[B] - P[A \cap B]\quad\)</span> (.ired[Regra da Adição])</p></li>
+<li><p>outras propriedades</p></li>
+</ol>
+<p>Por exemplo, primeira propriedade afirma que a probabilidade de observar o evento impossível é zero; a segunda propriedade nos garante que se um experimento pode ser repetido indefinidamente, então, para uma coleção finita de eventos mutuamente exclusivos, a proporção das vezes que a união dos eventos ocorre é igual à soma das proporções das ocorrências individuais desses eventos; a soma das probabilidades de eventos complementares vale 1; a probabilidade de ocorrência de um evento A, qualquer, é sempre um número entre 0 e 1; a probabilidade da união de dois eventos A e B, é a soma das probabilidades dos eventos menos a probabilidade da ocorrência simultânea dos dois eventos.</p>
+<p>Faremos uso desses e de outros teoremas para resolver problemas de cálculo de probabilidades.</p>
+</div>
+<div id="revisitando-o-paradoxo-de-de-méré-o-problema-dos-dados" class="section level2">
+<h2><span class="header-section-number">2.5</span> Revisitando o Paradoxo de De Méré: O Problema dos Dados</h2>
+<blockquote>
+<p><em>“A probabilidade de obter pelo menos um ‘6’ em 4 lançamentos seguidos de um dado deveria ser a mesma de obter pelo menos um ‘6 duplo’ em 24 lançamentos de um par de dados”</em></p>
+<p>—Chevalier de Méré (Antoine Gombaud, 1607-1684)</p>
+</blockquote>
+<p>Na França do século XVII, jogos de azar (<em>jeux de hasard</em>) eram uma prática disseminada entre a nobreza e esta era considerada, sobretudo, uma atividade refinada na corte do rei Luis XIV, a tal ponto de ser reconhecida como a única forma “honrada” de um nobre endividado (algo muito comum na época) obter algum dinheiro. Em realidade, etiqueta, jogos e divertimentos foram maneiras sutis que Louis XIV encontrou de manipular e enfraquecer econômicamente a nobreza, que passou a ser endividada demais para armar exércitos que pudessem se levantar contra o rei, e cujo destino dependia da capacidade de agradá-lo.</p>
+<p>Embora não fosse de origem nobre, Antoine Gombaud, conhecido como Chevalier de Méré era um filósofo e escritor conhecido, além de uma figura importante na corte do rei-sol, onde atuava como conselheiro em situações delicadas e árbitro em conflitos entre nobres. Ele era também um aficcionado por jogos de azar.</p>
+<p>Diz-se que ele consistentemente ganhava dinheiro em um jogo de azar, apostando que obteria pelo menos um ‘6’ em quatro lançamentos de um dado. A fim de incluir mais jogadores (e, assim, ganhar mais dinheiro), modificou o jogo, passando a apostar que obteria pelo menos um ‘duplo 6’ em 24 lançamentos de um par de dados. A nova estratégia não funcionou na prática e de Méré passou a acumular enormes prejuízos! Ele tinha a impressão que 25 (não 24) lançamentos seriam necessários para que o novo jogo lhe fosse favorável, mas não conseguia identificar o erro em sua solução matemática…Desesperado, procurou a ajuda de seu amigo matemático Blaise Pascal que, intrigado com o problema, passou a se corresponder com Pierre de Fermat, em busca de uma solução.</p>
+<p><strong>Estratégia de solução (errada) proposta por De Méré</strong></p>
+<blockquote>
+<p>“<em>Ao lançar um dado, tenho 1/6 de chance de obter um ‘6’. <br>Como 3 x 1/6 = 50% e 4 x 1/6 = 67%, preciso jogar o dado 4 vezes para tornar o jogo favorável para mim!</em>”</p>
+</blockquote>
+<p>Este é o número crítico de lançamentos para este jogo; é o número que faz o jogo se tornar favorável para o jogador. Ele agora deseja encontrar o número crítico de lançamentos para o jogo modificado…E, assim, prossegue:</p>
+<blockquote>
+<p>“<em>Quando jogo um par de dados, tenho 36 possibilidades, ou seja, seis vezes mais possibilidades que no jogo anterior. Portanto, é necessário lançar o par de dados 6 x 4 = 24 vezes, para ter chance maior do que 50% de obter pelo menos um ‘duplo 6’.</em>”</p>
+</blockquote>
+<p>Obviamente, esta solução está errada.</p>
+<p>Vamos retomar o problema dos dados proposto pelo Chevalier de Méré ao seu amigo, o matemático Blaise Pascal, e reconstruir a solução correta para esse problema, utilizando diferentes estratégias. A primeira estratégia a ser considerada será através do emprego da interpretação clássica de probabilidade.</p>
+<p><strong>Solução via interpretação clássica</strong></p>
+<p>EXPERIMENTO 1:<br />
+Jogue um dado honesto 4 vezes e observe a quantidade de ocorrências do número ‘6’.</p>
+<p>Espaço amostral: <span class="math inline">\(\Omega_1\)</span> = {A0, A1, A2, A3, A4}, em que:</p>
+<p>Ai: conjunto dos resultados em que são obtidas <em>i</em> ocorrências do número ‘6’</p>
+<p>O experimento 1 representa o jogo original, em que apenas um dado é lançado 4 vezes e a quantidade de vezes que aparece o número 6 nesses 4 lançamentos é registrado. Os resultados possíveis são:</p>
+<ul>
+<li>nenhum ‘6’ foi observado, que representamos por A0<br />
+</li>
+<li>apenas um ‘6’ foi observado, representado por A1<br />
+</li>
+<li>dois ‘6’ foram obtidos, correspondendo a A2<br />
+</li>
+<li>três ‘6’ obtidos, evento dado por A3; ou, finalmente<br />
+</li>
+<li>o valor ‘6’ foi obtido em todos os 4 lançamentos; evento este representado por A4.</li>
+</ul>
+<p>A fim de utilizar a interpretação clássica, é necessário escrever o espaço amostral em termos de um conjunto finito de resultados possíveis igualmente prováveis.</p>
+<p>Note que os eventos A0, A1, A2, A3, A4 que compõem o espaço amostral não
+são equiprováveis. Precisamos, então, reescrever os eventos que compõe o espaço amostral, a fim de que ele seja definido em termos de resultados equiprováveis.</p>
+<p>Vamos reescrever cada um dos eventos A0, A1, A2 etc enumerando todos os eventos simples que os compõe:</p>
+<p>A0: conjunto dos resultados em que nenhum ‘6’ ocorre<br />
+A0 = {(1, 1, 1, 1), (1, 2, 1, 1), (1, 1, 2, 1), (1, 1, 1, 2),…, (5, 5, 5, 5)}</p>
+<p>A1: conjunto dos resultados em que ocorre um unico ‘6’<br />
+A1 = {(6, 1, 1, 1), (1, 6, 1, 1), (1, 1, 6, 1), (1, 1, 1, 6),…, (5, 5, 5, 6)}</p>
+<p>A2: conjunto dos resultados em que ocorrem dois ‘6’<br />
+A2 = {(6, 6, 1, 1), (6, 1, 6, 1), (6, 1, 1, 6),…, (5, 5, 6, 6)}</p>
+<p>A3: conjunto dos resultados em que ocorrem três ‘6’<br />
+A3 = {(6, 6, 6, 1), (6, 1, 6, 6), (1, 6, 6, 6),…, (5, 6, 6, 6)}</p>
+<p>A4: conjunto dos resultados em que ocorrem quatro ‘6’<br />
+A4 = {(6, 6, 6, 6)}</p>
+<p>Sendo assim,
+A0 é dado pelo conjunto das sequências de 4 lançamentos que não contém nenhum resultado ‘6’</p>
+<p>O mesmo é feito para os demais eventos, de forma que o novo espaço amostral é dado por:</p>
+<p><span class="math inline">\(\Omega_1^\prime\)</span> =<br />
+{(1, 1, 1, 1), (1, 2, 1, 1), (1, 1, 2, 1), (1, 1, 1, 2), (1, 3, 1, 1),…, (5, 5, 5, 5),<br />
+(6, 1, 1, 1), (1, 6, 1, 1), (1, 1, 6, 1), (1, 1, 1, 6), (6, 2, 1, 1),…, (5, 5, 5, 6),<br />
+(6, 6, 1, 1), (6, 1, 6, 1), (6, 1, 1, 6), (1, 6, 6, 1), (1, 6, 1, 6),…, (5, 5, 6, 6),<br />
+(1, 6, 6, 6), (6, 1, 6, 6), (6, 6, 1, 6), (6, 6, 6, 1),…, (6, 6, 6, 5), (6, 6, 6, 6)}</p>
+<p>Pela definição clássica de probabilidades:</p>
+<p><span class="math display">\[\text{PC.1 = n.favoráveis/n.possíveis}\]</span></p>
+<p>onde:</p>
+<p><span class="math display">\[\text{n.possíveis} =  {N[\Omega_1^\prime]= 6 \times 6 \times 6 \times 6 = 6^4}\]</span></p>
+<p>Cada um dos elementos simples que compõe o espaço amostral representa uma possível sequência de números resultantes de 4 lançamentos de uma dado.</p>
+<p>Esses resultados são equiprováveis e, por este motivo, agora podemos definir a probabilidade de interesse, isto é, de obter pelo menos um ‘6’ em 4 lançamentos de um dado como sendo a razão entre o número de resultados favoráveis e o número de resultados possíveis.</p>
+<p>O número de resultados possíveis é dado pelo tamanho do espaço amostral e vale <span class="math inline">\(6^4\)</span>, pois temos 6 possibilidades para cada lançamento do dado.</p>
+<p>Precisamos determinar agora o número de eventos favoráveis.</p>
+<p>Os resultados favoráveis são aqueles em que pelo menos uma ‘6’ foi obtido, ou seja, são obtidos pela união dos eventos A1, A2, A3, A4:</p>
+<p><span class="math display">\[\text{Af.1 = A1 U A2 U A3 U A4}\]</span></p>
+<p>Precisamos agora determinar o número de resultados favoráveis, ou seja, o tamanho do conjunto Af.1. Esta quantidade pode ser mais facilmente calculada utilizando-se a definição de evento complementar: o número de eventos favoráveis é igual número de resultados possíveis (o tamanho do espaço amostral) menos o tamanho do conjunto A0, em que nenhum resultado ‘6’ é observado nos 4 lançamentos. Assim, o número de resultados favoráveis é dado por:</p>
+<p><span class="math display">\[\text{n.favoraveis = N[Af.1]} =  {N[\Omega_1^\prime] - N[A0] = 6^4 - (5 \times 5 \times 5 \times 5) = 6^4 - 5^4}\]</span></p>
+<p>Portanto:</p>
+<p><span class="math display">\[\text{PC.1} =  {1 - (5/6)^4 = 0.518}\]</span>
+O tamanho do espaço amostral foi calculado anteriormente e vale <span class="math inline">\(6^4\)</span> e o tamanho do conjunto A0 é daddo por <span class="math inline">\(5^4\)</span>, pois como nenhum ‘6’ pode ser observado, isso significa que, para cada um dos 4 lançamentos tínhamos apenas 5 resultados possíveis, os números de 1 a 5.</p>
+<p>Dessa forma, o número de resultados favoráveis é <span class="math inline">\(6^4\)</span> - <span class="math inline">\(5^4\)</span>.</p>
+<p>Portanto, a probabilidade de obter pelo menos um ‘6’ em 4 lançamentos é 51,8%. O jogo é favorável para o Chevalier, mas não da maneira que ele supunha…</p>
+<p>Vamos fazer agora, da mesma forma, a análise para o jogo modificado: um par de dados é lançado 24 vezes e são registradas as ocorrências de ‘duplos 6’.</p>
+<p>EXPERIMENTO 2:<br />
+Jogue um par de dados honestos 24 vezes e observe os resultados em que se obteve pelo menos um ‘duplo 6’.</p>
+<p>Espaço amostral: <span class="math inline">\(\Omega_2\)</span> = {B0, B1, B2, B3, B4, B5, B6, …, B24}, em que:</p>
+<p>Bi: conjunto dos resultados em que são obtidas <em>i</em> ocorrências de ‘duplos 6’.</p>
+<p>Semelhantemente ao experimento 1, os eventos Bi que compõe o espaço amostral, embora representem todos os resultados possíveis do experimento 2, não são equiprováveis e, por este motivo, não podemos utilizar a definição clássica para calcular a probabilidade de obter pelo menos um ‘duplo 6’ nos 24 lançamentos.</p>
+<p>Precisamos então, reescrever o espaço amostral para esse experimento em termos de eventos equiprováveis… mas eu vou deixar essa tarefa de exercício para vocês!</p>
+<p>A partir de um espaço amostral composto por eventos que têm iguais probabilidades de ocorrer, é possível utilizar a definição clássica para calcular a probabilidade de interesse através da razão entre o número de resultados favoráveis (em que pelo menos um ‘duplo 6’ foi obtido na sequência de 24 lançamentos) e o número de resultados possíveis (tamanho do espaço amostral).</p>
+<p>Pela definição clássica de probabilidades:</p>
+<p><span class="math display">\[\text{PC.2 = n.favoráveis/n.possíveis}\]</span></p>
+<p>A cada um dos 24 lançamentos temos 6 possibilidades para o primeiro dado e 6 possibilidades para o segundo dado. Portanto, o número de resultados possíveis é dado por:</p>
+<p><span class="math display">\[\text{n.possíveis} =  {N[\Omega_2]= (6\times 6)^{24} = 36^{24}}\]</span></p>
+<p>O número de resultados favoráveis pode ser facilmente calculado utilizando-se a definição de evento complementar, isto é, o número dos resultados possíveis, menos o número de resultados “desfavoráveis”, dado pelo tamanho do conjunto B0. Assim, o número de resultados favoráveis é dado por:</p>
+<p><span class="math display">\[\text{n.favoraveis} =  {N[\Omega_2] - N[B0]}\]</span></p>
+<p>Em cada lançamento do par de dados, são possíveis 36 resultados, em que apenas um resultado corresponde a um ‘duplo 6’.</p>
+<p>Para que nenhum ‘duplo 6’ tenha sido obtido na sequência de 24 lançamentos do par de dados, temos que observar algum dos 35 resultados alternativos em cada uma das 24 vezes. Sendo assim, o evento B0, que corresponde à situação em que nenhum ‘duplo 6’ é obtido nos 24 lançamentos, pode ser observado de <span class="math inline">\(35^{24}\)</span> maneiras:</p>
+<p><span class="math display">\[\text{N[B0]} =  {[(6 \times 6) - 1]^{24} = 35^{24}}\]</span></p>
+<p>Então o número de resultados favoráveis vale:</p>
+<p><span class="math display">\[\text{n.favoráveis} =  {36^{24} - 35^{24}}\]</span></p>
+<p>Portanto, a probabilidade de obter pelo menos um ‘duplo 6’ em 24 lançamentos é igual a 1 - a probabilidade de não obter nenhum ‘duplo 6’, dada por:</p>
+<p><span class="math display">\[\text{PC.2} =  {1 - (35/36)^{24} = 0.491}\]</span></p>
+<p>De fato, De Méré teve evidências empíricas de que o novo jogo lhe era desfavorável. A probabilidade de vencer ao lançar 24 vezes um par de dados é menor que 50%. E, assim, para que o jogo se tornasse favorável, seriam necessários 25 lançamentos do par de dados…</p>
+<p>Que tal calcular a probabilidade de vencer a aposta em 25 lançamentos?</p>
+<p>De Méré obteve evidências empíricas de que seu cálculo de probabilidades estava errado. E, de maneira não intencional, aplicou a interpretação de frequência relativa para chegar a essa conclusão.</p>
+<p>A princípio, precisaríamos repetir cada um dos experimentos um grande número de vezes e observar a frequência relativa em que se observam os resultados favoráveis a fim de calcular os valores de probabilidade correspondentes.</p>
+<p>Felizmente, dispomos de um atalho: SIMULAÇÃO</p>
+<p><strong>Solução via interpretação de frequência relativa (simulação)</strong></p>
+<p>Vamos considerar os dois eventos que representam os resultados de cada um dos jogos de dados do Chevalier de Méré. O experimento 1 consiste em lançar um dado honesto 4 vezes e observar a quantidade de ocorrências do número ‘6’. O experimento 2 corresponde a lançar um par de dados honestos 24 vezes e observar os resultados em que se obteve pelo menos um ‘duplo 6’.</p>
+<p>E1 = pelo menos um ‘6’ em 4 lançamentos de um dado<br />
+E2 = pelo menos um ‘duplo 6’ em 24 lançamentos de um par de dados</p>
+<p>Estamos interessados em determinar as probabilidades de vencer nos dois jogos, isto é, observar os eventos E1 e E2 nos experimentos 1 e 2, respectivamente. Desejamos calcular: P[E1] e P[E2].</p>
+<p>Para isso, vamos utilizar o software R para simular a realização desses dois jogos um grande número de vezes, digamos 1000 vezes. É como se tívessemos 1000 dias e em cada um desses dias, jogássemos uma partida dos dois jogos.</p>
+<p>Em seguida, registraremos o número de ocorrências de cada um dos eventos E1 e E2 na longa sequência de realizações dos experimentos, isto é em quantas das 1000 vezes em que jogamos cada jogo, conseguimos ganhar. A probabilidade dos eventos será aproximada pela frequência relativa de ocorrência de E1 e E2.</p>
+<p>Vamos definir algumas variáveis:</p>
+<p><code>nRep</code> é o número de replicações de cada um dos experimentos, ou seja, o no. de vezes que cada um dos experimentos será realizado.</p>
+<p><code>n1</code> e <code>n2</code> correspondem ao no. de lançamentos dos dados nos experimentos 1 e 2, respectivamente.</p>
+<p>Então, vamos fazer: <code>nRep = 1000</code>, <code>n1 = 4</code> e <code>n2 = 24</code>.</p>
+<p>As respostas serão as frequências relativas de ocorrência dos eventos E1 e E2. Então, vamos criar os vetores que armazenarão essas quantidades em nossa simulação: <code>frel.E1</code> e <code>frel.E2</code>. E vamos criar variáveis intermediárias que registrarão se a cada partida, o Chevalier ganhou ou não. Feito isto, vamos realizar os experimentos 1 e 2.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="introdução-à-teoria-de-probabilidades.html#cb33-1"></a><span class="co"># Variáveis</span></span>
+<span id="cb33-2"><a href="introdução-à-teoria-de-probabilidades.html#cb33-2"></a><span class="co"># nRep: no. de replicações do experimento</span></span>
+<span id="cb33-3"><a href="introdução-à-teoria-de-probabilidades.html#cb33-3"></a><span class="co"># n1: no. de lançamentos de 1 dado no Experimento 1</span></span>
+<span id="cb33-4"><a href="introdução-à-teoria-de-probabilidades.html#cb33-4"></a><span class="co"># n2: no. de lançamentos de 2 dados no Experimento 2</span></span>
+<span id="cb33-5"><a href="introdução-à-teoria-de-probabilidades.html#cb33-5"></a>nRep &lt;-<span class="st"> </span><span class="dv">1000</span></span>
+<span id="cb33-6"><a href="introdução-à-teoria-de-probabilidades.html#cb33-6"></a>n1 &lt;-<span class="st"> </span><span class="dv">4</span></span>
+<span id="cb33-7"><a href="introdução-à-teoria-de-probabilidades.html#cb33-7"></a>n2 &lt;-<span class="st"> </span><span class="dv">24</span></span>
+<span id="cb33-8"><a href="introdução-à-teoria-de-probabilidades.html#cb33-8"></a></span>
+<span id="cb33-9"><a href="introdução-à-teoria-de-probabilidades.html#cb33-9"></a><span class="co"># Respostas</span></span>
+<span id="cb33-10"><a href="introdução-à-teoria-de-probabilidades.html#cb33-10"></a><span class="co"># frel.E1: frequencia relativa do evento E1 para o Experimento 1</span></span>
+<span id="cb33-11"><a href="introdução-à-teoria-de-probabilidades.html#cb33-11"></a><span class="co"># frel.E2: frequencia relativa do evento E2 para o Experimento 2</span></span>
+<span id="cb33-12"><a href="introdução-à-teoria-de-probabilidades.html#cb33-12"></a>frel.E1 &lt;-<span class="st"> </span><span class="kw">c</span>()</span>
+<span id="cb33-13"><a href="introdução-à-teoria-de-probabilidades.html#cb33-13"></a>frel.E2 &lt;-<span class="st"> </span><span class="kw">c</span>()</span>
+<span id="cb33-14"><a href="introdução-à-teoria-de-probabilidades.html#cb33-14"></a></span>
+<span id="cb33-15"><a href="introdução-à-teoria-de-probabilidades.html#cb33-15"></a><span class="co"># Variáveis intermediárias: registram a cada jogo se o Chevalier venceu</span></span>
+<span id="cb33-16"><a href="introdução-à-teoria-de-probabilidades.html#cb33-16"></a>ganhou.E1 &lt;-<span class="st"> </span><span class="kw">c</span>()</span>
+<span id="cb33-17"><a href="introdução-à-teoria-de-probabilidades.html#cb33-17"></a>ganhou.E2 &lt;-<span class="st"> </span><span class="kw">c</span>()</span></code></pre></div>
+<p>EXPERIMENTO 1:<br />
+Lançar um dado honesto 4 vezes e observar a quantidade de ocorrências do número ‘6’.</p>
+<p>O experimento é replicado <code>nRep</code> vezes. Para cada uma das replicações, simulamos 4 lançamentos de um dado; o que corresponde a sortear com reposição 4 números de 1 a 6. Isso é obtido utilizando a função <code>sample</code>.</p>
+<p>Em seguida, realizamos um teste lógico para verificar se pelo menos um ‘6’ foi obtido nos 4 lançamentos. Primeiro, testamos se em cada lançamento foi obtido um número ‘6’; isto é feito pelo comando <code>res.E1 == 6</code>. Esse procedimento resulta em uma sequência de 4 valores <code>TRUE</code> ou <code>FALSE</code>, dependendo se esta condição foi atendida. Não estamos interessados na quantidades de lançamentos que resultaram em um ‘6’; apenas se houve pelo menos um ‘6’. A soma desses valores lógicos, então, vai indicar exatamente isso; se houve pelo menos um ‘6’ nos 4 lançamentos. O vetor <code>ganhou.E1</code> vai acumulando valores lógicos <code>TRUE</code> ou <code>FALSE</code>, conforme em cada partida tenha sido obtido pelo menos um resultado ‘6’.</p>
+<p>Após todas as <code>nRep</code> realizações, calcula-se a frequência relativa de ganhos.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="introdução-à-teoria-de-probabilidades.html#cb34-1"></a><span class="co"># Realiza Experimento 1 `nRep` vezes</span></span>
+<span id="cb34-2"><a href="introdução-à-teoria-de-probabilidades.html#cb34-2"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>nRep){</span>
+<span id="cb34-3"><a href="introdução-à-teoria-de-probabilidades.html#cb34-3"></a>  <span class="co"># lança `n1`  vezes um dado </span></span>
+<span id="cb34-4"><a href="introdução-à-teoria-de-probabilidades.html#cb34-4"></a>  <span class="co"># e registra resultados</span></span>
+<span id="cb34-5"><a href="introdução-à-teoria-de-probabilidades.html#cb34-5"></a>  res.E1 &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>, n1, <span class="dt">replace =</span> <span class="ot">TRUE</span>)  </span>
+<span id="cb34-6"><a href="introdução-à-teoria-de-probabilidades.html#cb34-6"></a>  <span class="co"># Saiu pelo menos um &#39;6&#39;? </span></span>
+<span id="cb34-7"><a href="introdução-à-teoria-de-probabilidades.html#cb34-7"></a>  <span class="co"># Registra `TRUE` ou `FALSE`</span></span>
+<span id="cb34-8"><a href="introdução-à-teoria-de-probabilidades.html#cb34-8"></a>  ganhou.E1 &lt;-<span class="st"> </span><span class="kw">c</span>(ganhou.E1, <span class="kw">sum</span>(res.E1 <span class="op">==</span><span class="st"> </span><span class="dv">6</span>) <span class="op">!=</span><span class="st"> </span><span class="dv">0</span>)</span>
+<span id="cb34-9"><a href="introdução-à-teoria-de-probabilidades.html#cb34-9"></a>}</span>
+<span id="cb34-10"><a href="introdução-à-teoria-de-probabilidades.html#cb34-10"></a></span>
+<span id="cb34-11"><a href="introdução-à-teoria-de-probabilidades.html#cb34-11"></a><span class="co"># Registra frequencia relativa de ganhos    </span></span>
+<span id="cb34-12"><a href="introdução-à-teoria-de-probabilidades.html#cb34-12"></a>frel.E1 &lt;-<span class="st"> </span><span class="kw">cumsum</span>(ganhou.E1)<span class="op">/</span><span class="dv">1</span><span class="op">:</span>nRep</span>
+<span id="cb34-13"><a href="introdução-à-teoria-de-probabilidades.html#cb34-13"></a></span>
+<span id="cb34-14"><a href="introdução-à-teoria-de-probabilidades.html#cb34-14"></a><span class="co"># Gráfico de Freq. Relativa</span></span>
+<span id="cb34-15"><a href="introdução-à-teoria-de-probabilidades.html#cb34-15"></a><span class="kw">plot</span>(frel.E1, <span class="dt">pch =</span> <span class="st">&quot;*&quot;</span>, <span class="dt">cex.axis =</span> <span class="fl">0.7</span>, <span class="dt">las =</span> <span class="dv">1</span>, </span>
+<span id="cb34-16"><a href="introdução-à-teoria-de-probabilidades.html#cb34-16"></a>     <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="dt">yaxp =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">20</span>),</span>
+<span id="cb34-17"><a href="introdução-à-teoria-de-probabilidades.html#cb34-17"></a>     <span class="dt">ylab =</span> <span class="st">&quot;freq. relativa de ganhos: E1&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;Realizações do Experimento&quot;</span>)</span>
+<span id="cb34-18"><a href="introdução-à-teoria-de-probabilidades.html#cb34-18"></a><span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">1</span> <span class="op">-</span><span class="st"> </span>(<span class="dv">5</span><span class="op">/</span><span class="dv">6</span>)<span class="op">^</span>n1,  <span class="dt">lty =</span> <span class="st">&quot;dashed&quot;</span>, <span class="dt">lwd =</span> <span class="dv">2</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:ch2-demere-experimento1-res"></span>
+<img src="02-ch2_files/figure-html/ch2-demere-experimento1-res-1.png" alt="Evolução dos valores de frequência relativa de ganhos para E1." width="100%" />
+<p class="caption">
+Figura 2.3: Evolução dos valores de frequência relativa de ganhos para E1.
+</p>
+</div>
+<p>Observe o gráfico que mostra a evolução do valores de frequência relativa calculados. Há uma grande variabilidade para os valores de frequência relativa, correspondendo a um número pequeno de replicações do experimento, mas a frequência relativa tende a estabilizar-se, conforme o número de replicações aumenta. Este limite é o valor que aproxima a probabilidade que desejamos calcular. A reta vermelha horizontal mostra o valor de probabilidade teórico calculado anteriormente, utilizando a definição clássica.</p>
+<p>Para o segundo experimento, o procedimento é praticamente idêntico ao anterior, exceto que agora o teste lógico para verificar se o Chevalier venceu a partida consiste em observar a soma dos resultados. Soma igual à 12 indica a ocorrência de um ‘duplo 6’.</p>
+<p>EXPERIMENTO 2:<br />
+Lançar um par de dados 24 vezes e observar a quantidade de ocorrências de um ‘duplo 6’.</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="introdução-à-teoria-de-probabilidades.html#cb35-1"></a>frel.E2 &lt;-<span class="st"> </span>ganhou.E2 &lt;-<span class="st"> </span><span class="kw">c</span>()</span>
+<span id="cb35-2"><a href="introdução-à-teoria-de-probabilidades.html#cb35-2"></a></span>
+<span id="cb35-3"><a href="introdução-à-teoria-de-probabilidades.html#cb35-3"></a><span class="co"># Realiza Experimento 2 `nRep` vezes</span></span>
+<span id="cb35-4"><a href="introdução-à-teoria-de-probabilidades.html#cb35-4"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>nRep){</span>
+<span id="cb35-5"><a href="introdução-à-teoria-de-probabilidades.html#cb35-5"></a>  <span class="co"># lanca `n2`  vezes um par de dados e registra resultados</span></span>
+<span id="cb35-6"><a href="introdução-à-teoria-de-probabilidades.html#cb35-6"></a>  res.E2 &lt;-<span class="st"> </span><span class="kw">cbind</span>(<span class="kw">sample</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>, n2, <span class="dt">replace =</span> <span class="ot">TRUE</span>), </span>
+<span id="cb35-7"><a href="introdução-à-teoria-de-probabilidades.html#cb35-7"></a>                  <span class="kw">sample</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>, n2, <span class="dt">replace =</span> <span class="ot">TRUE</span>)) </span>
+<span id="cb35-8"><a href="introdução-à-teoria-de-probabilidades.html#cb35-8"></a>  <span class="co"># Saiu pelo menos uma soma &#39;12&#39; (duplo &#39;6&#39;)?</span></span>
+<span id="cb35-9"><a href="introdução-à-teoria-de-probabilidades.html#cb35-9"></a>  <span class="co"># Registra `TRUE` ou `FALSE`</span></span>
+<span id="cb35-10"><a href="introdução-à-teoria-de-probabilidades.html#cb35-10"></a>  ganhou.E2 &lt;-<span class="st"> </span><span class="kw">c</span>(ganhou.E2, <span class="kw">sum</span>(<span class="kw">rowSums</span>(res.E2) <span class="op">==</span><span class="st"> </span><span class="dv">12</span>) <span class="op">!=</span><span class="st"> </span><span class="dv">0</span>)</span>
+<span id="cb35-11"><a href="introdução-à-teoria-de-probabilidades.html#cb35-11"></a>}</span>
+<span id="cb35-12"><a href="introdução-à-teoria-de-probabilidades.html#cb35-12"></a></span>
+<span id="cb35-13"><a href="introdução-à-teoria-de-probabilidades.html#cb35-13"></a><span class="co"># Registra frequencia relativa de ganhos    </span></span>
+<span id="cb35-14"><a href="introdução-à-teoria-de-probabilidades.html#cb35-14"></a>frel.E2 &lt;-<span class="st"> </span><span class="kw">cumsum</span>(ganhou.E2)<span class="op">/</span><span class="dv">1</span><span class="op">:</span>nRep</span>
+<span id="cb35-15"><a href="introdução-à-teoria-de-probabilidades.html#cb35-15"></a></span>
+<span id="cb35-16"><a href="introdução-à-teoria-de-probabilidades.html#cb35-16"></a><span class="co"># Gráfico de Freq. Relativa</span></span>
+<span id="cb35-17"><a href="introdução-à-teoria-de-probabilidades.html#cb35-17"></a><span class="kw">plot</span>(frel.E2, <span class="dt">pch =</span> <span class="st">&quot;*&quot;</span>, <span class="dt">cex.axis =</span> <span class="fl">0.7</span>, <span class="dt">las =</span> <span class="dv">1</span>, </span>
+<span id="cb35-18"><a href="introdução-à-teoria-de-probabilidades.html#cb35-18"></a>     <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="dt">yaxp =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">20</span>),</span>
+<span id="cb35-19"><a href="introdução-à-teoria-de-probabilidades.html#cb35-19"></a>     <span class="dt">ylab =</span> <span class="st">&quot;freq. relativa de ganhos: E2&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;Realizações do Experimento&quot;</span>)</span>
+<span id="cb35-20"><a href="introdução-à-teoria-de-probabilidades.html#cb35-20"></a><span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">1</span> <span class="op">-</span><span class="st"> </span>(<span class="dv">35</span><span class="op">/</span><span class="dv">36</span>)<span class="op">^</span>n2, <span class="dt">lty =</span> <span class="st">&quot;dashed&quot;</span>, <span class="dt">lwd =</span><span class="dv">2</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:ch2-demere-experimento2-res"></span>
+<img src="02-ch2_files/figure-html/ch2-demere-experimento2-res-1.png" alt="Evolução dos valores de frequência relativa de ganhos para E2." width="100%" />
+<p class="caption">
+Figura 2.4: Evolução dos valores de frequência relativa de ganhos para E2.
+</p>
+</div>
+<p>Novamente, o gráfico mostra a evolução do valores de frequência relativa calculados como função do número de replicações do experimento; e o mesmo padrão de comportamento é observado. A flutuação nos valores de frequência relativa é elevada para um número pequeno de replicações do experimento, mas também observamos uma estabilização desses valores, conforme aumenta o número de realizações do experimento, tendendo para o valor de probabilidade que desejamos calcular.</p>
+<p><strong>Regularidade Estatística</strong></p>
+<p>Os gráficos de frequência relativa obtidos para os experimentos, que nós observamos para os dois experimentos, representam apenas um caminho aleatório para cada simulação. Cada simulação consiste em realizar, neste caso, <code>nRep</code> replicações de cada um dos jogos.</p>
+<p>Se repetirmos esse processo um número muito grande de vezes, isto é, realizar novas simulações, dos mesmos experimentos, teremos novos e diferentes caminhos aleatórios, ou seja, os caminhos aleatórios variam de simulação para simulação.</p>
+<p>A questão agora é: como se comporta a variabilidade desses caminhos alternativos? Será que existe um padrão no comportamento aleatório desses caminhos; em outras palavras, existe uma distribuição de probabilidade no espaço dos caminhos possíveis? O princípio da regularidade estatística nos diz que sim… É difícil perceber isso olhando para o caminho aleatório inteiro, mas podemos olhar para uma posição específica do caminho aleatório: vamos olhar para a posição final!</p>
+<p>Encontramos regularidade estatística quando realizamos um grande número de replicações independentes da simulação e olhamos para a distribuição nas posições finais. Façamos isto, então!</p>
+<p>EXPERIMENTO 1:</p>
+<div class="figure"><span id="fig:ch2-regularidade-experimento1"></span>
+<img src="02-ch2_files/figure-html/ch2-regularidade-experimento1-1.png" alt="Regularidade Estatística: E1." width="100%" />
+<p class="caption">
+Figura 2.5: Regularidade Estatística: E1.
+</p>
+</div>
+<p>Cada linha no gráfico à esquerda corresponde a um caminho aleatório diferente. Ao todo, temos 100 caminhos aleatórios, ou simulações, cada uma correspondendo a 1000 realizações do Experimento 1. A reta horizontal tracejada é o valor de probabilidade teórico, calculado a partir da definição clássica.</p>
+<p>As linhas verticais tracejadas indicam duas fatias que vamos analisar desse experimento: uma correspondendo a um caminho de tamanho 100, isto é com 100 realizações do experimento; e a outra, a um caminho de tamanho 1000, ou seja, considerando as 1000 realizações do experimento.</p>
+<p>Aqui percebemos claramente a regularidade estatística: quando repetimos o experimento um pequeno número de vezes (ou seja, quando o caminho aleatório é “curto”), a frequência relativa calculada a partir desse pequeno número de realizações varia bastante de um caminho para outro; no entanto, a variabilidade para os diferentes valores de frequência relativa é muito menor, quando calculados com base em 1000 realizações.</p>
+<p>Isso torna-se ainda mais claro, comparando os histogramas para os valores de frequência relativas calculados a partir das 100 simulações do experimento 1, com 100 e 1000 realizações desse experimento.</p>
+<p>As linhas verticais tracejadas coloridas correspondem aos quantis da distribuição amostral associada (isto é, dos valores observados) que englobam 95% das observações; ou seja, 95% dos valores de frequência relativa calculados com base em 100 realizações do experimento 1 encontram-se entre os valores delimitados pelas linhas tracejadas vermelhas. O mesmo raciocínio pode ser aplicado para as linhas verticais azuis.</p>
+<p>Note que o espalhamento para o histograma correspondendo a 100 realizações (em vermelho) é muito mais disperso que aquele para 1000 realizações do experimento; isso significa que aumentamos a precisão da estimativa da probabilidade desejada conforme aumentamos o número de realizações do experimento.</p>
+<p>EXPERIMENTO 2:</p>
+<div class="figure"><span id="fig:ch2-regularidade-experimento2"></span>
+<img src="02-ch2_files/figure-html/ch2-regularidade-experimento2-1.png" alt="Regularidade Estatística: E2." width="100%" />
+<p class="caption">
+Figura 2.6: Regularidade Estatística: E2.
+</p>
+</div>
+<p>O mesmo procedimento foi realizado para o experimento 2 e percebemos que
+conclusões semelhantes podem ser obtidas.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introdução.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="probabilidade-condicional-e-independência.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["apostila-GED13.pdf", "apostila-GED13.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

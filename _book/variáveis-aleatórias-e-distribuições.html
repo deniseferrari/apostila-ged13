@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 5 Variáveis Aleatórias e Distribuições | GED-13: Probabilidade e Estatística</title>
+  <meta name="description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 5 Variáveis Aleatórias e Distribuições | GED-13: Probabilidade e Estatística" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 5 Variáveis Aleatórias e Distribuições | GED-13: Probabilidade e Estatística" />
+  
+  <meta name="twitter:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+<meta name="author" content="Prof. Denise Beatriz Ferrari" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="teoremas-fundamentais-da-probabilidade.html"/>
+<link rel="next" href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Probabilidade e Estatística</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Objetivos do Curso</a></li>
+<li class="chapter" data-level="1" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="introdução.html"><a href="introdução.html#estatística-e-o-raciocínio-científico"><i class="fa fa-check"></i><b>1.1</b> Estatística e o Raciocínio Científico</a></li>
+<li class="chapter" data-level="1.2" data-path="introdução.html"><a href="introdução.html#o-que-é-estatística"><i class="fa fa-check"></i><b>1.2</b> O que é Estatística?</a></li>
+<li class="chapter" data-level="1.3" data-path="introdução.html"><a href="introdução.html#o-papel-da-probabilidade-em-estatística"><i class="fa fa-check"></i><b>1.3</b> O Papel da Probabilidade em Estatística</a></li>
+<li class="chapter" data-level="1.4" data-path="introdução.html"><a href="introdução.html#elementos-fundamentais-em-estatística"><i class="fa fa-check"></i><b>1.4</b> Elementos Fundamentais em Estatística</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#população-e-amostra"><i class="fa fa-check"></i>População e Amostra</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#variáveis"><i class="fa fa-check"></i>Variáveis</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#dados-e-fontes-de-dados"><i class="fa fa-check"></i>Dados e Fontes de Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introdução.html"><a href="introdução.html#tipos-de-problemas"><i class="fa fa-check"></i><b>1.5</b> Tipos de Problemas</a></li>
+<li class="chapter" data-level="1.6" data-path="introdução.html"><a href="introdução.html#o-processo-de-análise-de-dados"><i class="fa fa-check"></i><b>1.6</b> O Processo de Análise de Dados</a></li>
+<li class="chapter" data-level="1.7" data-path="introdução.html"><a href="introdução.html#métodos-para-exploração-resumo-e-descrição-de-dados"><i class="fa fa-check"></i><b>1.7</b> Métodos para Exploração, Resumo e Descrição de Dados</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#análise-exploratória-de-dados-exploratory-data-analysis-eda"><i class="fa fa-check"></i>Análise Exploratória de Dados (“Exploratory Data Analysis”, EDA)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html"><i class="fa fa-check"></i><b>2</b> Introdução à Teoria de Probabilidades</a><ul>
+<li class="chapter" data-level="2.1" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#breve-histórico"><i class="fa fa-check"></i><b>2.1</b> Breve Histórico</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#chance-e-incerteza"><i class="fa fa-check"></i>Chance e Incerteza</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#jogos-de-azar"><i class="fa fa-check"></i>Jogos de Azar</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#origem-da-teoria-matemática-de-probabilidades"><i class="fa fa-check"></i>Origem da Teoria Matemática de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#formalização-matemática"><i class="fa fa-check"></i>Formalização Matemática</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definições-iniciais"><i class="fa fa-check"></i><b>2.2</b> Definições Iniciais</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#experimento-aleatório"><i class="fa fa-check"></i>Experimento Aleatório</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#espaço-amostral-e-evento"><i class="fa fa-check"></i>Espaço Amostral e Evento</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#lei-de-probabilidade"><i class="fa fa-check"></i>Lei de Probabilidade</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretações-de-probabilidade"><i class="fa fa-check"></i><b>2.3</b> Interpretações de Probabilidade</a><ul>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-clássica-a-priori-laplace-1812">Interpretação Clássica (<em>a priori</em>): Laplace, 1812</a></li>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-empírica-ou-de-frequência-relativa-a-posteriori-richard-v.-mises-1919">Interpretação Empírica ou de Frequência Relativa (<em>a posteriori</em>): Richard V. Mises, 1919</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretação-subjetiva"><i class="fa fa-check"></i>Interpretação Subjetiva</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#resumo"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definição-axiomática"><i class="fa fa-check"></i><b>2.4</b> Definição Axiomática</a></li>
+<li class="chapter" data-level="2.5" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#revisitando-o-paradoxo-de-de-méré-o-problema-dos-dados"><i class="fa fa-check"></i><b>2.5</b> Revisitando o Paradoxo de De Méré: O Problema dos Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html"><i class="fa fa-check"></i><b>3</b> Probabilidade Condicional e Independência</a><ul>
+<li class="chapter" data-level="3.1" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#probabilidade-condicional"><i class="fa fa-check"></i><b>3.1</b> Probabilidade Condicional</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades"><i class="fa fa-check"></i>Propriedades</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-de-eventos"><i class="fa fa-check"></i><b>3.2</b> Independência de Eventos</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades-1"><i class="fa fa-check"></i>Propriedades</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-condicional"><i class="fa fa-check"></i>Independência Condicional</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#eventos-independentes-x-eventos-mutuamente-exclusivos"><i class="fa fa-check"></i>Eventos Independentes x Eventos Mutuamente Exclusivos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html"><i class="fa fa-check"></i><b>4</b> Teoremas Fundamentais da Probabilidade</a><ul>
+<li class="chapter" data-level="4.1" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-da-probabilidade-total-dividir-para-conquistar"><i class="fa fa-check"></i><b>4.1</b> Teorema da Probabilidade Total: …dividir para conquistar!</a></li>
+<li class="chapter" data-level="4.2" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-de-bayes-aprendendo-pela-experiência"><i class="fa fa-check"></i><b>4.2</b> Teorema de Bayes: …aprendendo pela experiência</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html"><i class="fa fa-check"></i><b>5</b> Variáveis Aleatórias e Distribuições</a><ul>
+<li class="chapter" data-level="5.1" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variáveis-aleatórias"><i class="fa fa-check"></i><b>5.1</b> Variáveis Aleatórias</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#definição-caso-unidimensional"><i class="fa fa-check"></i>Definição (caso unidimensional)</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#tipos-de-variáveis-aleatórias"><i class="fa fa-check"></i>Tipos de Variáveis Aleatórias</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#distribuições-de-probabilidade"><i class="fa fa-check"></i><b>5.2</b> Distribuições de Probabilidade</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-discreto"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso discreto</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-contínuo"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso contínuo</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-acumulada-fda"><i class="fa fa-check"></i>Função Distribuição Acumulada (FDA)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado-e-variância"><i class="fa fa-check"></i><b>5.3</b> Valor Esperado e Variância</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado"><i class="fa fa-check"></i>Valor Esperado</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#o-problema-dos-pontos-e-a-aposta-de-pascal"><i class="fa fa-check"></i>O Problema dos Pontos e a Aposta de Pascal</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variância"><i class="fa fa-check"></i>Variância</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desvio-padrão"><i class="fa fa-check"></i>Desvio-padrão</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#momentos"><i class="fa fa-check"></i><b>5.4</b> Momentos</a><ul>
+<li><a href="variáveis-aleatórias-e-distribuições.html#assimetria-skewness-e-excesso-kurtosis">Assimetria (<em>skewness</em>) e Excesso (<em>kurtosis</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdades-de-markov-e-chebyshev"><i class="fa fa-check"></i><b>5.5</b> Desigualdades de Markov e Chebyshev</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-markov"><i class="fa fa-check"></i>Desigualdade de Markov</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-chebyshev"><i class="fa fa-check"></i>Desigualdade de Chebyshev</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><i class="fa fa-check"></i><b>6</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Bernoulli</a><ul>
+<li class="chapter" data-level="6.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#o-experimento-de-bernoulli"><i class="fa fa-check"></i><b>6.1</b> O Experimento de Bernoulli</a></li>
+<li class="chapter" data-level="6.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-de-bernoulli"><i class="fa fa-check"></i><b>6.2</b> Distribuição de Bernoulli</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-2"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial"><i class="fa fa-check"></i><b>6.3</b> Distribuição Binomial</a></li>
+<li class="chapter" data-level="6.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#um-problema-de-tomada-de-decisão"><i class="fa fa-check"></i><b>6.4</b> Um Problema de Tomada de Decisão</a></li>
+<li class="chapter" data-level="6.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-geométrica"><i class="fa fa-check"></i><b>6.5</b> Distribuição Geométrica</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#propriedade-de-ausência-de-memória"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#outras-distribuições"><i class="fa fa-check"></i><b>6.6</b> Outras Distribuições</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial-negativa-ou-distribuição-de-pascal"><i class="fa fa-check"></i>Distribuição Binomial Negativa (ou Distribuição de Pascal)</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial"><i class="fa fa-check"></i>Distribuição Multinomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial-negativa"><i class="fa fa-check"></i>Distribuição Multinomial Negativa</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica"><i class="fa fa-check"></i>Distribuição Hipergeométrica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica-negativa"><i class="fa fa-check"></i>Distribuição Hipergeométrica Negativa</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-4"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><i class="fa fa-check"></i><b>7</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Poisson</a><ul>
+<li class="chapter" data-level="7.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i><b>7.1</b> Uma aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="7.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-poisson"><i class="fa fa-check"></i><b>7.2</b> Distribuição de Poisson</a></li>
+<li class="chapter" data-level="7.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#o-processo-de-poisson"><i class="fa fa-check"></i><b>7.3</b> O Processo de Poisson</a></li>
+<li class="chapter" data-level="7.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-exponencial"><i class="fa fa-check"></i><b>7.4</b> Distribuição Exponencial</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#propriedade-de-ausência-de-memória-1"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-weibull"><i class="fa fa-check"></i>Distribuição de Weibull:</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-gama"><i class="fa fa-check"></i><b>7.5</b> Distribuição Gama</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html"><i class="fa fa-check"></i><b>8</b> Modelos Probabilísticos: Distribuição Normal</a><ul>
+<li class="chapter" data-level="8.1" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#distribuição-normal"><i class="fa fa-check"></i><b>8.1</b> Distribuição Normal</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#mais-uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>…(Mais) Uma Aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#cálculo-de-probabilidades"><i class="fa fa-check"></i>Cálculo de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#padronização-1"><i class="fa fa-check"></i>Padronização</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#regra-empírica"><i class="fa fa-check"></i>Regra Empírica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#coeficiente-de-variação"><i class="fa fa-check"></i>Coeficiente de Variação</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-distribuições-discretas"><i class="fa fa-check"></i><b>8.2</b> Aproximação para Distribuições Discretas</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>Aproximação para a Distribuição Binomial</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#métodos-descritivos-para-avaliar-normalidade"><i class="fa fa-check"></i><b>8.3</b> Métodos Descritivos para Avaliar Normalidade</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html"><i class="fa fa-check"></i><b>9</b> Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="9.1" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#introdução-à-inferência-estatística"><i class="fa fa-check"></i><b>9.1</b> Introdução à Inferência Estatística</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#inferência-estatística"><i class="fa fa-check"></i>Inferência Estatística</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostras-e-distribuições-amostrais"><i class="fa fa-check"></i><b>9.2</b> Amostras e Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostra-aleatória"><i class="fa fa-check"></i>Amostra Aleatória</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#parâmetos-vs.-estatísticas"><i class="fa fa-check"></i>Parâmetos vs. Estatísticas</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-amostral"><i class="fa fa-check"></i>Distribuição Amostral</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-da-média-amostral"><i class="fa fa-check"></i><b>9.3</b> Distribuição da Média Amostral</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#propriedades-da-média-amostral"><i class="fa fa-check"></i>Propriedades da Média Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#lei-dos-grandes-números"><i class="fa fa-check"></i>Lei dos Grandes Números</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#teorema-do-limite-central"><i class="fa fa-check"></i><b>9.4</b> Teorema do Limite Central</a></li>
+<li class="chapter" data-level="9.5" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuições-amostrais-associadas-a-populações-normais"><i class="fa fa-check"></i><b>9.5</b> Distribuições Amostrais Associadas a Populações Normais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-qui-quadrado"><i class="fa fa-check"></i>Distribuição Qui-Quadrado</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-t-student"><i class="fa fa-check"></i>Distribuição t-Student</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#aproximando-distribuições-amostrais-via-simulação-de-monte-carlo"><i class="fa fa-check"></i><b>9.6</b> Aproximando Distribuições Amostrais via Simulação de Monte Carlo</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-mediana-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Mediana Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-desvio-padrão-amostral"><i class="fa fa-check"></i>Distribuição Aproximada do Desvio-Padrão Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-variância-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Variância Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-mad-desvio-mediano-absoluto"><i class="fa fa-check"></i>Distribuição Aproximada do MAD (Desvio Mediano Absoluto)</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-amplitude-inter-quartis-iqr"><i class="fa fa-check"></i>Distribuição Aproximada da Amplitude Inter-Quartis (IQR)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="estimação-pontual.html"><a href="estimação-pontual.html"><i class="fa fa-check"></i><b>10</b> Estimação Pontual</a><ul>
+<li class="chapter" data-level="10.1" data-path="estimação-pontual.html"><a href="estimação-pontual.html#estimador-e-estimativa"><i class="fa fa-check"></i><b>10.1</b> Estimador e Estimativa</a></li>
+<li class="chapter" data-level="10.2" data-path="estimação-pontual.html"><a href="estimação-pontual.html#propriedades-de-estimadores"><i class="fa fa-check"></i><b>10.2</b> Propriedades de Estimadores</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#não-tendeciosidade-exatidão"><i class="fa fa-check"></i>Não-Tendeciosidade (exatidão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#eficiência-precisão"><i class="fa fa-check"></i>Eficiência (precisão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#consistência"><i class="fa fa-check"></i>Consistência</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#erro-médio-quadrático"><i class="fa fa-check"></i>Erro Médio Quadrático</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="estimação-pontual.html"><a href="estimação-pontual.html#métodos-clássicos-de-estimação-de-parâmetros"><i class="fa fa-check"></i><b>10.3</b> Métodos Clássicos de Estimação de Parâmetros</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-dos-momentos"><i class="fa fa-check"></i>Método dos Momentos</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-da-máxima-verossimilhança"><i class="fa fa-check"></i>Método da Máxima Verossimilhança</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html"><i class="fa fa-check"></i><b>11</b> Intervalos de Confiança</a><ul>
+<li class="chapter" data-level="11.1" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#estimação-por-intervalos"><i class="fa fa-check"></i><b>11.1</b> Estimação por Intervalos</a></li>
+<li class="chapter" data-level="11.2" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#procedimento-para-construção-de-ics"><i class="fa fa-check"></i><b>11.2</b> Procedimento para Construção de IC’s</a><ul>
+<li><a href="intervalos-de-confiança.html#caso-1-ic-para-mu-com-sigma2-conhecida">CASO 1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> conhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.1-ic-para-mu-com-sigma2-desconhecida">CASO 2.1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.2-ic-para-mu-com-sigma2-desconhecida-amostras-grandes">CASO 2.2: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida (amostras grandes)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-p-proporção-populacional">CASO 3: IC para <span class="math inline">\(p\)</span> (proporção populacional)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-sigma2">CASO 3: IC para <span class="math inline">\(\sigma^2\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html"><i class="fa fa-check"></i><b>12</b> Testes de Hipóteses</a><ul>
+<li class="chapter" data-level="12.1" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#formulação-de-hipóteses-estatísticas"><i class="fa fa-check"></i><b>12.1</b> Formulação de Hipóteses Estatísticas</a></li>
+<li class="chapter" data-level="12.2" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#estatística-do-teste"><i class="fa fa-check"></i><b>12.2</b> Estatística do Teste</a></li>
+<li class="chapter" data-level="12.3" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#erros-de-decisão"><i class="fa fa-check"></i><b>12.3</b> Erros de Decisão</a></li>
+<li class="chapter" data-level="12.4" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-crítica"><i class="fa fa-check"></i><b>12.4</b> Região Crítica</a></li>
+<li class="chapter" data-level="12.5" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#valor-p"><i class="fa fa-check"></i><b>12.5</b> Valor-p</a></li>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#qual-a-probabilidade-de-cometer-erro-do-tipo-ii"><i class="fa fa-check"></i>Qual a probabilidade de cometer erro do tipo II?</a></li>
+<li class="chapter" data-level="12.6" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#poder-do-teste"><i class="fa fa-check"></i><b>12.6</b> Poder do Teste</a></li>
+<li class="chapter" data-level="12.7" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#resumo-gráfico"><i class="fa fa-check"></i><b>12.7</b> Resumo Gráfico</a></li>
+<li class="chapter" data-level="12.8" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#testes-mono--e-bi-caudais"><i class="fa fa-check"></i><b>12.8</b> Testes Mono- e Bi-Caudais</a><ul>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-de-rejeição-para-um-teste-bi-caudal"><i class="fa fa-check"></i>Região de Rejeição para um Teste Bi-caudal</a></li>
+</ul></li>
+<li class="chapter" data-level="12.9" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-o-nível-de-significância"><i class="fa fa-check"></i><b>12.9</b> Procedimento para Testes de Hipóteses (utilizando o nível de significância)</a></li>
+<li class="chapter" data-level="12.10" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-valor-p"><i class="fa fa-check"></i><b>12.10</b> Procedimento para Testes de Hipóteses (utilizando valor-p)</a></li>
+<li class="chapter" data-level="12.11" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#ic-vs-th"><i class="fa fa-check"></i><b>12.11</b> IC vs TH</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GED-13: Probabilidade e Estatística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="variáveis-aleatórias-e-distribuições" class="section level1">
+<h1><span class="header-section-number">Capítulo 5</span> Variáveis Aleatórias e Distribuições</h1>
+<p>A partir de agora, nosso estudo de teoria de probabilidades começa a ficar mais interessante, pois vamos introduzir o conceito de variáveis aleatórias, que nos permitirá analisar situações de incerteza muito mais complexas do que vimos até então.</p>
+<p>Iniciaremos relembrando brevemente o que vimos dos fundamentos de teoria de probabilidades.</p>
+<p>Vimos que, para um experimento aleatório E, ao determinar o espaço amostral associado a este experimento (que consiste no conjunto de todos os resultados possíveis) e, ao definir a função de probabilidade a cada evento do espaço amostral (que representa a crença na propensão da ocorrência de cada evento do espaço amostral) temos uma descrição probabilística completa da situação de incerteza representada pelo experimento:</p>
+<p><span class="math inline">\(E\)</span>: experimento aleatório;<br />
+<span class="math inline">\(\Omega\)</span>: espaço amostral associado a E; e<br />
+<span class="math inline">\(P\)</span>: função de probabilidade definida em todo evento <span class="math inline">\(A \in \Omega\)</span><br />
+…fornecem uma <strong>descrição probabilística completa</strong> do experimento em questão!</p>
+<p>Por exemplo, se considerarmos o experimento aleatório que consiste em lançar uma moeda honesta e observar o resultado obtido, a descrição completa dessa situação de incerteza é dada pelo espaço amostral (que contém todos os resultados possíveis do experimento, que neste caso, é o conjunto dos resultados cara ou coroa), bem como a definição da lei de probabilidade associada a cada elemento no espaço amostral:</p>
+<p><span class="math inline">\(E\)</span>: Lançar uma moeda honesta e observar o resultado.<br />
+<span class="math inline">\(\Omega = \{cara, coroa\}\)</span><br />
+<span class="math inline">\(P[cara] = 1/2\)</span><br />
+<span class="math inline">\(P[coroa] = 1/2\)</span></p>
+<p>Agora, imagine que estejamos diante de uma situação um pouco mais complexa, em que se deseja conduzir uma pesquisa de opinião a fim de obter informação a respeito do apoio de um grupo a uma certa causa. Para isso, uma amostra de 50 pessoas pertencentes a esse grupo que serão entrevistadas foi selecionada. Cada pessoa entrevistada vai, então, manifestar a sua opinião, respondendo: “sou favorável” ou “não sou favorável” à causa em análise.</p>
+<p>De que maneira podemos representar o espaço amostral associado a esse experimento?</p>
+<p>Registrando o valor “1” para representar uma resposta positiva e o valor “0” para representar uma resposta negativa, o espaço amostral associado a este experimento é definido por todas as n-uplas de tamanho 50, que representam todas as respostas possíveis para os 50 indivíduos que compõe a amostra:</p>
+<p><span class="math display">\[\Omega = \{ (0, 0, \ldots, 0), (1, 0, \ldots, 0), \ldots, (0, 0, \ldots, 1), (1, 1, \ldots, 0), \ldots, (1, 1, \ldots, 1)\}\]</span></p>
+<p>Podemos ter todas as respostas negativas; ou podemos observar apenas uma resposta positiva e, neste caso, precisamos registrar se foi o primeiro entrevistado a dar seu voto favorável, ou apenas o segundo, ou apenas o terceiro, e assim sucessivamente, até o último entrevistado; ou podemos ter apenas duas respostas positivas e, assim, por diante, até chegar ao último resultado possível, que corresponde a todos os 50 indivíduos entrevistados apresentando seu apoio em favor da causa.</p>
+<p>A cada elemento desse espaço amostral está associado um valor definido pela lei de probabilidade e, a partir daí, podemos calcular qualquer probabilidade relativa a este experimento. Não há problema algum com esse procedimento, exceto pelo fato de que este espaço amostral tem <span class="math inline">\(2^{50}\)</span> elementos! E, com isso, precisaríamos definir <span class="math inline">\(2^{50}\)</span> valores de probabilidade, um para cada elemento que compõe o espaço amostral.</p>
+<p>No entanto, a questão que de fato importa é a seguinte: será que nós estamos realmente interessados na <strong>descrição probabilística completa</strong> desse experimento? Ou será que estamos interessados em apenas um <strong>aspecto específico</strong> do experimento? Será que é necessário descrever completamente esse experimento aleatório, ou podemos analisar apenas os aspectos de interesse?</p>
+<p>Por exemplo, se estivermos interessados em responder apenas à pergunta: <em>“Qual a probabilidade de que no mínimo 26 das 50 pessoas apoiem a causa?”</em> Como é possível transformar o espaço amostral para simplificar sua análise, reduzindo-o a fim analisar apenas os aspectos de interesse?</p>
+<p>Podemos definir uma variável que captura a essência do problema:</p>
+<p><span class="math inline">\(X\)</span> = no. de pessoas que apóiam a causa, dentre as 50 entrevistadas.</p>
+<p>O experimento aleatório associado consiste em:</p>
+<p><span class="math inline">\(E\)</span> = entrevistar 50 pessoas e registrar o número de respostas favoráveis.</p>
+<p>Agora, o espaço amostral correspondente é dado por:</p>
+<p><span class="math display">\[\Omega = \{0, 1, 2, \ldots, 50\}\]</span></p>
+<p>…que é muito menor e, portanto, mais fácil de lidar!</p>
+<p>Isso equivale a construir um novo experimento aleatório que agora consiste em entrevistar 50 pessoas e registrar, não a resposta de cada indivíduo, mas apenas o total de respostas favoráveis. Com isso, temos um novo espaço amostral associado a esse novo experimento. Neste caso, o espaço amostral passa ser composto pelos resultados 0, 1, 2, até 50 (representando, respectivamente os resultados em que nenhum, um, dois até 50 respostas favoráveis foram obtidas). Este novo espaço amostral tem apenas 51 elementos e, portanto, é muito mais fácil de analisar e de determinar os valores de probabilidade associados a cada elemento desse novo espaço amostral!</p>
+<p>Portanto, chegamos à conclusão de que escolha do espaço amostral associado a uma situação de incerteza não é única, mas depende da quantidade de detalhes do fenômeno aleatório que queremos incluir no nosso modelo. Ao definir a quantidade <span class="math inline">\(X\)</span>, definimos um mapeamento ou uma função do espaço original para um novo espaço amostral que pode ser mais facilmente analisado do que o espaço amostral original, como veremos a seguir.</p>
+<div id="variáveis-aleatórias" class="section level2">
+<h2><span class="header-section-number">5.1</span> Variáveis Aleatórias</h2>
+<div id="definição-caso-unidimensional" class="section level3 unnumbered">
+<h3>Definição (caso unidimensional)</h3>
+<p>Uma variável aleatória (v.a.) é uma <strong>função</strong> que associa cada elemento do espaço amostral (descrito com palavras) a um número real, i.e., <strong>v.a. é uma representação matemática dos eventos de um espaço amostral</strong>, ou seja, embora o nome dessa quantidade seja <em>variável</em>, ela é uma <em>função</em> que vai associar a cada elemento <span class="math inline">\(s\)</span> do espaço amostral um número real <span class="math inline">\(x\)</span>, que corresponde ao valor assumido pela função <span class="math inline">\(X(s)\)</span>.</p>
+<p>Assim, a função variável aleatória tem o domínio no espaço amostral, e o contra-domínio no conjunto dos números reais. Portanto, a probabilidade do evento <span class="math inline">\(s\)</span>, que é um elemento do espaço amostral, é igual à probabilidade de que a variável aleatória <span class="math inline">\(X\)</span> associada a esse evento assuma o valor <span class="math inline">\(x\)</span>; e essa probabilidade é representada simplesmente por <span class="math inline">\(p(x)\)</span>. E, é claro, <span class="math inline">\(p(x)\)</span> deve satisfazer os axiomas de Kolmogorov a fim de que seja uma função probabilidade válida.</p>
+<p><img src="img/va/va.png" width="60%" /></p>
+<p><strong>Notação:</strong></p>
+<p><span class="math inline">\(X(\cdot): \Omega \rightarrow \Re\)</span></p>
+<p>onde <span class="math inline">\(s\)</span> é qualquer evento em <span class="math inline">\(\Omega\)</span></p>
+<p>Probabilidade do evento <span class="math inline">\(s\)</span>:
+<span class="math inline">\(\{X(s) = x\} \; \Rightarrow \; P[X(s) = x] = P[X = x] = p(x)\)</span></p>
+<p>Aqui há uma observação importante a ser feita: representaremos uma variável aleatória, isto é, a função, por letra maiúscula, <span class="math inline">\(X\)</span>; já o valor observado dessa função, que corresponde a uma realização dessa variável aleatória, ou os valores que essa variável aleatória pode assumir, serão representados por letras minúsculas, <span class="math inline">\(x\)</span>.</p>
+</div>
+<div id="tipos-de-variáveis-aleatórias" class="section level3 unnumbered">
+<h3>Tipos de Variáveis Aleatórias</h3>
+<p>Neste curso, trataremos de variáveis aleatórias quantitativas. E essas variáveis quantitativas podem ser classificadas como sendo discretas ou contínuas.</p>
+<p><img src="img/va/va-tipos.png" width="70%" /></p>
+<p><strong>V.A.’s Discretas</strong></p>
+<p>Uma v.a. <span class="math inline">\(X\)</span> é dita <strong>discreta</strong> quando o espaço amostral associado a ela é enumerável, podendo ser finito ou infinito, isto é, se assumir um número <strong>finito</strong> ou <strong>infinito e enumerável</strong> de varlores reais distintos <span class="math inline">\(x_1, x_2, \ldots, x_n, \ldots\)</span>. Este é o caso quando anlisamos um processo aleatório que envolve a contagem do número de certas ocorrências: por exemplo, quando quero monitorar o número de caras em 10 lançamentos de uma moeda honesta, ou quantas vezes tenho que lançar uma bola de basquete até que eu acerte a cesta, ou posso estar interessada no número de pessoas que chegaram a uma agência bancária entre meio dia de 1h da tarde e assim por diante. Ou seja, estou modelando um processo aleatório que envolve contagem.</p>
+<p><strong>V.A.’s Contínuas</strong></p>
+<p>Uma v.a. <span class="math inline">\(X\)</span> é dita <strong>contínua</strong> quando está associada a um espaço amostral não enumerável, ou seja, temos uma quantidade infinita de elementos e é impossível enumerável-los, ou seja, se assumir um número <strong>infinito não-enumerável</strong> de varlores reais e a probabilidade de que <span class="math inline">\(X\)</span> assuma um valor em particular é nula. Este é o caso quando estamos diante de uma situação em que o resultado do experimento aleatório é uma medição, por exemplo: o tempo de duração de um atendimento médico, o comprimento de uma peça produzido por um determinado processo industrial, o tempo de vida de um equipamento eletrônico e assim por diante.</p>
+<p>Vejamos alguns exemplos de variáveis aleatórias discretas e contínuas:</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-1" class="example"><strong>Exemplo 1.1  </strong></span>
+</div>
+
+<p>Componentes eletrônicos fabricados em uma linha de produção são submetidos a inspeção, sendo classificados como defeituosos ou não-defeituosos (só existem essas duas possibilidades). Suponha que a probabilidade de um item defeituoso seja 0,1.</p>
+<p>O espaço amostral associado a esse experimento é formado por dois únicos resultados possíveis: o item é classificado como defeituoso ou não-defeituoso; e, portanto, está associado a uma v.a. discreta, pois temos um conjunto de resultados possíveis finito e enumerável:</p>
+<p><span class="math inline">\({\Omega = \{D, N\}}\)</span> (discreto: no. finito de possibilidades)</p>
+<p>Podemos definir a variável aleatória <span class="math inline">\(X\)</span> que vai assumir valor zero, se o item é defeituoso; e valor um, se o item é não defeituoso.</p>
+<p><span class="math display">\[{X = \left\{
+      \begin{array}{ll}
+      0, &amp; \textsf{ se o componente é defeituoso}\\
+      1, &amp; \textsf{ se o componente é não-defeituoso}
+      \end{array} \right.}\]</span></p>
+<p>Com isso, cria-se uma função (a variável aleatória <span class="math inline">\(X\)</span>) que mapeia cada elemento do espaço amostral a um número real.</p>
+<p>Podemos representar as probabilidades dos eventos do espaço amostral em termos da variável aleatória definida: a probabilidade de o item ser defeituoso corresponde à probabilidade de que <span class="math inline">\(X\)</span> assuma valor 0 (que vale 0,1); a probabilidade de o item ser não-defeituoso corresponde à probabilidade de que <span class="math inline">\(X\)</span> assuma valor 1 (que vale 0,9). Podemos também representar graficamente os valores de probabilidade associados aos valores da va. <span class="math inline">\(X\)</span>.</p>
+<p><span class="math inline">\(P[D] = P[X = 0] = 0,1\)</span><br />
+<span class="math inline">\(P[N] = P[X = 1] = 0,9\)</span></p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-2" class="example"><strong>Exemplo 2.1  </strong></span>
+</div>
+
+<p>Vamos imaginar que estejamos interessados agora em outro aspecto do mesmo experimento aleatório: monitorar o número de itens produzidos até observar o primeiro defeituoso. Isto define a variável aleatória de interesse.</p>
+<p><span class="math inline">\(X\)</span> = no. de itens produzidos até a observação do primeiro defeituoso.</p>
+<p>O espaço amostral, nesse caso, é formado pelos seguintes eventos: se o primeiro item produzido for defeituoso, temos o evento ‘D’ e acabou o experimento; se o primeiro item for não defeituoso e o segundo for defeituoso temos o evento ‘ND’, e assim, sucessivamente. Pode até ser que não se observe nenhum item defeituoso, indefinidamente… Perceba que este espaço amostral tem um número infinito de elementos. No entanto, podemos enumerá-los. E, como temos um conjunto enumerável de possibilidades a variável aleatória <span class="math inline">\(X\)</span> aqui representada, é uma v.a. discreta.</p>
+<ul>
+<li>Espaço amostral: <span class="math inline">\({\Omega = \{D, ND, NND, NNND, \ldots\}}\)</span><br />
+</li>
+<li><span class="math inline">\({X(\underbrace{NNN \ldots N}_{i-1}D) = i}\)</span></li>
+</ul>
+
+<div class="example">
+<span id="exm:unnamed-chunk-3" class="example"><strong>Exemplo 3.1  </strong></span>
+</div>
+
+<p>Seja a v.a. definida pelo tempo de espera (em segundos) para que duas mensagens cheguem a uma caixa de email. Esta é uma medida de tempo e vamos assumir que nosso cronômetro tenha precisão infinita. Então, o espaço amostral é definido por um intervalo, que tem uma quantidade infinita e não enumerável de possibilidades. Portanto, a va. <span class="math inline">\(X\)</span> associada a esse espaço amostral é contínua.</p>
+<ul>
+<li>Espaço amostral: <span class="math inline">\({\Omega = \{ x \in \Re: x \geq0\}}\)</span> (contínuo)</li>
+</ul>
+
+<div class="example">
+<span id="exm:unnamed-chunk-4" class="example"><strong>Exemplo 3.2  </strong></span>
+</div>
+
+<p>Sabe-se que uma máquina de envase de suco de laranja preenche os recipientes com um volume entre 0,9L e 1,1L. Seja <span class="math inline">\(X\)</span> a v.a. que registra o volume de suco no recipiente. Novamente, assumiremos que nosso instrumento de medição tem precisão infinita. O espaço amostral é definido por todos os volumes possíveis entre 0,9 e 1,1L. Esse é um espaço amostral com um número infinito e incontável de possbilidades e, portanto, a variável <span class="math inline">\(X\)</span> é uma v.a. contínua.</p>
+<ul>
+<li>Espaço amostral: <span class="math inline">\({\Omega = \{ x \in \Re: 0,9 &lt; x &lt; 1,1 \}}\)</span> (contínuo)</li>
+</ul>
+<p>Começamos a perceber que essas v.a.’s definidas nos exemplos anteriores passam a transformar um espaço amostral em outro que seja mais conveniente, para os propósitos da investigação de interesse.</p>
+<p>Em outras palavras, as v.a.’s servem para reduzir a complexidade do espaço amostral associado a um experimento aleatório, ao proporcionar uma descrição matemática mais sucinta, com menor nível de detalhamento do que a descrição completa do fenômeno aleatório sendo investigado, e que se relaciona mais diretamente com os aspectos de interesse desse experimento.</p>
+<p>Ao criar um artifício matemático que simplifica os cálculos de probabilidade, obviamente há um preço a ser pago: precisamos agora <strong>determinar a distribuição de probabilidades</strong> associada à v.a. <span class="math inline">\(X\)</span> que, para uma v.a. discreta, corresponde aos valores de probabilidade associados cada valor que essa v.a. assume. É isso o que veremos a seguir.</p>
+</div>
+</div>
+<div id="distribuições-de-probabilidade" class="section level2">
+<h2><span class="header-section-number">5.2</span> Distribuições de Probabilidade</h2>
+<div id="função-distribuição-de-probabilidade-fdp-caso-discreto" class="section level3 unnumbered">
+<h3>Função Distribuição de Probabilidade (fdp): caso discreto</h3>
+<p>Uma vez definida a variável aleatória <span class="math inline">\(X\)</span>, o espaço amostral <span class="math inline">\(\Omega\)</span> perde sua importância; para descrever toda a informação probabilística a respeito da variável aleatória discreta <span class="math inline">\(X\)</span>, basta identificar todos os valores discretos <span class="math inline">\(x_1, x_2, \ldots\)</span>, que a variável aleatória <span class="math inline">\(X\)</span> pode assumir e os valores de probabilidade correspondentes. Essa informação está contida na função distribuição de probabilidade de <span class="math inline">\(X\)</span>, dada pela função:</p>
+<p><span class="math display">\[\begin{align*}
+  f_X(\cdot): \Re \rightarrow [0,1] \quad \text{tq} \quad {f_X(x)} =
+  \left\{
+  \begin{array}{ll}
+    P[X=x_j], &amp; \text{ se } x = x_j, \\
+    0, &amp; \text{ se } x \neq x_j
+  \end{array} 
+  \right.
+  \\
+  \quad j = 1, 2, \ldots, n, \ldots
+\end{align*}\]</span></p>
+<p><span class="math inline">\(f(x)\)</span> tem como domínio o conjunto dos números reais (e isto é uma consequência da definição de variável aleatória que, por sua vez, tem domínio no espaço amostral e contradomínio na reta real). Como os valores da função distribuição de probabilidade, no caso discreto, representam valores de probabilidade, a fdp tem contradomínio no intervalo real de 0 a 1.</p>
+<p>A função distribuição de probabilidade vai corresponder ao valor da probabilidade para cada um dos pontos em que a v.a. discreta <span class="math inline">\(X\)</span> está definida; e vale zero, para valores diferentes daqueles que a v.a. <span class="math inline">\(X\)</span> pode assumir (isso significa que a probabilidade de que <span class="math inline">\(X\)</span> assuma um valor não admissível é zero, ou seja, a probabilidade de um resultado impossível vale zero!)</p>
+<p>Sendo assim, a fdp indica como a probabilidade total está distribuída por todos os valores que a v.a. <span class="math inline">\(X\)</span> pode assumir; os valores de uma v.a. discreta geralmente são chamados de <strong>pontos de massa</strong> e, por este motivo, também é comum que a fdp seja chamada <strong>função massa de probabilidade</strong>.</p>
+<p>Precisamos garantir que a fdp seja uma função probabilidade, ou seja, que respeite as condições dadas pelos axiomas de Kolmogorov. Sendo assim, essa função não pode assumir valores negativos; ela vale zero para os pontos em que a v.a. <span class="math inline">\(X\)</span> não está definida; e, finalmente, a soma de todos os valores de probabilidade para os pontos em que ela está definida vale 1:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\({f_X(x_j) \geq 0}\)</span> para <span class="math inline">\({j = 1, 2, \ldots, n, \ldots}\)</span><br />
+</li>
+<li><span class="math inline">\({f_X(x_j) = 0}\)</span> para <span class="math inline">\({x \neq x_j; \quad j = 1, 2, \ldots, n, \ldots}\)</span><br />
+</li>
+<li><span class="math inline">\({\sum_j f_X(x_j) = 1}\)</span></li>
+</ol>
+
+<div class="example">
+<span id="exm:unnamed-chunk-5" class="example"><strong>Exemplo 3.3  (Computadores defeituosos)  </strong></span>
+</div>
+
+<p>Um lote de 8 computadores em uma loja contém 3 defeituosos.
+Um cliente seleciona 2 destes computadores ao acaso para comprar.<br />
+Qual a distribuição de probabilidade para o número de computadores defeituosos comprados?</p>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<p>Em primeiro lugar, precisamos identificar qual é a v.a. de interesse e quais os valores que essa variável aleatória pode assumir. Às vezes, essa tarefa se torna mais fácil identificando o espaço amostral associado ao experimento aleatório em questão.</p>
+<p>Note que a pergunta já orienta a identificação da variável aleatória envolvida. Então, vamos escolher a v.a. <span class="math inline">\(X\)</span> como sendo o número de computadores defeituosos comprados pelo cliente. Ele comprará 2 computadores e, dentre eles, pode ser que nenhum seja defeituoso, ou apenas um deles seja defeituoso ou os dois computadores comprados sejam defeituosos; isso, por sua vez, define o espaço amostral associado a este experimento. Portanto:</p>
+<p><span class="math inline">\(X\)</span> = no. de computadores defeituosos comprados pelo cliente<br />
+<span class="math inline">\({\Omega = \{0,1,2\}}\)</span></p>
+<p>A fim de determinar a fdp de <span class="math inline">\(X\)</span>, devemos calcular os valores das probabilidades para todos os elementos do espaço amostral:</p>
+<p><span class="math display">\[\begin{align*}
+ &amp; f_X(0) = P[X=0] = \frac{\binom{3}{0}\binom{5}{2}}{\binom{8}{2}} = \frac{10}{28}\\
+ &amp; f_X(1) = P[X=1] = \frac{\binom{3}{1}\binom{5}{1}}{\binom{8}{2}} = \frac{15}{28}\\
+ &amp; f_X(2) = P[X=2] = \frac{\binom{3}{2}\binom{5}{0}}{\binom{8}{2}} = \frac{3}{28}
+\end{align*}\]</span></p>
+<p>A probabilidade de que nenhum computador seja defeituoso é a probabilidade de que a v.a. <span class="math inline">\(X\)</span> assuma valor igual a zero. Essa probabilidade pode ser calculada pela definição clássica, como sendo a razão entre o número de resultados favoráveis e o número de resultados possíveis. No denominador de <span class="math inline">\(f_X(0)\)</span> temos um total de 8 computadores, dos quais escolheremos 2. O número de maneiras com que isso pode ser feito é dado pela combinação de 8, 2-a-2. Já no numerador, temos o no de resultados favoráveis: neste caso, nenhum computador defeituoso será selecionado a partir dos 3 defeituosos disponíveis e os dois computadores comprados serão selecionados a partir dos 5 não-defeituosos que existem na loja. Portanto, temos o produto da combinação de 3, 0-a-0 e da combinação de 5, 2-a-2. Isso nos dá uma probabilidade de 10/28.</p>
+<p>Um procedimento análogo é realizado para os demais valores assumidos pela v.a. <span class="math inline">\(X\)</span>. Para <span class="math inline">\(X=1\)</span>, temos um computador selecionado a partir dos 3 defeituosos da loja e um computador selecionado a partir dos 5 não-defeituosos. O denominador é o mesmo, pois o número de resultados possíveis não se altera. A probabilidade de comprar apenas um computador defeituoso vale, então, 15/28. E, no caso de <span class="math inline">\(X = 2\)</span>, os dois computadores comprados são selecionados a partir do total de 3 defeituosos da loja.</p>
+<p>Podemos organizar os valores de probabilidade calculados em uma tabela, a fim de tornar mais explícita a apresentação da distribuição de probabilidade de <span class="math inline">\(X\)</span>, ou, ainda, através de um gráfico de frequências.</p>
+<p><img src="img/comp-fdp.png" width="50%" /></p>
+<div class="figure"><span id="fig:ch5-comp"></span>
+<img src="img/comp.png" alt="Função distribuição de probabilidade do número de computadores defeituosos comprados." width="60%" />
+<p class="caption">
+Figura 5.1: Função distribuição de probabilidade do número de computadores defeituosos comprados.
+</p>
+</div>
+</div>
+<div id="função-distribuição-de-probabilidade-fdp-caso-contínuo" class="section level3 unnumbered">
+<h3>Função Distribuição de Probabilidade (fdp): caso contínuo</h3>
+<p>Vamos definir agora a função distribuição de probabilidade para variáveis aleatórias contínuas.
+Primeiro, vamos lembrar que variáveis aleatórias contínuas são associadas a processos aleatórios que descrevem algum tipo de medição. Se nós pensarmos bem, todas as medições são, de fato discretas (já que não temos precisão infinita), então, em princípio, tudo pode ser modelado por variáveis aleatórias discretas. O contínuo, na realidade não existe; v.a.’s contínuas são uma abstração matemática que ajudam a simplificar os cálculos.</p>
+<p>Podemos entender v.a.’s contínuas como o resultado de um processo de refinamento (infinito) de v.a.’s discretas. Vejamos, através de um exemplo, o que isso quer dizer:</p>
+<p>Suponha que uma v.a. discreta <span class="math inline">\(X\)</span>, associada a um determinado experimento aleatório, cujos detalhes não nos interessam nesse momento, assuma o valor 3,5 com probabilidade <span class="math inline">\(p\)</span>. Imagine que os valores assumidos por esta va são o resultado de uma medição e, que conseguimos melhorar nosso processo de medição, de tal forma que agora conseguimos obter o valor de mais uma casa decimal. Isso significa que o valor de probabilidade <span class="math inline">\(p\)</span> associado ao valor 3,5 terá que ser distribuído entre todos os valores obtidos a partir do refinamento. Então, <span class="math inline">\(p\)</span> deve corresponder à soma das probabilidades de observar os valores entre 3,50 e 3,59. Cada um desses valores vai ocorrer com uma probabilidade, <span class="math inline">\(p_i\)</span>:</p>
+<p><span class="math display">\[{p = P[X = 3,50] + P[X = 3,51] + ... + P[X = 3,59] = \sum_{i=1}^{10} p_i}\]</span></p>
+<p>Se for possível uma nova melhoria no processo de medição, de forma que uma casa decimal adicional seja obtida, teremos para cada <span class="math inline">\(p_i\)</span> um refinamento equivalente, ou seja, o valor de cada probabilidade <span class="math inline">\(p_i\)</span> deverá ser redistribuído. A cada novo refinamento, o valor da probabilidade <span class="math inline">\(p_i\)</span> vai ficando cada vez menor. Se o processo de refinamento continua indefinidamente, cada <span class="math inline">\(p_i\)</span> tende a zero.</p>
+<p>A probabilidade de que <span class="math inline">\(X\)</span> assuma um valor com maior precisão (com mais casas decimais) vai se aproximando de zero e, no entanto, a probabilidade de que os valores possíveis para a v.a. se encontrem um determinado intervalo fixo que vai de <span class="math inline">\([a,b]\)</span>, neste exemplo <span class="math inline">\(a=3,50\)</span> a <span class="math inline">\(b=3,59\)</span>, se estabiliza.</p>
+<p>Assim, a definição de função distribuição de probabilidade para o caso contínuo é um pouco diferente daquela que vimos para o caso discreto.</p>
+<p>Para uma variável aleatória contínua, a fdp, também chamada de .stand-out[função densidade de probabilidade], é definida como sendo a função que tem domínio no conjunto dos reais (assim como antes, já que o domínio depende da definição da função v.a.), mas o contradomínio não é o intervalo entre 0 e 1; agora,<span class="math inline">\(f\)</span> pode assumir qualquer valor real não negativo.</p>
+<p>Seja <span class="math inline">\(X\)</span> uma v.a. contínua. Definimos a fdp de <span class="math inline">\(X\)</span> como sendo a função:</p>
+<p><span class="math inline">\({f_X(\cdot): \Re \rightarrow [0,\infty)}\)</span> tal que, para quaisquer números <span class="math inline">\({a \leq b}\)</span></p>
+<p><span class="math display">\[\begin{align*}
+  P[a \leq X \leq b] =\int_{a}^{b} f_X(u) du
+\end{align*}\]</span></p>
+<p>Veja, também, que agora a fdp para uma v.a. contínua não é definida como um valor de probabilidade. A probabilidade de que <span class="math inline">\(X\)</span> se encontre em uma faixa de valores que vai de <span class="math inline">\(a\)</span> até <span class="math inline">\(b\)</span> é dada pela integral definida de <span class="math inline">\(a\)</span> até <span class="math inline">\(b\)</span> da fdp de <span class="math inline">\(X\)</span>.</p>
+<p>As condições para que esta função seja uma função probabilidade também decorrem da definição axiomática de Kolmogorov e consistem em: que a função <span class="math inline">\(f_X(x)\)</span> não assuma valores negativos; a integral de <span class="math inline">\(f_X(x)\)</span> sobre todo o seu domínio deve ser igual a 1; e , finalmente, a probabilidade de que <span class="math inline">\(X\)</span> assuma um valor fixo igual à constante real <span class="math inline">\(C\)</span> é nula (isso significa que, num espaço amostral infinito, a probabilidade de observar <strong>exatamente</strong> um valor real <span class="math inline">\(C\)</span> vale zero):</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\({f_X(x) \geq 0, \; \forall x \in \Re}\)</span><br />
+</li>
+<li><span class="math inline">\({\int_{-\infty}^{\infty} f_X(x) dx= 1}\)</span><br />
+</li>
+<li><span class="math inline">\({P[X=c] =0, \; \forall c \in \Re}\)</span></li>
+</ol>
+<p>Como consequência dessa definição, ao calcular a probabilidade de que <span class="math inline">\(X\)</span> se encontre num intervalo real que vai de <span class="math inline">\(a\)</span> até <span class="math inline">\(b\)</span>, não faz diferença se as extremidades do intervalo são abertas ou fechadas. Portanto, para quaisquer números <span class="math inline">\(\mathsf{a &lt; b}\)</span>:</p>
+<p><span class="math display">\[{P[a \leq X \leq b] = P[a &lt; X \leq b] = P[a \leq X &lt; b] = P[a &lt; X &lt; b]}\]</span><br />
+Desta maneira, decorre da definição que a probabilidade de que <span class="math inline">\(X\)</span> se encontre no intervalo <span class="math inline">\([a,b]\)</span> é dada pela área sob a curva da fdp de <span class="math inline">\(X\)</span> no intervalo <span class="math inline">\([a,b]\)</span>, como ilustra a figura.</p>
+<p><img src="img/fdp-cont.png" width="60%" /></p>
+<p>A fdp para uma v.a. contínua não pode ser entendida como a probabilidade de <span class="math inline">\(X\)</span> assumir um determinado valor.</p>
+<p><span class="math display">\[P[a - \epsilon \leq X \leq a+ \epsilon] = \int_{a-\epsilon}^{a+\epsilon} f_X(u) du \stackrel{\epsilon \rightarrow 0}{\approx} 2 \epsilon f_X(a)\]</span></p>
+<p>Para um intervalo de comprimento <span class="math inline">\(2\epsilon\)</span> centrado em <span class="math inline">\(a\)</span>, conforme a largura do intervalo diminui (ou seja, fazendo <span class="math inline">\(\epsilon\)</span> tender a zero), o valor de probabilidade também tende a zero. Sendo assim, a fdp de <span class="math inline">\(X\)</span> em <span class="math inline">\(a\)</span> pode ser entendida como uma medida relativa da chance de que <span class="math inline">\(X\)</span> se encontre em uma .stand-out[vizinhança] de <span class="math inline">\(a\)</span> e pode assumir um valor arbitrariamente grande para <span class="math inline">\(X=a\)</span>.</p>
+<p><img src="img/fdp-cont-2.png" width="60%" /></p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-7" class="example"><strong>Exemplo 5.1  (Projétil)  </strong></span>
+</div>
+
+<p>Queremos construir um modelo probabilístico para o seguinte experimento:
+um projétil atinge um disco de raio <span class="math inline">\(r\)</span> de maneira completamente arbitrária (isso significa que qualquer ponto do disco é igualmente provável e o projétil não pode cair fora do disco). Estamos interessados na distância <span class="math inline">\(X\)</span> entre o ponto atingido pelo projétil e o alvo (centro do disco). A fdp de <span class="math inline">\(X\)</span> é dada por:</p>
+<p><span class="math display">\[\begin{align*}
+  f_X(x) = 
+  \left\{
+  \begin{array}{ll}
+    \frac{2x}{r^2}, &amp; 0 \leq x \leq r \\
+    0, &amp; \text{caso contrário}
+  \end{array} 
+  \right.
+\end{align*}\]</span></p>
+<ol style="list-style-type: decimal">
+<li>Verifique que a condição (2) é válida.<br />
+</li>
+<li>Calcule <span class="math inline">\(P[0 &lt; X \leq r/2]\)</span>.</li>
+</ol>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<ol style="list-style-type: decimal">
+<li>Condição (2): <span class="math inline">\(\int_{-\infty}^{\infty} f_X(x) dx = 1\)</span></li>
+</ol>
+<p><span class="math display">\[\int_{-\infty}^{\infty} f_X(x) dx = \int_{0}^{r} \frac{2x}{r^2} dx = \frac{2}{r^2}\left[\frac{1}{2}x^2\right]_{0}^{r} = \frac{1}{r^2} [r^2 - 0] = 1  \qquad \therefore \qquad \text{OK!}\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Para determinar a probabilidade de que o projétil esteja a uma distância máxima do cento igual à metade do raio do disco, vamos calcular a integral de zero a <span class="math inline">\(r/2\)</span> da fdp de <span class="math inline">\(X\)</span>.</li>
+</ol>
+<p><span class="math display">\[P[0 &lt; X \leq r/2] =  \int_{0}^{r/2} \frac{2x}{r^2} dx = \frac{2}{r^2}\left[\frac{x^2}{2}\right]_{0}^{r/2} = \frac{1}{r^2}\left[\frac{r^2}{4} - 0 \right] = \frac{1}{4}\]</span></p>
+<p>Veja que esta probabilidade encontrada independe do raio <span class="math inline">\(r\)</span> do disco!</p>
+</div>
+<div id="função-distribuição-acumulada-fda" class="section level3 unnumbered">
+<h3>Função Distribuição Acumulada (FDA)</h3>
+<p>É possível representar a distribuição de probabilidade de uma v.a. através de uma medida acumulada, a chamada <strong>função distribuição acumulada</strong>, ou FDA. Diferentemente da fpd, a FDA é <strong>unicamente determinada</strong> para cada v.a. e pode ser utilizada para calcular probabilidades associadas a essa v.a.</p>
+<p>A FDA de uma v.a. <span class="math inline">\(X\)</span>, representada por <span class="math inline">\({F_X(\cdot)}\)</span> é a função:</p>
+<p><span class="math display">\[\begin{align*}
+  &amp;{} {F_X(\cdot): \Re \rightarrow [0, 1]\qquad \text{tq} \qquad
+      F_X(x) = P[X \leq x], \quad -\infty &lt; x &lt; \infty}
+\end{align*}\]</span></p>
+<p>A FDA de uma v.a. <span class="math inline">\(X\)</span> consiste em uma função com domínio no conjunto dos reais, que assume valores no intervalo <span class="math inline">\([0,1]\)</span>, pois representa um valor de probabilidade, independentemente se a v.a. é discreta ou contínua. A FDA é definida como sendo a probabilidade de que a v.a. <span class="math inline">\(X\)</span> assuma um valor menor ou igual a <span class="math inline">\(x\)</span>, para qualquer valor de <span class="math inline">\(x\)</span> real. Para que seja FDA, a função <span class="math inline">\(F_X(x)\)</span> deve satisfazer as seguintes condições:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\({F_X(\cdot)}\)</span> é monotônica não-descrescente: <span class="math inline">\(\;{F_X(x_1) &lt; F_X(x_2), \; x_1 &lt; x_2}\)</span></p></li>
+<li><p><span class="math inline">\({F_X(-\infty) = \lim_{x \rightarrow -\infty}F_X(x) = 0}\)</span> e <span class="math inline">\({F_X(+\infty) = \lim_{x \rightarrow +\infty}F_X(x) = 1}\)</span></p></li>
+<li><p><span class="math inline">\({F_X(\cdot)}\)</span> é contínua pela direita: <span class="math inline">\({F_X(x) = \lim_{0&lt;h \rightarrow 0} F_X(x+h)}\)</span></p></li>
+</ol>
+<p>A FDA precisa ser uma função monotônica não decrescente, de forma que, dados dois números reais <span class="math inline">\(x_1\)</span> estritamente menor que <span class="math inline">\(x_2\)</span>, então a função em <span class="math inline">\(x_1\)</span> tem de ser estritamente menor que a função em <span class="math inline">\(x_2\)</span>. Como a FDA representa uma probabilidade acumulada, <span class="math inline">\(F_X(-\infty) = 0\)</span> significa que em <span class="math inline">\(-\infty\)</span> nenhum valor de probabilidade foi acumulado (a probabilidade de observar um valor menor ou igual a menos infinito é zero); por outro lado, quando vamos para a outra extremidade da reta real, representada por <span class="math inline">\(\infty\)</span>, todo o domínio foi varrido e todos os valores de probabilidade já foram acumulados, portanto <span class="math inline">\(F_X(\infty) = 1\)</span>. Além disto, a FDA é uma função contínua pela direita. Toda função que satisfaça essas condições é uma FDA.</p>
+<p>Seguem algumas consequências dessas condições:</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-9" class="theorem"><strong>Teorema 5.1  </strong></span>
+</div>
+
+<p>Dado <span class="math inline">\({x}\)</span> qualquer,
+<span class="math display">\[{P[X &gt; x] = 1- F_X(x)}\]</span></p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-10" class="theorem"><strong>Teorema 5.2  </strong></span>
+</div>
+
+<p>Dados <span class="math inline">\({x_1}\)</span> e <span class="math inline">\({x_2}\)</span> tais que <span class="math inline">\({x_1 &lt; x_2}\)</span>,</p>
+<p><span class="math display">\[{P[x_1&lt; X \leq x_2] = P[X \leq x_2] - P[X \leq x_1]}\]</span></p>
+<p>Esta situação é ilustrada na figura pela área em vermelho menos a área em azul, que corresponde à área sob a fdp entre <span class="math inline">\(x_1\)</span> e <span class="math inline">\(x_2\)</span>.</p>
+<p><img src="img/FDA.png" width="60%" /></p>
+<ul>
+<li><span class="math inline">\({F_X(\cdot)}\)</span> pode ser obtida a partir de <span class="math inline">\({f_X(\cdot)}\)</span> e vice-versa.</li>
+</ul>
+<p>É necessário fazer a distinção entre o caso discreto e o caso contínuo.</p>
+<p><strong>Caso Discreto:</strong></p>
+<ol style="list-style-type: lower-roman">
+<li><p>Dada <span class="math inline">\({f_X(\cdot)}\)</span>,<br />
+<span class="math inline">\({F_X(x) = P[X \leq x] = \sum_{x_j &lt;x}f_X(x_j)}\)</span></p></li>
+<li><p>Dada <span class="math inline">\({F_X(\cdot)}\)</span>,<br />
+<span class="math inline">\({f_X(x_j) = F_X(x_j) - \lim_{0&lt;h \rightarrow 0} F_X(x_j - h)}\)</span></p></li>
+</ol>
+<p>Para o caso discreto, para obter a FDA a partir da fdp, basta somar as probabilidades nos valores que satisfazem a condição desejada. Para obter a fdp a partir da FDA, vamos utilizar a diferença dos valores de FDA em <span class="math inline">\(x_j\)</span> e o valor da FDA em <span class="math inline">\(X\)</span> imediatamente inferior a <span class="math inline">\(x_j\)</span>.</p>
+<p><strong>Caso Contínuo:</strong></p>
+<ol style="list-style-type: lower-roman">
+<li><p>Dada <span class="math inline">\({f_X(\cdot)}\)</span>,<br />
+<span class="math inline">\({F_X(x) = P[X \leq x] = \int_{-\infty}^{x} f_X(u) du}\)</span></p></li>
+<li><p>Dada <span class="math inline">\({F_X(\cdot)}\)</span>,<br />
+<span class="math inline">\({f_X(x) = \frac{dF_X(x)}{dx}}\)</span></p></li>
+</ol>
+<p>Para o caso contínuo, dada a fdp, a FDA em <span class="math inline">\(x\)</span> é dada pela integral de -infinito e o valor de <span class="math inline">\(x\)</span> desejado. Para obter a fdp a partir da FDA, basta tomar a derivada da FDA com relação a <span class="math inline">\(x\)</span>.</p>
+<p>A seguir, são apresentados alguns exemplos de aplicação imediata desses conceitos.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-11" class="example"><strong>Exemplo 5.2  (Computadores defeituosos, continuação)  </strong></span>
+</div>
+
+<ol style="list-style-type: lower-alpha">
+<li><p>Determine a FDA para a v.a.<br />
+<span class="math inline">\(X\)</span> = no. de computadores defeituosos comprados pelo cliente</p></li>
+<li><p>Usando <span class="math inline">\(F_X(x)\)</span>, verifique que <span class="math inline">\(f_X(2) = 3/28\)</span></p></li>
+</ol>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<ol style="list-style-type: lower-alpha">
+<li>FDA de <span class="math inline">\(X\)</span>:</li>
+</ol>
+<p><img src="img/comp-fda.png" width="60%" /></p>
+<p>Resposta:</p>
+<p><span class="math display">\[\begin{align*}
+  {F_X(x)} =
+  \begin{cases}
+    0,       &amp; \mathsf{x &lt; 0}\\
+    10/28,   &amp; \mathsf{0 \leq x &lt; 1}\\
+    25/28,   &amp; \mathsf{1 \leq x &lt; 2}\\
+    1,       &amp; \mathsf{x \geq 2}\\
+  \end{cases}
+\end{align*}\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><span class="math inline">\({f_X(2) = F_X(2) - F_X(1) = 1 - 25/28 = 3/28 \qquad \therefore}\)</span> OK!</li>
+</ol>
+
+<div class="example">
+<span id="exm:unnamed-chunk-13" class="example"><strong>Exemplo 5.3  (Projétil, continuação)  </strong></span>
+</div>
+
+<ul>
+<li><p>Determine a FDA para a v.a. <span class="math inline">\(X\)</span> = distância do projétil ao alvo</p></li>
+<li><p>Usando <span class="math inline">\({F_X(x)}\)</span>, calcule <span class="math inline">\({P[r/2 &lt; X \leq r]}\)</span></p></li>
+</ul>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<ul>
+<li>FDA de <span class="math inline">\(X\)</span>:<br />
+Temos: <span class="math inline">\(\quad f_X(x) = \left\{ \begin{array}{ll} \frac{2x}{r^2}, &amp; 0 &lt; x &lt; r\\ 0, &amp; \textsf{caso contrário} \end{array} \right.\)</span></li>
+</ul>
+<p>Portanto:
+<span class="math display">\[F_X(x) = P[X\leq x] = \int_{-\infty}^{x} f(u)du =
+  \begin{cases}
+    0, &amp; \phantom{0 \leq \;} x \leq 0\\ 
+    \int_{0}^{x} \frac{2u} {r^2} du  = \frac{2}{r^2} \left[ \frac{u^2}{2} \right]_{0}^{x} = \frac{x^2}{r^2}, &amp; 0 \leq x &lt; r \\
+    1, &amp; \phantom{0 \leq \;} x \geq r\\
+  \end{cases}\]</span></p>
+<ul>
+<li><span class="math inline">\(P[r/2 &lt; X \leq r] = F_X(r) - F_X(r/2) = \frac{r^2}{r^2} - \frac{r^2}{4r^2} = 1 - \frac{1}{4} = \frac{3}{4}\)</span></li>
+</ul>
+<p>Também independe do raio do disco…</p>
+</div>
+</div>
+<div id="valor-esperado-e-variância" class="section level2">
+<h2><span class="header-section-number">5.3</span> Valor Esperado e Variância</h2>
+<p>Até agora vimos que a distribuição de probabilidade de uma v.a. pode ser representada de várias formas: através da fdp; ou de uma medida acumulada, através da FDA; ou ainda graficamente ou através de valores tabelados (de maneira exata, para uma v.a. discreta e aproximadamente, para uma va contínua).</p>
+<p>Tanto a função distribuição de probabilidade quanto a função distribuição acumulada são modelos matemáticos construídos com a finalidade de <strong>resumir</strong> ou representar matematicamente fenômenos aleatórios. No entanto, dependendo da complexidade da situação, especificar tais funções de maneira completa pode ser uma empreitada extremamente difícil. Então, novamente, devemos nos perguntar se é realmente necessário construir uma representação completa da situação de incerteza sendo investigada. Pode ser interessante observar, por exemplo, determinadas características dessa distribuição que nos ajudam a formar uma ideia a respeito da incertezas associadas à situação de interesse, sem a necessidade de construir uma descrição completa.</p>
+<p>Neste sentido, precisamos tratar, então, de dois conceitos muito importantes em teoria de probabilidades: <strong>valor esperado</strong> e <strong>variância</strong>.</p>
+<p>Para cada distribuição de probabilidade, no mundo de estatística paramétrica, temos quantidades chamadas <strong>parâmetros da distribuição</strong>; são os parâmetros que determinam a distribuição de probabilidade e estes parâmetros estão associados aos diferentes <strong>momentos</strong> da distribuição (esse é um conceito que veremos mais adiante).</p>
+<p>O valor esperado, por exemplo, corresponde ao primeiro momento da v.a. e está associado à localização do centro da distribuição, indicando quais são os valores típicos da v.a. em questão.
+Já a variância está associada ao segundo momento da v.a e nos dá uma medida da dispersão ou do espalhamento dessa v.a.</p>
+<p>O fato é que, ainda que não forneçam uma descrição completa, valor esperado e variância resumem características importantes da distribuição, que podem ser muito úteis no processo de tomada de decisão.</p>
+<div id="valor-esperado" class="section level3 unnumbered">
+<h3>Valor Esperado</h3>
+<p>Seja <span class="math inline">\(X\)</span> uma v.a. O <strong>valor esperado</strong> de <span class="math inline">\(X\)</span>, representado por <span class="math inline">\({\mu_X}\)</span> ou <span class="math inline">\({E[X]}\)</span>, é definido como:</p>
+<p><strong>Caso Discreto:</strong><br />
+<span class="math inline">\({E[X] = \sum_x x\cdot f_X(x)}, \quad\)</span> para os pontos <span class="math inline">\({x}\)</span> em que <span class="math inline">\({X}\)</span> é definida.</p>
+<p><strong>Caso Contínuo:</strong><br />
+<span class="math inline">\({E[X] = \int_{-\infty}^\infty x\cdot f_X(x) d(x)}, \quad\)</span> onde <span class="math inline">\({f_X(x)}\)</span> é a fdp de <span class="math inline">\({X}\)</span>.</p>
+<p>É necessário verificar a existência do valor esperado através das condições abaixo, pois há certas distribuições para as quais não existe valor esperado.</p>
+<p><strong>Existência de E[X]:</strong>
++ caso discreto: <span class="math inline">\({\sum_x |x|f_X(x) &lt; \infty}\)</span><br />
++ caso contínuo: <span class="math inline">\({\int_{-\infty}^{\infty} |x|f_X(x)dx &lt; \infty}\)</span></p>
+<p>Vejamos, a seguir, alguns exemplos.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-15" class="example"><strong>Exemplo 5.4  (Computadores defeituosos, continuação)  </strong></span>
+</div>
+
+<p>Vamos retomar o exemplo dos computadores defeituosos. A loja tem um total de 8 computadores, dos quais 3 são defeituosos. Um cliente compra dois dos computadores disponíveis. Qual o número de computadores defeituosos que se espera observar na compra do cliente?</p>
+<p>A v.a. de interesse é o número de computadores defeituosos que o cliente acaba comprando.</p>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<p>Temos:<br />
+<span class="math inline">\(X\)</span> = no. de computadores defeituosos comprados pelo cliente.<br />
+A fdp dessa v.a. foi determinada anteriormente, de forma que o valor esperado de <span class="math inline">\(X\)</span> pode ser calculado através da soma ponderada de cada valor que <span class="math inline">\(X\)</span> pode assumir, em que os pesos correspondem às probabilidades de observar cada um dos valores assumidos pela v.a.:</p>
+<ol style="list-style-type: lower-roman">
+<li>Distribuição de probabilidade:</li>
+</ol>
+<p><img src="img/comp-fdp.png" width="50%" /></p>
+<ol start="2" style="list-style-type: lower-roman">
+<li>Valor esperado:</li>
+</ol>
+<p><span class="math display">\[\begin{align*}
+\mu = {E[X]} &amp;= {\sum_x x \cdot f_X(x)}\\
+    &amp;= {0\cdot f_X(0) + 1\cdot f_X(1) + 2\cdot f_X(2)}\\
+    &amp;= {0 + \frac{15}{28} + \frac{6}{28} = \frac{21}{28}}\\
+    &amp;= \text{0,75}
+\end{align*}\]</span></p>
+<p>Portanto, chegamos a conclusão de que o valor esperado vale 0,75, ou seja, se uma amostra de tamanho 2 for selecionada aleatoriamente inúmeras vezes a partir de um lote contendo 5 computadores perfeitos e 3 defeituosos, espera-se que a amostra contenha, em média, 0,75 computadores defeituosos.</p>
+<p>Algumas observações são importantes: pode ser que para uma certa compra, todos os computadores sejam defeituosos; ou, ainda, na situação do extremo oposto, que o comprador tenha tido sorte e que tenha adquirido apenas computadores em perfeito estado, ou seja, em uma certa realização desse experimento aleatório, observaremos um dos valores possíveis para a variável aleatória <span class="math inline">\(X\)</span>.No entanto, se esta compra for repetida muitas e muitas vezes, o número de computadores defeituosos dentre os dois adquiridos converge, em média para 0,75. Note que o valor esperado não precisa necessariamente ser igual a um dos valores possíveis para <span class="math inline">\(X\)</span>. <strong>O valor esperado corresponde ao valor para o qual converge a média de um número muito grande de observações de uma v.a.</strong></p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-17" class="example"><strong>Exemplo 5.5  (Projétil, continuação)  </strong></span>
+</div>
+
+<p>Aqui, reconsideraremos o exemplo do projétil a fim de determinar a que distância do centro espera-se que o projétil atinja o disco. A v.a. de interesse é <span class="math inline">\(X\)</span>, que corresponde à distância ao centro do disco atingida pelo projétil.</p>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<p>Calculamos a fdp para essa variável aleatória anteriormente. E, como a v.a. é contínua, o valor esperado é obtido integrando em todo o domínio (que, neste caso corresponde aos valores de <span class="math inline">\(x\)</span> que vão de zero a <span class="math inline">\(r\)</span>) o produto de <span class="math inline">\(x\)</span> por <span class="math inline">\(f_X(x)\)</span>:</p>
+<ol style="list-style-type: lower-roman">
+<li>Distribuição de probabilidade:</li>
+</ol>
+<p><span class="math inline">\({f_X(x) = \frac{2x}{r^2}, \quad 0 &lt; x &lt; r}\)</span></p>
+<ol start="2" style="list-style-type: lower-roman">
+<li>Valor esperado:
+<span class="math display">\[\begin{align*}
+\mu = {E[X]} &amp;= {\int_{-\infty}^{\infty} x \cdot f_X(x) dx}
+= {\int_{0}^{r} x \frac{2x}{r^2} dx} = {\left.\frac{2}{r^2}\frac{x^3}{3}\right|_{0}^{r}}
+= {\frac{2}{3}r}
+\end{align*}\]</span></li>
+</ol>
+<p>O valor esperado é igual a 2/3 de <span class="math inline">\(r\)</span>.</p>
+<div id="propriedades-2" class="section level4 unnumbered">
+<h4>Propriedades</h4>
+<p>O valor esperado tem algumas propriedades:</p>
+<ul>
+<li><p><span class="math inline">\({E[c] = c}\)</span>, para <span class="math inline">\({c =}\)</span> constante;<br />
+Obviamente, o valor esperado de uma constante é a própria constante. A v.a. não é aleatória, portanto, o que esperar da média dessa variável? Que seja igual ao único valor que pode assumir.</p></li>
+<li><p><span class="math inline">\({\exists \,a = }\)</span> constante t.q. <span class="math inline">\({P[X\geq a] = 1 \Longrightarrow E[X] \geq a}\)</span><br />
+<span class="math inline">\({\exists \,b = }\)</span> constante t.q. <span class="math inline">\({P[X\leq b] = 1 \Longrightarrow E[X] \leq b}\)</span><br />
+Se existir uma constante <span class="math inline">\(a\)</span> tal que é certo que <span class="math inline">\(X\)</span> assume apenas valores maiores que essa constante, então o valor esperado da v.a. também precisa ser maior que essa constante <span class="math inline">\(a\)</span>. Um resultado análogo é obtido se há certeza de que <span class="math inline">\(X\)</span> assume apenas valores menores que uma certa constante <span class="math inline">\(b\)</span>.</p></li>
+<li><p><span class="math inline">\({X \sim f_X(x)}\)</span> simétrica em torno de um ponto (a cte. <span class="math inline">\({\mu}\)</span>):
+<span class="math display">\[{f_X(x) = \varphi(x-\mu) = \varphi(\mu-x) \quad \Longrightarrow \quad E[X] = \mu}\]</span>
+Se a distribuição de <span class="math inline">\(X\)</span> é simétrica em torno de um ponto, dado pela constante <span class="math inline">\(\mu\)</span>, o ponto de simetria corresponde ao valor esperado, desde que ele exista, claro.</p></li>
+</ul>
+<p>Suponha agora que tenhamos uma va. <span class="math inline">\(X\)</span> e sua fdp correspondente. Estamos agora interessados em calcular não o valor esperado de <span class="math inline">\(X\)</span>, mas o valor esperado de alguma função <span class="math inline">\(g(X)\)</span>. Como devemos proceder? Bem, podemos raciocinar que, sendo <span class="math inline">\(g(X)\)</span> também uma v.a., também tem uma distribuição de probabilidade, que pode ser obtida a partir do conhecimento da distribuição de <span class="math inline">\(X\)</span>. De posse da fdp de <span class="math inline">\(g(X)\)</span>, bastaria utilizar, então, a definição de valor esperado, para determinar <span class="math inline">\(E([g(X)]\)</span>. Este procedimento está absolutamente correto, mas temos uma maneira mais fácil de calcular o valor esperado de <span class="math inline">\(g(X)\)</span>: como a função <span class="math inline">\(g(\cdot)\)</span> assume valor <span class="math inline">\(g(x)\)</span> quando a va. <span class="math inline">\(X\)</span> assume valor <span class="math inline">\(x\)</span>, parece intuitivo que o valor esperado de <span class="math inline">\(g(X)\)</span> deve ser uma soma ponderada dos valores possíveis de <span class="math inline">\(g(X)\)</span>, em que os pesos correspondem às probabilidades de observar <span class="math inline">\(X=x\)</span>. É possível demonstrar que essa conjectura é verdadeira e, portanto, podemos calcular o valor esperado de uma função de uma v.a. como mostrado abaixo.</p>
+<ul>
+<li><span class="math inline">\({X \sim f_X(x)}\)</span><br />
+<strong>Caso discreto:</strong> <span class="math inline">\({E[g(X)] = \sum_x g(x)\cdot f_X(x)}\)</span><br />
+<strong>Caso contínuo:</strong> <span class="math inline">\({E[g(X)] = \int_{-\infty}^{\infty} g(x) \cdot f_X(x) dx}\)</span></li>
+</ul>
+<p>Consequentemente, quando esta função é uma transformação linear, sendo o valor esperado um operador linear, o valor esperado da transformação é igual à transformação aplicada ao valor esperado:</p>
+<ul>
+<li><span class="math inline">\({g(X) = a X + b, \; a,b}\)</span> constantes <span class="math inline">\({\Longrightarrow E[g(X)] = aE[X]+b}\)</span></li>
+</ul>
+<p>Na versão multidimensional dessa propriedade, se tivermos um conjunto de v.a.’s para as quais existe valor esperado (elas nem precisam ter a mesma distribuição) então o valor esperado de uma função linear dessas va’s é igual à mesma função linear aplicada aos valores esperados das va’s.</p>
+<ul>
+<li><span class="math inline">\({X_1, \ldots, X_n}\;\)</span> v.a.’s t.q. <span class="math inline">\({\exists \, E[X_i], i=1, \ldots, n}\)</span>, <span class="math inline">\(\quad{\forall \,a_1, \ldots, a_n, b}\)</span> constantes<br />
+<span class="math inline">\({\Longrightarrow E[a_1 X_1 + \ldots + a_n X_n + b] = a_1 E[X_1] + \ldots + a_n E[X_n] + b}\)</span></li>
+</ul>
+<p>E, finalmente, o valor esperado da soma de qualquer número de v.a.’s é igual à soma dos valores esperados individuais.</p>
+<ul>
+<li><span class="math inline">\({X_1, \ldots, X_n}\;\)</span> v.a.’s t.q. <span class="math inline">\({\exists \, E[X_i], i=1, \ldots, n}\)</span><br />
+<span class="math inline">\({\Longrightarrow E[X_1 + X_2 + \ldots + X_n] = E[X_1] + \ldots + E[X_n]}\)</span></li>
+</ul>
+<p>Estes são resultados simples e extremamente relevantes, que utilizaremos muitas e muitas vezes.</p>
+</div>
+</div>
+<div id="o-problema-dos-pontos-e-a-aposta-de-pascal" class="section level3 unnumbered">
+<h3>O Problema dos Pontos e a Aposta de Pascal</h3>
+<p>Blaise Pascal (1623-1662) foi o primeiro a descrever como obter o valor esperado de uma aposta. O chamado “Problema dos Pontos” foi uma das questões propostas pelo Chevalier de Méré a Pascal, que envolvia a partilha justa do prêmio de um jogo de apostas que terminava prematuramente, entre dois jogadores. Em sua troca de correspondências, Pascal e Fermat desenvolveram três argumentos para chegar à solução matemática deste problema. Em sua carta de 29 de julho de 1654 a Pierre de Fermat, Pascal desenvolveu a ideia de igualar o valor do jogo à sua <strong>“esperança matemática”</strong>, que poderia ser calculada a partir do produto da probabilidade de vencer pelo valor da aposta. Assim, o prêmio deveria ser dividido de acordo com a expectativa de vitória de cada jogador no momento em que o jogo foi interrompido. Com isso, Pascal inventou o conceito de “Valor Esperado” como conhecemos hoje. Posteriormente, Jakob Bernoulli I denominou o valor esperado de o “princípio fundamental da arte” em seu trabalho <em>Ars Conjectandi</em> (1713).</p>
+<p>Posteriormente, Pascal utilizou seu conceito de esperança matemática no raciocínio que ficou conhecido como a “Aposta de Pascal” e que, provavelmente é o primeiro problema moderno de análise de decisão. Em sua aposta, Pascal argumenta que a expectativa de ganho (felicidade eterna) é maior supondo a existência de Deus, do que pela sua negação. Seu argumento é muito simples; segundo ele: se Deus existe e a pessoa decide apostar que não existe e vive uma vida pautada por más ações, o preço do erro de decisão é enorme (basicamente a condenação por toda a eternidade). Por outro lado, se Deus não existe e a pessoa acredita que sim, não há grandes consequências associadas a esta decisão errada. Sendo assim, Pascal conclui que, na ausência de informação adicional, é vantajoso acreditar na existência de Deus. Em vez de tentar provar a existência de Deus, ele argumenta que uma pessoa racional deveria pautar sua vida e suas ações com sobriedade e correção, mesmo que a verdade a respeito da existência de Deus não pudesse ser conhecida de fato.</p>
+<p>É interessante que esse raciocínio continua relevante e, talvez seja até mais útil para tomar decisões do dia-a-dia, ou questões científicas, do que aquela originalmente proposta por Pascal. Este é o caso, por exemplo, quando analisamos o debate sobre aquecimento global e mudanças climáticas. Assim como Pascal, não conseguimos ainda provas definitivas e irrefutáveis de que a ação humana é responsável pelo aquecimento global e as mudanças climáticas. Mas, assim como Pascal argumenta em sua aposta, é vantajoso acreditar que este é o caso. O argumento é tão simples quanto aquele apresentado por Pascal: se a atividade humana provoca mudanças climáticas e as pessoas decidem apostar que não, as consequências do erro de decisão são nefastas (incluindo aumento no nível dos mares e oceanos, secas, fome, conflitos e, possivelmente a extinção de nossa espécie); por outro lado, se a atividade humana não tem a ver com o processo de aquecimento global e mudanças climáticas, então o erro de decisão, que implica em levar uma vida mais sustentável, não tem um custo tão elevado. Sendo assim, sem nenhuma informação adicional, concluímos, da mesma forma que Pascal, que é racional apostar que a atividade humana está relacionada ao aquecimento global.</p>
+</div>
+<div id="variância" class="section level3 unnumbered">
+<h3>Variância</h3>
+<p>Enquanto o valor esperado nos dá uma medida do centro da distribuição, ou seja o valor em torno do qual os valores da v.a .se distribuem, ele nada nos informa a respeito de<strong>como</strong> esses valores se distribuem em torno do centro.</p>
+<p>Uma maneira de medir a variabilidade de uma v.a. é considerando o quanto ela se afasta de sua média. A variância mede, então, o espalhamento médio quadrático das dos valores que a v.a. pode assumir, em tono do centro da distribuição, conforme definido abaixo.</p>
+<p>Seja <span class="math inline">\(X\)</span> uma v.a. com média <span class="math inline">\({\mu_X = E[X]}\)</span>. A <strong>variância</strong> de <span class="math inline">\(X\)</span>, representada por <span class="math inline">\({\sigma_X^2}\)</span> ou <span class="math inline">\({Var[X]}\)</span>, é definida como:</p>
+<p><strong>Caso Discreto:</strong><br />
+<span class="math inline">\({Var[X] = E[(X-\mu_x)^2] = \sum_x (x-\mu_x)^2 \cdot f_X(x)}\)</span>, para os pontos em que <span class="math inline">\(X\)</span> é definida.</p>
+<p><strong>Caso Contínuo:</strong><br />
+<span class="math inline">\({Var[X] = E[(X-\mu_x)^2] = \int_{-\infty}^{\infty} (x-\mu_x)^2 \cdot f_X(x)}\)</span>, onde <span class="math inline">\(f_X(x)\)</span> é a fdp de <span class="math inline">\(X\)</span>.</p>
+<div id="propriedades-3" class="section level4 unnumbered">
+<h4>Propriedades</h4>
+<ul>
+<li><p><span class="math inline">\({Var[X] \geq 0}\)</span><br />
+A variância corresponde à esperança de uma função quadrática, portanto não pode assumir valores negativos.</p></li>
+<li><p><span class="math inline">\({Var[X] = 0 \iff \exists \, c=}\)</span> constante, t.q. <span class="math inline">\({P[X=c]=1}\)</span><br />
+Se a variância é nula, isso implica que a variável em questão não é aleatória, assumindo apenas um valor constante <span class="math inline">\(c\)</span> e vice-versa.</p></li>
+<li><p><span class="math inline">\({Var[X] = E[X^2] -\big(E[X]\big)^2 = E[X^2] - \mu_x^2}\)</span>, se <span class="math inline">\({\exists \, E[X^2]}\)</span><br />
+A variância da v.a. <span class="math inline">\(X\)</span> é igual ao valor esperado de <span class="math inline">\(X^2\)</span> menos o quadrado do valor esperado de <span class="math inline">\(X\)</span>. Esta é uma maneira alternativa e, na prática, mais fácil de calcular a variância de uma v.a.</p></li>
+</ul>
+<p>Uma identidade útil a respeito de variâncias é a seguinte:</p>
+<ul>
+<li><span class="math inline">\({Y = aX+b}\)</span>, <span class="math inline">\(\mathsf{a,b}\)</span> constantes <span class="math inline">\({\Longrightarrow Var[Y] = a^2 Var[X]}\)</span></li>
+</ul>
+<p>Para a variância de uma função <span class="math inline">\(g(\cdot)\)</span> de <span class="math inline">\(X\)</span>, basta utilizar a definição de valor esperado aplicada ao quadrado da diferença entre <span class="math inline">\(g(X)\)</span> e o valor esperado de <span class="math inline">\(g(X)\)</span>, <span class="math inline">\(\mu_{g(X)}\)</span>:</p>
+<ul>
+<li><p><span class="math inline">\({X \sim f_X(x) \quad \Longrightarrow \quad Var[g(X)] = E\{[g(X) - \mu_{g(x)}]^2\}}\)</span>:</p>
+<p><strong>Caso discreto:</strong> <span class="math inline">\({Var[g(X)] = \sum_x [g(X) - \mu_{g(x)}]^2 \cdot f_X(x)}\)</span></p>
+<p><strong>Caso contínuo:</strong> <span class="math inline">\({Var [g(X)] = \int_{-\infty}^{\infty} [g(X) - \mu_{g(x)}]^2 \cdot f_X(x) dx}\)</span></p></li>
+</ul>
+</div>
+</div>
+<div id="desvio-padrão" class="section level3 unnumbered">
+<h3>Desvio-padrão</h3>
+<p>O desvio-padrão é uma outra medida do espalhamento de uma v.a., definido como:</p>
+<p><span class="math display">\[{\sigma_x = +\sqrt{Var[X]}}\]</span></p>
+<p>Desta maneira, o desvio-padrão é dado nas mesmas unidades da v.a., o que torna seu uso em muitas aplicações preferível à variância.</p>
+<div id="padronização" class="section level4 unnumbered">
+<h4>Padronização</h4>
+<p>A padronização é uma transformação de escala e localização. A variável aleatória é centralizada com relação à sua média, e re-escalada de forma a tornar seu valor esperado nulo e variância unitária:</p>
+<p>Se <span class="math inline">\(X\)</span> é uma v.a. com <span class="math inline">\({E[X] = \mu_x}\)</span> e <span class="math inline">\({Var[X] = \sigma^2_x}\)</span>, então<br />
+<span class="math display">\[{Y = \frac{X - \mu_x}{\sigma_x}}\]</span>
+é uma v.a. <strong>padronizada</strong>, i.e., <span class="math inline">\({E[Y] = 0}\)</span> e <span class="math inline">\({Var[Y] = 1}\)</span>.</p>
+</div>
+</div>
+</div>
+<div id="momentos" class="section level2">
+<h2><span class="header-section-number">5.4</span> Momentos</h2>
+<p>Além das medidas de localização e dispersão apresentadas anteriormente, existem outras medidas que descrevem diferentes características de uma distribuição.</p>
+<p>Os vários momentos de uma variável aleatória representam uma classe importante de esperanças que podem ser utilizadas para descrever completamente uma distribuição de probabilidade. Isso é o que veremos a seguir.</p>
+<p>Para qualquer variável aleatória <span class="math inline">\(X\)</span> e qualquer número inteiro positivo <span class="math inline">\(k\)</span>, o valor esperado de <span class="math inline">\(X^k\)</span> é chamado <strong>momento de ordem k</strong> de <span class="math inline">\(X\)</span>.</p>
+<p>O momento de ordem <span class="math inline">\({k \in \mathcal{Z}_+}\)</span> de <span class="math inline">\(X\)</span> existe se, e somente se,
+<span class="math display">\[{E[|X|^k] &lt; \infty}\]</span></p>
+<p>e, neste caso, é dado por:</p>
+<p><span class="math display">\[{\mu_k^\prime = E[X^k]}\]</span></p>
+<p>Em particular, o momento de primeira ordem da variável aleatória X corresponde à sua média.</p>
+<p>O momento central de ordem k, corresponde ao momento de ordem <span class="math inline">\(k\)</span> da v.a. tomado com relação a sua média. Assim, de acordo com essa terminologia, a variância da variável aleatória <span class="math inline">\(X\)</span> corresponde ao seu segundo momento central.</p>
+<p>O momento .stand-out[central] de ordem k de <span class="math inline">\(X\)</span> é dado por:</p>
+<p><span class="math display">\[{\mu_k^{} = E[(X - \mu)^k]}\]</span></p>
+<p>Já vimos dois momentos importantes: a média (que corresponde ao primeiro momento de uma variável aleatória e descreve a localização do centro de sua distribuição) e a variância (que corresponde ao segundo momento central e descreve o espalhamento ou dispersão dos valores assumidos pela variável aleatória em torno de seu centro).</p>
+<p>No século XIX, era uma prática comum entre os estatísticos tratar qualquer distribuição de frequência como sendo normal ou Gaussiana, isto é, tendo forma de sino: histogramas multimodais (aqueles com múltiplos picos) eram ajustados com misturas de gaussianas, assimetrias eram removidas através de transformações que garantissem a normalidade da distribuição e simetria era vista como uma evidência irrefutável da normalidade da população.</p>
+<p>Foi neste contexto que Karl Pearson propôs (1894) um sistema de curvas (de distribuições) com diversas formas possíveis, de forma a permitir uma representação mais acurada dos dados observados, utilizando para isso momentos de ordem mais elevada. Esse sistema de curvas era completamente determinado por quantidades associadas ao terceiro e quarto momentos centrais de uma variável aleatória.</p>
+<div id="assimetria-skewness-e-excesso-kurtosis" class="section level3 unnumbered">
+<h3>Assimetria (<em>skewness</em>) e Excesso (<em>kurtosis</em>)</h3>
+<p>Os momentos centrais de 3a. e 4a. ordem estão associados aos conceitos de assimetria e excesso.</p>
+<div class="figure"><span id="fig:ch5-skewness-kurtosis"></span>
+<img src="img/skewness-kurtosis.jpg" alt="Assimetria e Excesso. [Fonte](https://dataanalyticsedge.com/2017/06/16/descriptive-statistics-in-r/)" width="100%" />
+<p class="caption">
+Figura 5.2: Assimetria e Excesso. <a href="https://dataanalyticsedge.com/2017/06/16/descriptive-statistics-in-r/">Fonte</a>
+</p>
+</div>
+<p>O termo “skewness” se refere à falta de simetria de uma distribuição. As medidas de assimetria indicam a diferença da distribuição das observações, se comparadas à distribuição normal (que tem forma de sino e é simétrica). Em uma distribuição simétrica, os valores de média, mediana e moda são idênticos.</p>
+<p>Para distribuições com assimetria negativa, o valor da moda é maior que a média e a mediana se encontra entre a média e a moda; a distribuição apresenta cauda inferior (à esquerda) longa, de forma que a média é deslocada para baixo. Por outro lado, para distribuições com assimetria positiva, a média é maior que moda e a mediana se encontra entre a moda e a média. Distribuições com assimetria positiva admitem valores muito maiores que a maior parte das observações, de forma que a cauda à direita é mais longa e a média é deslocada para cima.</p>
+<p>Distribuições assimétricas surgem em diversas situações como, por exemplo, quando a variável aleatória de interesse é renda, preço de imóveis, duração ou vida de um produto, idade no instante da aposentadoria entre outras.</p>
+<p>Enquanto “skewness” mede a assimetria de uma distribuição, “kurtosis” ou curtose é uma propriedade de distribuições simétricas e se refere ao nível de achatamento da distribuição, com relação à distribuição normal.</p>
+<p>Distribuições mais espalhadas e achatadas que a distribuição normal são chamadas platicúrticas e apresentam valores negativos de curtose; distribuições mais concentradas em torno da média, isto é, que apresentam um pico mais elevado, são chamadas leptocúrticas e apresentam valor de curtose elevado. A distribuição normal, utilizada como referência, é chamada mesocúrtica. Valores elevados para a curtose podem estar associados à presença de observações extremas (<em>outliers</em>).</p>
+</div>
+</div>
+<div id="desigualdades-de-markov-e-chebyshev" class="section level2">
+<h2><span class="header-section-number">5.5</span> Desigualdades de Markov e Chebyshev</h2>
+<p>Até agora, vimos que, a fim de calcular probabilidades, precisamos conhecer a distribuição de probabilidade associada a uma determinada variável aleatória. Entretanto, é comum nos depararmos com a situação em que não conseguimos determinar a distribuição de probabilidade, mas o valor esperado e/ou a variância da variável aleatória são conhecidos. Nesses casos, embora não sejamos capazes de calcular de maneira exata, ainda é possível estabelecer limites para certas probabilidades.</p>
+<p>Por exemplo, nossa intuição nos diz que deve ser raro observar uma v.a. se desviar demasiadamente de seu valor esperado, ou seja, não esperamos observar outliers com muita frequência. Mas qual a probabilidade de observar um valor atípico de uma variável aleatória? Ou seja, qual a probabilidade de que ela assuma um valor maior que uma certa quantidade?</p>
+<p>Veremos a seguir como dois resultados simples e universais, conhecidos como desigualdades de Markov e Chebyshev fornecem argumentos matemáticos sólidos para confirmar tais conjecturas e responder a perguntas como essas, quando aplicados a amostras aleatórias.</p>
+<div id="desigualdade-de-markov" class="section level3 unnumbered">
+<h3>Desigualdade de Markov</h3>
+<p>Sejam:
+O espaço de probabilidades <span class="math inline">\({(\Omega, \mathcal{A}, P)}\)</span><br />
+A variável aleatória <span class="math inline">\({X: \Omega \rightarrow \Re}\)</span><br />
+A função real <span class="math inline">\({g(\cdot): \Re \rightarrow \Re_{+}}\)</span></p>
+<p>Então:
+<span class="math display">\[{P[g(X) \geq k] \leq \frac{E[g(X)]}{k};  \quad \forall k&gt;0}\]</span></p>
+<p>A desigualdade de Markov, que é mais comumente enunciada na forma do corolário abaixo.</p>
+
+<div class="corollary">
+<span id="cor:unnamed-chunk-19" class="corollary"><strong>Corolário 5.1  </strong></span>
+</div>
+
+<p>Dada a v.a. <span class="math inline">\(X\)</span>, para <span class="math inline">\({g(X) = X: \qquad P[X \geq k] \leq \frac{E[X]}{k}; \quad \forall k&gt;0}\)</span></p>
+<p>Sendo assim, a desigualdade de Markov nos dá um limite superior para a probabilidade de uma variável aleatória não negativa ser maior ou igual a uma constante positiva <span class="math inline">\(k\)</span>. Note que este limite superior é .stand-out[universalmente] válido, ou seja, independe da distribuição de <span class="math inline">\(X\)</span>.</p>
+<p>Estamos especialmente interessados em valores elevados de <span class="math inline">\(k\)</span>. Quando <span class="math inline">\(k\)</span> é menor ou igual ao valor esperado de <span class="math inline">\(X\)</span>, a desigualdade não nos dá nenhuma informação, pois sabemos de antemão que essa probabilidade deve ser menor ou igual a 1.</p>
+<p>Utilizando a desigualdade de Markov, podemos verificar resultados interessantes: por exemplo, para qualquer variável aleatória não-negativa <span class="math inline">\(X\)</span>, cuja média vale 1, o maior valor possível para a probabilidade de que <span class="math inline">\(X\)</span> seja maior ou igual a 100, é 0,01.</p>
+<p>Uma consequência da desigualdade de Markov é a desigualdade de Chebyshev, que veremos a seguir. Essa desigualdade recebe o nome do matemático russo Pafnuty Chebyshev, que a enunciou pela primeira vez (sem demonstrá-la) em 1874. Dez anos depois, um aluno de Chebyshev, Andrey Markov, demonstrou a desigualdade em sua tese de Doutorado.</p>
+</div>
+<div id="desigualdade-de-chebyshev" class="section level3 unnumbered">
+<h3>Desigualdade de Chebyshev</h3>
+<p>Vamos considerar que valem as condições da desigualdade de Markov, mas que, além do valor esperado da variável aleatória, também conhecemos sua variância e ambos <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma^2\)</span> são finitos:</p>
+<p><span class="math display">\[\begin{align*}
+{g(X) = (X - \mu)^2}, \quad &amp;\text{onde} \quad {\mu = E[X] &lt; \infty}\\
+{k = \theta^2 \sigma^2},\quad &amp;\text{onde} \quad {\sigma^2 = Var[X] &lt; \infty}
+\end{align*}\]</span></p>
+<p>Então, da desigualdade de Markov:</p>
+<p><span class="math display">\[{P[|X-\mu|\geq \theta\sigma] \leq \frac{1}{\theta^2}; \quad \forall \theta&gt;0}\]</span>
+consequentemente: <span class="math inline">\({P[\mu - \theta\sigma &lt; X &lt; \mu + \theta\sigma] \geq 1 - \frac{1}{\theta^2}}\)</span></p>
+<p>Para <span class="math inline">\(\theta = 1: \;\)</span> o resultado é óbvio.<br />
+Para <span class="math inline">\(\theta = 2: \; P[\mu - 2\sigma &lt; X &lt; \mu + 2\sigma] \geq 75\%\)</span><br />
+Para <span class="math inline">\(\theta = 3: \; P[\mu - 3\sigma &lt; X &lt; \mu + 3\sigma] \geq 89\%\)</span></p>
+<p>A desigualdade de Chebyshev nos diz que a probabilidade de que <span class="math inline">\(X\)</span> se afaste de sua média pelo menos uma quantidade de <span class="math inline">\(\theta\)</span> desvios-padrão é menor que <span class="math inline">\(1/\theta^2\)</span>. Em outras palavras, a probabilidade de que <span class="math inline">\(X\)</span> esteja a uma distância de sua média menor que <span class="math inline">\(\theta\)</span> desvios é de pelo menos <span class="math inline">\(1 - 1/\theta^2\)</span>.</p>
+<p>Assim, a desigualdade de Chebyshev nos diz, em particular, que para qualquer conjunto de dados, independentemente da distribuição de probabilidade associada à v.a. em análise, pelo menos 75% das observações se encontram a uma distância máxima de dois desvios de sua média; e pelo menos 89% de todas as observações se encontram a uma distância máxima de três desvios de sua média.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-20" class="example"><strong>Exemplo 5.6  </strong></span>
+</div>
+
+<p>Suponha que, em média, a demanda diária por um certo item seja de 28 unidades, com variância 16. Quantos itens devem ser disponibilizados diariamente para atender à demanda diária em pelo menos 90% das vezes?</p>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<p>Seja a v.a. <span class="math inline">\(X\)</span> = demanda diária, tal que <span class="math inline">\({\mu = E[X] = 28}\)</span> e <span class="math inline">\({\sigma^2 = Var[X] = 16}\)</span>. Queremos <span class="math inline">\(k\)</span> tal que <span class="math inline">\({P[X \leq k] \geq 0.90}\)</span>, que equivale a <span class="math inline">\({P[X \geq k] \leq 0.10}\)</span>.</p>
+<p><strong>Utilizando a Desigualdade de Markov</strong></p>
+<p><span class="math display">\[\begin{align*}
+{P[X \geq k] \leq \frac{E[X]}{k} = \frac{28}{k} = 0.1 \quad \therefore k = 280 \quad \Rightarrow P[X \geq 280] \leq 0.1}
+\end{align*}\]</span></p>
+<p>Aplicando a desigualdade de Markov, chegamos à conclusão de que são necessários 280 itens a fim de que a demanda seja satisfeita em pelo menos 90% das vezes. Note que esse é um limite bastante conservador. Ora, a demanda média diária é de 28 itens e a desigualdade nos pede para disponibilizar uma quantidade 10 vezes maior de itens. No entanto, ela se baseia em muito pouca informação: utilizamos apenas a demanda média, sem nenhuma informação a respeito da variabilidade ou da distribuição dessa variável aleatória.</p>
+<p>Já a desigualdade de Chebyshev utiliza a informação da média e da variância. Vejamos, então, como essa informação adicional contribui para uma melhor estimativa da quantidade de itens necessários diariamente.</p>
+<p><strong>Utilizando a Desigualdade de Chebyshev</strong></p>
+<p><span class="math display">\[\begin{align*}
+{P[|X -28|\geq m] \leq \frac{Var[X]}{m^2} = \frac{16}{m^2} = 0.1 \quad \therefore m = 4\sqrt{10} \approx 13}\\
+{\Rightarrow |X -28| \geq 13 \quad \Rightarrow X \geq 41}.
+\end{align*}\]</span></p>
+<p>Pela desigualdade de Chebyshev, chegamos à conclusão de que é necessário disponibilizar pelo menos 41 itens diariamente a fim de atender à demanda em pelo menos 90% das vezes.</p>
+<p>Note agora que a quantidade de itens necessários é consideravelmente menor que aquela obtida através da desigualdade de Markov. Essa quantidade de 41 itens é suficiente para satisfazer a probabilidade desejada de 90%, independentemente da distribuição da variável aleatória. Se informação adicional a respeito da distribuição puder ser obtida, é de se esperar chegar à conclusão de que um número ainda menor de itens seja suficiente para atender à demanda nas condições consideradas.</p>
+<div id="resumo-1" class="section level4 unnumbered">
+<h4>Resumo</h4>
+<p>Em síntese, as desigualdades de Markov e Chebyshev nos permitem fazer afirmações probabilísticas quando temos muito pouca informação a respeito de uma variável aleatória. Com essas desigualdades, podemos calcular limites para probabilidades quando apenas a média, ou apenas média e variância de uma variável aleatória são conhecidas. É claro que se fosse possível determinar a distribuição de probabilidades, poderíamos calcular as probabilidades exatas e não seria necessário recorrer a esses limites.</p>
+<p>É interessante ressaltar que esses resultados são absolutamente gerais; isso significa que valem para qualquer variável aleatória sob mínimas condições de média e variância conhecidas. E, portanto, valem para qualquer .stand-out[população] (já que v.a.’s nada mais são do que formas de representar o comportamento aleatório de uma população).</p>
+<p><strong>Desigualdade de Markov:</strong> Permite estabelecer um limite para a probabilidade de a variável aleatória <span class="math inline">\(X\)</span> (ou uma função de <span class="math inline">\(X\)</span> ) ser maior que um certo valor.</p>
+<p><strong>Desigualdade de Chebyshev:</strong> Permite estabelecer um limite para a probabilidade de a variável aleatória <span class="math inline">\(X\)</span> se encontrar a uma certa distância máxima de sua média.</p>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="teoremas-fundamentais-da-probabilidade.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["apostila-GED13.pdf", "apostila-GED13.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

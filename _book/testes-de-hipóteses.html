@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 12 Testes de Hipóteses | GED-13: Probabilidade e Estatística</title>
+  <meta name="description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 12 Testes de Hipóteses | GED-13: Probabilidade e Estatística" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 12 Testes de Hipóteses | GED-13: Probabilidade e Estatística" />
+  
+  <meta name="twitter:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+<meta name="author" content="Prof. Denise Beatriz Ferrari" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intervalos-de-confiança.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Probabilidade e Estatística</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Objetivos do Curso</a></li>
+<li class="chapter" data-level="1" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="introdução.html"><a href="introdução.html#estatística-e-o-raciocínio-científico"><i class="fa fa-check"></i><b>1.1</b> Estatística e o Raciocínio Científico</a></li>
+<li class="chapter" data-level="1.2" data-path="introdução.html"><a href="introdução.html#o-que-é-estatística"><i class="fa fa-check"></i><b>1.2</b> O que é Estatística?</a></li>
+<li class="chapter" data-level="1.3" data-path="introdução.html"><a href="introdução.html#o-papel-da-probabilidade-em-estatística"><i class="fa fa-check"></i><b>1.3</b> O Papel da Probabilidade em Estatística</a></li>
+<li class="chapter" data-level="1.4" data-path="introdução.html"><a href="introdução.html#elementos-fundamentais-em-estatística"><i class="fa fa-check"></i><b>1.4</b> Elementos Fundamentais em Estatística</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#população-e-amostra"><i class="fa fa-check"></i>População e Amostra</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#variáveis"><i class="fa fa-check"></i>Variáveis</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#dados-e-fontes-de-dados"><i class="fa fa-check"></i>Dados e Fontes de Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introdução.html"><a href="introdução.html#tipos-de-problemas"><i class="fa fa-check"></i><b>1.5</b> Tipos de Problemas</a></li>
+<li class="chapter" data-level="1.6" data-path="introdução.html"><a href="introdução.html#o-processo-de-análise-de-dados"><i class="fa fa-check"></i><b>1.6</b> O Processo de Análise de Dados</a></li>
+<li class="chapter" data-level="1.7" data-path="introdução.html"><a href="introdução.html#métodos-para-exploração-resumo-e-descrição-de-dados"><i class="fa fa-check"></i><b>1.7</b> Métodos para Exploração, Resumo e Descrição de Dados</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#análise-exploratória-de-dados-exploratory-data-analysis-eda"><i class="fa fa-check"></i>Análise Exploratória de Dados (“Exploratory Data Analysis”, EDA)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html"><i class="fa fa-check"></i><b>2</b> Introdução à Teoria de Probabilidades</a><ul>
+<li class="chapter" data-level="2.1" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#breve-histórico"><i class="fa fa-check"></i><b>2.1</b> Breve Histórico</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#chance-e-incerteza"><i class="fa fa-check"></i>Chance e Incerteza</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#jogos-de-azar"><i class="fa fa-check"></i>Jogos de Azar</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#origem-da-teoria-matemática-de-probabilidades"><i class="fa fa-check"></i>Origem da Teoria Matemática de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#formalização-matemática"><i class="fa fa-check"></i>Formalização Matemática</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definições-iniciais"><i class="fa fa-check"></i><b>2.2</b> Definições Iniciais</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#experimento-aleatório"><i class="fa fa-check"></i>Experimento Aleatório</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#espaço-amostral-e-evento"><i class="fa fa-check"></i>Espaço Amostral e Evento</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#lei-de-probabilidade"><i class="fa fa-check"></i>Lei de Probabilidade</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretações-de-probabilidade"><i class="fa fa-check"></i><b>2.3</b> Interpretações de Probabilidade</a><ul>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-clássica-a-priori-laplace-1812">Interpretação Clássica (<em>a priori</em>): Laplace, 1812</a></li>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-empírica-ou-de-frequência-relativa-a-posteriori-richard-v.-mises-1919">Interpretação Empírica ou de Frequência Relativa (<em>a posteriori</em>): Richard V. Mises, 1919</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretação-subjetiva"><i class="fa fa-check"></i>Interpretação Subjetiva</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#resumo"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definição-axiomática"><i class="fa fa-check"></i><b>2.4</b> Definição Axiomática</a></li>
+<li class="chapter" data-level="2.5" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#revisitando-o-paradoxo-de-de-méré-o-problema-dos-dados"><i class="fa fa-check"></i><b>2.5</b> Revisitando o Paradoxo de De Méré: O Problema dos Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html"><i class="fa fa-check"></i><b>3</b> Probabilidade Condicional e Independência</a><ul>
+<li class="chapter" data-level="3.1" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#probabilidade-condicional"><i class="fa fa-check"></i><b>3.1</b> Probabilidade Condicional</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades"><i class="fa fa-check"></i>Propriedades</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-de-eventos"><i class="fa fa-check"></i><b>3.2</b> Independência de Eventos</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades-1"><i class="fa fa-check"></i>Propriedades</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-condicional"><i class="fa fa-check"></i>Independência Condicional</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#eventos-independentes-x-eventos-mutuamente-exclusivos"><i class="fa fa-check"></i>Eventos Independentes x Eventos Mutuamente Exclusivos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html"><i class="fa fa-check"></i><b>4</b> Teoremas Fundamentais da Probabilidade</a><ul>
+<li class="chapter" data-level="4.1" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-da-probabilidade-total-dividir-para-conquistar"><i class="fa fa-check"></i><b>4.1</b> Teorema da Probabilidade Total: …dividir para conquistar!</a></li>
+<li class="chapter" data-level="4.2" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-de-bayes-aprendendo-pela-experiência"><i class="fa fa-check"></i><b>4.2</b> Teorema de Bayes: …aprendendo pela experiência</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html"><i class="fa fa-check"></i><b>5</b> Variáveis Aleatórias e Distribuições</a><ul>
+<li class="chapter" data-level="5.1" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variáveis-aleatórias"><i class="fa fa-check"></i><b>5.1</b> Variáveis Aleatórias</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#definição-caso-unidimensional"><i class="fa fa-check"></i>Definição (caso unidimensional)</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#tipos-de-variáveis-aleatórias"><i class="fa fa-check"></i>Tipos de Variáveis Aleatórias</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#distribuições-de-probabilidade"><i class="fa fa-check"></i><b>5.2</b> Distribuições de Probabilidade</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-discreto"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso discreto</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-contínuo"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso contínuo</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-acumulada-fda"><i class="fa fa-check"></i>Função Distribuição Acumulada (FDA)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado-e-variância"><i class="fa fa-check"></i><b>5.3</b> Valor Esperado e Variância</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado"><i class="fa fa-check"></i>Valor Esperado</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#o-problema-dos-pontos-e-a-aposta-de-pascal"><i class="fa fa-check"></i>O Problema dos Pontos e a Aposta de Pascal</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variância"><i class="fa fa-check"></i>Variância</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desvio-padrão"><i class="fa fa-check"></i>Desvio-padrão</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#momentos"><i class="fa fa-check"></i><b>5.4</b> Momentos</a><ul>
+<li><a href="variáveis-aleatórias-e-distribuições.html#assimetria-skewness-e-excesso-kurtosis">Assimetria (<em>skewness</em>) e Excesso (<em>kurtosis</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdades-de-markov-e-chebyshev"><i class="fa fa-check"></i><b>5.5</b> Desigualdades de Markov e Chebyshev</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-markov"><i class="fa fa-check"></i>Desigualdade de Markov</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-chebyshev"><i class="fa fa-check"></i>Desigualdade de Chebyshev</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><i class="fa fa-check"></i><b>6</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Bernoulli</a><ul>
+<li class="chapter" data-level="6.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#o-experimento-de-bernoulli"><i class="fa fa-check"></i><b>6.1</b> O Experimento de Bernoulli</a></li>
+<li class="chapter" data-level="6.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-de-bernoulli"><i class="fa fa-check"></i><b>6.2</b> Distribuição de Bernoulli</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-2"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial"><i class="fa fa-check"></i><b>6.3</b> Distribuição Binomial</a></li>
+<li class="chapter" data-level="6.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#um-problema-de-tomada-de-decisão"><i class="fa fa-check"></i><b>6.4</b> Um Problema de Tomada de Decisão</a></li>
+<li class="chapter" data-level="6.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-geométrica"><i class="fa fa-check"></i><b>6.5</b> Distribuição Geométrica</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#propriedade-de-ausência-de-memória"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#outras-distribuições"><i class="fa fa-check"></i><b>6.6</b> Outras Distribuições</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial-negativa-ou-distribuição-de-pascal"><i class="fa fa-check"></i>Distribuição Binomial Negativa (ou Distribuição de Pascal)</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial"><i class="fa fa-check"></i>Distribuição Multinomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial-negativa"><i class="fa fa-check"></i>Distribuição Multinomial Negativa</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica"><i class="fa fa-check"></i>Distribuição Hipergeométrica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica-negativa"><i class="fa fa-check"></i>Distribuição Hipergeométrica Negativa</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-4"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><i class="fa fa-check"></i><b>7</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Poisson</a><ul>
+<li class="chapter" data-level="7.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i><b>7.1</b> Uma aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="7.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-poisson"><i class="fa fa-check"></i><b>7.2</b> Distribuição de Poisson</a></li>
+<li class="chapter" data-level="7.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#o-processo-de-poisson"><i class="fa fa-check"></i><b>7.3</b> O Processo de Poisson</a></li>
+<li class="chapter" data-level="7.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-exponencial"><i class="fa fa-check"></i><b>7.4</b> Distribuição Exponencial</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#propriedade-de-ausência-de-memória-1"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-weibull"><i class="fa fa-check"></i>Distribuição de Weibull:</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-gama"><i class="fa fa-check"></i><b>7.5</b> Distribuição Gama</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html"><i class="fa fa-check"></i><b>8</b> Modelos Probabilísticos: Distribuição Normal</a><ul>
+<li class="chapter" data-level="8.1" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#distribuição-normal"><i class="fa fa-check"></i><b>8.1</b> Distribuição Normal</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#mais-uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>…(Mais) Uma Aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#cálculo-de-probabilidades"><i class="fa fa-check"></i>Cálculo de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#padronização-1"><i class="fa fa-check"></i>Padronização</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#regra-empírica"><i class="fa fa-check"></i>Regra Empírica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#coeficiente-de-variação"><i class="fa fa-check"></i>Coeficiente de Variação</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-distribuições-discretas"><i class="fa fa-check"></i><b>8.2</b> Aproximação para Distribuições Discretas</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>Aproximação para a Distribuição Binomial</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#métodos-descritivos-para-avaliar-normalidade"><i class="fa fa-check"></i><b>8.3</b> Métodos Descritivos para Avaliar Normalidade</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html"><i class="fa fa-check"></i><b>9</b> Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="9.1" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#introdução-à-inferência-estatística"><i class="fa fa-check"></i><b>9.1</b> Introdução à Inferência Estatística</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#inferência-estatística"><i class="fa fa-check"></i>Inferência Estatística</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostras-e-distribuições-amostrais"><i class="fa fa-check"></i><b>9.2</b> Amostras e Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostra-aleatória"><i class="fa fa-check"></i>Amostra Aleatória</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#parâmetos-vs.-estatísticas"><i class="fa fa-check"></i>Parâmetos vs. Estatísticas</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-amostral"><i class="fa fa-check"></i>Distribuição Amostral</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-da-média-amostral"><i class="fa fa-check"></i><b>9.3</b> Distribuição da Média Amostral</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#propriedades-da-média-amostral"><i class="fa fa-check"></i>Propriedades da Média Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#lei-dos-grandes-números"><i class="fa fa-check"></i>Lei dos Grandes Números</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#teorema-do-limite-central"><i class="fa fa-check"></i><b>9.4</b> Teorema do Limite Central</a></li>
+<li class="chapter" data-level="9.5" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuições-amostrais-associadas-a-populações-normais"><i class="fa fa-check"></i><b>9.5</b> Distribuições Amostrais Associadas a Populações Normais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-qui-quadrado"><i class="fa fa-check"></i>Distribuição Qui-Quadrado</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-t-student"><i class="fa fa-check"></i>Distribuição t-Student</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#aproximando-distribuições-amostrais-via-simulação-de-monte-carlo"><i class="fa fa-check"></i><b>9.6</b> Aproximando Distribuições Amostrais via Simulação de Monte Carlo</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-mediana-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Mediana Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-desvio-padrão-amostral"><i class="fa fa-check"></i>Distribuição Aproximada do Desvio-Padrão Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-variância-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Variância Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-mad-desvio-mediano-absoluto"><i class="fa fa-check"></i>Distribuição Aproximada do MAD (Desvio Mediano Absoluto)</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-amplitude-inter-quartis-iqr"><i class="fa fa-check"></i>Distribuição Aproximada da Amplitude Inter-Quartis (IQR)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="estimação-pontual.html"><a href="estimação-pontual.html"><i class="fa fa-check"></i><b>10</b> Estimação Pontual</a><ul>
+<li class="chapter" data-level="10.1" data-path="estimação-pontual.html"><a href="estimação-pontual.html#estimador-e-estimativa"><i class="fa fa-check"></i><b>10.1</b> Estimador e Estimativa</a></li>
+<li class="chapter" data-level="10.2" data-path="estimação-pontual.html"><a href="estimação-pontual.html#propriedades-de-estimadores"><i class="fa fa-check"></i><b>10.2</b> Propriedades de Estimadores</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#não-tendeciosidade-exatidão"><i class="fa fa-check"></i>Não-Tendeciosidade (exatidão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#eficiência-precisão"><i class="fa fa-check"></i>Eficiência (precisão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#consistência"><i class="fa fa-check"></i>Consistência</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#erro-médio-quadrático"><i class="fa fa-check"></i>Erro Médio Quadrático</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="estimação-pontual.html"><a href="estimação-pontual.html#métodos-clássicos-de-estimação-de-parâmetros"><i class="fa fa-check"></i><b>10.3</b> Métodos Clássicos de Estimação de Parâmetros</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-dos-momentos"><i class="fa fa-check"></i>Método dos Momentos</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-da-máxima-verossimilhança"><i class="fa fa-check"></i>Método da Máxima Verossimilhança</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html"><i class="fa fa-check"></i><b>11</b> Intervalos de Confiança</a><ul>
+<li class="chapter" data-level="11.1" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#estimação-por-intervalos"><i class="fa fa-check"></i><b>11.1</b> Estimação por Intervalos</a></li>
+<li class="chapter" data-level="11.2" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#procedimento-para-construção-de-ics"><i class="fa fa-check"></i><b>11.2</b> Procedimento para Construção de IC’s</a><ul>
+<li><a href="intervalos-de-confiança.html#caso-1-ic-para-mu-com-sigma2-conhecida">CASO 1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> conhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.1-ic-para-mu-com-sigma2-desconhecida">CASO 2.1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.2-ic-para-mu-com-sigma2-desconhecida-amostras-grandes">CASO 2.2: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida (amostras grandes)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-p-proporção-populacional">CASO 3: IC para <span class="math inline">\(p\)</span> (proporção populacional)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-sigma2">CASO 3: IC para <span class="math inline">\(\sigma^2\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html"><i class="fa fa-check"></i><b>12</b> Testes de Hipóteses</a><ul>
+<li class="chapter" data-level="12.1" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#formulação-de-hipóteses-estatísticas"><i class="fa fa-check"></i><b>12.1</b> Formulação de Hipóteses Estatísticas</a></li>
+<li class="chapter" data-level="12.2" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#estatística-do-teste"><i class="fa fa-check"></i><b>12.2</b> Estatística do Teste</a></li>
+<li class="chapter" data-level="12.3" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#erros-de-decisão"><i class="fa fa-check"></i><b>12.3</b> Erros de Decisão</a></li>
+<li class="chapter" data-level="12.4" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-crítica"><i class="fa fa-check"></i><b>12.4</b> Região Crítica</a></li>
+<li class="chapter" data-level="12.5" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#valor-p"><i class="fa fa-check"></i><b>12.5</b> Valor-p</a></li>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#qual-a-probabilidade-de-cometer-erro-do-tipo-ii"><i class="fa fa-check"></i>Qual a probabilidade de cometer erro do tipo II?</a></li>
+<li class="chapter" data-level="12.6" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#poder-do-teste"><i class="fa fa-check"></i><b>12.6</b> Poder do Teste</a></li>
+<li class="chapter" data-level="12.7" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#resumo-gráfico"><i class="fa fa-check"></i><b>12.7</b> Resumo Gráfico</a></li>
+<li class="chapter" data-level="12.8" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#testes-mono--e-bi-caudais"><i class="fa fa-check"></i><b>12.8</b> Testes Mono- e Bi-Caudais</a><ul>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-de-rejeição-para-um-teste-bi-caudal"><i class="fa fa-check"></i>Região de Rejeição para um Teste Bi-caudal</a></li>
+</ul></li>
+<li class="chapter" data-level="12.9" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-o-nível-de-significância"><i class="fa fa-check"></i><b>12.9</b> Procedimento para Testes de Hipóteses (utilizando o nível de significância)</a></li>
+<li class="chapter" data-level="12.10" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-valor-p"><i class="fa fa-check"></i><b>12.10</b> Procedimento para Testes de Hipóteses (utilizando valor-p)</a></li>
+<li class="chapter" data-level="12.11" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#ic-vs-th"><i class="fa fa-check"></i><b>12.11</b> IC vs TH</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GED-13: Probabilidade e Estatística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="testes-de-hipóteses" class="section level1">
+<h1><span class="header-section-number">Capítulo 12</span> Testes de Hipóteses</h1>
+<p>Até agora, aprendemos como realizar inferência a respeito de certas características
+de uma população na forma de estimativas numéricas:</p>
+<ul>
+<li>pontuais; ou através de<br />
+</li>
+<li>intervalos de confiança</li>
+</ul>
+<p>Há certas inferências, no entanto, que envolvem a comparação ou a escolha entre
+duas teorias, ou hipóteses concorrentes!</p>
+<p>Por exemplo, em vez de tentar estimar a eficácia de uma vacina, um pesquisador pode querer avaliar com base em evidências empíricas se é plausível acreditar que a vacina é eficaz contra um certo vírus. Neste tipo de problema de inferência, cria-se uma conjectura a respeito do estado real da natureza (que no exemplo, que se refere à eficácia da vacina), coletam-se dados e uma decisão é tomada com base nas evidências empíricas obtidas.</p>
+<p>O processo de</p>
+<ol style="list-style-type: lower-roman">
+<li>formular as possíveis conclusões que podem ser obtidas a partir de um certo
+experimento aleatório e<br />
+</li>
+<li>escolher uma dentre as alternativas disponíveis</li>
+</ol>
+<p>…é chamado de <em>Teste de Hipóteses</em>.</p>
+<p>Vejamos um outro exemplo para ilustrar este processo:</p>
+<p>A Rodovia dos Imigrantes liga a cidade de São Paulo ao litoral paulista. A fim de incentivar que os motoristas respeitem os limites de velocidade, foram instalados radares ao longo da rodovia.</p>
+<p>Num certo trecho da rodovia, cujo limite de velocidade para veículos de passeio é de 120km/h,
+a velocidade dos veículos medida por três radares é modelada pela amostra aleatória:</p>
+<p><span class="math display">\[X_1, X_2, X_3\]</span></p>
+<p>Os motoristas são multados por excesso de velocidade com base no valor da média dessas velocidades.</p>
+<p>A partir de que valor de velocidade média registrada os motoristas devem ser multados por ultrapassar o limite de velocidade, admitindo-se que 5% dos motoristas serão multados injustamente?</p>
+<p>Vamos construir um modelo para os dados, a fim de analisá-los utilizando técnicas estatísticas apropriadas.</p>
+<p><strong>Modelo para os Dados</strong></p>
+<p>Nossos dados consistem em uma amostra aleatória contendo 3 observações para a velocidade de um veículo, registrada por 3 radares. Cada valor <span class="math inline">\(x_i\)</span> corresponde ao valor de velocidade registrada pelo radar <span class="math inline">\(i\)</span>. Vamos, ainda, supor que o veículo mantenha velocidade constante no trecho que compreende os três radares.</p>
+<p>Dados (amostra): <span class="math inline">\(x_1, x_2, x_3\)</span></p>
+<p>A variabilidade observada nos dados obtidos nesse experimento pode ser descrito através de um modelo matemático. A fim de construir este modelo, vamos imaginar que a velocidade medida não necessariamente corresponde à velocidade real do veículo; pode ser que haja um erro de medida associado ao instrumento utilizado, que é o radar.
+Sendo assim, a velocidade medida pelo radar é igual à velocidade média real do veículo mais um erro de medida do instrumento.</p>
+<p>[VELOCIDADE MEDIDA] = [VELOCIDADE MÉDIA REAL] + [ERRO DE MEDIDA]</p>
+<p>Podemos representar essa relação matematicamente:
+<span class="math display">\[X_i = \mu + \epsilon_i, \quad i = 1,2,3\]</span></p>
+<p>onde:
+<span class="math inline">\(X_i\)</span>: representa o valor de velocidade medido pelo radar <span class="math inline">\(i\)</span><br />
+<span class="math inline">\(\mu\)</span>: é a velocidade média real do veículo<br />
+(esse é um parâmetro populacional considerado fixo (ou constante), porém desconhecido, pois não sabemos qual a velocidade real do veículo. Esse parâmetro precisa ser estimado com base nos dados da amostra coletada.)</p>
+<p><span class="math inline">\(\epsilon_i\)</span>: são perturbações aleatórias que correspondem aos erros de medida de cada um dos radares.</p>
+<p>Se cada radar estiver calibrado corretamente, podemos modelar o erro de medida através de v.a.’s <span class="math inline">\(\epsilon_i\)</span>, <span class="math inline">\(\; i = 1,2,3\)</span> tal que
+<span class="math display">\[E[\epsilon_i] = 0, \quad Var[\epsilon_i] = \sigma^2: \qquad \epsilon_{i} \sim N(0, \sigma^2)\]</span></p>
+<p>Esse modelo descreve a variabilidade na velocidade registrada para os diferentes radares como sendo um desvio aleatório com relação à média dessa população (isto é, a velocidade média real do veículo). Esse desvio aleatório tem média nula, de forma que não há erro sistemático na velocidade registrada pelo radar e vamos considerar que as variâncias sejam idênticas.</p>
+<p>Vimos anteriormente (motivados pelo TLC) que erros em medidas físicas como esta podem
+ser adequadamente modelados por uma distribuição normal. Assumindo variância conhecida ( <span class="math inline">\(\sigma^2 = 4\)</span>, por exemplo), temos que <span class="math inline">\(X_1, X_2, X_3\)</span> constituem uma a.a. retirada de uma população Normal com média <span class="math inline">\(\mu\)</span>, desconhecida, e variância comum igual a 4.</p>
+<p>Portanto, supondo a variância conhecida ( <span class="math inline">\(\sigma^2 =4\)</span> ):
+<span class="math display">\[X_1, X_2, X_3 \quad i.i.d. \quad N(\mu, \sigma^2=4)\]</span></p>
+<div id="formulação-de-hipóteses-estatísticas" class="section level2">
+<h2><span class="header-section-number">12.1</span> Formulação de Hipóteses Estatísticas</h2>
+<p>Uma hipótese estatística corresponde a uma conjectura a respeito dos parâmetros de uma distribuição ou de um modelo; a avaliação, ou o teste desta hipótese, está associado a uma decisão a ser tomada.</p>
+<p>Por exemplo, podemos questionar se é plausível crer que a velocidade média do veículo não excede o limite de 120km/h. Um veículo não será multado a menos que tenhamos evidências suficientemente fortes de que sua velocidade é maior que o limite estabelecido, ou seja, a decisão será por não multar o veículo a menos que estejamos convencidos de que sua velocidade está alta demais.</p>
+<p>O processo de avaliação da plausabilidade de uma conjectura é um problema de decisão, formulado formalmente através do seguinte teste de hipóteses:</p>
+<p><strong>Hipótese Nula (Ho):</strong> <span class="math inline">\(\mu = 120\)</span><br />
+a velocidade real do veículo é (menor ou) igual a 120km/h<br />
+(decisão: não multar)</p>
+<p><strong>Hipótese Alternativa (Ha):</strong> <span class="math inline">\(\mu &gt; 120\)</span><br />
+a velocidade real do veículo é superior a 120km/h<br />
+(decisão: multar)</p>
+<p>A Hipótese Nula (representada por Ho) corresponde ao status quo considerado, é o estado da natureza que acreditamos ser verdadeiro a menos que tenhamos evidências empíricas fortes o suficiente para nos convencer do contrário e, assim, rejeitá-la.</p>
+<p>Já a Hipótese Alternativa (representada por Ha) é a realidade alternativa considerada, ou seja, é a realidade em que estamos dispostos a crer, se as evidências empíricas nos conduzirem a rejeitar a nossa crença atual, dada pela Ho. Note que não estamos dispostos a trocar nossa crença atual por outra possibilidade qualquer. Estamos considerando apenas a possibilidade alternativa dada por Ha. Por isso, Ha deve ser cuidadosamente escolhida de acordo com o problema em questão.</p>
+<p>O processo de decisão em um teste de hipóteses é semelhante ao de um julgamento:
+Assumimos Ho verdadeira até que “se prove” o contrário, ou seja, até que se tenha evidências fortes o suficiente para “condená-la”, ou seja, rejeitar Ho em favor de Ha.</p>
+<p>Precisamos definir como utilizar os dados coletados para colocar à prova a hipótese nula e o que significa obter “evidências fortes o suficiente” para rejeitá-la.</p>
+</div>
+<div id="estatística-do-teste" class="section level2">
+<h2><span class="header-section-number">12.2</span> Estatística do Teste</h2>
+<p>Considere um conjunto de dados modelado como a realização de uma a.a. <span class="math inline">\(X_1, X_2, \ldots X_n\)</span> de uma população <span class="math inline">\(f_X(x)\)</span>.</p>
+<p>A estatístcia do teste é qualquer função das observações da amostra:</p>
+<p><span class="math display">\[W = g(X_1, X_2, \ldots, X_n)\]</span></p>
+<p>No exemplo, queremos comparar a velocidade média real do veículo <span class="math inline">\(\mu\)</span> ao limite de velocidade de 120km/h. Mas a velocidade média real é desconhecida. Nós não a observarmos. Portanto, precisamos estimar essa média populacional a partir dos dados de que dispomos, isto é, das observações na amostra coletada.</p>
+<p>Vimos que um estimador não-viesado para a média populacional é a média amostral, que corresponde à média aritmética dos valores da amostra. Assim, podemos estimar <span class="math inline">\(\mu\)</span> utilizando o estimador <span class="math inline">\(\bar{X}_3\)</span>, que neste caso corresponde à média aritmética das velocidades registradas pelos três radares. O valor calculado de <span class="math inline">\(\bar{X}_3\)</span> pode ser utililizado para decidir se temos evidências para crer que a velocidade média registrada pelos radares não foi observada por acaso.</p>
+<p>De maneira geral, utilizamos o valor da estatística <span class="math inline">\(W\)</span> calculado para os valores da amostra para decidir se a hipótese nula é estatisticamente compatível com as evidências empíricas obtidas. <span class="math inline">\(W\)</span> é a chamada ESTATÍSTICA DO TESTE. A estatística <span class="math inline">\(W\)</span> é uma v.a., já que é função exclusiva dos valores observados na amostra e, portanto, tem uma distribuição amostral.</p>
+<p>No exemplo, para decidir se a velocidade média observada nos leva à conclusão de que a velocidade média real do veículo está acima do limite de 120km/h, precisamos calcular a probabilidade de ter observado essa velocidade média amostral por ação do mero acaso, já que existe variabilidade intrínseca no processo de amostragem.</p>
+<p>Suponha que um veículo passa todos os dias pela mesma estrada com a mesma velocidade média. Se hoje eu obtiver uma amostra com 3 medidas de velocidade e amanhã outras 3 e, assim por diante, concordamos que cada amostra será composta por conjuntos distintos de 3 elementos, correto? Sendo assim, a média aritmética resultante para os valores observados para a primeira amostra provavelmente será diferente daquela calculada para o segundo conjunto e, assim sucessivamente.</p>
+<p>Assumimos que as observações da amostra foram coletadas de maneira independente a partir de uma distribuição Normal com variância conhecida 4. Portanto, o TLC nos garante que a média amostral têm distribuição Normal com centro na média populacional correspondente <span class="math inline">\(\mu\)</span> e variância igual à variância populacional dividida pelo número de elementos da amostra, <span class="math inline">\(\sigma^2/3\)</span>.</p>
+<p>No exemplo:
+<span class="math display">\[W = \bar{X}_3 = \frac{X_1 + X_2 + X_3}{3} \sim N(\mu, 4/3)\]</span></p>
+<p>Precisamos determinar <strong>com base na distribuição amostral da estatística</strong>:<br />
++ que valores de <span class="math inline">\(W\)</span> nos dão evidências que suportam Ho e<br />
++ que valores de <span class="math inline">\(W\)</span> dão evidências para rejeitar Ho em favor de Ha.</p>
+</div>
+<div id="erros-de-decisão" class="section level2">
+<h2><span class="header-section-number">12.3</span> Erros de Decisão</h2>
+<p><img src="img/TH-erros-decisao.png" width="80%" /></p>
+<p><span class="math inline">\(\alpha =\)</span> P[erro tipo I] = P[rej. Ho | Ho V]</p>
+<p><span class="math inline">\(\beta =\)</span> P[erro tipo II] = P[não rej. Ho | Ho F]</p>
+<p><span class="math inline">\(\pi = 1-\beta\)</span> = Poder do Teste = P[rej. Ho | Ho F]</p>
+<p>Num problema de teste de hipóteses, estamos diante da seguinte situação: existe o estado real da natureza, que pode ser: (1) a Ho é verdadeira, o que significa que o veículo está abaixo do limite de velocidade, ou (2) a Ho é falsa (isto é, o veículo está acima do limite de velocidade). O estado real da natureza é desconhecido. Não conhcemos a velocidade real do veículo; só sabemos ao certo o que se observa nos dados da amostra. Ao mesmo tempo, precisamos tomar uma decisao: rejeitar ou não rejeitar a Ho.</p>
+<p>Se rejeitamos a Ho e o estado real da natureza é que a Ho é falsa, então eu acertamos em nossa decisão. Isso significa que decidimos acreditar que a velocidade do veículo está acima do limite quando ela de fato está e, portanto, a multa é aplicada corretamente. Se rejeitamos a Ho e o estado real da natureza é que a Ho é verdadeira, então a decisão tomada foi errada. Fomos levados a crer (a partir dos dados da amostra observada) que o veículo estava com velocidade acima do limite, mas ele não estava. Nessa situação, cometemos um erro, e a multa é aplicada injustamente, pois a partir das evidências empíricas obtidas, não fomos capazes de perceber o real estado da natureza. Esse erro tem nome: <strong>Erro do Tipo I</strong>.</p>
+<p>Quando cometemos erro do tipo I, somos levados a crer, com base nas evidências empíricas (os resultados do experimento) que o veículo está mais rápido do que deveria. Só que isso aconteceu fortuitamente, por acaso, pois o estado real da natureza é que o veículo está numa velocidade admissível.</p>
+<p>Uma outra decisão é possível: não rejeitar a Ho. Tomamos esta decisão quando as evidências empíricas nos levam a crer que o veículo está a uma velocidade abaixo do limite. Se decidirmos não rejeitar a Ho e o estado real da natureza for a Ho é verdadeira, então tomamos uma decisão correta. Um veículo com velocidade adequada não é multado. Por outro lado, se decidimos não rejeitar Ho e a Ho é falsa, erramos na decisão tomada, pois um veículo que dirigia de maneira inadequada deixou de ser multado. Esse é o <strong>Erro do tipo II</strong>. Neste caso, os dados não foram capazes de mostrar o real estado da natureza, que corresponde à situação em que a velocidade do veículo é superior a 120 km/h.</p>
+<p>Cada um desses erros pode acontecer com uma certa probabilidade. E o teste de hipóteses é formulado de modo que o erro mais temido seja o erro do tipo I. O teste é bem sucedido quando somos capaz de rejeitar a Ho. Assim, é possível controlar o risco máximo de cometer erro tipo I em <span class="math inline">\(\alpha\)</span> (por exemplo 5%). <span class="math inline">\(\alpha\)</span> é o <strong>Nível de Significância</strong> do teste e corresponde ao maior risco que se aceita correr de cometer erro do tipo I. A probabilidade de cometer erro tipo II é chamada de <span class="math inline">\(\beta\)</span>. Só corremos o risco de cometer erro do tipo II se não conseguirmos rejeitar a Ho. Já o <strong>poder do teste</strong> é uma medida da resolução ou sensibilidade do teste, ou seja, da capacidade de perceber corretamente que a Ho é falsa; é a probabilidade de tomar corretamente a decisão de rejeitar a Ho.</p>
+<p>Essas probabilidades precisam ser calculadas com base na distribuição amostral da estatística do teste. A distribuição amostral a ser empregada vai depender da estatística considerada, bem como das informações que temos disponíveis a respeito das populações de onde foram retiradas as amostras.</p>
+<p>No exemplo, só vamos rejeitar a hipótese nula de que <span class="math inline">\(\mu\)</span> = 120 se o valor observado da estatística $W $ estiver “muito longe” do centro de sua distribuição amostral. Precisamos definir o que é “muito longe” a fim de tomar a decisão de rejeitar ou não a Ho! Mas essa decisão será tomada sob uma condição de incerteza, pois o estado real da natureza é desconhecido. Apenas conhecemos o que observamos da natureza. E será que as observações coletadas refletem adequadamente o estado real da natureza?</p>
+</div>
+<div id="região-crítica" class="section level2">
+<h2><span class="header-section-number">12.4</span> Região Crítica</h2>
+<p><img src="img/regiao-critica.png" width="100%" /></p>
+<p>Precisamos avaliar quais os valores que poderiam ser tipicamente observados para a estatística do teste, quando a Ho é verdadeira. A região crítica é aquela definida para valores de <span class="math inline">\(W\)</span> estatisticamente incompatíveis com a Ho, ou seja, aqueles que nos motivam a rejeitar Ho em favor de Ha.</p>
+<p>Note que valores de <span class="math inline">\(W\)</span> próximos de 120 são compatíveis com a Ho; portanto, nesta região não há motivos para desconfiar da veracidade da Ho. Vivemos bem com a decisão de não rejeitar a Ho quando <span class="math inline">\(W\)</span> assume valores próximos de 120.</p>
+<p>Quando <span class="math inline">\(W\)</span> assume valores muito diferentes de 120, começamos a desconfiar de que talvez nossa crença em Ho não faça muito sentido… mas, só nos sentimos inclinados a rejeitar Ho em favor de Ha para valores de <span class="math inline">\(W\)</span> muito maiores do que 120. Para valores de <span class="math inline">\(W\)</span> muito menores que 120, desconfiamos de Ho, mas essa evidência não favorece a Ha. Como só é possível trocar Ho por Ha, neste caso, não faz sentido rejeitar a Ho em favor de Ha.</p>
+<p>Vamos calcular então, para que valores de <span class="math inline">\(W\)</span> rejeitamos a Ho em favor da Ha!</p>
+<p>Para isso, é necessário definir o risco máximo que estamos dispostos a correr de cometer o erro tipo I, que consiste em rejeitar Ho quando não deveríamos (isto é, multar um veículo injustamente). Ou seja, precisamos estabelecer o nível de significância <span class="math inline">\(\alpha\)</span> do teste. Para o exemplo, o risco máximo tolerado é 5%.</p>
+<p>Escolhido o nível de significância do teste, é necessário determinar o valor <span class="math inline">\(w^\star\)</span> que define a região crítica para o nível de significância 5%. Isso significa que a probabilidade de observar valores de <span class="math inline">\(W\)</span> mais extremos que <span class="math inline">\(w^\star\)</span> é igual a 5% quando a Ho é verdadeira.</p>
+<p>Sabemos que <span class="math inline">\(W\)</span> tem distribuição amostral Normal com média <span class="math inline">\(\mu\)</span> que, sob a Ho, vale 120 e cuja variância é igual a 4/3. Portanto, a probabilidade de observar <span class="math inline">\(W ≥ w^\star\)</span> é equivalente à probabilidade de observar valores da estatística normal padronizada <span class="math inline">\(Z ≥ z^\star\)</span> , que corresponde ao valor de <span class="math inline">\(w^\star\)</span> padronizado. Podemos determinar, então, o valor de <span class="math inline">\(w^\star\)</span> que faz essa probabilidade ser igual a 5%. A fim de encontrar o valor limite <span class="math inline">\(w^\star\)</span>, tal que
+<span class="math display">\[P[W \geq w^\star | \textsf{Ho V}] = 0,05\]</span></p>
+<p>precisamos resolver:
+<span class="math display">\[P\left[ Z \geq z^\star = \frac{w^\star - E[W]}{\sqrt{\textsf{Var}[W]}}\right] = 0,05,
+  \quad \textsf{em que} \quad Z \sim N(0,1).\]</span></p>
+<p>Portanto, temos <span class="math inline">\(z_{0,05} = 1,645\)</span> e
+<span class="math display">\[z^\star = \frac{w^\star - E[W]}{\sqrt{\textsf{Var}[W]}} = \frac{w^\star - 120}{2/\sqrt{3}} = 1,645 
+  \qquad \therefore \quad
+  w^\star = 121,9.\]</span></p>
+<p>A Região crítica é o conjunto de valores observados para a estatística <span class="math inline">\(W\)</span> do teste
+que correspondem à rejeição de Ho em favor de Ha. Ela pode ser definida a partir da distribuição amostral da estatística do teste.</p>
+<p><img src="12-ch12_files/figure-html/unnamed-chunk-1-1.png" width="100%" /></p>
+<p>No exemplo, a região crítica é definida pelos valores de <span class="math inline">\(W \geq 121,9\)</span> (sombreada na figura). Se o valor da estatística calculado para os dados experimentais se encontrar nessa região, consideraremos que está “longe demais” para que a diferença observada seja devida simplesmente ao acaso. O valor de <span class="math inline">\(W\)</span> (121,9) que define a fronteira de decisão entre rejeitar ou não rejeitar a hipótese nula é chamado <strong>valor crítico</strong>.</p>
+<p>A região crítica depende do nível de significância <span class="math inline">\(\alpha\)</span> e da estatística do teste <span class="math inline">\(W\)</span>,
+de forma que a probabilidade de observar valores da estatística na região de rejeição é no máximo <span class="math inline">\(\alpha\)</span>, quando Ho é verdadeira.</p>
+<p>Portanto, para um nível de significância do teste de 5%, rejeitamos a Ho de que <span class="math inline">\(\mu= 120\)</span> em favor da Ha de que $&gt; 120 $ para <span class="math inline">\(W ≥ 121,9\)</span>. Isso quer dizer que toda vez que obtivermos uma velocidade média calculada a partir dos registros dos três radares maior ou igual a 121,9, o veículo será multado por excesso de velocidade. Utilizando esta regra de decisão, é possível garantir que no máximo 5% dos motoristas serão multados injustamente.</p>
+</div>
+<div id="valor-p" class="section level2">
+<h2><span class="header-section-number">12.5</span> Valor-p</h2>
+<p>Outra opção é basear nossa decisão, não limitando o risco máximo de cometer erro tipo I, mas avaliando o <strong>risco real</strong> de cometer erro tipo I. Esse risco real é o valor-p. O valor-p corresponde ao nível de significância observado:</p>
+<p><span class="math display">\[\textsf{valor-p} = P[W \geq W_{obs} |\textsf{Ho V}]\]</span></p>
+<p>Suponha que, para um determinado veículo tenha sido registrado <span class="math inline">\(w_{obs} = 124\)</span>.<br />
+Então:</p>
+<p><span class="math display">\[\begin{align*}
+    \textsf{valor-p} 
+    &amp;= P[W \geq 124 | Ho] = P\left[ \frac{W - 120}{2/\sqrt{3}} \geq \frac{124-120}{2/\sqrt{3}} \right]\\
+    &amp;= P[Z \geq 3,46] \approx 0,0003 &lt; \alpha  = 0,05!
+\end{align*}\]</span></p>
+<p><img src="12-ch12_files/figure-html/unnamed-chunk-2-1.png" width="100%" /></p>
+<p>O valor observado para a estatística do teste define uma área na cauda da distribuição. Essa área o valor-p. Se a área é pequena, nosso risco real de cometer erro do tipo I é pequeno. O valor-p representa uma medida da força das evidências nos dados de que Ho é falsa.</p>
+<p>Quanto menor o valor-p, maiores as evidências contra Ho,
+pois mais raro seria o evento de obter uma amostra que produz o valor de <span class="math inline">\(W = w_{obs}\)</span> se a Ho fosse verdadeira.</p>
+<p>Sendo assim, vamos tomar a decisão de rejeitar a Ho com mais tranquilidade se o valor-p for baixo, o que significa que nosso risco real de estar tomando essa decisão de maneira equivocada é baixo.</p>
+<p>Neste exemplo, como o valor-p (que é o nível de significância observado) é menor que o nível de significância do teste <span class="math inline">\(\alpha\)</span>, rejeitamos Ho no nível <span class="math inline">\(\alpha\)</span>, pois se a Ho fosse verdadeira, a amostra que produziu o valor de <span class="math inline">\(W = 124\)</span> seria mais rara do que estamos dispostos a admitir. Apenas 0,03% de todas as amostras aleatórias seriam capazes de produzir um valor de média amostral igual a 124km/h, se a velocidade média real fosse igual a 120km/h. Lembre-se que o valor máximo admissível é dado pelo valor crítico <span class="math inline">\(w^\star\)</span>, determinado pelo nível de significância do teste, que corresponde ao risco máximo tolerável de rejeitar de maneira equivocada a Ho.</p>
+<p>O valor-p obtido de 0,03%, muito menor que o nível de significância do teste <span class="math inline">\(\alpha\)</span>, nos diz que o risco real de cometer erro do tipo I é bem menor que aquele que estaríamos dispostos a correr ao rejeitar Ho. Portanto, com este valor-p podemos rejeitar a Ho com maior tranquilidade ainda.</p>
+<p>Se o valor-p for elevado, por exemplo 15%, 20%, então o risco real de estar cometendo um erro ao decidir rejeitar Ho começa a ficar desconfortavelmente alto e pode ser preferível tomar a decisão de não rejeitar Ho. Essa decisão, por sua vez, também está sujeita a incertezas. Vejamos como calcular a probabilidade de cometer erro tipo II, que corresponde a não rejeitar Ho quando deveríamos.</p>
+</div>
+<div id="qual-a-probabilidade-de-cometer-erro-do-tipo-ii" class="section level2 unnumbered">
+<h2>Qual a probabilidade de cometer erro do tipo II?</h2>
+<p>Ou seja, qual o percentual de veículos com excesso de velocidade que não serão multados?</p>
+<p>Ao estabelecer um nível de significância <span class="math inline">\(\alpha\)</span>, controlamos o risco máximo
+de cometer erro do tipo I, que consiste em rejeitar Ho quando a Ho é verdadeira (isto é, quando a multa é aplicada injustamente).</p>
+<p>Como calculamos a probabilidade de cometer erro do tipo II, que consiste em não rejeitar Ho quando ela é FALSA (ou seja, quando a multa não é aplicada para um veículo infrator)?</p>
+<p>Em primeiro lugar, essa pergunta só pode ser feita quando não somos capazes de rejeitar Ho no teste de hipóteses. Em segundo lugar, esta pergunta só pode ser respondida considerando-se alternativas específicas. Para isso, vamos considerar duas possibilidades para a hipótese alternativa:</p>
+<p>H1: <span class="math inline">\(\mu = 125\)</span><br />
+H2: <span class="math inline">\(\mu = 123\)</span></p>
+<div id="h1-mu-125" class="section level4 unnumbered">
+<h4>(1) H1: <span class="math inline">\(\mu = 125\)</span></h4>
+<p>Para o primeiro caso, quando a Ho é falsa, e o estado real da natureza corresponde a <span class="math inline">\(\mu = 125\)</span>, a probabilidade de não sermos capazes de rejeitar a Ho corresponde à probabilidade de obter uma amostra que produz um valor para a estatística <span class="math inline">\(W\)</span> inferior a 121,9 (o valor crítico, que define a fronteira da região de rejeição de Ho), quando a velocidade média real é de 125km/h. Portanto,</p>
+<p>Se Ho é falsa e <span class="math inline">\(\mu = 125\)</span>, temos:</p>
+<p><span class="math display">\[\begin{align*}
+P[\text{Erro Tipo II}] 
+&amp;= P [\text{não rej. Ho | Ho F}] = \beta\\
+&amp;= P [\text{não receber multa estando acima do limite de velocidade}]\\
+&amp;= P [W &lt; 121,9 | \mu= 125]\\
+&amp;= P \left[\frac{W - 125}{2/\sqrt{3}} &lt; \frac{121,9 - 125}{2/\sqrt{3}} \right]\\   
+&amp;= \Phi (-2,68) = 0,0036 \approx 0,4\%.  
+\end{align*}\]</span></p>
+<p>Portanto, apenas aproximadamente 0,4% de todos os veículos que estiverem a uma velocidade de 125km/h deixarão de ser multados por excesso de velocidade. Como esta probabilidade é baixa, isso significa que somos capazes de perceber que a velocidade de 125km/h é estatisticamente maior que 120km/h.</p>
+<p>No R:</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="testes-de-hipóteses.html#cb87-1"></a><span class="kw">pnorm</span>(<span class="dt">q =</span> <span class="fl">121.9</span>, <span class="dt">mean =</span> <span class="dv">125</span>, <span class="dt">sd =</span> <span class="kw">sqrt</span>(<span class="dv">4</span><span class="op">/</span><span class="dv">3</span>))</span></code></pre></div>
+</div>
+<div id="h2-mu-123" class="section level4 unnumbered">
+<h4>(2) H2: <span class="math inline">\(\mu = 123\)</span></h4>
+<p>Quando a Ho é falsa, e o estado real da natureza corresponde a mu = 123km/h, a probabilidade de não sermos capazes de rejeitar Ho corresponde à probabilidade de obter uma amostra que produz um valor para a estatística <span class="math inline">\(W\)</span> inferior a 121,9 (o valor crítico, que define a fronteira da região de rejeição de Ho) quando o veículo tem velocidade média real de 123km/h. Portanto,</p>
+<p>Se Ho é falsa e <span class="math inline">\(\mu = 123\)</span>, temos:</p>
+<p><span class="math display">\[\begin{align*}
+P[\text{Erro Tipo II}] 
+&amp;= P [\text{não rej. Ho | Ho F}] = \beta\\
+&amp;= P [\text{não receber multa estando acima do limite de velocidade}]\\
+&amp;= P [W &lt; 121,9 | \mu= 123]\\
+&amp;= P \left[\frac{W - 123}{2/\sqrt{3}} &lt; \frac{121,9 - 123}{2/\sqrt{3}} \right]\\   
+&amp;= \Phi (-0.95) = 0,1711 \approx 17\%.  
+\end{align*}\]</span></p>
+<p>Isto quer dizer que cerca de 17% de todos os veículos que estiverem a uma velocidade de 123km/h deixarão de ser multados por excesso de velocidade. Note que ficou mais difícil de identificar que o estado real da natureza corresponde à hipótese alternativa de <span class="math inline">\(\mu = 123\)</span>, pois ela se confunde com maior facilidade com a condição dada pela hipótese nula.</p>
+<p>No R:</p>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="testes-de-hipóteses.html#cb88-1"></a><span class="kw">pnorm</span>(<span class="dt">q =</span> <span class="fl">121.9</span>, <span class="dt">mean =</span> <span class="dv">123</span>, <span class="dt">sd =</span> <span class="kw">sqrt</span>(<span class="dv">4</span><span class="op">/</span><span class="dv">3</span>))</span></code></pre></div>
+</div>
+</div>
+<div id="poder-do-teste" class="section level2">
+<h2><span class="header-section-number">12.6</span> Poder do Teste</h2>
+<p>O teste de hipótese é governado pelo seu nível de significância, que corresponde ao risco máximo de tomar uma decisão errada ao rejeitar indevidamente a hipótese nula. Agora, qual a capacidade de o teste rejeitar Ho se, de fato, ela é falsa? A probabilidade de rejeitar corretamente a hipótese nula para uma certa condição alternativa específica corresponde ao poder do teste. Portanto,</p>
+<p>Qual a capacidade de o teste rejeitar Ho se, de fato, temos <span class="math inline">\(\mu=125\)</span>?</p>
+<p><span class="math display">\[\begin{align*}
+P[\text{Poder do Teste}] 
+&amp;= P [\text{rej. Ho | Ho F}] = 1 - \beta\\
+&amp;= P [\text{multar quando deveria}]\\
+&amp;= P [W &gt; 121,9 | \mu= 125]\\
+&amp;= 1-0,0036 = 0,9964  \approx 99,64\%.  
+\end{align*}\]</span></p>
+<p>No R:</p>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="testes-de-hipóteses.html#cb89-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="dt">q =</span> <span class="fl">121.9</span>, <span class="dt">mean =</span> <span class="dv">125</span>, <span class="dt">sd =</span> <span class="kw">sqrt</span>(<span class="dv">4</span><span class="op">/</span><span class="dv">3</span>))</span></code></pre></div>
+<p>O poder do teste representa a sensibilidade do teste, fornecendo uma medida da diferença entre Ho e Ha. Testes diferentes podem ser comparados com relação ao seu poder e considera-se um teste razoável aquele com poder ≥ 0,8.</p>
+<p>Como exercício, calcule o poder do teste para o caso em que a hipótese alternativa corresponde a <span class="math inline">\(\mu = 123\)</span>.</p>
+</div>
+<div id="resumo-gráfico" class="section level2">
+<h2><span class="header-section-number">12.7</span> Resumo Gráfico</h2>
+<p><img src="12-ch12_files/figure-html/unnamed-chunk-6-1.png" width="100%" /></p>
+<p>Aqui temos um resumo gráfico de testes de hipóteses. Neste caso, estamos testando o seguinte conjunto de hipóteses:</p>
+<p>Ho: <span class="math inline">\(\mu = 120\)</span><br />
+Ha: <span class="math inline">\(\mu &gt; 120\)</span></p>
+<p>Este teste controla em <span class="math inline">\(\alpha =\)</span> 5% o risco de cometer erro do tipo I. O valor para a estatística que define a área <span class="math inline">\(\alpha\)</span>, em vermelho, é o valor crítico <span class="math inline">\(w^\star\)</span>, que define a fronteira de decisão.</p>
+<p>Portanto, quando o estado real da natureza for a Ho é verdadeira (correspondente à distribuição vermelha), se obtivermos um valor de estatística <span class="math inline">\(W\)</span> do teste na região sombreada de vermelho, seremos levados a rejeitar a Ho, pois esse valor de estatística cai na região de rejeição, mas esta decisão terá sido errada. Neste caso, cometemos erro do tipo I. No exemplo, a probabilidade deste erro vale <span class="math inline">\(\alpha =\)</span> 5%.</p>
+<p>Por outro lado, se o valor da estatística do teste observado for inferior ao valor crítico <span class="math inline">\(w^\star\)</span>, decidiremos não rejeitar Ho, pois estamos na região de não rejeição da Ho. Se o estado da natureza for a Ho é verdadeira (correspondente à distribuição vermelha), teremos tomado uma decisão correta ao não rejeitar Ho.</p>
+<p>No entanto, quando o estado da natureza for a Ho é falsa e vale a Ha (agora, correspondente à distribuição azul), podemos rejeitar a Ho corretamente quando o valor da estatística do teste observado é superior ao valor crítico <span class="math inline">\(w^\star\)</span> ou, podemos não rejeitar a Ho, cometendo assim erro do tipo II, quando o valor da estatística do teste observado for inferior ao valor crítico <span class="math inline">\(w^\star\)</span>. No exemplo, para a hipótese alternativa <span class="math inline">\(\mu =\)</span> 123, a probabilidade de cometer erro do tipo II é dada pela área sombreada de azul, que corresponde a <span class="math inline">\(\beta\)</span> e vale 17%.</p>
+<p>Nunca saberemos ao certo se estamos cometendo erro do tipo I ou II, pois não conhecemos o estado real da natureza, ou seja, não sabemos se estamos na distribuição vermelha ou na distribuição azul. Mas conseguimos pautar nossas decisões calculando os riscos de cometer esses erros.</p>
+<p>Algumas reflexões são importantes:</p>
+<ul>
+<li><p>A probabilidade de cometer erro do tipo II depende o valor real que <span class="math inline">\(\mu\)</span> assume
+na hipótese alternativa. Neste caso a Ha corresponde a <span class="math inline">\(\mu &gt; \mu_o = 123\)</span>.</p></li>
+<li><p>Se a Ho é falsa, <span class="math inline">\(\beta\)</span> aumenta quando o valor real do parâmetro se aproxima do valor hipotético (isto é quando a Ha se aproxima da Ho). Quanto maior a distância entre Ho e Ha, menor o valor de <span class="math inline">\(\beta\)</span>. Quanto mais próximo <span class="math inline">\(\mu_a\)</span> estiver de <span class="math inline">\(\mu_o\)</span>, maior o valor de <span class="math inline">\(\beta\)</span>, isto é, maior a probabilidade de cometer erro do tipo II, pois maior a dificuldade de distinguir os dois estados da natureza representados pelas duas hipóteses.</p></li>
+<li><p>Uma vez estabelecido o nível de significância <span class="math inline">\(\alpha\)</span> do teste, a probabilidade de cometer erro do tipo I é fixado em no máximo <span class="math inline">\(\alpha\)</span>.</p></li>
+<li><p>A probabilidade de cometer erro do tipo II pode ser arbitrariamente próxima de <span class="math inline">\(1-\alpha\)</span>, conforme aproximamos <span class="math inline">\(\mu_a\)</span> de <span class="math inline">\(\mu_o\)</span>. Por exemplo, como exercício para casa, calcule a probabilidade de erro do tipo II quando <span class="math inline">\(\mu_a = 120,1\)</span>.</p></li>
+<li><p>Os Erros dos tipos I e II estão relacionados. A redução da probabilidade de um deles resulta em aumento na probabilidade do outro: a probabilidade de cometer erro do tipo I (dada por <span class="math inline">\(\alpha\)</span>) sempre pode ser reduzida ajustando-se o valor crítico (reduzindo a região crítica), acompanhado de um aumento na probabilidade de cometer erro do tipo II (dada por beta). Por outro lado, podemos reduzir <span class="math inline">\(\beta\)</span> aumentando a região crítica; mas isso é possível apenas pagando-se o preço de aumentar também <span class="math inline">\(\alpha\)</span>.</p></li>
+</ul>
+<p>Mas queremos <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span> ambos pequenos…</p>
+<ul>
+<li>Bem, só podemos diminuir a probabilidade de cometer os dois erros, aumentando o tamanho da amostra <span class="math inline">\(n\)</span>, isto é, obtendo mais informação. O aumento do tamanho da amostra reduz <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span> simultaneamente.</li>
+</ul>
+</div>
+<div id="testes-mono--e-bi-caudais" class="section level2">
+<h2><span class="header-section-number">12.8</span> Testes Mono- e Bi-Caudais</h2>
+<p>Um teste de hipótese sempre é definido por duas hipóteses concorrentes: Ho e Ha. Para a hipótese nula, usa-se sempre a igualdade, pois assim, controlamos <span class="math inline">\(\alpha\)</span>. A escolha de uma hipótese alternativa mono- ou bi-caudal depende da conclusão a que se quer chegar, caso Ho seja rejeitada (controla a região crítica).</p>
+<p>O exemplo que vimos consistida em um teste mono-caudal superior, ou seja, quando a hipótese nula é rejeitada se há evidências que levam a crer que o valor do parâmetro é maior que aquele assumido na hipótese nula.</p>
+<p>Há ocasiões em que a hipótese nula é rejeitada quando há evidências de que o valor real do parâmetro se afasta do valor hipotético de Ho em qualquer direção. Neste caso, é adequado utilizar um teste bicaudal.</p>
+<p><strong>Testes Mono-Caudais</strong></p>
+<p>Ho: <span class="math inline">\(\theta = \theta_o\)</span><br />
+Ha: <span class="math inline">\(\theta &gt; \theta_o\)</span></p>
+<p>ou</p>
+<p>Ho: <span class="math inline">\(\theta = \theta_o\)</span><br />
+Ha: <span class="math inline">\(\theta &lt; \theta_o\)</span></p>
+<p><strong>Testes Bi-Caudais</strong></p>
+<p>Ho: <span class="math inline">\(\theta = \theta_o\)</span><br />
+Ha: <span class="math inline">\(\theta \neq \theta_o\)</span> ( <span class="math inline">\(\theta &gt; \theta_o\)</span> ou <span class="math inline">\(\theta &lt; \theta_o\)</span> )<br />
+</p>
+<div id="região-de-rejeição-para-um-teste-bi-caudal" class="section level3 unnumbered">
+<h3>Região de Rejeição para um Teste Bi-caudal</h3>
+<p><img src="img/TH-regiao-rej-Ho.png" width="100%" /></p>
+<p>No caso de um teste bi-caudal, a região de rejeição da Ho também precisa ser redefinida com base na distribuição amostral adequada. Assim como no caso de um teste mono-caudal, vamos tomar nossa decisão limitando o risco de cometer erro tipo I em no máximo <span class="math inline">\(\alpha\)</span>. Isso significa que consideraremos que a distância admissível para a não rejeição da Ho é aquela determinada pelos valores da estatística que delimitam a área <span class="math inline">\(1-\alpha\)</span> em torno do centro da distribuição. Nas caudas sobram áreas iguais a <span class="math inline">\(\alpha/2\)</span> de cada lado.</p>
+<p>A região das caudas (em vermelho) é a chamada região de rejeição, pois se o valor da estatística calculado para os dados experimentais se encontrar nessa região, consideraremos que está longe demais do valor assumido pela hipótese nula, para que a diferença observada seja devida simplesmente ao acaso.</p>
+<p>Em outras palavras, se os dados da amostra produzem um valor da estatística do teste na região de rejeição, considera-se ter evidências suficientemente fortes para rejeitar a Ho, aceitando correr um risco máximo igual a <span class="math inline">\(\alpha\)</span> de cometer um erro ao tomar essa decisão de rejeitar Ho.</p>
+<p>O valor-p é definido exatamente de maneira análoga, definindo-se corretamente a região de não rejeição da hipótese nula, ou seja, neste caso a área correspondente ao valor-p também deve compreender as duas caudas da distribuição.</p>
+</div>
+</div>
+<div id="procedimento-para-testes-de-hipóteses-utilizando-o-nível-de-significância" class="section level2">
+<h2><span class="header-section-number">12.9</span> Procedimento para Testes de Hipóteses (utilizando o nível de significância)</h2>
+<p>Podemos realizar dois procedimentos distintos para conduzir um teste de hipóteses a respeito de um parâmetro populacional <span class="math inline">\(\theta\)</span> de interesse. O primeiro aqui descrito, é baseado no nível de significância estabelecido para o teste.</p>
+<ol style="list-style-type: decimal">
+<li><p>Estabelecer Ho e Ha;</p></li>
+<li><p>Escolher nível de significância <span class="math inline">\(\alpha\)</span>;</p></li>
+<li><p>Escolher estatística <span class="math inline">\(W\)</span> apropriada para o teste;</p></li>
+<li><p>Determinar região crítica (rejeição de Ho) baseada em <span class="math inline">\(\alpha\)</span>;</p></li>
+<li><p>Calcular o valor da estatística do teste ( <span class="math inline">\(w_{obs}\)</span> ):<br />
+</p></li>
+</ol>
+<ul>
+<li>Rejeita-se Ho se <span class="math inline">\(w\)</span> pertence à região crítica<br />
+</li>
+<li>Caso contrário, não é possível rejeitar Ho</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>Obter conclusões científicas a partir do resultado do teste.</li>
+</ol>
+<p>O teste de hipóteses inicia com a escolha das hipóteses nula e alternativa. Na hipótese nula, sempre colocamos a igualdade pois, desta forma, somos capazes de controlar o risco máximo de rejeitá-la erroneamente. A hipótese alternativa deve ser formulada tendo em vista a rejeição da hipótese nula. A favor de que explicação para o estado real da natureza estamos dispostos de trocar a explicação atual fornecida pela hipótese nula?</p>
+<p>Lembre-se de que, e isto é de extrema importância, para que um teste de hipótese seja bem sucedido, ele deve rejeitar a hipótese nula. Esta é a única maneira de controlarmos o risco de cometer erro do tipo I. Se a hipótse nula não é rejeitada, podemos até calcular a probabilidade de cometer erro do tipo II, mas não temos controle sobre esse risco. Pior ainda, é que a não-rejeição da Ho não implica na veracidade da Ho; apenas indica que não fomos capazes de obter evidências suficientemente fortes para refutar (respeitando-se um certo nível de incerteza) nossa conjectura e, or este motivo, nunca devemos escrever ou falar “aceitar a Ho”; a expressão correta é “não rejeitar a Ho”. O objetivo de todo teste de hipóteses é rejeitar a hipótese nula em favor da hipótese alternativa escolhida. Quando não conseguimos rejeitar a hipótese nula, chegamos a um resultado inconclusivo! Chegamos à conclusão de que não temos evidências fortes o suficiente para deixar de acreditar na explicação para o estado real da natureza fornecida pela Ho.</p>
+<p>Estabelecidas as hipóteses nula e alternativa, é necessário escolher um nível de significância fixo para o teste. Este é o risco máximo tolerado de cometer erro do tipo I.</p>
+<p>Utilizando os métodos de construção de estimadores vistos anteriormente, podemos escolher ou construir um estimador <span class="math inline">\(\hat\theta\)</span> adequado para o parâmetro populacional <span class="math inline">\(\theta\)</span> sendo avaliado. O estimador é a estatística do teste. É importante ser capaz de determinar a distribuição amostral da estatística do teste, pois é a partir dessa distribuição e do nível de significância escolhido que podemos determinar a região de rejeição da hipótese nula.</p>
+<p>Calcula-se o valor da estatística para o conjunto de observações disponíveis na amostra disponível e toma-se a decisão objetiva de rejeitar ou não rejeitar a hipótese nula, dependendo se o valor observado da estatística estiver ou não inserido na região crítica.</p>
+<p>Com estes resultados, é possível obter as conclusões científicas relativas ao fenômeno sendo investigado.</p>
+</div>
+<div id="procedimento-para-testes-de-hipóteses-utilizando-valor-p" class="section level2">
+<h2><span class="header-section-number">12.10</span> Procedimento para Testes de Hipóteses (utilizando valor-p)</h2>
+<p>Existe uma outra abordagem alternativa para conduzir um teste de hipóteses, com base no valor-p. Embora o procedimento seja semelhante, é filosoficamente diferente do anterior.</p>
+<ol style="list-style-type: decimal">
+<li><p>Estabelecer Ho e Ha;</p></li>
+<li><p>Escolher estatística <span class="math inline">\(W\)</span> apropriada para o teste;</p></li>
+<li><p>Calcular o valor da estatística do teste ( <span class="math inline">\(w_{obs}\)</span> ):</p></li>
+<li><p>Calcular valor-p da estatística;</p></li>
+<li><p>Utilizar valor-p obtido e conhecimento a respeito do sistema analisado para chegar a uma conclusão científica.</p></li>
+</ol>
+<p>Aqui também o procedimento tem início com a escolha das hipóteses nula e alternativa, tendo em vista as mesmas considerações do caso anterior. A escolha da estatística do teste e o cálculo do seu valor para o conjunto de dados disponíveis na amostra também devem ser realizados como antes.</p>
+<p>No entanto, note que não escolhemos um valor fixo para o nível de significância do teste. Isso significa que, na abordagem do valor-p, não se busca controlar o risco máximo de cometer erro do tipo I e também que não há uma decisão objetiva a ser tomada com relação à rejeição ou não da hipótese nula.</p>
+<p>Pelo contrário, determina-se o nível de significância observado (o valor-p) associado ao valor calculado para a estatística do teste para os dados na amostra. A decisão de rejeitar ou não a hipótese nula é tomada a partir da análise <strong>subjetiva</strong> do valor-p obtido e do conhecimento do analista a respeito do fenômeno sendo investigado. Rejeita-se a hipótese nula em favor da hipótese alternativa se o valor-p for considerado baixo o suficiente, isto é, se o risco real de cometer erro do tipo I for considerado tolerável com base na experiência do analista.</p>
+</div>
+<div id="ic-vs-th" class="section level2">
+<h2><span class="header-section-number">12.11</span> IC vs TH</h2>
+<p>IC e TH consistem em procedimentos de inferência estatística relacionados entre si, embora sejam conduzidos com diferentes propósitos:</p>
+<p>Construímos intervalos de confiança para obter uma gama de valores plausíveis para um determinado parâmetro populacional <span class="math inline">\(\theta\)</span>. A plausabilidade é medida pelo nível de confiança <span class="math inline">\(1-\alpha\)</span> do intervalo.</p>
+<p>Note que um intervalo de confiança NÃO deve ser interpretado como o intervalo de valores tal que a probabilidade de que o parâmetro populacional se encontre entre seus limites vale <span class="math inline">\((1-\alpha)100\%\)</span>. Em estatística clássoca, um intervalo de confiança apenas sugere que se o processo de amostragem for replicado um grande número de vezes, espera-se que cerca de <span class="math inline">\((1-\alpha)100\%\)</span> dos intervalos gerados a partir de diferentes amostras contenham o parâmetro real populacional de interesse.</p>
+<p>Por outro lado, realizamos um teste de hipótese para decidir se é plausível acreditar que o parâmetro populacional sendo investigado assume um determinado valor conjecturado. A plausabilidade é medida pelo nível de significância <span class="math inline">\(\alpha\)</span> do teste.</p>
+<p>Note que, quando um mesmo parâmetro populacionalé analisado, ambos os procedimentos são realizados com base na mesma estatística. Para realizar inferências a respeito da média populacional <span class="math inline">\(\mu\)</span>, utilizamos a média amostral, quer para construir um IC para <span class="math inline">\(\mu\)</span>, quer para testar uma hipótese a respeito de <span class="math inline">\(\mu\)</span>. De fato, é possível perceber que os dois procedimentos podem nos levar a um entendimento equivalente a respeito do parâmetro populacional, a partir de pontos de vista diferentes. Por exemplo, quando testamos a hipótese de que a média populacional é igual a um certo valor <span class="math inline">\(\mu_o\)</span>, versus a hipótese alternativa de que <span class="math inline">\(\mu\)</span> é diferente de <span class="math inline">\(\mu_o\)</span>, num nível de significância <span class="math inline">\(\alpha\)</span>, é o mesmo que construir um IC com nível de confiança <span class="math inline">\(1-\alpha\)</span> e rejeitar a hipótese nula caso o valor conjecturado <span class="math inline">\(\mu_o\)</span> se encontre fora do intervalo construído.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intervalos-de-confiança.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["apostila-GED13.pdf", "apostila-GED13.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

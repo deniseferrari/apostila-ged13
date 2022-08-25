@@ -1,0 +1,111 @@
+% !TEX encoding = MacOSRoman
+%---------------------------------------------------------------------
+\documentclass{article}
+\usepackage[applemac]{inputenc} % Mac
+\usepackage[portuges,brazilian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{verbatim}
+\usepackage{icomma}
+
+
+
+%%%<
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{arrows,shapes}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%>
+
+\begin{document}
+\pagestyle{empty}
+
+
+% Define block styles
+\tikzstyle{block} = [rectangle, draw, fill=gray!20, 
+                     text width=2.5cm, text centered, 
+                     rounded corners, minimum height=4em]
+\tikzstyle{cloud} = [ellipse, 
+                     text width=4.5em, text badly centered, 
+                     node distance=2.5cm, inner sep=0pt, minimum size = 5cm]
+\tikzstyle{dot} = [circle, inner sep=0pt, minimum size=0.1mm, 
+                   fill=black, draw=black]
+\tikzstyle{fake} = [circle, inner sep=0pt, minimum size=0.1mm, 
+                    text badly centered]
+\tikzstyle{connector} = [draw, thick, -latex']
+\tikzstyle{line} = [draw, thick]
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[node distance=2cm, auto]  
+   \node[cloud, fill=blue!20, anchor=base] (bubble){};
+   \node[block, left of=bubble, node distance=5cm] (exp) {Experimento Aleat\'orio ($E$)};
+   \node[dot, left of=bubble, node distance=-.3cm] (set){};
+   \node[fake, below of =bubble, node distance=1.5cm](Omega){Espao Amostral ($\Omega$)};
+   \node[ellipse, fill=white, right of=bubble, above of=bubble, node distance =0.3cm](B){Evento $A$};
+   \node[ellipse, fill=white, right of=bubble, below of=bubble, node distance =-1cm](A){Evento $B$};
+%   \node[left of=bubble, node distance=-.2cm](s){$s$};
+%   \node[right of=Omega, node distance=5cm](Re){$\Re$};
+   
+   
+   \node[fake, right of=Omega, node distance=3cm](fake1){};
+   \node[fake, right of=Omega, node distance=5.5cm](fake2){};
+   \node[fake, right of=Omega, node distance=4.2cm](fake3){};
+   \node[fake, above of=fake1, node distance=3cm](fake4){};
+   \path[connector, shorten >=-2pt, shorten <=-2pt] (fake1) -- (fake2);
+   \path[connector, shorten >=-2pt, shorten <=-2pt] (fake1) -- (fake4);
+%   \draw[->, >=latex', shorten >=2pt, shorten <=-1pt, bend right=-45] 
+%    (s) to node[auto] {$X(s)$}(fake3); 
+   \draw[->, >=latex', shorten >=2pt, shorten <=0pt] 
+    (exp) to node[auto] {}(A);
+   \draw[->, >=latex', shorten >=2pt, shorten <=0pt] 
+    (exp) to node[auto] {}(B);
+    
+   \node[above of=fake4, right of=fake4, node distance=0.5cm](P){Probabilidade};
+   \node[above of=P, node distance=0.35cm](P){Lei de};
+   \node[right of =fake2, below of =fake2,node distance=0.5cm](Re){Eventos};
+   \node[rectangle, draw, fill=black, right of=fake1, above of=fake1, node distance=0.5cm, minimum height=1cm](PA){};
+   \node[rectangle, draw, fill=black, left of=fake2, above of=fake2, node distance=0.75cm, minimum height=1.5cm](PB){};
+   \draw[->, >=latex', shorten >=2pt, shorten <=0pt, bend right=-45] 
+    (A) to node[auto] {}(PB);
+   \draw[->, >=latex', shorten >=2pt, shorten <=0pt, bend right=15] 
+    (B) to node[auto] {}(PA);
+   \node[above of=PA, node distance=0.75cm](PdA){$P(A)$};
+   \node[above of=PB, node distance=1cm](PdB){$P(B)$};
+   \node[below of=PA, node distance=0.75cm](EA){$A$};
+   \node[below of=PB, node distance=1cm](EB){$B$};
+
+   
+%   \draw[<-, >=latex', shorten >=2pt, shorten <=2pt, bend right=45, thick, dashed] 
+%    (amost.north) to node[auto, swap] {Probabilidade}(pop.north); 
+   
+   
+   
+%%\node[mynode] (manufacturer) {MANUFACTURER};  
+%%\node[below=3cm of manufacturer] (dummy) {}; 
+%%\node[mynode, left=of dummy] (retailer1) {RETAILER 1};  
+%%\node[mynode, right=of dummy] (retailer2) {RETAILER 2};
+%%\node[mylabel, below left=of manufacturer] (label1) {Participation rate $\theta_1$};  
+%%\node[mylabel, below right=of manufacturer] (label2) {Participation rate $\theta_2$};
+%% The text width of 7em forces the text to break into two lines. 
+%
+%%\draw[myarrow] (manufacturer.south) -- ++(-.5,0) -- ++(0,-1) -|  (retailer1.north);	
+%%\draw[myarrow] (manufacturer.south) -- ++(.5,0) -- ++(0,-1) -|  (retailer2.north);
+%% There is a slight overlap of the arrows with the (manufacturer) south edge
+%% because creating the offset in another way didn't compile. 
+% 
+%\draw[<-, >=latex', shorten >=2pt, shorten <=2pt, bend right=45, thick, dashed] 
+%    (amost.north) to node[auto, swap] {Probabilidade}(pop.north); 
+%\draw[<-, >=latex', shorten >=2pt, shorten <=2pt, bend right=45, thick, dashed] 
+%    (pop.south) to node[auto, swap] {Estat?stica}(amost.south);   
+%% The swap command corrects the placement of the text.
+
+\end{tikzpicture} 
+\medskip
+\caption{Structure of the Market} 
+\end{figure}
+
+\end{document}
+%---------------------------------------------------------------------
+% EOF

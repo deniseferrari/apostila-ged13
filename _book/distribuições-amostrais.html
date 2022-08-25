@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 9 Distribuições Amostrais | GED-13: Probabilidade e Estatística</title>
+  <meta name="description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 9 Distribuições Amostrais | GED-13: Probabilidade e Estatística" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 9 Distribuições Amostrais | GED-13: Probabilidade e Estatística" />
+  
+  <meta name="twitter:description" content="Apostila do curso de GED-13: Probabilidade e Estatística." />
+  
+
+<meta name="author" content="Prof. Denise Beatriz Ferrari" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="modelos-probabilísticos-distribuição-normal.html"/>
+<link rel="next" href="estimação-pontual.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Probabilidade e Estatística</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Objetivos do Curso</a></li>
+<li class="chapter" data-level="1" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="introdução.html"><a href="introdução.html#estatística-e-o-raciocínio-científico"><i class="fa fa-check"></i><b>1.1</b> Estatística e o Raciocínio Científico</a></li>
+<li class="chapter" data-level="1.2" data-path="introdução.html"><a href="introdução.html#o-que-é-estatística"><i class="fa fa-check"></i><b>1.2</b> O que é Estatística?</a></li>
+<li class="chapter" data-level="1.3" data-path="introdução.html"><a href="introdução.html#o-papel-da-probabilidade-em-estatística"><i class="fa fa-check"></i><b>1.3</b> O Papel da Probabilidade em Estatística</a></li>
+<li class="chapter" data-level="1.4" data-path="introdução.html"><a href="introdução.html#elementos-fundamentais-em-estatística"><i class="fa fa-check"></i><b>1.4</b> Elementos Fundamentais em Estatística</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#população-e-amostra"><i class="fa fa-check"></i>População e Amostra</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#variáveis"><i class="fa fa-check"></i>Variáveis</a></li>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#dados-e-fontes-de-dados"><i class="fa fa-check"></i>Dados e Fontes de Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introdução.html"><a href="introdução.html#tipos-de-problemas"><i class="fa fa-check"></i><b>1.5</b> Tipos de Problemas</a></li>
+<li class="chapter" data-level="1.6" data-path="introdução.html"><a href="introdução.html#o-processo-de-análise-de-dados"><i class="fa fa-check"></i><b>1.6</b> O Processo de Análise de Dados</a></li>
+<li class="chapter" data-level="1.7" data-path="introdução.html"><a href="introdução.html#métodos-para-exploração-resumo-e-descrição-de-dados"><i class="fa fa-check"></i><b>1.7</b> Métodos para Exploração, Resumo e Descrição de Dados</a><ul>
+<li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html#análise-exploratória-de-dados-exploratory-data-analysis-eda"><i class="fa fa-check"></i>Análise Exploratória de Dados (“Exploratory Data Analysis”, EDA)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html"><i class="fa fa-check"></i><b>2</b> Introdução à Teoria de Probabilidades</a><ul>
+<li class="chapter" data-level="2.1" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#breve-histórico"><i class="fa fa-check"></i><b>2.1</b> Breve Histórico</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#chance-e-incerteza"><i class="fa fa-check"></i>Chance e Incerteza</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#jogos-de-azar"><i class="fa fa-check"></i>Jogos de Azar</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#origem-da-teoria-matemática-de-probabilidades"><i class="fa fa-check"></i>Origem da Teoria Matemática de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#formalização-matemática"><i class="fa fa-check"></i>Formalização Matemática</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definições-iniciais"><i class="fa fa-check"></i><b>2.2</b> Definições Iniciais</a><ul>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#experimento-aleatório"><i class="fa fa-check"></i>Experimento Aleatório</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#espaço-amostral-e-evento"><i class="fa fa-check"></i>Espaço Amostral e Evento</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#lei-de-probabilidade"><i class="fa fa-check"></i>Lei de Probabilidade</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretações-de-probabilidade"><i class="fa fa-check"></i><b>2.3</b> Interpretações de Probabilidade</a><ul>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-clássica-a-priori-laplace-1812">Interpretação Clássica (<em>a priori</em>): Laplace, 1812</a></li>
+<li><a href="introdução-à-teoria-de-probabilidades.html#interpretação-empírica-ou-de-frequência-relativa-a-posteriori-richard-v.-mises-1919">Interpretação Empírica ou de Frequência Relativa (<em>a posteriori</em>): Richard V. Mises, 1919</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#interpretação-subjetiva"><i class="fa fa-check"></i>Interpretação Subjetiva</a></li>
+<li class="chapter" data-level="" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#resumo"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#definição-axiomática"><i class="fa fa-check"></i><b>2.4</b> Definição Axiomática</a></li>
+<li class="chapter" data-level="2.5" data-path="introdução-à-teoria-de-probabilidades.html"><a href="introdução-à-teoria-de-probabilidades.html#revisitando-o-paradoxo-de-de-méré-o-problema-dos-dados"><i class="fa fa-check"></i><b>2.5</b> Revisitando o Paradoxo de De Méré: O Problema dos Dados</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html"><i class="fa fa-check"></i><b>3</b> Probabilidade Condicional e Independência</a><ul>
+<li class="chapter" data-level="3.1" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#probabilidade-condicional"><i class="fa fa-check"></i><b>3.1</b> Probabilidade Condicional</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades"><i class="fa fa-check"></i>Propriedades</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-de-eventos"><i class="fa fa-check"></i><b>3.2</b> Independência de Eventos</a><ul>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#propriedades-1"><i class="fa fa-check"></i>Propriedades</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#independência-condicional"><i class="fa fa-check"></i>Independência Condicional</a></li>
+<li class="chapter" data-level="" data-path="probabilidade-condicional-e-independência.html"><a href="probabilidade-condicional-e-independência.html#eventos-independentes-x-eventos-mutuamente-exclusivos"><i class="fa fa-check"></i>Eventos Independentes x Eventos Mutuamente Exclusivos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html"><i class="fa fa-check"></i><b>4</b> Teoremas Fundamentais da Probabilidade</a><ul>
+<li class="chapter" data-level="4.1" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-da-probabilidade-total-dividir-para-conquistar"><i class="fa fa-check"></i><b>4.1</b> Teorema da Probabilidade Total: …dividir para conquistar!</a></li>
+<li class="chapter" data-level="4.2" data-path="teoremas-fundamentais-da-probabilidade.html"><a href="teoremas-fundamentais-da-probabilidade.html#teorema-de-bayes-aprendendo-pela-experiência"><i class="fa fa-check"></i><b>4.2</b> Teorema de Bayes: …aprendendo pela experiência</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html"><i class="fa fa-check"></i><b>5</b> Variáveis Aleatórias e Distribuições</a><ul>
+<li class="chapter" data-level="5.1" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variáveis-aleatórias"><i class="fa fa-check"></i><b>5.1</b> Variáveis Aleatórias</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#definição-caso-unidimensional"><i class="fa fa-check"></i>Definição (caso unidimensional)</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#tipos-de-variáveis-aleatórias"><i class="fa fa-check"></i>Tipos de Variáveis Aleatórias</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#distribuições-de-probabilidade"><i class="fa fa-check"></i><b>5.2</b> Distribuições de Probabilidade</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-discreto"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso discreto</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-de-probabilidade-fdp-caso-contínuo"><i class="fa fa-check"></i>Função Distribuição de Probabilidade (fdp): caso contínuo</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#função-distribuição-acumulada-fda"><i class="fa fa-check"></i>Função Distribuição Acumulada (FDA)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado-e-variância"><i class="fa fa-check"></i><b>5.3</b> Valor Esperado e Variância</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#valor-esperado"><i class="fa fa-check"></i>Valor Esperado</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#o-problema-dos-pontos-e-a-aposta-de-pascal"><i class="fa fa-check"></i>O Problema dos Pontos e a Aposta de Pascal</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#variância"><i class="fa fa-check"></i>Variância</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desvio-padrão"><i class="fa fa-check"></i>Desvio-padrão</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#momentos"><i class="fa fa-check"></i><b>5.4</b> Momentos</a><ul>
+<li><a href="variáveis-aleatórias-e-distribuições.html#assimetria-skewness-e-excesso-kurtosis">Assimetria (<em>skewness</em>) e Excesso (<em>kurtosis</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdades-de-markov-e-chebyshev"><i class="fa fa-check"></i><b>5.5</b> Desigualdades de Markov e Chebyshev</a><ul>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-markov"><i class="fa fa-check"></i>Desigualdade de Markov</a></li>
+<li class="chapter" data-level="" data-path="variáveis-aleatórias-e-distribuições.html"><a href="variáveis-aleatórias-e-distribuições.html#desigualdade-de-chebyshev"><i class="fa fa-check"></i>Desigualdade de Chebyshev</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><i class="fa fa-check"></i><b>6</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Bernoulli</a><ul>
+<li class="chapter" data-level="6.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#o-experimento-de-bernoulli"><i class="fa fa-check"></i><b>6.1</b> O Experimento de Bernoulli</a></li>
+<li class="chapter" data-level="6.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-de-bernoulli"><i class="fa fa-check"></i><b>6.2</b> Distribuição de Bernoulli</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-2"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial"><i class="fa fa-check"></i><b>6.3</b> Distribuição Binomial</a></li>
+<li class="chapter" data-level="6.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#um-problema-de-tomada-de-decisão"><i class="fa fa-check"></i><b>6.4</b> Um Problema de Tomada de Decisão</a></li>
+<li class="chapter" data-level="6.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-geométrica"><i class="fa fa-check"></i><b>6.5</b> Distribuição Geométrica</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#propriedade-de-ausência-de-memória"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#outras-distribuições"><i class="fa fa-check"></i><b>6.6</b> Outras Distribuições</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-binomial-negativa-ou-distribuição-de-pascal"><i class="fa fa-check"></i>Distribuição Binomial Negativa (ou Distribuição de Pascal)</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial"><i class="fa fa-check"></i>Distribuição Multinomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-multinomial-negativa"><i class="fa fa-check"></i>Distribuição Multinomial Negativa</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica"><i class="fa fa-check"></i>Distribuição Hipergeométrica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#distribuição-hipergeométrica-negativa"><i class="fa fa-check"></i>Distribuição Hipergeométrica Negativa</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-bernoulli.html#resumo-4"><i class="fa fa-check"></i>Resumo</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><i class="fa fa-check"></i><b>7</b> Modelos Probabilísticos: Distribuições Associadas a Processos de Poisson</a><ul>
+<li class="chapter" data-level="7.1" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i><b>7.1</b> Uma aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="7.2" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-poisson"><i class="fa fa-check"></i><b>7.2</b> Distribuição de Poisson</a></li>
+<li class="chapter" data-level="7.3" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#o-processo-de-poisson"><i class="fa fa-check"></i><b>7.3</b> O Processo de Poisson</a></li>
+<li class="chapter" data-level="7.4" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-exponencial"><i class="fa fa-check"></i><b>7.4</b> Distribuição Exponencial</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#propriedade-de-ausência-de-memória-1"><i class="fa fa-check"></i>Propriedade de Ausência de Memória</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-de-weibull"><i class="fa fa-check"></i>Distribuição de Weibull:</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html"><a href="modelos-probabilísticos-distribuições-associadas-a-processos-de-poisson.html#distribuição-gama"><i class="fa fa-check"></i><b>7.5</b> Distribuição Gama</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html"><i class="fa fa-check"></i><b>8</b> Modelos Probabilísticos: Distribuição Normal</a><ul>
+<li class="chapter" data-level="8.1" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#distribuição-normal"><i class="fa fa-check"></i><b>8.1</b> Distribuição Normal</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#mais-uma-aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>…(Mais) Uma Aproximação para a Distribuição Binomial</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#cálculo-de-probabilidades"><i class="fa fa-check"></i>Cálculo de Probabilidades</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#padronização-1"><i class="fa fa-check"></i>Padronização</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#regra-empírica"><i class="fa fa-check"></i>Regra Empírica</a></li>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#coeficiente-de-variação"><i class="fa fa-check"></i>Coeficiente de Variação</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-distribuições-discretas"><i class="fa fa-check"></i><b>8.2</b> Aproximação para Distribuições Discretas</a><ul>
+<li class="chapter" data-level="" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#aproximação-para-a-distribuição-binomial"><i class="fa fa-check"></i>Aproximação para a Distribuição Binomial</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="modelos-probabilísticos-distribuição-normal.html"><a href="modelos-probabilísticos-distribuição-normal.html#métodos-descritivos-para-avaliar-normalidade"><i class="fa fa-check"></i><b>8.3</b> Métodos Descritivos para Avaliar Normalidade</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html"><i class="fa fa-check"></i><b>9</b> Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="9.1" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#introdução-à-inferência-estatística"><i class="fa fa-check"></i><b>9.1</b> Introdução à Inferência Estatística</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#inferência-estatística"><i class="fa fa-check"></i>Inferência Estatística</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostras-e-distribuições-amostrais"><i class="fa fa-check"></i><b>9.2</b> Amostras e Distribuições Amostrais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#amostra-aleatória"><i class="fa fa-check"></i>Amostra Aleatória</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#parâmetos-vs.-estatísticas"><i class="fa fa-check"></i>Parâmetos vs. Estatísticas</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-amostral"><i class="fa fa-check"></i>Distribuição Amostral</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-da-média-amostral"><i class="fa fa-check"></i><b>9.3</b> Distribuição da Média Amostral</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#propriedades-da-média-amostral"><i class="fa fa-check"></i>Propriedades da Média Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#lei-dos-grandes-números"><i class="fa fa-check"></i>Lei dos Grandes Números</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#teorema-do-limite-central"><i class="fa fa-check"></i><b>9.4</b> Teorema do Limite Central</a></li>
+<li class="chapter" data-level="9.5" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuições-amostrais-associadas-a-populações-normais"><i class="fa fa-check"></i><b>9.5</b> Distribuições Amostrais Associadas a Populações Normais</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-qui-quadrado"><i class="fa fa-check"></i>Distribuição Qui-Quadrado</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-t-student"><i class="fa fa-check"></i>Distribuição t-Student</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#aproximando-distribuições-amostrais-via-simulação-de-monte-carlo"><i class="fa fa-check"></i><b>9.6</b> Aproximando Distribuições Amostrais via Simulação de Monte Carlo</a><ul>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-mediana-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Mediana Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-desvio-padrão-amostral"><i class="fa fa-check"></i>Distribuição Aproximada do Desvio-Padrão Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-variância-amostral"><i class="fa fa-check"></i>Distribuição Aproximada da Variância Amostral</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-do-mad-desvio-mediano-absoluto"><i class="fa fa-check"></i>Distribuição Aproximada do MAD (Desvio Mediano Absoluto)</a></li>
+<li class="chapter" data-level="" data-path="distribuições-amostrais.html"><a href="distribuições-amostrais.html#distribuição-aproximada-da-amplitude-inter-quartis-iqr"><i class="fa fa-check"></i>Distribuição Aproximada da Amplitude Inter-Quartis (IQR)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="estimação-pontual.html"><a href="estimação-pontual.html"><i class="fa fa-check"></i><b>10</b> Estimação Pontual</a><ul>
+<li class="chapter" data-level="10.1" data-path="estimação-pontual.html"><a href="estimação-pontual.html#estimador-e-estimativa"><i class="fa fa-check"></i><b>10.1</b> Estimador e Estimativa</a></li>
+<li class="chapter" data-level="10.2" data-path="estimação-pontual.html"><a href="estimação-pontual.html#propriedades-de-estimadores"><i class="fa fa-check"></i><b>10.2</b> Propriedades de Estimadores</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#não-tendeciosidade-exatidão"><i class="fa fa-check"></i>Não-Tendeciosidade (exatidão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#eficiência-precisão"><i class="fa fa-check"></i>Eficiência (precisão)</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#consistência"><i class="fa fa-check"></i>Consistência</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#erro-médio-quadrático"><i class="fa fa-check"></i>Erro Médio Quadrático</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="estimação-pontual.html"><a href="estimação-pontual.html#métodos-clássicos-de-estimação-de-parâmetros"><i class="fa fa-check"></i><b>10.3</b> Métodos Clássicos de Estimação de Parâmetros</a><ul>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-dos-momentos"><i class="fa fa-check"></i>Método dos Momentos</a></li>
+<li class="chapter" data-level="" data-path="estimação-pontual.html"><a href="estimação-pontual.html#método-da-máxima-verossimilhança"><i class="fa fa-check"></i>Método da Máxima Verossimilhança</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html"><i class="fa fa-check"></i><b>11</b> Intervalos de Confiança</a><ul>
+<li class="chapter" data-level="11.1" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#estimação-por-intervalos"><i class="fa fa-check"></i><b>11.1</b> Estimação por Intervalos</a></li>
+<li class="chapter" data-level="11.2" data-path="intervalos-de-confiança.html"><a href="intervalos-de-confiança.html#procedimento-para-construção-de-ics"><i class="fa fa-check"></i><b>11.2</b> Procedimento para Construção de IC’s</a><ul>
+<li><a href="intervalos-de-confiança.html#caso-1-ic-para-mu-com-sigma2-conhecida">CASO 1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> conhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.1-ic-para-mu-com-sigma2-desconhecida">CASO 2.1: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida</a></li>
+<li><a href="intervalos-de-confiança.html#caso-2.2-ic-para-mu-com-sigma2-desconhecida-amostras-grandes">CASO 2.2: IC para <span class="math inline">\(\mu\)</span> com <span class="math inline">\(\sigma^2\)</span> desconhecida (amostras grandes)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-p-proporção-populacional">CASO 3: IC para <span class="math inline">\(p\)</span> (proporção populacional)</a></li>
+<li><a href="intervalos-de-confiança.html#caso-3-ic-para-sigma2">CASO 3: IC para <span class="math inline">\(\sigma^2\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html"><i class="fa fa-check"></i><b>12</b> Testes de Hipóteses</a><ul>
+<li class="chapter" data-level="12.1" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#formulação-de-hipóteses-estatísticas"><i class="fa fa-check"></i><b>12.1</b> Formulação de Hipóteses Estatísticas</a></li>
+<li class="chapter" data-level="12.2" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#estatística-do-teste"><i class="fa fa-check"></i><b>12.2</b> Estatística do Teste</a></li>
+<li class="chapter" data-level="12.3" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#erros-de-decisão"><i class="fa fa-check"></i><b>12.3</b> Erros de Decisão</a></li>
+<li class="chapter" data-level="12.4" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-crítica"><i class="fa fa-check"></i><b>12.4</b> Região Crítica</a></li>
+<li class="chapter" data-level="12.5" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#valor-p"><i class="fa fa-check"></i><b>12.5</b> Valor-p</a></li>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#qual-a-probabilidade-de-cometer-erro-do-tipo-ii"><i class="fa fa-check"></i>Qual a probabilidade de cometer erro do tipo II?</a></li>
+<li class="chapter" data-level="12.6" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#poder-do-teste"><i class="fa fa-check"></i><b>12.6</b> Poder do Teste</a></li>
+<li class="chapter" data-level="12.7" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#resumo-gráfico"><i class="fa fa-check"></i><b>12.7</b> Resumo Gráfico</a></li>
+<li class="chapter" data-level="12.8" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#testes-mono--e-bi-caudais"><i class="fa fa-check"></i><b>12.8</b> Testes Mono- e Bi-Caudais</a><ul>
+<li class="chapter" data-level="" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#região-de-rejeição-para-um-teste-bi-caudal"><i class="fa fa-check"></i>Região de Rejeição para um Teste Bi-caudal</a></li>
+</ul></li>
+<li class="chapter" data-level="12.9" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-o-nível-de-significância"><i class="fa fa-check"></i><b>12.9</b> Procedimento para Testes de Hipóteses (utilizando o nível de significância)</a></li>
+<li class="chapter" data-level="12.10" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#procedimento-para-testes-de-hipóteses-utilizando-valor-p"><i class="fa fa-check"></i><b>12.10</b> Procedimento para Testes de Hipóteses (utilizando valor-p)</a></li>
+<li class="chapter" data-level="12.11" data-path="testes-de-hipóteses.html"><a href="testes-de-hipóteses.html#ic-vs-th"><i class="fa fa-check"></i><b>12.11</b> IC vs TH</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GED-13: Probabilidade e Estatística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="distribuições-amostrais" class="section level1">
+<h1><span class="header-section-number">Capítulo 9</span> Distribuições Amostrais</h1>
+<div id="introdução-à-inferência-estatística" class="section level2">
+<h2><span class="header-section-number">9.1</span> Introdução à Inferência Estatística</h2>
+<p>Chegamos agora no momento em precisamos fazer a conexão entre a teoria de probabilidades que vimos até agora (que culminou com o estudo de diversos modelos de distribuições) e a teoria de inferência estatística que veremos em seguida.</p>
+<p>Anteriormente, estudamos diversas ferramentas matemáticas para descrever e estudar populações. No entanto, na prática, nem sempre temos conhecimento perfeito a respeito das populações de interesse.</p>
+<p>Conduzimos experimentos a fim de obter informação a respeito de populações que não são perfeitamente compreendidas. Experimentos produzem dados, que por sua vez, constituem na matéria prima de que se utilizam os métodos estatísticos, na tarefa de realizar inferência a respeito da população sendo investigada.</p>
+<p>Para entendermos o tipo de problema que buscamos resolver, vamos considerar o seguinte exemplo:</p>
+<p>Imagine que você é um produtor e possui 10 milhões de bulbos que produzem tulipas brancas ou vermelhas. Mas um de seus encarregados inadvertidamente misturou os bulbos.
+E agora você precisa saber:</p>
+<blockquote>
+<p>De um total de 10 milhões de bulbos que produzem tulipas brancas ou vermelhas, que percentual produzirá tulipas brancas?</p>
+</blockquote>
+<p>A única maneira de responder <strong>com certeza</strong> a esta pergunta é plantando exatamente todos os 10 milhões de bulbos e observando quantos produzem flores brancas, certo?</p>
+<p>Bem, esta estratégia não parece viável, especialmente se quisermos vender os bulbos pois, desta maneira, o produto é destruído no processo de avaliação. E mesmo que esse não fosse o caso, deve haver um jeito de responder a esta pergunta sem ter de despender tanto esforço.</p>
+<p>Que tal realizar o seguinte experimento: plantar alguns bulbos e, com base na observação desse pequeno número de resultados, chegar a uma conclusão com relação aos 10 milhões de bulbos.
+Parece uma boa idéia, certo?</p>
+<p>Mas o fato é que nunca poderemos ter certeza (ou seja, fornecer uma previsão exata) sobre o número de bulbos que produzirão flores brancas. Não é possível ter certeza absoluta, mas dependendo de como o experimento é realizado, podemos ter uma certa <strong>confiança</strong> (ou seja, seremos capazes de obter uma medida probabilística) no resultado esperado para o total dos 10 milhões de bulbos. Este é um processo de <strong>inferência indutiva</strong>.</p>
+<blockquote>
+<p>A inferência indutiva consiste no processo de obter informação a partir de evidências.</p>
+</blockquote>
+<p>Neste tipo de inferência, busca-se chegar a conclusões plausíveis para um universo, a partir de evidências observadas para um subconjunto deste universo; ou seja, queremos fazer previsões ou generalizações das evidências empíricas que foram obtidas.</p>
+<p>Existe outro tipo de inferência também, chamada de <strong>inferência dedutiva</strong>. Diferentemente da inferência indutiva, a inferência dedutiva consiste num processo de obter informação a partir de um conjunto de premissas verdadeiras.</p>
+<p>Este tipo de inferência tem como exemplo clássico o silogismo, que consiste em um processo dedutivo em que se chega a uma conclusão lógica a partir de duas proposições consideradas verdadeiras.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-1" class="example"><strong>Exemplo 1.1  (Silogismo)  </strong></span>
+</div>
+
+<p>I. Afirmação Geral<br />
+II. Afirmação Específica<br />
+III. Conclusão</p>
+<p>Parte-se de uma verdade geral, válida para um universo e são obtidas conclusões para uma parte deste universo, como no exemplo a seguir: Se é verdade que alienígenas são perigosos e que marcianos são um tipo de alienígenas, conclui-se que marcianos também são perigosos. Essa conclusão é uma verdade lógica irrefutável, se as premissas em que se baseia forem verdadeiras.</p>
+<p>Em forma de silogismo:</p>
+<p>I. Todas as visitas de alienígenas são um risco para a humanidade<br />
+II. Marcianos são alienígenas<br />
+III. As visitas de marcianos são um risco para a humanidade</p>
+<p>Esses dois tipos de inferências diferem no sentido em que as conclusões obtidas a partir de um processo de inferência indutiva são prováveis; já as conclusões obtidas a partir de um processo de inferência dedutiva são irrefutáveis!</p>
+<p>A lógica matemática, por exemplo, se apoia na inferência dedutiva para provar teoremas; as ciências empíricas, por outro lado, se apoiam na inferência indutiva para construir novos conhecimentos. As premissas de um argumento dedutivo válido proporcionam suporte absoluto para a conclusão, que consiste em uma consequência lógica verdadeira, estabelecida pela veracidade das premissas. A lógica indutiva estende essa ideia para argumentos um pouco mais fracos; ela se baseia em evidências, não em verdades absolutas. Em um argumento indutivo, as evidências dão suporte para que seja plausível crer na veracidade da conclusão, embora não se possa garantir que a conclusão seja verdadeira. O grau de confiança é medido em alguma escala numérica. E uma das maneiras mais utilizadas para medir essa crença na plausibilidade das conclusões de um processo de inferência indutiva é dada em termos de probabilidades.</p>
+<div id="inferência-estatística" class="section level3 unnumbered">
+<h3>Inferência Estatística</h3>
+<blockquote>
+<p>A inferência estatística consiste no processo de interpretar evidências na presença de incertezas.]</p>
+</blockquote>
+<p>De fato, um dos objetivos da Estatística é justamente fornecer um conjunto de técnicas que permitam:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>realizar <strong>inferências indutivas</strong> a partir de evidências empíricas, i.e., dados amostrais; e</p></li>
+<li><p><strong>medir o grau de incerteza</strong> de tais inferências.</p></li>
+</ol>
+<p>Esta incerteza é medida em termos de probabilidades e este é o motivo por que investimos tanto tempo estudando teoria de probabilidades!</p>
+<p>É importante ressaltar que <strong>sempre há incerteza ao realizar inferência indutiva</strong>:
+simplesmente, não é possível fazer generalizações absolutamente certas. Podemos fazer generalizações incertas, e o grau de incerteza pode ser medido se os dados que compõe a amostra tiverem sido selecionados observando-se certos princípios.</p>
+<p>Como selecionar a amostra que será examinada? É isso o que veremos a seguir.</p>
+</div>
+</div>
+<div id="amostras-e-distribuições-amostrais" class="section level2">
+<h2><span class="header-section-number">9.2</span> Amostras e Distribuições Amostrais</h2>
+<p>Uma amostra consiste em um subconjunto de indivíduos que compõe a população de interesse.
+Utilizamos amostras para obter informação a respeito dessa população em diversas circunstâncias: quando há escassez de recursos e tempo, ou quando a população é infinita (e portanto não pode ser complemente observada). Amostragem pode, ainda, ser o único procedimento possível para obter informação quando os indivíduos que compõe a população são destruídos no processo de observação, como no caso de ensaios destrutivos.</p>
+<p>A partir de agora, passaremos a estudar técnicas capazes de extrair informação a partir de dados amostrais, de forma que possamos realizar <strong>algumas inferências</strong> a respeito de <strong>certas características da população</strong> que originou a amostra disponível. Podemos, por exemplo, desejar estimar uma determinada quantidade populacional, ou avaliar se uma hipótese a respeito da população parece ou não plausível.</p>
+<p>É fundamental notar que inferências realizadas com base em dados amostrais são sujeitas a erros, pois nenhuma amostra, por mais representativa que seja, é capaz de fornecer uma imagem perfeita da população de interesse.</p>
+<p>Quando podemos, então, confiar em uma amostra? Isso depende de como a amostra foi selecionada.</p>
+<div id="amostra-aleatória" class="section level3 unnumbered">
+<h3>Amostra Aleatória</h3>
+<p>Podemos confiar em uma amostra (dentro de certos limites que podem ser calculados) se <strong>cada indivíduo da população tem a mesma chance de ser selecionado para compor a amostra</strong>. Uma amostra coletada desta maneira é chamada amostra aleatória (a.a.).</p>
+<p>O procedimento empregado para obtenção de uma a.a. é o seguinte:</p>
+<ol style="list-style-type: decimal">
+<li>Atribui-se um número para cada elemento da população.</li>
+<li>Determina-se o tamanho da amostra. (utilizando um método adequado).<br />
+</li>
+<li>Emprega-se procedimento aleatório para sortear elementos que comporão a amostra.</li>
+</ol>
+<p>Embora esta ideia pareça bastante simples, na prática nem sempre esta é uma tarefa simples de realizar. Por este motivo, existem outros esquemas de amostragem (tais como amostragem sistemática, amostragem estratificada, amostragem por conglomerados etc.) que não estudaremos neste curso.</p>
+<p>Se a v.a. <span class="math inline">\(X\)</span> representa a característica de interesse de uma população representada matematicamente pela distribuição <span class="math inline">\(f_X(x)\)</span>, então um conjunto de <span class="math inline">\(n\)</span> observações que compõe uma a.a. pode ser entendido como uma sequencia de <span class="math inline">\(n\)</span> v.a.’s independentes e identicamente distribuídas de acordo com <span class="math inline">\(f_X(x)\)</span>:</p>
+<p>Seja <span class="math inline">\(X \sim f_X(\cdot)\)</span> a característica em análise da população de interesse.</p>
+<p>Então, as v.a.’s</p>
+<p><span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> i.i.d. <span class="math inline">\(f_X(\cdot)\)</span> formam uma a.a. de tamanho <span class="math inline">\(n\)</span> desta população.</p>
+<p><strong>OBS:</strong><br />
+Utilizamos letras maiúsculas para representar as v.a.’s que representam matematicamente os elementos que compõe a amostra; e letras minúsculas, para representar os valores numéricos efetivamente assumidos pelas v.a.’s, que correspondem aos valores numéricos registrados na amostra que foi coletada.</p>
+<ul>
+<li>as v.a.’s <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i =1, 2, \ldots, n\)</span> correspondem à representação simbólica do valor numérico assumido pelo i-ésimo elemento da amostra;<br />
+</li>
+<li>após a efetiva coleta dos dados, tem-se um conjunto de valores numéricos <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span>.</li>
+</ul>
+</div>
+<div id="parâmetos-vs.-estatísticas" class="section level3 unnumbered">
+<h3>Parâmetos vs. Estatísticas</h3>
+<p>Utilizaremos amostras para realizar inferências a respeito de uma população. O que isso quer dizer?
+No mundo de estatística paramétrica, isso quer dizer que utilizaremos quantidades calculadas a partir dos valores observados na amostra para chegar a conclusões a respeito de parâmetros populacionais.</p>
+<p>Os <strong>parâmetros populacionais</strong> são quantidades fixas que caracterizam uma população, modelada matematicamente por uma distribuição de probabilidade. Essas quantidades populacionais são tipicamente desconhecidas, caso contrário não seria necessário realizar qualquer inferência.</p>
+<p>Já uma <strong>estatística</strong> corresponde a qualquer função dos valores conhecidos, observados, em uma amostra que tenha sido obtida a partir da população de interesse. Sendo assim, uma estatística é uma quantidade amostral.</p>
+<p>Note que os valores calculados para uma estatística variam de amostra para amostra e sua variabilidade deve ser levada em conta nos procedimentos de inferência realizados. Portanto, uma estatística é também uma v.a. e sua variabilidade amostral pode ser descrita matematicamente em termos de uma distribuição de probabilidades.</p>
+<p>A distribuição de probabilidades de uma estatística tem um nome e chama-se <strong>distribuição amostral</strong>.</p>
+</div>
+<div id="distribuição-amostral" class="section level3 unnumbered">
+<h3>Distribuição Amostral</h3>
+<p>Sejam:
+<span class="math inline">\(X \sim f_X(x)\)</span>, v.a.<br />
+<span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> i.i.d. <span class="math inline">\(f_X(x)\)</span>: a.a. de tamanho <span class="math inline">\(n\)</span>.<br />
+<span class="math inline">\(W\)</span> uma estatística qualquer, i.e., função de <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span>:<br />
+<span class="math display">\[W = g (X_1, X_2, \ldots, X_n)\]</span>
+Define-se:</p>
+<p><span class="math inline">\(f_W(w)\)</span>: distribuição amostral de <span class="math inline">\(W\)</span>;<br />
+<span class="math inline">\(\sigma[W]\)</span>: erro-padrão de <span class="math inline">\(W\)</span>.</p>
+<p>Em outras palavras, se tivermos uma amostra aleatória de tamanho <span class="math inline">\(n\)</span> obtida de uma população <span class="math inline">\(f_X(x)\)</span>, qualquer função <span class="math inline">\(W\)</span> dos valores da amostra, <span class="math inline">\(W = g(X_1, X_2, \ldots X_n)\)</span> é uma v.a. que tem distribuição de probabilidade <span class="math inline">\(f_W(w)\)</span> chamada <strong>distribuição amostral</strong>. O desvio-padrão da distribuição amostral de uma estatística é chamado <strong>erro padrão</strong>:</p>
+<p>A distribuição amostral de uma estatística <span class="math inline">\(W\)</span> depende do:</p>
+<ul>
+<li>tamanho <span class="math inline">\(n\)</span> da amostra;<br />
+</li>
+<li>tamanho da população; e<br />
+</li>
+<li>método de amostragem (ou seja, de como foi realizada a coleta dos dados).</li>
+</ul>
+
+<div class="example">
+<span id="exm:unnamed-chunk-2" class="example"><strong>Exemplo 2.1  (Medidas de Antebraço)  </strong></span>
+</div>
+
+<p>Fonte: Hand, D et al. (1993). Handbook of Small Data Sets, CRC Press.</p>
+<p>Vamos ilustrar os conceitos apresentados analisando os dados analisados por Karl Pearson e Alice Lee em 1903, no trabalho intitulado “On the Laws of Inheritance in Man” e republicados 90 anos depois na referência fornecida acima.</p>
+<p>Suponha que estejamos interessados no comprimento de antebraços de indivíduos adultos do sexo masculino e desejamos chegar a alguma conclusão a respeito dessa quantidade. Por exemplo, desejamos responder à seguinte pergunta:</p>
+<blockquote>
+<p>Qual o comprimento médio do antebraço de um indivíduo adulto do sexo masculino?</p>
+</blockquote>
+<p>Para isso, utilizaremos os dados que correspondem às medidas (em pol.) de antebraços coletadas de um total de 140 indivíduos adultos do sexo masculino. Esta é uma amostra, mas, para fins de ilustração, vamos supor que esta é nossa população.</p>
+<p>Vamos então realizar inferência a partir de amostras retiradas desta “pseudo-população”.</p>
+<p><strong>Pseudo-População:</strong></p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="distribuições-amostrais.html#cb62-1"></a>(forearm &lt;-<span class="st"> </span><span class="kw">scan</span>(<span class="st">&quot;data/FOREARM.dat&quot;</span>))</span></code></pre></div>
+<pre><code>##   [1] 17.3 18.4 20.9 16.8 18.7 20.5 17.9 20.4 18.3 20.5 19.0 17.5 18.1 17.1 18.8
+##  [16] 20.0 19.1 19.1 17.9 18.3 18.2 18.9 19.4 18.9 19.4 20.8 17.3 18.5 18.3 19.4
+##  [31] 19.0 19.0 20.5 19.7 18.5 17.7 19.4 18.3 19.6 21.4 19.0 20.5 20.4 19.7 18.6
+##  [46] 19.9 18.3 19.8 19.6 19.0 20.4 17.3 16.1 19.2 19.6 18.8 19.3 19.1 21.0 18.6
+##  [61] 18.3 18.3 18.7 20.6 18.5 16.4 17.2 17.5 18.0 19.5 19.9 18.4 18.8 20.1 20.0
+##  [76] 18.5 17.5 18.5 17.9 17.4 18.7 18.6 17.3 18.8 17.8 19.0 19.6 19.3 18.1 18.5
+##  [91] 20.9 19.8 18.1 17.1 19.8 20.6 17.6 19.1 19.5 18.4 17.7 20.2 19.9 18.6 16.6
+## [106] 19.2 20.0 17.4 17.1 18.3 19.1 18.5 19.6 18.0 19.4 17.1 19.9 16.3 18.9 20.7
+## [121] 19.7 18.5 18.4 18.7 19.3 16.3 16.9 18.2 18.5 19.3 18.1 18.0 19.5 20.3 20.1
+## [136] 17.2 19.5 18.8 19.2 17.7</code></pre>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="distribuições-amostrais.html#cb64-1"></a><span class="kw">summary</span>(forearm)</span></code></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    16.1    18.1    18.8    18.8    19.6    21.4</code></pre>
+<p>Aqui temos o conjunto das 140 observações coletadas. Como estamos assumindo que esta seja nossa população, vamos chamá-la de <strong>pseudo-população</strong>. O valor calculado para a média será considerado o valor populacional, que suporemos desconhecido e a respeito do qual desejamos realizar inferência. Para isso, vamos supor que não conhecemos a população e que retiraremos dela algumas amostras aleatórias.</p>
+<p><strong>Amostragem:</strong></p>
+<p>Vamos retirar um total de 100 amostras aleatórias a partir dessa população, cada uma contendo 10 observações. O que estas amostras nos dizem a respeito da média populacional?</p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="distribuições-amostrais.html#cb66-1"></a><span class="co"># Obtenção de 100 a.a.&#39;s de tamanho 10</span></span>
+<span id="cb66-2"><a href="distribuições-amostrais.html#cb66-2"></a>AA10 &lt;-<span class="st"> </span><span class="kw">replicate</span>(<span class="dv">100</span>, <span class="kw">sample</span>(forearm, <span class="dt">size =</span> <span class="dv">10</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>))</span></code></pre></div>
+<p>Abaixo temos os valores de média amostral calculados para cada uma das 100 amostras. Temos, portanto, um total de 100 valores de médias amostrais. A média populacional valia 18,8 polegadas. Percebemos que algumas amostras levaram a valores de média próximos (ou até exatamente iguais) ao valor populacional, mas nem todos. Há uma flutuação estatística nos valores amostrais, pois as observações que compõe as amostras são diferentes.</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="distribuições-amostrais.html#cb67-1"></a><span class="co"># Médias amostrais</span></span>
+<span id="cb67-2"><a href="distribuições-amostrais.html#cb67-2"></a>(AA10_means &lt;-<span class="st"> </span><span class="kw">colMeans</span>(AA10))</span></code></pre></div>
+<pre><code>##   [1] 18.45 18.97 18.94 18.52 19.08 18.93 18.53 18.90 18.76 18.93 18.80 18.88
+##  [13] 18.89 18.81 18.77 19.60 18.58 18.20 18.49 18.91 18.27 18.48 18.66 18.80
+##  [25] 18.66 19.20 19.21 18.96 18.98 19.26 19.11 18.42 18.79 19.35 18.56 18.36
+##  [37] 18.20 19.38 19.12 18.38 18.82 19.15 19.16 18.53 18.75 18.98 18.29 19.31
+##  [49] 18.76 18.90 18.85 19.04 19.19 19.46 18.53 19.05 18.77 18.30 18.97 18.00
+##  [61] 18.90 18.94 18.36 19.06 18.64 18.82 18.69 18.63 18.59 19.14 18.87 18.94
+##  [73] 18.80 18.76 18.96 18.45 18.75 18.64 18.99 18.76 19.11 19.02 18.87 18.72
+##  [85] 18.71 18.72 18.64 18.06 18.95 18.76 18.42 18.54 19.06 18.73 18.71 18.04
+##  [97] 18.29 18.88 18.77 19.33</code></pre>
+<p>Veja, por exemplo, os valores observados para duas dessas amostras:</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="distribuições-amostrais.html#cb69-1"></a><span class="co"># Duas a.a.&#39;s obtidas</span></span>
+<span id="cb69-2"><a href="distribuições-amostrais.html#cb69-2"></a><span class="kw">t</span>(AA10[,<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>])</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+## [1,] 19.0 18.4 17.5 18.6 18.3 18.4 20.4 19.4 16.6  17.9
+## [2,] 20.8 19.3 20.5 19.6 20.1 17.1 17.3 18.1 18.2  18.7</code></pre>
+<p>A estatística média amostral é uma v.a. e, portanto, tem uma distribuição de probabilidade associada. Vejamos, então, a distribuição amostral da média amostral.</p>
+<p><strong>Distribuições Amostrais:</strong></p>
+<p>Vamos construir histogramas para os valores observados para 100 amostras, com tamanhos <span class="math inline">\(n=10\)</span>, <span class="math inline">\(n=20\)</span> e <span class="math inline">\(n=30\)</span>:</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="distribuições-amostrais.html#cb71-1"></a><span class="co"># n = 10</span></span>
+<span id="cb71-2"><a href="distribuições-amostrais.html#cb71-2"></a><span class="kw">hist</span>(AA10_means,<span class="dt">freq =</span> <span class="ot">FALSE</span>, </span>
+<span id="cb71-3"><a href="distribuições-amostrais.html#cb71-3"></a>     <span class="dt">main =</span> <span class="st">&quot;n = 10&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;comprimento (pol.)&quot;</span>)</span>
+<span id="cb71-4"><a href="distribuições-amostrais.html#cb71-4"></a><span class="kw">abline</span>(<span class="dt">v =</span> <span class="kw">mean</span>(forearm), <span class="dt">col =</span> <span class="dv">2</span>)</span>
+<span id="cb71-5"><a href="distribuições-amostrais.html#cb71-5"></a><span class="co"># n = 20</span></span>
+<span id="cb71-6"><a href="distribuições-amostrais.html#cb71-6"></a><span class="kw">hist</span>(AA20_means,<span class="dt">freq =</span> <span class="ot">FALSE</span>, </span>
+<span id="cb71-7"><a href="distribuições-amostrais.html#cb71-7"></a>     <span class="dt">main =</span> <span class="st">&quot;n = 20&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;comprimento (pol.)&quot;</span>)</span>
+<span id="cb71-8"><a href="distribuições-amostrais.html#cb71-8"></a><span class="kw">abline</span>(<span class="dt">v =</span> <span class="kw">mean</span>(forearm), <span class="dt">col =</span> <span class="dv">2</span>)</span>
+<span id="cb71-9"><a href="distribuições-amostrais.html#cb71-9"></a><span class="co"># n = 30</span></span>
+<span id="cb71-10"><a href="distribuições-amostrais.html#cb71-10"></a><span class="kw">hist</span>(AA30_means,<span class="dt">freq =</span> <span class="ot">FALSE</span>, </span>
+<span id="cb71-11"><a href="distribuições-amostrais.html#cb71-11"></a>     <span class="dt">main =</span> <span class="st">&quot;n = 30&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;comprimento (pol.)&quot;</span>)</span>
+<span id="cb71-12"><a href="distribuições-amostrais.html#cb71-12"></a><span class="kw">abline</span>(<span class="dt">v =</span> <span class="kw">mean</span>(forearm), <span class="dt">col =</span> <span class="dv">2</span>)</span></code></pre></div>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Os histogramas mostram as frequências relativas para os valores das estatísticas <span class="math inline">\(\bar{X}_{10}\)</span> <span class="math inline">\(\bar{X}_{20}\)</span> e <span class="math inline">\(\bar{X}_{30}\)</span> (médias amostrais com base em amostras de tamanho 10, 20 e 30, respectivamente), observados para cada conjunto de 100 amostras; mas não correspondem às distribuições amostrais destas estatísticas. São apenas estimativas destas distribuições.</p>
+<p>A fim de obter a distribuição amostral da estatística média amostral <span class="math inline">\(\bar{X}_n\)</span>, precisaríamos representar os valores de médias amostrais calculados a partir de todas as possíveis amostras de tamanho <span class="math inline">\(n\)</span> obtidas a partir da população investigada. Perceba que a distribuição amostral varia conforme muda o tamanho das amostras consideradas. O que você nota de diferente neles?</p>
+</div>
+</div>
+<div id="distribuição-da-média-amostral" class="section level2">
+<h2><span class="header-section-number">9.3</span> Distribuição da Média Amostral</h2>
+<p>A seguir, generalizaremos as observações que fizemos anteriormente e chegaremos à Lei dos Grandes números e ao Teorema do Limite Central que, sem dúvida, constituem dois dos resultados mais importantes para inferência estatística. Ambos nos dizem o que acontece com a média amostral à medida que obtemos mais e mais dados.</p>
+<div id="propriedades-da-média-amostral" class="section level3 unnumbered">
+<h3>Propriedades da Média Amostral</h3>
+<p>Vamos considerar um experimento aleatório que pode ser realizado, identicamente e independentemente, inúmeras, quantas vezes desejarmos. Vamos descrever essa situação supondo a existência de uma sequência de variáveis aleatórias, <span class="math inline">\(X_1, X_2, \ldots X_n\)</span>, e vamos assumir que essas variáveis aleatórias têm média e variância finitas, dadas, respectivamente por <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma^2\)</span>. Sob essas condições, estudaremos o comportamento da média amostral, conforme o tamanho <span class="math inline">\(n\)</span> da amostra aumenta.</p>
+<p>Portanto, seja a a.a.: <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> i.i.d. <span class="math inline">\(f_X(x)\)</span>, t.q. <span class="math inline">\(E[X] = \mu\)</span> e <span class="math inline">\(Var[X] = \sigma^2\)</span>.</p>
+<p><strong>Média Amostral:</strong></p>
+<p><span class="math display">\[\overline{X}_n = (X_1 + X_2 + \ldots + X_n)/n\]</span></p>
+<ul>
+<li><span class="math inline">\(E[\bar{X}_n] = \mu\)</span><br />
+</li>
+<li><span class="math inline">\(Var[\bar{X}_n] = \sigma^2/n\)</span></li>
+</ul>
+<p>Por definição, a média populacional corresponde ao valor esperado da variável aleatória <span class="math inline">\(X\)</span>. O mesmo ocorre para a média amostral: o valor esperado da média amostral è igual à média populacional, <span class="math inline">\(\mu\)</span>.</p>
+<p>Mas há uma diferença crucial entre as v.a.’s <span class="math inline">\(X_i\)</span> e <span class="math inline">\(\bar{X}_n\)</span>: a tendência de uma v.a. assumir valores próximos de seu valor esperado é quantificada pela variância. A variância de <span class="math inline">\(X_i\)</span> vale <span class="math inline">\(\sigma^2\)</span>; já a variância de <span class="math inline">\(\bar{X}_n\)</span> vale <span class="math inline">\(\sigma^2/n\)</span>!</p>
+<p>Portanto, a média amostral apresenta menor variabilidade que qualquer uma das v.a.’s individuais que compõe a amostra. Quando tomamos a média, a variância se reduz, de tal forma que fazendo <span class="math inline">\(n\)</span> tender a infinito, a variância da média amostral tende a zero. Isto significa que, ao repetir o experimento aleatório um número suficientemente grande de vezes (ou seja, ao obter uma amostra aleatória suficientemente grande) podemos tornar a variância da média amostral tão pequena quanto se queira.</p>
+</div>
+<div id="lei-dos-grandes-números" class="section level3 unnumbered">
+<h3>Lei dos Grandes Números</h3>
+<p>Sejam <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> i.i.d. <span class="math inline">\(f_X(\cdot)\)</span>, com média populacional <span class="math inline">\(\mu\)</span>.</p>
+<p>Então:</p>
+<p><span class="math display">\[P\left[|\bar{X}_n - \mu| &lt; \epsilon \right] \stackrel{n \rightarrow \infty}{\longrightarrow} 1, \quad \forall \epsilon &gt; 0\]</span></p>
+<p>A Lei dos Grandes Números (LGN) garante que, conforme o tamanho de uma a.a. (conjunto de variáveis aleatórias independentes e identicamente distribuídas) aumenta, sua média converge para a média populacional.</p>
+<p>Este teorema foi provado pela primeira vez por Jakob Bernoulli em 1713 (para o caso especial de uma amostra aleatória retirada de uma distribuição de Bernoulli) e consiste em uma representação matemática da interpretação de frequência relativa da probabilidade, que formaliza nossa intuição de que no longo prazo, as frequências relativas convergem para a média.</p>
+<p>Sendo assim, a Lei dos Grandes Números é de fundamental importância para a prática científica em geral. Se considerarmos que dados são obtidos a partir de um grande número de replicações independentes de um experimento (que pode ter sido realizado através de simulação ou em um laboratório, ou observado no mundo real), cada vez que utilizamos a frequência relativa de ocorrências de um evento de interesse para estimar sua probabilidade, estamos implicitamente invocando a Lei dos Grandes Números.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-9" class="example"><strong>Exemplo 7.1  </strong></span>
+</div>
+
+<p>Vamos ilustrar a Lei dos Grandes Números através de um exemplo computacional. Primeiro, devemos escolher uma população idealizada. Em seguida, fingindo não conhecer esta população, vamos retirar amostras (de diferentes tamanhos) desta população, e calcular as respectivas médias amostrais. A Lei dos Grandes Números garante que, conforme o tamanho da amostra aumenta, a média amostral deve se aproximar da média populacional.</p>
+<p>Vamos considerar três populações idealizadas: Binomial, Exponencial e Normal.
+Para cada uma das ilustrações, foram geradas 100 amostras de tamanhos variando de 1 até 1000.</p>
+<p><strong>CASO 1: População Binomial (n = 20, p = 0.5)</strong></p>
+<p>No primeiro caso, vamos considerar a população idealizada Binomial com parâmetros n = 20 e p = 0.5. Veja que, conforme o tamanho da a.a. aumenta, as médias amostrais convergem para a média populacional que vale <span class="math inline">\(np = 10\)</span>, com varibilidade decrescente.</p>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="distribuições-amostrais.html#cb72-1"></a>n       &lt;-<span class="st"> </span><span class="dv">20</span>     <span class="co"># tamanho do experim.</span></span>
+<span id="cb72-2"><a href="distribuições-amostrais.html#cb72-2"></a>p       &lt;-<span class="st"> </span><span class="fl">0.5</span>    <span class="co"># prob. sucesso</span></span>
+<span id="cb72-3"><a href="distribuições-amostrais.html#cb72-3"></a>aa_size &lt;-<span class="st"> </span><span class="dv">1000</span>   <span class="co"># tamanho da amostra</span></span>
+<span id="cb72-4"><a href="distribuições-amostrais.html#cb72-4"></a>nSim    &lt;-<span class="st"> </span><span class="dv">100</span>    <span class="co"># no. replicações</span></span>
+<span id="cb72-5"><a href="distribuições-amostrais.html#cb72-5"></a></span>
+<span id="cb72-6"><a href="distribuições-amostrais.html#cb72-6"></a>gen_path &lt;-<span class="st"> </span><span class="cf">function</span>(aa_size, n, p){</span>
+<span id="cb72-7"><a href="distribuições-amostrais.html#cb72-7"></a>  <span class="kw">return</span>(<span class="kw">cumsum</span>(<span class="kw">rbinom</span>(aa_size, n, p))<span class="op">/</span><span class="dv">1</span><span class="op">:</span>aa_size)</span>
+<span id="cb72-8"><a href="distribuições-amostrais.html#cb72-8"></a>}</span>
+<span id="cb72-9"><a href="distribuições-amostrais.html#cb72-9"></a>  </span>
+<span id="cb72-10"><a href="distribuições-amostrais.html#cb72-10"></a>media_amostral &lt;-<span class="st"> </span><span class="kw">replicate</span>(<span class="dv">100</span>, <span class="kw">gen_path</span>(aa_size, n, p))</span>
+<span id="cb72-11"><a href="distribuições-amostrais.html#cb72-11"></a></span>
+<span id="cb72-12"><a href="distribuições-amostrais.html#cb72-12"></a><span class="kw">plot</span>(<span class="ot">NULL</span>, <span class="dt">type=</span><span class="st">&quot;n&quot;</span>, </span>
+<span id="cb72-13"><a href="distribuições-amostrais.html#cb72-13"></a>     <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">0</span>, aa_size), </span>
+<span id="cb72-14"><a href="distribuições-amostrais.html#cb72-14"></a>     <span class="dt">ylim =</span> <span class="kw">range</span>(media_amostral),</span>
+<span id="cb72-15"><a href="distribuições-amostrais.html#cb72-15"></a>     <span class="dt">xlab =</span> <span class="st">&quot;tamanho da amostra&quot;</span>,</span>
+<span id="cb72-16"><a href="distribuições-amostrais.html#cb72-16"></a>     <span class="dt">ylab =</span> <span class="st">&quot;Média amostral&quot;</span>)</span>
+<span id="cb72-17"><a href="distribuições-amostrais.html#cb72-17"></a><span class="cf">for</span>(s <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="st"> </span>nSim) <span class="kw">lines</span>(media_amostral[,s], <span class="dt">col=</span><span class="st">&quot;gray&quot;</span>)</span>
+<span id="cb72-18"><a href="distribuições-amostrais.html#cb72-18"></a><span class="kw">abline</span>(<span class="dt">h =</span> n<span class="op">*</span>p, <span class="dt">lty =</span> <span class="st">&quot;dashed&quot;</span>, <span class="dt">lwd =</span> <span class="dv">2</span>)</span></code></pre></div>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><strong>CASO 2: População Exponencial (lambda = 2)</strong></p>
+<p>No segundo caso, temos uma população exponencial com parâmetro lambda = 2. Observamos a mesma convergência da média amostral para o valor 1/lambda = 0.5, que corresponde à média populacional.</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="distribuições-amostrais.html#cb73-1"></a>lambda  &lt;-<span class="st"> </span><span class="dv">2</span></span>
+<span id="cb73-2"><a href="distribuições-amostrais.html#cb73-2"></a>aa_size &lt;-<span class="st"> </span><span class="dv">1000</span>   <span class="co"># tamanho da amostra</span></span>
+<span id="cb73-3"><a href="distribuições-amostrais.html#cb73-3"></a>nSim    &lt;-<span class="st"> </span><span class="dv">100</span>    <span class="co"># no. replicações</span></span>
+<span id="cb73-4"><a href="distribuições-amostrais.html#cb73-4"></a></span>
+<span id="cb73-5"><a href="distribuições-amostrais.html#cb73-5"></a>gen_path &lt;-<span class="st"> </span><span class="cf">function</span>(aa_size, lambda){</span>
+<span id="cb73-6"><a href="distribuições-amostrais.html#cb73-6"></a>  <span class="kw">return</span>(<span class="kw">cumsum</span>(<span class="kw">rexp</span>(aa_size, lambda))<span class="op">/</span><span class="dv">1</span><span class="op">:</span>aa_size)</span>
+<span id="cb73-7"><a href="distribuições-amostrais.html#cb73-7"></a>}</span>
+<span id="cb73-8"><a href="distribuições-amostrais.html#cb73-8"></a>  </span>
+<span id="cb73-9"><a href="distribuições-amostrais.html#cb73-9"></a>media_amostral &lt;-<span class="st"> </span><span class="kw">replicate</span>(nSim, <span class="kw">gen_path</span>(aa_size, lambda))</span>
+<span id="cb73-10"><a href="distribuições-amostrais.html#cb73-10"></a></span>
+<span id="cb73-11"><a href="distribuições-amostrais.html#cb73-11"></a><span class="kw">plot</span>(<span class="ot">NULL</span>, <span class="dt">type=</span><span class="st">&quot;n&quot;</span>, </span>
+<span id="cb73-12"><a href="distribuições-amostrais.html#cb73-12"></a>     <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">0</span>, aa_size), </span>
+<span id="cb73-13"><a href="distribuições-amostrais.html#cb73-13"></a>     <span class="dt">ylim =</span> <span class="kw">range</span>(media_amostral),</span>
+<span id="cb73-14"><a href="distribuições-amostrais.html#cb73-14"></a>     <span class="dt">xlab =</span> <span class="st">&quot;tamanho da amostra&quot;</span>,</span>
+<span id="cb73-15"><a href="distribuições-amostrais.html#cb73-15"></a>     <span class="dt">ylab =</span> <span class="st">&quot;Média amostral&quot;</span>)</span>
+<span id="cb73-16"><a href="distribuições-amostrais.html#cb73-16"></a><span class="cf">for</span>(s <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="st"> </span>nSim) <span class="kw">lines</span>(media_amostral[,s], <span class="dt">col=</span><span class="st">&quot;gray&quot;</span>)</span>
+<span id="cb73-17"><a href="distribuições-amostrais.html#cb73-17"></a><span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">1</span><span class="op">/</span>lambda, <span class="dt">lty =</span> <span class="st">&quot;dashed&quot;</span>, <span class="dt">lwd =</span> <span class="dv">2</span>)</span></code></pre></div>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><strong>CASO 3: População Normal (0, 1)</strong></p>
+<p>Finalmente, a terceira população idealizada é normal padronizada. E, assim como nos casos anteriores, observamos a convergência da média amostral para a média populacional, conforme o tamanho da amostra aumenta.</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="distribuições-amostrais.html#cb74-1"></a>mu      &lt;-<span class="st"> </span><span class="dv">0</span>      <span class="co"># media populacional</span></span>
+<span id="cb74-2"><a href="distribuições-amostrais.html#cb74-2"></a>sigma   &lt;-<span class="st"> </span><span class="dv">1</span>      <span class="co"># desvio-padrão populacional</span></span>
+<span id="cb74-3"><a href="distribuições-amostrais.html#cb74-3"></a>aa_size &lt;-<span class="st"> </span><span class="dv">1000</span>   <span class="co"># tamanho da amostra</span></span>
+<span id="cb74-4"><a href="distribuições-amostrais.html#cb74-4"></a>nSim    &lt;-<span class="st"> </span><span class="dv">100</span>    <span class="co"># no. replicações</span></span>
+<span id="cb74-5"><a href="distribuições-amostrais.html#cb74-5"></a></span>
+<span id="cb74-6"><a href="distribuições-amostrais.html#cb74-6"></a>gen_path &lt;-<span class="st"> </span><span class="cf">function</span>(aa_size, mu, sigma){</span>
+<span id="cb74-7"><a href="distribuições-amostrais.html#cb74-7"></a>  <span class="kw">return</span>(<span class="kw">cumsum</span>(<span class="kw">rnorm</span>(aa_size, mu, sigma))<span class="op">/</span><span class="dv">1</span><span class="op">:</span>aa_size)</span>
+<span id="cb74-8"><a href="distribuições-amostrais.html#cb74-8"></a>}</span>
+<span id="cb74-9"><a href="distribuições-amostrais.html#cb74-9"></a>  </span>
+<span id="cb74-10"><a href="distribuições-amostrais.html#cb74-10"></a>media_amostral &lt;-<span class="st"> </span><span class="kw">replicate</span>(nSim, <span class="kw">gen_path</span>(aa_size, mu, sigma))</span>
+<span id="cb74-11"><a href="distribuições-amostrais.html#cb74-11"></a></span>
+<span id="cb74-12"><a href="distribuições-amostrais.html#cb74-12"></a><span class="kw">plot</span>(<span class="ot">NULL</span>, <span class="dt">type=</span><span class="st">&quot;n&quot;</span>, </span>
+<span id="cb74-13"><a href="distribuições-amostrais.html#cb74-13"></a>     <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">0</span>, aa_size), </span>
+<span id="cb74-14"><a href="distribuições-amostrais.html#cb74-14"></a>     <span class="dt">ylim =</span> <span class="kw">range</span>(media_amostral),</span>
+<span id="cb74-15"><a href="distribuições-amostrais.html#cb74-15"></a>     <span class="dt">xlab =</span> <span class="st">&quot;tamanho da amostra&quot;</span>,</span>
+<span id="cb74-16"><a href="distribuições-amostrais.html#cb74-16"></a>     <span class="dt">ylab =</span> <span class="st">&quot;Média amostral&quot;</span>)</span>
+<span id="cb74-17"><a href="distribuições-amostrais.html#cb74-17"></a><span class="cf">for</span>(s <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="st"> </span>nSim) <span class="kw">lines</span>(media_amostral[,s], <span class="dt">col=</span><span class="st">&quot;gray&quot;</span>)</span>
+<span id="cb74-18"><a href="distribuições-amostrais.html#cb74-18"></a><span class="kw">abline</span>(<span class="dt">h =</span> mu, <span class="dt">lty =</span> <span class="st">&quot;dashed&quot;</span>, <span class="dt">lwd =</span> <span class="dv">2</span>)</span></code></pre></div>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-15-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Como pudemos perceber nestas ilustrações, a lei dos grandes números sugere que, se a média populacional <span class="math inline">\(\mu\)</span> for desconhecida, podemos realizar inferências a respeito deste parâmetro a partir da observação do comportamento da média amostral. Esta observação é central a muitos dos procedimentos que utilizaremos daqui por diante.</p>
+<p>Ainda assim, por mais interessante e útil que seja este resultado, algumas perguntas permanecem sem resposta:</p>
+<ul>
+<li>Quão rápido a média amostral tende para a média populacional?</li>
+<li>O que se pode afirmar a respeito da distribuição da média amostral conforme o tamanho da amostra aumenta?</li>
+</ul>
+<p>Estas respostas podem ser satisfatoriamente respondidas pelo próximo resultado: o aguardado Teorema do Limite Central!</p>
+</div>
+</div>
+<div id="teorema-do-limite-central" class="section level2">
+<h2><span class="header-section-number">9.4</span> Teorema do Limite Central</h2>
+<p>Seja <span class="math inline">\(\overline{X}_n\)</span> a média amostral de uma a.a. de tamanho <span class="math inline">\(n\)</span> obtida a partir de uma população <span class="math inline">\(f_X(x)\)</span>, <strong>qualquer</strong>, com média <span class="math inline">\(\mu\)</span> e variância <span class="math inline">\(\sigma\)</span>, ambas finitas.</p>
+<p>Então:</p>
+<p><span class="math display">\[\begin{align*}
+  Z_n 
+  = \frac{\overline{X}_n - E[\overline{X}_n]}{\sqrt{\mathit{Var}[\overline{X}_n]}}
+  = \frac{\overline{X}_n - \mu}{\sigma/\sqrt{n}} 
+  \; \underset{n\rightarrow \infty}{\longrightarrow} \; N(0,1) 
+\end{align*}\]</span></p>
+<p>De forma que:
+<span class="math display">\[\overline{X}_n \; \dot{\sim} \; N(\mu, \sigma^2/n)\]</span></p>
+<p>O Teorema do Limite Central (TLC) afirma que o comportamento aleatório da média amostral se assemelha ao comportamento aleatório de uma variável aleatória normalmente distribuída. E isto é verdade, idependentemente da população da qual é retirada a amostra aleatória.</p>
+<p>Sendo assim, este resultado nos permite aproximar uma variedade de probabilidades que, de outra maneira, poderiam ser intratáveis. Para que essa aproximação seja válida, precisamos ter uma amostra de tamanho suficientemente grande; e este número depende da distribuição populacional. Em geral, uma regra de bolso diz é que a aproximação normal é válida para médias amostrais calculadas a partir de amostras com 30 ou mais observações.</p>
+<p>Vamos ilustrar o TLC através de um exemplo computacional, assim como fizemos para a LGN. Vamos considerar três populações idealizadas: Uniforme, Exponencial e Normal.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-16" class="example"><strong>Exemplo 9.1  </strong></span>
+</div>
+
+<p>Simular a distribuição amostral de <span class="math inline">\(\overline{X}_n\)</span> para as seguintes amostras aleatórias:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> i.i.d. U(0,1)<br />
+</li>
+<li><span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> i.i.d. Exp(2)<br />
+</li>
+<li><span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> i.i.d. N(0,1)</li>
+</ol>
+<p>para os tamanhos de amostra n = 10, 25, 50, 500.</p>
+<p><strong>CASO 1: População Uniforme (0, 1)</strong></p>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-17-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><strong>CASO 2: População Exponencial (lambda = 2)</strong></p>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-18-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><strong>CASO 3: População Normal (0, 1)</strong></p>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Essas ilustrações permitem perceber como as distribuições das médias amostrais convergem para a distribuição Normal conforme aumenta o tamanho da amostra, exatamente como afirma o TLC, exceto no caso da população normal, em que a distribuição da média amostral é Normal, independentemente do tamanho da amostra.</p>
+<p>O TLC tem uma longa história. Como vimos anteriormente, para o caso especial em que a v.a. tem distribuição de Bernoulli com probabilidade de sucesso igual a <span class="math inline">\(p\)</span>, a versão do TLC para o total amostral foi desenvolvida por De Moivre em 1733, como uma aproximação para a distribuição Binomial. A primeira contribuição para uma versão mais geral para o TLC foi feita por Laplace em 1810, mas resultados definitivos só foram obtidos na primeira metade do século XX.</p>
+<p>A beleza do TLC consiste no fato de que, a partir de praticamente nenhuma hipótese, exceto independência e existência de média e variância, chegamos na normalidade da distribuição da média amostral, qualquer que seja a população de origem. O ponto importante é que a normalidade é decorrente da soma de perturbações independentes (mas essas perturbações precisam ser pequenas, daí a necessidade de variância finita). Mas esse encanto não deve ofuscar nosso senso prático. É necessário também ter em mente as limitações deste resultado. Embora o TLC nos dê uma aproximação geral, não há meios de determinar quão boa é a aproximação, ou qual o tamanho de amostra mínimo necessário para obter uma boa aproximação, exceto analisando-se caso a caso, já que isto sim depende da população original. Além disso, com a grande disponibilidade atual de recursos computacionais, aproximações como o TLC, de certa forma, perdem um pouco sua importância prática.</p>
+<p>Embora o TLC não assuma normalidade da população que originou a amostra, essa hipótese é necessária para obter a distribuição amostral de outras estatísticas que não a média amostral, como veremos mais adiante.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-20" class="example"><strong>Exemplo 5.6  </strong></span>
+</div>
+
+<p>Um pacote de granola tem peso aproximadamente normalmente distribuído com média 800g e desvio-padrão 40g. Qual a probabilidade de que uma a.a. contendo 16 pacotes tenha peso médio inferior a 775g?</p>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<p>Dados do problema:</p>
+<p><span class="math inline">\(X\)</span> = peso de um pacote de granola <span class="math inline">\(\stackrel{\cdot}{\sim} N(\mu = 800, \sigma^2 = 40^2)\qquad\)</span><br />
+a.a. <span class="math inline">\(X_1, X_2, \ldots, X_n, \; n=16\)</span>.</p>
+<p>Queremos: <span class="math inline">\(P[\bar{X}_n &lt; 775]\)</span></p>
+<p>Neste caso, não precisamos do TLC, pois a população tem distribuição aproximadamente normal. Sendo assim:</p>
+<p><span class="math inline">\(\bar{X}_n \stackrel{\cdot}{\sim} N(E[\bar{X}_n], Var[\bar{X}_n]): \qquad\)</span>
+<span class="math inline">\(E[\bar{X}_n] = \mu = 800\)</span> e
+<span class="math inline">\(Var[\bar{X}_n] = \sigma^2/n = 40^2/16= 100\)</span></p>
+<p>Portanto:
+<span class="math display">\[P[\bar{X}_n &lt; 775] = P\left[\frac{\bar{X}_n - E[\bar{X}_n]}{\sqrt{Var[\bar{X}_n]}} = Z &lt; \frac{775 -800}{10}\right] = P[Z &lt; -2.5] = 0.0062\]</span></p>
+<p>Conclusão:</p>
+<p>Há aproximadamente 0,62% de chance de observar uma a.a. de 16 pacotes de granola com peso médio inferior a 775g.</p>
+<p>no R:</p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="distribuições-amostrais.html#cb75-1"></a><span class="kw">pnorm</span>(<span class="dv">775</span>, <span class="dt">mean =</span> <span class="dv">800</span>, <span class="dt">sd =</span> <span class="dv">10</span>)</span></code></pre></div>
+
+<div class="example">
+<span id="exm:unnamed-chunk-23" class="example"><strong>Exemplo 8.3  </strong></span>
+</div>
+
+<p>Um determinado processo de fabricação produz peças cilíndricas para uso na indústria aeronáutica. O engenheiro responsável acredita que o diâmetro médio de todas as peças produzidas por tal processo esteja de acordo com a especificação e seja de 5cm. Sabe-se ainda que o desvio-padrão do processo vale 0,1cm.</p>
+<p>Um experimento é conduzido em que 100 peças produzidas por tal processo são escolhidas aleatoriamente. O diâmetro de cada uma das peças da amostra é medido. O experimento resulta em um valor médio para o diâmetro das peças de 5,027cm.</p>
+<p>A informação obtida através da análise da amostra valida ou refuta a conjectura do engenheiro responsável?</p>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<p>Seja <span class="math inline">\(X\)</span> = diâmetro de uma peça cilíndrica tq. <span class="math inline">\(\mu =\)</span> 5cm; <span class="math inline">\(\sigma =\)</span> 0,1cm<br />
+(não há informação a respeito da distribuição desta v.a.)<br />
+a.a. <span class="math inline">\(X_1, X_2, \ldots, X_n, \; n=100\)</span>.</p>
+<p>Para a estatística média amostral <span class="math inline">\(\bar{X}_n\)</span>, temos:<br />
+<span class="math inline">\(E[\bar{X}_n] = \mu = 5\)</span> e <span class="math inline">\(\sigma[\bar{X}_n] = \sigma/\sqrt{n} = 0.1/\sqrt{100} = 0.01\)</span></p>
+<p>A fim de verificar se os dados amostrais refutam ou validam a conjectura de que <span class="math inline">\(\mu = 5\)</span>, precisamos responder à seguinte pergunta:</p>
+<blockquote>
+<p>Qual a probabilidade de observar <span class="math inline">\(|\bar{X}_n - \mu| \geq 0,027\)</span>, em uma a.a. de tamanho <span class="math inline">\(n=100\)</span>, quando <span class="math inline">\(\mu = 5\)</span>?</p>
+</blockquote>
+<ul>
+<li>Se a probabilidade for baixa, refuta-se a conjectura;</li>
+<li>Se a probabilidade for alta, valida-se a conjectura.</li>
+</ul>
+<p>A média amostral observada para a amostra coletada dista da média esperada de <span class="math inline">\(|\bar{x}_n - \mu| = 0.027\)</span>.</p>
+<p>Portanto:</p>
+<p><span class="math display">\[|W| = \frac{|\bar{X}_n - \mu|}{\sigma} = \frac{|5.027 - 5|}{0.01} = 2.7\]</span></p>
+<p>então: <span class="math inline">\(w_1 = -2.7\)</span> e <span class="math inline">\(w_2 = 2.7\)</span></p>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-25-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>Vamos calcular a probabilidade de observar uma amostra com essa característica (assumindo que a população tenha média <span class="math inline">\(\mu\)</span> e desvio-padrão <span class="math inline">\(\sigma\)</span>):</p>
+<p><span class="math display">\[\begin{align*}
+  P[|\bar{X}_n - \mu| \geq 0.027] = P[|W| \geq 2.7]
+  &amp;= P[W \leq w_1] + P[W \geq w_2] \\
+  &amp;= 2 P[W \leq -2.7] = 2 \cdot 0.003467 \approx 0.007.
+\end{align*}\]</span></p>
+<p>Conclusão:</p>
+<p>Para as condições consideradas, a probabilidade de que a média amostral <span class="math inline">\(\bar{X}_n\)</span> se afaste 0.027cm da especificação 5cm é de aproximadamente 0,7%. Isto significa que espera-se observar uma diferença como esta em apenas 7 a cada 1000 amostras (de tamanho 100).</p>
+<p>Portanto, não parece plausível validar a conjectura do engenheiro de que as peças estejam sendo produzidas dentro da especificação.</p>
+<p>no R:</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="distribuições-amostrais.html#cb76-1"></a><span class="dv">2</span><span class="op">*</span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">5.027</span>, <span class="dt">mean =</span> <span class="dv">5</span>, <span class="dt">sd =</span> <span class="fl">0.01</span>))</span>
+<span id="cb76-2"><a href="distribuições-amostrais.html#cb76-2"></a><span class="dv">2</span><span class="op">*</span><span class="kw">pnorm</span>(<span class="op">-</span><span class="fl">2.7</span>)</span></code></pre></div>
+<p>Suponha agora que nova informação tenha sido obtida e passou-se a acreditar que o processo tem desvio-padrão <span class="math inline">\(\sigma = 0.2\)</span>cm e a média continua sendo <span class="math inline">\(\mu =5\)</span>cm:</p>
+<p><span class="math display">\[\begin{align*}
+\mu = 5       &amp; \qquad \Rightarrow \quad E[\bar{X}_n] = 5
+\sigma = 0.2  &amp; \qquad \Rightarrow \quad \sigma[\bar{X}_n] = 0.2/\sqrt{100} = 0.02
+\end{align*}\]</span></p>
+<p><span class="math display">\[w_1 = \frac{-0.027}{0.02} =  -1.35 \qquad w_2 = \frac{0.027}{0.02} = 1.35\]</span>
+Portanto,</p>
+<p><span class="math display">\[P[|\bar{X}_n - 5| \geq 0.027] =  2 P[W \leq -1.35] = 2 \cdot 0.088508 = 0.177 \approx 18\%\]</span></p>
+<p>E agora, o que se pode concluir?…</p>
+</div>
+<div id="distribuições-amostrais-associadas-a-populações-normais" class="section level2">
+<h2><span class="header-section-number">9.5</span> Distribuições Amostrais Associadas a Populações Normais</h2>
+<p>Distribuições amostrais de estatísticas importantes nos permitem aprender sobre os parâmetros de distribuições. Vimos que podemos utilizar a média amostral para realizar inferências a respeito da média populacional. Seria natural que pudéssemos utilizar a variância amostral para realizar inferências a respeito da variância populacional.</p>
+<p>No entanto, não existem teoremas análogos ao TLC que garantam uma aproximação para a distribuição amostral da variância amostral ou para outras estatísticas importantes (mesmo quando <span class="math inline">\(n \rightarrow \infty\)</span> ), quando a população original é arbitrária.</p>
+<p>Ainda assim, algumas distribuições amostrais exatas podem ser obtidas para estatísticas calculadas a partir de amostras retiradas de uma população normal. Estas estatísticas são chamadas Qui-Quadrado, T-Student e F-Snedecor.</p>
+<div id="distribuição-qui-quadrado" class="section level3 unnumbered">
+<h3>Distribuição Qui-Quadrado</h3>
+<p>Sejam <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> i.i.d. <span class="math inline">\(N(\mu, \sigma^2)\)</span>. Então:</p>
+<p><span class="math display">\[Q^2 = \frac{(n-1)S_n^2}{\sigma^2} = \sum_{i=1}^{n}\frac{(X_i - \bar{X}_n)^2}{\sigma^2} \sim \chi^2_\nu\]</span></p>
+<p>onde:<br />
+<span class="math inline">\(\nu = n-1\)</span>: no. de graus de liberdade<br />
+<span class="math inline">\(S_n^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X}_n)^2\)</span>: variância amostral.</p>
+<p>Em outras palavras, se uma a.a. com <span class="math inline">\(n\)</span> observações <span class="math inline">\(X_1, X_2, \ldots X_n\)</span> é selecionada a partir de uma população Normal com média <span class="math inline">\(\mu\)</span> e variância <span class="math inline">\(\sigma^2\)</span>, então a distribuição amostral da estatística <span class="math inline">\(Q^2\)</span> segue a distribuição Qui-Quadrado com <span class="math inline">\(\nu = n-1\)</span> graus de liberdade.</p>
+<p>O número de g.d.l. da distribuição <span class="math inline">\(\chi^2\)</span> pode ser interpretado como uma medida de informação, da seguinte maneira: a uma a.a. de tamanho <span class="math inline">\(n\)</span> estão associados <span class="math inline">\(n\)</span> graus de liberdade, já que cada uma das observações que compõe a amostra foi obtida de maneira independente. Quando não conhecemos a média populacional <span class="math inline">\(\mu\)</span>, precisamos estimá-la utilizando a média amostral, <span class="math inline">\(\bar{X}_n\)</span>. Ao estimar a variância populacional <span class="math inline">\(\sigma^2\)</span> utilizando a variância amostral <span class="math inline">\(S_n^2\)</span>, temo um total de <span class="math inline">\(n-1\)</span> g.d.l, já que <span class="math inline">\(S_n^2\)</span> é função da média amostral. Perdemos um grau de liberdade para cada parâmetro populacional estimado a partir do mesmo conjunto de dados.</p>
+<div id="propriedades-4" class="section level4 unnumbered">
+<h4>Propriedades</h4>
+<p>A distribuição <span class="math inline">\(\chi^2\)</span> tem algumas propriedades interessantes:</p>
+<ul>
+<li><p>Se <span class="math inline">\(Z \sim N(0,1)\)</span> então <span class="math inline">\(Z^2 \sim \chi^2_1\)</span><br />
+i.e., quadrado de uma v.a. normal padronizada tem distribuição <span class="math inline">\(\chi^2\)</span> com 1 g.d.l.</p></li>
+<li><p>Se <span class="math inline">\(X_1, \ldots, X_n\)</span> independentes, com <span class="math inline">\(X_i \sim \chi^2_{\nu_i}\)</span> então <span class="math inline">\(X_1 + \ldots + X_n \sim \chi^2_{\nu_1 + \ldots + \nu_n}\)</span><br />
+i.e., a soma de v.a.’s <span class="math inline">\(\chi^2\)</span> independentes também tem distribuição <span class="math inline">\(\chi^2\)</span> , e o número de graus de liberdade da soma corresponde à soma dos números de g.d.l.</p></li>
+</ul>
+<p><img src="img/distr-chi2.png" width="50%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>95% da área da distribuição encontra-se entre <span class="math inline">\(\chi^2_{0,975}\)</span> e <span class="math inline">\(\chi^2_{0,025}\)</span>:<br />
+A distribuição Qui-Quadrado é assimétrica e tem suporte no conjunto dos números reais não negativos. Ela deixa uma área igual a <span class="math inline">\(\alpha\)</span> à direita do quantil <span class="math inline">\(\chi^2_\alpha\)</span> , de forma que 95% da área sob a curva de densidade <span class="math inline">\(\chi^2\)</span> se encontra entre os percentis 97,5% e 2,5%.</li>
+</ul>
+<p>Portanto, para um certo número de graus de liberdade, <span class="math inline">\(\nu\)</span>:</p>
+<ul>
+<li>Se <span class="math inline">\(Q^2 &gt; \chi^2_{0,025; \nu}\)</span>: resultado improvável (P &lt; 0,025), a menos que <span class="math inline">\(\sigma^2 \downarrow\)</span><br />
+</li>
+<li>Se <span class="math inline">\(Q^2 &lt; \chi^2_{0,975; \nu}\)</span>: resultado improvável (P &lt; 0,025), a menos que <span class="math inline">\(\sigma^2 \uparrow\)</span></li>
+</ul>
+<p>Podemos utilizar esta distribuição para realizar inferência a respeito da variância populacional. Para um certo número de graus de liberdade, <span class="math inline">\(\nu\)</span>: se o valor observado da estatística <span class="math inline">\(Q^2\)</span> se encontrar à direita do percentil 2,5% temos um resultado bastante improvável (já que a área à direita do valor da estatística é inferior a 2,5%), a menos que a variância populacional seja menor que o imaginado. Um raciocínio análogo se aplica para valores observados da estatística <span class="math inline">\(Q^2\)</span> menores que o percentil 97,5%. Isso significa que é possível observar <span class="math inline">\(Q^2\)</span> à esquerda de do percentil 97,5% e à direita do percentil 2,5%, quando <span class="math inline">\(\sigma^2\)</span> está correto, mas é mais provável que nossa ideia a respeito deste parâmetro esteja errada.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-27" class="example"><strong>Exemplo 9.2  </strong></span>
+</div>
+
+<p>Uma companhia produz medicamentos que contém 8g de um determinado composto em um frasco do medicamento. Engenheiros da qualidade determinaram que o processo estará operando em conformidade com o especificado se a variabilidade real <span class="math inline">\(\sigma^2\)</span> do composto por frasco for menos que 0,0025.</p>
+<p>Uma a.a. de 10 frascos é selecionada e a quantidade do composto em cada frasco é medida.
+Assuma que a quantidade do composto seja normalmente distribuída.
+Estamos interessados na variância amostral, <span class="math inline">\(Sn^2\)</span>.</p>
+<p>Se, de fato, <span class="math inline">\(\sigma^2 =\)</span> 0,001, qual a probabilidade de que <span class="math inline">\(S_n^2\)</span> exceda 0,0025?</p>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<p>Temos: <span class="math inline">\(X_1, X_2, \ldots, X_{n=10} \sim N(\mu, \sigma^2)\)</span>.<br />
+Queremos: <span class="math inline">\(P[S_n^2 &gt; 0.0025]\)</span>:</p>
+<ul>
+<li>Para calcular esta probabilidade, utilizaremos a estatística:
+<span class="math display">\[Q^2 = (n-1) S_n^2/\sigma^2 \sim \chi^2_{\nu = n-1}\]</span>
+Portanto:</li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+  P[S_n^2 &gt; 0.0025]
+  &amp;= P\left[(n-1)\frac{S_n^2}{\sigma^2} &gt; (n-1)\frac{0.0025}{\sigma^2}\right]; \quad n = 10; \sigma^2 = 0.001\\
+  &amp;= P\left[\chi^2 &gt; 9 \frac{0.0025}{0.001}\right] = P[\chi^2 &gt; 22.5]\\
+\end{align*}\]</span></p>
+<p>Da tabela, <span class="math inline">\(\nu=9\)</span>, <span class="math inline">\(\chi^2_\alpha = 22.5\)</span>. Precisamos encontrar o valor de <span class="math inline">\(\alpha\)</span> (probabilidade).</p>
+<p>Na linha de <span class="math inline">\(\nu =9\)</span>, temos apenas <span class="math inline">\(\chi^2_{0.01} = 21.67\)</span> e <span class="math inline">\(\chi^2_{0.005} = 23.59\)</span>.
+Podemos interpolar os valores de probabilidade associados a esses quantis, ou encontrar uma faixa de valores em que se encontra a probabilidade desejada:</p>
+<p><span class="math inline">\(0.005 &lt; P[\chi^2 &gt; 22.5] &lt; 0.01\)</span>, se a variância populacional for de fato <span class="math inline">\(\sigma^2 = 0.001\)</span>.</p>
+<p>no R:</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="distribuições-amostrais.html#cb77-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pchisq</span>(<span class="fl">22.5</span>, <span class="dt">df =</span> <span class="dv">9</span>)  </span></code></pre></div>
+</div>
+</div>
+<div id="distribuição-t-student" class="section level3 unnumbered">
+<h3>Distribuição t-Student</h3>
+<p>Sejam <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> i.i.d. <span class="math inline">\(N(\mu, \sigma^2)\)</span>.</p>
+<p>Se <span class="math inline">\(\sigma\)</span> conhecido: <span class="math inline">\(\quad \frac{\overline{X}_n - \mu}{\sigma/\sqrt{n}} \sim N(0,1)\)</span></p>
+<p>Se <span class="math inline">\(\sigma\)</span> <strong>desconhecido</strong> (em geral, este é o caso):</p>
+<p><span class="math display">\[T = \frac{\overline{X}_n - \mu}{S_n/\sqrt{n}}   \sim t_\nu\]</span></p>
+<p><img src="img/distr-t-Student.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>onde:</p>
+<p><span class="math inline">\(\nu = n-1\)</span>: no. de graus de liberdade</p>
+<p>Simetria: <span class="math inline">\(t_{1-\alpha,\nu} = - t_{\alpha, \nu}\)</span></p>
+<p>Em outras palavras, se <span class="math inline">\(X_1, X_2, \ldots X_n\)</span> constituem uma a.a. de uma população Normal com média <span class="math inline">\(\mu\)</span> e variância <span class="math inline">\(\sigma^2\)</span>, sabemos, independentemente do TLC, que a estatística padronizada tem distribuição normal padronizada. Quando o valor de <span class="math inline">\(\sigma\)</span> é conhecido, podemos utilizar essa estatística para realizar inferência a respeito da média populacional <span class="math inline">\(\mu\)</span>, já que esta é a única quantidade populacional desconhecida.</p>
+<p>Na maioria dos casos práticos em que se deseja realizar inferência a respeito da média populacional, no entanto, é irreal acreditar que a variância populacional <span class="math inline">\(\sigma^2\)</span> seja conhecida. Na realidade, se temos dúvidas a respeito da localização do centro da distribuição, o que dizer a respeito de sua dispersão? Como podemos realizar inferência a respeito de <span class="math inline">\(\mu\)</span>, neste caso?</p>
+<p>Este problema foi investigado por William Gosset (que publicou seus resultados sob o pseudônimo de Student) no início do século XX. Este trabalho resultou no desenvolvimento da distribuição t-Student. Gosset fez o óbvio: olhou para a distribuição amostral da estatística <span class="math inline">\(T\)</span>, em que a variância populacional desconhecida <span class="math inline">\(\sigma^2\)</span> é substituída pelo estimador variância amostral. Ele percebeu que a distribuição da estatística <span class="math inline">\(T\)</span> tinha uma forma semelhante à da distribuição normal, exceto por apresentar um maior achatamento e, portanto, caudas mais longas, explicadas pela maior variabilidade observada em decorrência da incerteza associada ao desconhecimento e consequente necessidade de estimar a variância populacional. De fato, ele desenvolveu uma formulação matemática para a distribuição da estatística <span class="math inline">\(T\)</span>, que ficou conhecida como distribuição t-Student.</p>
+<p>Em suma, a distribuição t−Student é útil para realizar inferências a respeito da média populacional (ou entre diferenças de duas médias populacionais) quando a variância populacional <span class="math inline">\(\sigma^2\)</span> é desconhecida.</p>
+<p>É importante observar que, para amostras de tamanho pequen,o a variância amostral <span class="math inline">\(S_n^2\)</span> flutua muito de amostra para amostra, de forma que a distribuição <span class="math inline">\(t\)</span> correspondente é muito mais achatada que a distribuição normal padronizada. Conforme o tamanho da amostra aumenta, a distribuição t se aproxima da distribuição normal padronizada, de forma que é indiferente utilizar a distribuição t ou normal padronizada para realizar inferência a respeito da média populacional com base em amostras grandes. Para amostras pequenas (com n &lt; 30), deve-se utilizar a distribuição t-Student.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-30" class="example"><strong>Exemplo 9.3  </strong></span>
+</div>
+
+<p>Determine o valor de <span class="math inline">\(k\)</span> de forma que
+<span class="math display">\[P[k &lt; T &lt; -1,761] = 0.045\]</span>
+para uma a.a. <span class="math inline">\(X_1, \ldots, X_n\)</span> de tamanho <span class="math inline">\(n=15\)</span> selecionada a partir de uma distribuição normal, em que
+<span class="math display">\[T = \frac{\overline{X}_n - \mu}{S_n/\sqrt{n}}.\]</span></p>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<p>Se a população é normal, então a estatística <span class="math inline">\(T \sim t_\nu\)</span> onde: <span class="math inline">\(\nu = n -1 = 14\)</span> g.d.l.</p>
+<p>Temos: <span class="math inline">\(-1.761 = -t_\alpha = t_{1-\alpha}\)</span> (simetria)</p>
+<p>Da tabela da distribuição t-Student: <span class="math inline">\(\nu = 14 \; \Rightarrow t_\alpha = 1.761 \quad \therefore \alpha = 0.05\)</span></p>
+<p>Seja <span class="math inline">\(k = - t_\beta: \quad 0.045 = \alpha - \beta = 0.05 - \beta \; \therefore \beta = 0.005\)</span>.</p>
+<p>Portanto: <span class="math inline">\(k = - t_\beta = - 2.977\)</span>.</p>
+<p><strong>OBS:</strong> Exatamente 95% dos valores da distribuição <span class="math inline">\(t-\)</span>Student com <span class="math inline">\(\nu = n-1\)</span> g.d.l. encontram-se entre <span class="math inline">\(-t_{0.025}\)</span> e <span class="math inline">\(t_{0.025}\)</span> (valores tabelados). E, assim, valores observados para a estatística <span class="math inline">\(T\)</span> fora deste intervalo caracterizam eventos <strong>raros</strong>.</p>
+<p>no R:</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="distribuições-amostrais.html#cb78-1"></a><span class="kw">pt</span>(<span class="op">-</span><span class="fl">1.761</span>, <span class="dv">14</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pt</span>(<span class="op">-</span><span class="fl">2.977</span>, <span class="dv">14</span>)</span></code></pre></div>
+
+<div class="example">
+<span id="exm:unnamed-chunk-33" class="example"><strong>Exemplo 9.4  </strong></span>
+</div>
+
+<p>Um engenheiro afirma que a concentração média (populacional) de uma determinada substância química é de 500mg/ml de solução. Considere que a distribuição da concentração desta substância seja aproximadamente normal.</p>
+<p>A fim de avaliar esta conjectura, todo mês ele mede a concentração média de uma amostra obtida a partir de 25 frascos de solução. Se o valor <span class="math inline">\(T\)</span> calculado estiver entre <span class="math inline">\(-t_{0,05}\)</span> e <span class="math inline">\(t_{0,05}\)</span>, a hipótese é mantida.</p>
+<p>A que conclusão pode-se chegar a partir de uma amostra cuja concentração média vale <span class="math inline">\(\overline{x} = 518\)</span>mg/ml, com desvio-padrão de <span class="math inline">\(s=40\)</span>mg/ml?</p>
+
+<div class="solution">
+ <span class="solution"><em>Solução. </em></span> 
+</div>
+
+<p>Temos:
+<span class="math inline">\(\mu = 500\)</span>mg/ml; n = 25 <span class="math inline">\(\Rightarrow \nu = 25-1 = 24\)</span>;</p>
+<p>Para a amostra obtida: <span class="math inline">\(\overline{x} = 518\)</span>mg/ml e <span class="math inline">\(s=40\)</span>mg/ml.</p>
+<p>O engenheiro está satisfeito se <span class="math inline">\(-t_{0.05; 24} &lt; T &lt; t_{0.05; 24}\)</span>.<br />
+Da tabela da distribuição t-Student, <span class="math inline">\(t_{0.05; 24} = 1.711\)</span>.</p>
+<p><span class="math display">\[T = \frac{518 - 500}{40/\sqrt{25}} = 2.25 &gt; t_{0,05}!\]</span></p>
+<p>Portanto, a hipótese de que <span class="math inline">\(\mu=500\)</span>ml/mg não parece ser válida.<br />
+É mais provável que <span class="math inline">\(\mu&gt;500\)</span>ml/mg.</p>
+<p>no R:</p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="distribuições-amostrais.html#cb79-1"></a><span class="kw">c</span>(<span class="kw">qt</span>(<span class="fl">0.05</span>, <span class="dv">24</span>), <span class="kw">qt</span>(<span class="fl">0.95</span>, <span class="dv">24</span>))</span></code></pre></div>
+</div>
+</div>
+<div id="aproximando-distribuições-amostrais-via-simulação-de-monte-carlo" class="section level2">
+<h2><span class="header-section-number">9.6</span> Aproximando Distribuições Amostrais via Simulação de Monte Carlo</h2>
+<p>Vimos que as distribuições amostrais relacionam o que se espera de uma amostra às características da população. Vimos também que é possível determinar as distribuições amostrais exatas de algumas estatísticas obtidas a partir de amostras retiradas de populações normais.</p>
+<p>No entanto, distribuições amostrais de estatísticas podem ser determinadas matematicamente apenas em casos muito simples e para uma quantidade limitada de estatísticas. Uma estratégia alternativa é utilizar simulação para obter uma distribuição amostral aproximada para uma estatística arbitrária, calculada a partir de uma amostra retirada de uma população também arbitrária.</p>
+<p>Se nem simulação for possível, ainda nos resta o recurso de obter uma descrição aproximada utilizando a regra empírica, no caso de distribuições simétricas e unimodais, ou a regra de Chebyshev, no caso de distribuições completamente arbitrárias, para as quais se conhece apenas média e variância.</p>
+<p>Vejamos como obter aproximações para as distribuições amostrais de algumas estatísticas utilizando simulação de Monte Carlo. Para isso, consideraremos amostras de tamanho fixo igual a 30, retiradas de três populações idealizadas: a população uniforme entre 0 e 1, a população exponencial com parâmetro <span class="math inline">\(\lambda = 2\)</span> e população normal padronizada.</p>
+<div id="distribuição-aproximada-da-mediana-amostral" class="section level3 unnumbered">
+<h3>Distribuição Aproximada da Mediana Amostral</h3>
+<div id="população-idealizada-u01" class="section level4 unnumbered">
+<h4>População Idealizada: U(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-36-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-exp2" class="section level4 unnumbered">
+<h4>População Idealizada: Exp(2)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-37-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-n01" class="section level4 unnumbered">
+<h4>População Idealizada: N(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-38-1.png" width="100%" /></p>
+<p>É possível demonstrar que a distribuição amostral da mediana se aproxima de uma distribuição normal, embora a média amostral apresente variâncias menores. Para outras estatísticas, não há garantia de convergência da distribuição amostral.</p>
+</div>
+</div>
+<div id="distribuição-aproximada-do-desvio-padrão-amostral" class="section level3 unnumbered">
+<h3>Distribuição Aproximada do Desvio-Padrão Amostral</h3>
+<div id="população-idealizada-u01-1" class="section level4 unnumbered">
+<h4>População Idealizada: U(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-39-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-exp2-1" class="section level4 unnumbered">
+<h4>População Idealizada: Exp(2)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-40-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-n01-1" class="section level4 unnumbered">
+<h4>População Idealizada: N(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-41-1.png" width="100%" /></p>
+</div>
+</div>
+<div id="distribuição-aproximada-da-variância-amostral" class="section level3 unnumbered">
+<h3>Distribuição Aproximada da Variância Amostral</h3>
+<div id="população-idealizada-u01-2" class="section level4 unnumbered">
+<h4>População Idealizada: U(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-42-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-exp2-2" class="section level4 unnumbered">
+<h4>População Idealizada: Exp(2)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-43-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-n01-2" class="section level4 unnumbered">
+<h4>População Idealizada: N(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-44-1.png" width="100%" /></p>
+</div>
+</div>
+<div id="distribuição-aproximada-do-mad-desvio-mediano-absoluto" class="section level3 unnumbered">
+<h3>Distribuição Aproximada do MAD (Desvio Mediano Absoluto)</h3>
+<div id="população-idealizada-u01-3" class="section level4 unnumbered">
+<h4>População Idealizada: U(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-45-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-exp2-3" class="section level4 unnumbered">
+<h4>População Idealizada: Exp(2)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-46-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-n01-3" class="section level4 unnumbered">
+<h4>População Idealizada: N(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-47-1.png" width="100%" /></p>
+</div>
+</div>
+<div id="distribuição-aproximada-da-amplitude-inter-quartis-iqr" class="section level3 unnumbered">
+<h3>Distribuição Aproximada da Amplitude Inter-Quartis (IQR)</h3>
+<div id="população-idealizada-u01-4" class="section level4 unnumbered">
+<h4>População Idealizada: U(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-48-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-exp2-4" class="section level4 unnumbered">
+<h4>População Idealizada: Exp(2)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-49-1.png" width="100%" /></p>
+</div>
+<div id="população-idealizada-n01-4" class="section level4 unnumbered">
+<h4>População Idealizada: N(0,1)</h4>
+<p><img src="09-ch9_files/figure-html/unnamed-chunk-50-1.png" width="100%" /></p>
+<p>Neste capítulo, vimos alguns dos conceitos fundamentais mais importantes para o Estudo de Estatística. A seguir, veremos como utilizar as distribuições amostrais de estatísticas para realizar inferências a respeito de parâmetros populacionais desconhecidos.</p>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="modelos-probabilísticos-distribuição-normal.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="estimação-pontual.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["apostila-GED13.pdf", "apostila-GED13.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+%---------------------------------------------------------------------
+\documentclass{article}
+\usepackage[applemac]{inputenc} % Mac
+\usepackage[portuges,brazilian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{verbatim}
+\usepackage{icomma}
+\usepackage{amssymb}
+
+
+
+%%%<
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{arrows,shapes}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%>
+
+\begin{document}
+\pagestyle{empty}
+
+
+% Define block styles
+\tikzstyle{block} = [rectangle, draw, fill=gray!20, text width=1cm, text centered, rounded corners, minimum height=4em]
+\tikzstyle{cloud} = [ellipse, text width=4.5em, text badly centered, node distance=2.5cm, inner sep=0pt, minimum size = 2cm]
+\tikzstyle{dot} = [circle, inner sep=0pt, minimum size=0.1mm, fill=black, draw=black]
+\tikzstyle{fake} = [circle, inner sep=0pt, minimum size=0.1mm, text badly centered]
+\tikzstyle{connector} = [draw, thick, -latex']
+\tikzstyle{line} = [draw, thick]
+
+\begin{figure}
+\centering
+\begin{tikzpicture}%[node distance=1cm, auto]  
+%   \node[cloud, fill=blue!20, anchor=base] (bubble){};
+%   \node[dot, left of=bubble, node distance=-.3cm] (set){};
+%   \node[fake, left of=bubble, below of =bubble, node distance=1cm](Omega){$\Omega$};
+%   \node[left of=bubble, node distance=-.2cm](s){$s$};
+%   \node[right of=Omega, node distance=5cm](Re){$\Re$};
+%   \node[fake, right of=Omega, node distance=3cm](fake1){};
+%   \node[fake, right of=Omega, node distance=4.5cm](fake2){};
+%   \node[fake, right of=Omega, node distance=4.2cm](fake3){};
+%   \path[connector] (fake1) -- (fake2);
+%   \draw[->, >=latex', shorten >=2pt, shorten <=-1pt, bend right=-45] 
+%    (s) to node[auto] {$X(s)$}(fake3); 
+
+   
+    \node[fake](va){\textsf{V.A.'s}};
+    \node[fake, right of=va, node distance=2.5cm](fake1){};
+    \node[fake, above of=fake1, node distance=0.5cm](quali){\textsf{Qualitativas}};
+    \node[fake, below of=fake1, node distance=0.5cm](quanti){\textsf{Quantitativas}};
+    \node[fake, right of=quanti, node distance=3cm](fake2){};
+    \node[fake, above of=fake2, node distance=0.5cm](disc){\textsf{Discretas}};% ($\in \mathbb{N}$)};
+    \node[fake, below of=fake2, node distance=0.5cm](cont){\textsf{Cont\'inuas}};% ($\in \mathbb{R}$)};
+    \path[connector, shorten <=5pt, shorten >=2pt](va.east) -- (quanti.west);
+    \path[connector, shorten <=5pt, shorten >=2pt](va.east) -- (quali.west);
+    \path[connector, shorten <=5pt, shorten >=2pt](quanti.east) -- (disc.west);
+    \path[connector, shorten <=5pt, shorten >=2pt](quanti.east) -- (cont.west);
+\end{tikzpicture} 
+\medskip
+%\caption{Structure of the Market} 
+\end{figure}
+
+\end{document}
+%---------------------------------------------------------------------
+% EOF
