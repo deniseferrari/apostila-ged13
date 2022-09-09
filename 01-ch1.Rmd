@@ -23,11 +23,11 @@ Sendo assim, as práticas científicas apóiam-se no emprego do Método Científ
 
 O método científico é caracterizado pela formulação e avaliação de hipóteses e teorias, a observação e experimentação sistemática do fenômeno sendo investigado, além do emprego dos raciocínios dedutivo e indutivo para chegar a conclusões objetivas e válidas.
 
-A função da Estatística, como disciplina, consiste em tornar os estágios de experimentação e conclusão objetivos, rigorosos e eficientes. A Estatística permite responder de maneira satisfatória a três perguntas: 
+A função da Estatística, como disciplina, consiste em tornar os estágios de experimentação e conclusão objetivos, rigorosos e eficientes. A Estatística permite responder de maneira satisfatória a três perguntas:
 
-(1) Qual a melhor maneira de coletar os dados? 
+(1) Qual a melhor maneira de coletar os dados?
 
-(2) Como os dados devem ser analisados? 
+(2) Como os dados devem ser analisados?
 
 (3) O que se pode concluir a partir da análise?
 
@@ -44,7 +44,7 @@ Esse processo de transformação de dados em informação envolve coletar, organ
 
 ## O Papel da Probabilidade em Estatística
 
-A teoria de probabilidades teve origem no século XVII com a troca de correspondência entre os dois grandes matemáticos franceses, Blaise Pascal e Pierre de Fermat, que na tentativa de resolver dois problemas envolvendo jogos de azar acabaram desenvolvendo as bases matemáticas para a teoria. Embora o início dessa disciplina não pareça muito nobre ou digno, o fato é que esses estudos iniciais acabaram por chamar a atenção de outros matemáticos ilustres como Huyghens, Bernoulli e DeMoivre para a necessidade de estabelecer uma teoria matemática de probabilidades. 
+A teoria de probabilidades teve origem no século XVII com a troca de correspondência entre os dois grandes matemáticos franceses, Blaise Pascal e Pierre de Fermat, que na tentativa de resolver dois problemas envolvendo jogos de azar acabaram desenvolvendo as bases matemáticas para a teoria. Embora o início dessa disciplina não pareça muito nobre ou digno, o fato é que esses estudos iniciais acabaram por chamar a atenção de outros matemáticos ilustres como Huyghens, Bernoulli e DeMoivre para a necessidade de estabelecer uma teoria matemática de probabilidades.
 
 Hoje, a teoria de probabilidades é um ramo da matemática bem estabelecido e encontra aplicações em praticamente todas as áreas do conhecimento humano, de física às artes, além de estar presente em nossa experiência cotidiana, desde a previsão do tempo diária, à avaliação de riscos associados a novos tratamentos médicos.
 
@@ -66,11 +66,11 @@ Neste curso, estudaremos métodos de inferência estatística segundo o paradigm
 
 ### População e Amostra {-}
 
-Na terminologia estatística, o conjunto de dados que desejamos descrever, aquele que caracteriza em sua totalidade o fenômeno sendo investigado é chamado **população**. A população pode ser finita ou infinita, real ou conceitual. 
+Na terminologia estatística, o conjunto de dados que desejamos descrever, aquele que caracteriza em sua totalidade o fenômeno sendo investigado é chamado **população**. A população pode ser finita ou infinita, real ou conceitual.
 
-Uma **população finita** é aquela em que é possível determinar o número de elementos que a compõe. Um exemplo de população finita é o conjunto dos alunos do 2o ano de engenharia de uma determinada escola. 
+Uma **população finita** é aquela em que é possível determinar o número de elementos que a compõe. Um exemplo de população finita é o conjunto dos alunos do 2o ano de engenharia de uma determinada escola.
 
-Em uma **população infinita** não é possível enumerar todos os seus elementos. Por exemplo, os itens produzidos (existentes ou não) por um certo processo industrial constitui uma população infinita. O conjunto de todas as estrelas no universo também pode ser considerado uma população infinita. 
+Em uma **população infinita** não é possível enumerar todos os seus elementos. Por exemplo, os itens produzidos (existentes ou não) por um certo processo industrial constitui uma população infinita. O conjunto de todas as estrelas no universo também pode ser considerado uma população infinita.
 
 Uma população conceitual é aquela que não necessariamente existe de maneira concreta na ocasião em que os dados são coletados (talvez porque seja uma população crescente, como a coleção de todos os indivíduos nascidos ou que ainda nascerão em uma determinada localidade). Quando os elementos que compõe a população existem de maneira tangível ou concreta, esta é dita uma população real.
 
@@ -84,28 +84,28 @@ As **unidades experimentais** correspondem aos elementos, os objetos ou indivíd
 ### Variáveis  {-}
 
 As variáveis correspondem aos atributos monitorados nas unidades experimentais.
-Para o nosso teste clínico, as variáveis seriam nível de glicose no sangue, nível de colesterol e peso. As variáveis podem ter diferentes níveis de refinamento em suas medidas. 
+Para o nosso teste clínico, as variáveis seriam nível de glicose no sangue, nível de colesterol e peso. As variáveis podem ter diferentes níveis de refinamento em suas medidas.
 
-**Variáveis categóricas** (qualitativas) são aquelas que podem ser divididas em classes ou categorias. Elas são ditas nominais quando não há ordenamento intrínseco entre as classes. Por exemplo, para um carro, modelo é uma variável categórica, em que cada modelo corresponde a uma classe diferente e, como não há um ordenamento natural das diferentes classes, esta é uma variável **nominal**. Quando há ordenamento intrínseco entre as classes, a variável categórica é dita **ordinal**. Por exemplo, a variável nível educacional assumindo três níveis (fundamental, médio, superior, pós-graduação) pressupõe uma ordem, em que o nível superior é mais alto que o nível médio que, por sua vez, é mais alto que o nível fundamental. Note que as distâncias entre os níveis não são iguais. 
+**Variáveis categóricas** (qualitativas) são aquelas que podem ser divididas em classes ou categorias. Elas são ditas nominais quando não há ordenamento intrínseco entre as classes. Por exemplo, para um carro, modelo é uma variável categórica, em que cada modelo corresponde a uma classe diferente e, como não há um ordenamento natural das diferentes classes, esta é uma variável **nominal**. Quando há ordenamento intrínseco entre as classes, a variável categórica é dita **ordinal**. Por exemplo, a variável nível educacional assumindo três níveis (fundamental, médio, superior, pós-graduação) pressupõe uma ordem, em que o nível superior é mais alto que o nível médio que, por sua vez, é mais alto que o nível fundamental. Note que as distâncias entre os níveis não são iguais.
 
 Quando distâncias iguais entre diferentes níveis de uma variável tem mesmo valor, teríamos uma **variável numérica**, ou quantitativa. Por exemplo, a variável renda medida em números de salários mínimos é uma variável numérica. As variáveis numéricas são ditas discretas quando assumem uma quantidade finita ou infinita e enumerável de valores distintos; e contínuas, se assumem um número infinito não enumerável de valores. Essa classificação é importante pois os procedimentos estatísticos adequados dependem da natureza das variáveis sendo analisadas.
 
 
 ### Dados e Fontes de Dados {-}
 
-Os dados utilizados na análise podem ser originados de fontes primárias (quando a coleta dos dados faz parte da investigação científica, por exemplo através de experimentos planejados ou estudos observacionais) ou fontes secundárias (quando os dados foram obtidos a partir de outras fontes, tais como relatórios, periódicos, publicações oficiais, entre outros).  Os dados podem ser obtidos de diversas maneiras, incluindo experimentos planejados e estudos observacionais. 
+Os dados utilizados na análise podem ser originados de fontes primárias (quando a coleta dos dados faz parte da investigação científica, por exemplo através de experimentos planejados ou estudos observacionais) ou fontes secundárias (quando os dados foram obtidos a partir de outras fontes, tais como relatórios, periódicos, publicações oficiais, entre outros).  Os dados podem ser obtidos de diversas maneiras, incluindo experimentos planejados e estudos observacionais.
 
-Em um **estudo experimental**, o investigador ativamente manipula certas variáveis associadas ao estudo (os chamados fatores) e, então, registra os valores observados para as respostas associadas aos indivíduos investigados. Um esforço ativo é realizado para controlar todas as outras fontes de variabilidade que podem afetar a resposta sendo investigada. Por este motivo, um efeito observado na resposta pode ter causa atribuída à variação dos fatores controlados. A partir de estudos experimentais é possível estabelecer relações de causa-e-efeito entre variáveis. Por exemplo, é possível conduzir um experimento para avaliar se a inclusão de um certo aditivo exerce influência na resistência de um material. Se o experimento tiver sido realizado de maneira controlada de forma a eliminar efeitos de perturbações espúrias, é possível concluir que variações observadas na resistência do material são decorrentes da inclusão do aditivo, ou seja, foram provocadas pela presença do aditivo. 
+Em um **estudo experimental**, o investigador ativamente manipula certas variáveis associadas ao estudo (os chamados fatores) e, então, registra os valores observados para as respostas associadas aos indivíduos investigados. Um esforço ativo é realizado para controlar todas as outras fontes de variabilidade que podem afetar a resposta sendo investigada. Por este motivo, um efeito observado na resposta pode ter causa atribuída à variação dos fatores controlados. A partir de estudos experimentais é possível estabelecer relações de causa-e-efeito entre variáveis. Por exemplo, é possível conduzir um experimento para avaliar se a inclusão de um certo aditivo exerce influência na resistência de um material. Se o experimento tiver sido realizado de maneira controlada de forma a eliminar efeitos de perturbações espúrias, é possível concluir que variações observadas na resistência do material são decorrentes da inclusão do aditivo, ou seja, foram provocadas pela presença do aditivo.
 
 Em um **estudo observacional**, por outro lado, o pesquisador registra a informação a respeito dos indivíduos investigados sem nenhuma interferência no processo que gera a informação. O pesquisador é um observador passivo dos eventos. Neste caso, muito cuidado é necessário para evitar vieses e problemas de amostragem que podem comprometer a qualidade dos dados, com relação a sua representatividade. Estudos observacionais podem ser comparativos ou descritivos. Nos estudos comparativos, vários grupos são comparados com relação a um atributo em comum, por exemplo, podemos desejar realizar a comparação dos salários inicias de engenheiros graduados em faculdades publicas ou privadas. Já nos estudos descritivos o objetivo é caracterizar uma população ou processo com base em certos atributos nesta população ou processo, como por exemplo, estudar as condições de saúde das crianças menores de 5 anos em famílias sem plano de saúde.
 
-Uma limitação severa dos estudos observacionais está associada ao fato de que as respostas observadas podem ter sido afetadas por outras variáveis não incluídas no estudo. Sendo assim, dados obtidos a partir de estudos observacionais não permitem estabelecer relações de causa-e-efeito entre fatores, apenas associações (pois como o investigador não tem controle sobre as circunstâncias em que os dados foram gerados, muitas fontes espúrias, desconhecidas, de variabilidade podem ser as causadoras do efeito observado). 
+Uma limitação severa dos estudos observacionais está associada ao fato de que as respostas observadas podem ter sido afetadas por outras variáveis não incluídas no estudo. Sendo assim, dados obtidos a partir de estudos observacionais não permitem estabelecer relações de causa-e-efeito entre fatores, apenas associações (pois como o investigador não tem controle sobre as circunstâncias em que os dados foram gerados, muitas fontes espúrias, desconhecidas, de variabilidade podem ser as causadoras do efeito observado).
 
 Por exemplo, imagine que um estudo observacional que monitorou o uso de protetor solar e a ocorrência de câncer de pele, tenha levado à conclusão de que quanto maior o uso de protetor solar, maior a chance de a pessoa desenvolver cancer de pele. É possível concluir que o uso de protetor solar *causa* cancer de pele? Há evidências científicas de que, na verdade, o uso de protetor solar reduz o risco de desenvolver  câncer de pele. Então, pode ser que haja uma outra variável não incluída no estudo que explique essa aparente associação entre uso de protetor solar e ocorrência de cancer de pele. Uma informação não registrada, por exemplo, é a exposição do indivíduo ao sol. Quanto maior a exposição ao sol, maior a chance de que o indivíduo utilize proteção solar e, também, maior a chance de que desenvolva cancer de pele. Exposição ao sol foi uma variável omitida do estudo que se relaciona a ambas as variáveis para as quais se tenta estabelecer uma relação; esta é uma variável chamada variável de confusão.
 
 ## Tipos de Problemas
 
-A ciência Estatística comumente é aplicada a dois tipos de problemas: 
+A ciência Estatística comumente é aplicada a dois tipos de problemas:
 
 **Exploração:** as atividades associadas ao que se chama hoje no mundo de *data science*, ou ciência de dados, de *analytics*. Basicamente, essas atividades estão associadas ao primeiro encontro com os dados, em que desejamos resumir, descrever, explorar e formular hipóteses ou conjecturas a respeito dos dados.
 
@@ -139,9 +139,9 @@ A primeira etapa do processo é a exploração dos dados. Vejamos então alguns 
 
 ## Métodos para Exploração, Resumo e Descrição de Dados
 
-Vamos assumir, então, que temos em mãos um conjunto de dados de interesse, e que desejamos extrair informação a partir deles.  
+Vamos assumir, então, que temos em mãos um conjunto de dados de interesse, e que desejamos extrair informação a partir deles.
 
-Consideraremos apenas de dados *estruturados*, que são aqueles podem ser organizados em uma tabela. No entanto, tentar obter informação a partir de dados tabulados nem sempre é uma tarefa simples, quando por exemplo, o conjunto de dados é muito grande. 
+Consideraremos apenas de dados *estruturados*, que são aqueles podem ser organizados em uma tabela. No entanto, tentar obter informação a partir de dados tabulados nem sempre é uma tarefa simples, quando por exemplo, o conjunto de dados é muito grande.
 
 Antes de mais nada, precisamos fazer a distinção entre parâmetros e estatísticas.
 
@@ -157,19 +157,19 @@ Se o conjunto de dados representa uma população, ferramentas exploratórias 
 
 O objetivo de realizar análise exploratória de dados é o de ganhar uma melhor compreensão sobre os dados que se têm disponíveis.
 
-Análise Exploratória de Dados envolve examinar: 
+Análise Exploratória de Dados envolve examinar:
 
-(1) a estrutura e componentes do conjunto de dados (isto é, observamos que variáveis temos disponíveis, quantas observações há na massa de dados, como estão formatados e outras características da massa de dados); 
+(1) a estrutura e componentes do conjunto de dados (isto é, observamos que variáveis temos disponíveis, quantas observações há na massa de dados, como estão formatados e outras características da massa de dados);
 
-(2) como se caracteriza a variabilidade (ou distribuição) das variáveis observadas; e 
+(2) como se caracteriza a variabilidade (ou distribuição) das variáveis observadas; e
 
 (3) se há indícios de associações ou relações entre diferentes variáveis.
 
-Esta análise preliminar deve ser realizada com 3 propósitos fundamentais:  
+Esta análise preliminar deve ser realizada com 3 propósitos fundamentais:
 
-(1) determinar se existem problemas com os dados (e aqui é necessário avaliar se as medidas estão de acordo com o que deveriam? se as ordens de magnitude são compatíveis com o esperado, se a gama de valores observados é adequada? se há dados faltantes? se há erros de registro evidentes?). 
+(1) determinar se existem problemas com os dados (e aqui é necessário avaliar se as medidas estão de acordo com o que deveriam? se as ordens de magnitude são compatíveis com o esperado, se a gama de valores observados é adequada? se há dados faltantes? se há erros de registro evidentes?).
 
-(2) EDA também serve para determinar se a pergunta de interesse pode ser respondida com os dados disponíveis (isto é, os dados são adequados, são suficientes para responder à pergunta original? podem ser utilizados para responder a outras questões? é necessário obter mais dados ou outros dados? outras perguntas são mais interessantes?) e, finalmente 
+(2) EDA também serve para determinar se a pergunta de interesse pode ser respondida com os dados disponíveis (isto é, os dados são adequados, são suficientes para responder à pergunta original? podem ser utilizados para responder a outras questões? é necessário obter mais dados ou outros dados? outras perguntas são mais interessantes?) e, finalmente
 
 (3) Obter respostas preliminares à pergunta científica.
 
@@ -184,14 +184,14 @@ Resumos numéricos correspondem a estatísticas, ou seja, são valores calculado
 Ao descrever variáveis qualitativas, são definidas categorias ou classes de forma que cada observação pertence a apenas uma classe. Sendo assim, este tipo de variável pode ser explorado numericamente através de tabelas de frequência, que registram o número de observações (ou a proporção de observações) em cada categoria diferente.
 
 
-Resumos gráficos permitem visualizar os dados e ganhar noções sobre sua natureza de maneira muito intuitiva. 
+Resumos gráficos permitem visualizar os dados e ganhar noções sobre sua natureza de maneira muito intuitiva.
 
 Veremos a seguir diversas ferramentas estatísticas básicas utilizadas para explorar um conjunto de dados, utilizando para isso o ambiente computacional R/RStudio.
 
 
 **Medidas de Localização (Centro da Distribuição)**
 
-a. Média (aritmética)  
+a. Média (aritmética)
 
 A média aritmética ou, simplesmente, média, é uma maneira muito comum de representar o centro da distribuição dos dados. Ela representa o centro de massa ou ponto de equilíbrio dos dados, mas é uma medida muito sensível a assimetrias na distribuição, ou à presença de pontos extremos que exercem influência no valor da soma, de forma que sua interpretação pode acabar sendo enganosa.
 
@@ -199,11 +199,11 @@ A média aritmética ou, simplesmente, média, é uma maneira muito comum de rep
   \bar{X} = \frac{1}{n}\sum_{i=1}^{n}X_i
 \end{align*}
 
-b. Mediana  
+b. Mediana
 
 Se os dados são ordenados em ordem crescente, a mediana é o valor que divide os valores observados em duas metades, ou seja, 50% das observações apresentam valor inferior à mediana e 50% das observações apresentam valor superior à mediana. Essa é uma medida de centro resistente a assimetrias e pontos extremos, pois cada observação apresenta o mesmo peso na determinação da mediana. Por este motivo, esta é uma estatística chamada robusta.
 
-c. Moda  
+c. Moda
 
 A moda é uma medida bem menos utilizada que as outras duas, exceto em situações em que a frequência relativa de ocorrências é importante, e ela representa o pico da distribuição, ou seja, o valor mais frequentemente observado no conjunto de dados.
 
@@ -220,7 +220,7 @@ knitr::include_graphics("img/medidas-de-centro.png")
 
 Além de descrever o centro da distribuição, é importante compreender como os dados se espalham ou variam em torno desse centro. Para isso podemos utilizar as medidas de dispersão variância, desvio-padrão e amplitude.
 
-a. Variância  
+a. Variância
 
 A variância corresponde à distância média quadrática das observação à média, ou seja, é a soma das distâncias (ou desvios) quadráticas de cada observação à média, dividida por n-1, não por n. A razão disso ficará mais clara no futuro.
 
@@ -228,7 +228,7 @@ A variância corresponde à distância média quadrática das observação à m�
   S^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \bar{X})^2
 \end{align*}
 
-b. Desvio-padrão  
+b. Desvio-padrão
 
 O desvio-padrão é dado pela raiz quadrada da variância e representa quão próximo em média os dados estão do centro da distribuição.
 
@@ -236,7 +236,7 @@ O desvio-padrão é dado pela raiz quadrada da variância e representa quão pr�
   S = \sqrt{S^2} = \sqrt{\frac{1}{n-1}\sum_{i=1}^n (X_i - \bar{X})^2}
 \end{align*}
 
-c. Amplitude  
+c. Amplitude
 
 A amplitude é a diferença entre o máximo e o mínimo valor observado para os dados. Esta é uma medida de dispersão também robusta, pois diferentes conjuntos de dados podem apresentar mesma amplitude e diferentes comportamentos para a variabilidade. Em geral, a amplitude é útil como medida de dispersão no caso de amostras pequenas, em que se tem poucas observações.
 
@@ -244,7 +244,7 @@ A amplitude é a diferença entre o máximo e o mínimo valor observado para os 
 
 Com os dados ordenados em ordem crescente, é possível descrever a posição de uma observação com relação às demais observações no conjunto de dados.
 
-a. Quantis/percentis/quartis  
+a. Quantis/percentis/quartis
 
 Os quartis são as posições que dividem a massa de dados em quartos. Sendo assim, 1/4 (ou 25%) das observações se encontram abaixo do 1o quartil (também chamado quartil inferior ou Q1) e 1/4 (ou 25%) das observações se encontram acima do 3o. quartil (o quartil superior, também chamado de Qo). A diferença entre o 3o e o 1o quartis é chamada amplitude inter-quartis. O primeiro quartil também é chamado de percentil 25% ou quantil 0,25. Note que a mediana corresponde ao 2o quartil ou ao percentil 50% ou ao quantil 0,5.
 
@@ -253,7 +253,7 @@ Os quartis são as posições que dividem a massa de dados em quartos. Sendo ass
 knitr::include_graphics("img/medidas-posicao-relativa.jpg")
 ```
 
-b. Escores-z  
+b. Escores-z
 
 Já os escores-z medem a posição das observações com relação a média, em números de desvios-padrão. Valores negativos para o escore-z indicam que a observação correspondente encontra-se abaixo da média. Valores positivos, indicam que a observação se encontra acima da média. Quanto maior o valor do escore-z em módulo, mais distante da média se encontra a observação.
 
@@ -270,14 +270,15 @@ Por vezes, observações inconsistentes estão presentes da massa de dados. Essa
 
 *Outliers* normalmente podem ter uma das possíveis causas:
 
-(1) A observação pode ter sido incorretamente medida, registrada ou lida pelo computador;  
-(2) A observação pode pertencer a uma população distinta; ou  
+(1) A observação pode ter sido incorretamente medida, registrada ou lida pelo computador;
+(2) A observação pode pertencer a uma população distinta; ou
 (3) A observação é correta, mas representa um evento raro.
 
 
-O método mais usual para detecção de *outliers* é o cálculo do escore-z. Desta maneira, *outliers* apresentam valores absolutos de escore-z maiores que 3. Outro procedimento é baseado na ferramenta gráfica chamada *boxplot*, que veremos com mais detalhes em seguida.    
+O método mais usual para detecção de *outliers* é o cálculo do escore-z. Desta maneira, *outliers* apresentam valores absolutos de escore-z maiores que 3. Outro procedimento é baseado na ferramenta gráfica chamada *boxplot*, que veremos com mais detalhes em seguida.
 
-```{example name="Prevalência de Diabetes Mellitus entre as mulheres indígenas Pima"}
+```{exm name="Prevalência de Diabetes Mellitus entre as mulheres indígenas Pima"}
+
 ```
 
 
@@ -292,331 +293,331 @@ knitr::include_graphics("img/pima.png")
 ```
 
 
-Este conjunto de dados foi obtido a partir do repositório de dados da Universidade da Californa Irvine, que contém uma grande quandidade de conjuntos de dados disponíveis para diversos tipos de análise. O objetivo inicial desse estudo era construir um algoritmo capaz de prever se a paciente mostra sinais de diabetes mellitus, de acordo com os critérios estabelecidos pela OMS, isto é se o teste oral de tolerância a glicose, ou TTOG, apresenta resultado igual ou superior a 200mg/dl. Os dados disponíveis foram pré-selecionados a partir de uma massa de dados que continha um número maior de observações.
+<!-- Este conjunto de dados foi obtido a partir do repositório de dados da Universidade da Californa Irvine, que contém uma grande quandidade de conjuntos de dados disponíveis para diversos tipos de análise. O objetivo inicial desse estudo era construir um algoritmo capaz de prever se a paciente mostra sinais de diabetes mellitus, de acordo com os critérios estabelecidos pela OMS, isto é se o teste oral de tolerância a glicose, ou TTOG, apresenta resultado igual ou superior a 200mg/dl. Os dados disponíveis foram pré-selecionados a partir de uma massa de dados que continha um número maior de observações. -->
 
-Temos aqui algumas informações preliminares: Há um total de 768 observações registradas para 8 variáveis de interesse. E precisamos estar preparados para lidar com dados faltantes, conforme nos informa o resumo dos dados.
+<!-- Temos aqui algumas informações preliminares: Há um total de 768 observações registradas para 8 variáveis de interesse. E precisamos estar preparados para lidar com dados faltantes, conforme nos informa o resumo dos dados. -->
 
 
 
-**Variáveis**
+<!-- **Variáveis** -->
 
-`times_pregnant`: número de gravidezes  
-`glucose_tot`: concentração de glicose no plasma a 2h no TTOG  
-`diastolic_pb`: pressão sanguínea diastólica (mmHg)  
-`triceps`: espessura de dobra cutânea de tríceps (mm)  
-`insulin`: dosagem de insulina 2h em soro (µU/ml)  
-`mass_index`: índice de massa corporal (kg/m^2)  
-`pedigree`: função de pedigree para diabetes   
-`age`: idade (anos)  
-`class`: diabetes (0 ou 1) 
+<!-- `times_pregnant`: número de gravidezes   -->
+<!-- `glucose_tot`: concentração de glicose no plasma a 2h no TTOG   -->
+<!-- `diastolic_pb`: pressão sanguínea diastólica (mmHg)   -->
+<!-- `triceps`: espessura de dobra cutânea de tríceps (mm)   -->
+<!-- `insulin`: dosagem de insulina 2h em soro (µU/ml)   -->
+<!-- `mass_index`: índice de massa corporal (kg/m^2)   -->
+<!-- `pedigree`: função de pedigree para diabetes    -->
+<!-- `age`: idade (anos)   -->
+<!-- `class`: diabetes (0 ou 1)  -->
 
-As variáveis são estas. A princípio podemos identificar algumas variáveis numéricas e uma variável categórica (que corresponde à classificação da paciente em diabética ou não). 
+<!-- As variáveis são estas. A princípio podemos identificar algumas variáveis numéricas e uma variável categórica (que corresponde à classificação da paciente em diabética ou não).  -->
 
-#### Análise Exploratória da Base da Dados `pima` {-}
+<!-- #### Análise Exploratória da Base da Dados `pima` {-} -->
 
-O primeiro passo consiste em limpar a área de trabalho, utilizando o comando `rm(list = ls())`, para então ler os dados que se encontram no arquivo `pima-indians-diabetes.data`. Nota que os dados estão dentro de uma pasta chamada `pima-indians-diabetes`, que por sua vez, encontra-se dentro de uma pasta chamada `data`, que é o local onde eu armazeno minhas massas de dados.
-Eu leio esses dados e os armazeno em um objeto do tipo tabela, chamada `pima`. Eu sei, de antemão, que não há cabeçalho no arquivo de entrada, ou seja, a primeira linha do arquivo não corresponde aos nomes das variáveis; as colunas não têm nomes - por isso, faço `col_names = FALSE`.
+<!-- O primeiro passo consiste em limpar a área de trabalho, utilizando o comando `rm(list = ls())`, para então ler os dados que se encontram no arquivo `pima-indians-diabetes.data`. Nota que os dados estão dentro de uma pasta chamada `pima-indians-diabetes`, que por sua vez, encontra-se dentro de uma pasta chamada `data`, que é o local onde eu armazeno minhas massas de dados. -->
+<!-- Eu leio esses dados e os armazeno em um objeto do tipo tabela, chamada `pima`. Eu sei, de antemão, que não há cabeçalho no arquivo de entrada, ou seja, a primeira linha do arquivo não corresponde aos nomes das variáveis; as colunas não têm nomes - por isso, faço `col_names = FALSE`. -->
 
-```{r ch1-inicializa, out.width = '100%', message=FALSE}
-# Limpa área de trabalho
-rm(list=ls())
+<!-- ```{r ch1-inicializa, out.width = '100%', message=FALSE} -->
+<!-- # Limpa área de trabalho -->
+<!-- rm(list=ls()) -->
 
-library(tidyverse)
+<!-- library(tidyverse) -->
 
-# Carrega os dados e armazena em um objeto do tipo tabela
-pima <- read_csv("data/pima-indians-diabetes/pima-indians-diabetes.data", 
-                 col_names = FALSE)
-```
+<!-- # Carrega os dados e armazena em um objeto do tipo tabela -->
+<!-- pima <- read_csv("data/pima-indians-diabetes/pima-indians-diabetes.data",  -->
+<!--                  col_names = FALSE) -->
+<!-- ``` -->
 
-Veja que podemos obter algumas informações do objeto `pima`, simplesmente digitando `pima`. Verificamos que há um total de 768 linhas e 9 colunas. Cada coluna da tabela corresponde a uma variável (atributo) e as linhas correspondem a diferentes observações, ou seja, toda informação coletada para cada um dos indivíduos avaliados. As variáveis não tem nomes que façam sentido e todas foram codificadas como variáveis numéricas contínuas, doubles, ou números reais `<dbl>`. 
+<!-- Veja que podemos obter algumas informações do objeto `pima`, simplesmente digitando `pima`. Verificamos que há um total de 768 linhas e 9 colunas. Cada coluna da tabela corresponde a uma variável (atributo) e as linhas correspondem a diferentes observações, ou seja, toda informação coletada para cada um dos indivíduos avaliados. As variáveis não tem nomes que façam sentido e todas foram codificadas como variáveis numéricas contínuas, doubles, ou números reais `<dbl>`.  -->
 
 
-```{r ch1-obj-pima}
-pima
-```
+<!-- ```{r ch1-obj-pima} -->
+<!-- pima -->
+<!-- ``` -->
 
-Vamos dar nomes às variáveis. Para isso, utilizamos o comando `colnames` no objeto `pima` e atribuímos a esse objeto o vetor contendo os nomes das variáveis.
+<!-- Vamos dar nomes às variáveis. Para isso, utilizamos o comando `colnames` no objeto `pima` e atribuímos a esse objeto o vetor contendo os nomes das variáveis. -->
 
-```{r ch1-nomeia-col}
-# Atribui nomes às colunas da tabela
-colnames(pima) <- c("times_pregnant","glucose_tot", "diastolic_pb",
-                    "triceps", "insulin", "mass_index", "pedigree",
-                    "age", "class")
-pima
-```
+<!-- ```{r ch1-nomeia-col} -->
+<!-- # Atribui nomes às colunas da tabela -->
+<!-- colnames(pima) <- c("times_pregnant","glucose_tot", "diastolic_pb", -->
+<!--                     "triceps", "insulin", "mass_index", "pedigree", -->
+<!--                     "age", "class") -->
+<!-- pima -->
+<!-- ``` -->
 
-Também percebemos que há valores medidos para as variáveis `diastolic_pb`, `insulin`, `triceps` e `mass_index` iguais a zero. Será que correspondem a erro de codificação? Valores não observados? Há mais um problema com os dados: a variável `class` é categórica e precisa ser codificada adequadamente como fator; precisamos corrigir isto, bem como os outros problemas com a massa de dados.
+<!-- Também percebemos que há valores medidos para as variáveis `diastolic_pb`, `insulin`, `triceps` e `mass_index` iguais a zero. Será que correspondem a erro de codificação? Valores não observados? Há mais um problema com os dados: a variável `class` é categórica e precisa ser codificada adequadamente como fator; precisamos corrigir isto, bem como os outros problemas com a massa de dados. -->
 
 
 
-```{r ch1-recodifica-class}
-# recodifica `class` como sendo fator
-pima$class <- as.factor(pima$class) 
+<!-- ```{r ch1-recodifica-class} -->
+<!-- # recodifica `class` como sendo fator -->
+<!-- pima$class <- as.factor(pima$class)  -->
 
-# muda os rótulos dos níveis do fator
-levels(pima$class) <- c("neg", "pos")
+<!-- # muda os rótulos dos níveis do fator -->
+<!-- levels(pima$class) <- c("neg", "pos") -->
 
-# Verifica recodificação  
-pima
-```
+<!-- # Verifica recodificação   -->
+<!-- pima -->
+<!-- ``` -->
 
-#### Resumos numéricos {-}
+<!-- #### Resumos numéricos {-} -->
 
-Um resumo numérico simples pode ser obtido utilizando a função `summary`:
+<!-- Um resumo numérico simples pode ser obtido utilizando a função `summary`: -->
 
-```{r ch1-summary-pima}
-summary(pima)
-```
+<!-- ```{r ch1-summary-pima} -->
+<!-- summary(pima) -->
+<!-- ``` -->
 
-Para a variável categórica, a função `summary` retorna o número de observações em cada classe.
+<!-- Para a variável categórica, a função `summary` retorna o número de observações em cada classe. -->
 
-Para as variáveis quantitativas, a função `summary` fornece o chamado resumo de 5-números (mais a média) . Temos valores mínimo, máximo, 1o. e 3o. quartis, mediana e média. Para os dados analisados, observamos 5 variáveis com valor mínimo igual a zero: `times_pregnant`, `glucose_tot`, `diastolic_pb`, `triceps`, `insulin`, `mass_index`.
+<!-- Para as variáveis quantitativas, a função `summary` fornece o chamado resumo de 5-números (mais a média) . Temos valores mínimo, máximo, 1o. e 3o. quartis, mediana e média. Para os dados analisados, observamos 5 variáveis com valor mínimo igual a zero: `times_pregnant`, `glucose_tot`, `diastolic_pb`, `triceps`, `insulin`, `mass_index`. -->
 
 
-Num exercício de validação externa, podemos concluir que possivelmente há algo de errado com as variáveis `glucose_tot`, `diastolic_pb`, `triceps`, `insulin`, `mass_index`, pois não seria natural observar valores iguais a zero para essas quantidades. Provavalmente há erro na codificação de valores faltantes. Antes de corrigir este problema, vejamos como utilizar ferramentas gráficas para visualizar dados qualitativos.
+<!-- Num exercício de validação externa, podemos concluir que possivelmente há algo de errado com as variáveis `glucose_tot`, `diastolic_pb`, `triceps`, `insulin`, `mass_index`, pois não seria natural observar valores iguais a zero para essas quantidades. Provavalmente há erro na codificação de valores faltantes. Antes de corrigir este problema, vejamos como utilizar ferramentas gráficas para visualizar dados qualitativos. -->
 
 
 
 
-**Tabela de Frequência e Barplot**  
+<!-- **Tabela de Frequência e Barplot**   -->
 
-Podemos também contar as ocorrências de todos os valores que a variável assume e incluir uma representação gráfica.
+<!-- Podemos também contar as ocorrências de todos os valores que a variável assume e incluir uma representação gráfica. -->
 
-Essa visualização é especialmente útil quando temos uma variável categórica com mais de duas classes.
+<!-- Essa visualização é especialmente útil quando temos uma variável categórica com mais de duas classes. -->
 
-```{r ch1-tabela-freq-barplot, eval=FALSE }
-# Conta ocorrências em cada uma das classes
-pima %>%
-  select(class) %>% 
-  table %>%
-  print %>%
-  barplot
-```
+<!-- ```{r ch1-tabela-freq-barplot, eval=FALSE } -->
+<!-- # Conta ocorrências em cada uma das classes -->
+<!-- pima %>% -->
+<!--   select(class) %>%  -->
+<!--   table %>% -->
+<!--   print %>% -->
+<!--   barplot -->
+<!-- ``` -->
 
-```{r bar-plot-pima, echo=FALSE, fig.cap='Número de ocorrências em cada classe.', out.width='33%'}
-par(mar=c(2,2,1,0))
-# Conta ocorrências em cada uma das classes
-pima %>%
-  select(class) %>% 
-  table %>%
-  print %>%
-  barplot
-```
+<!-- ```{r bar-plot-pima, echo=FALSE, fig.cap='Número de ocorrências em cada classe.', out.width='33%'} -->
+<!-- par(mar=c(2,2,1,0)) -->
+<!-- # Conta ocorrências em cada uma das classes -->
+<!-- pima %>% -->
+<!--   select(class) %>%  -->
+<!--   table %>% -->
+<!--   print %>% -->
+<!--   barplot -->
+<!-- ``` -->
 
-**Não utilize gráficos de pizza para visualizar dados!** Gráficos de pizza não são muito úteis para gerar visualizações de dados, pois é mais difícil comparar os tamanhos dos grupos em uma escala não linear do que utilizando um barplot, especialmente quando as categorias têm proporções muito parecidas.
+<!-- **Não utilize gráficos de pizza para visualizar dados!** Gráficos de pizza não são muito úteis para gerar visualizações de dados, pois é mais difícil comparar os tamanhos dos grupos em uma escala não linear do que utilizando um barplot, especialmente quando as categorias têm proporções muito parecidas. -->
 
-Vamos analisar agora as variáveis quantitativas. Iniciemos com a  investigação da variável `diastolic_pb`:
+<!-- Vamos analisar agora as variáveis quantitativas. Iniciemos com a  investigação da variável `diastolic_pb`: -->
 
-```{r ch1-conta-ocorr}
-# Conta ocorrências de zeros
-pima %>% summarise(count = sum(diastolic_pb == 0))
-```
+<!-- ```{r ch1-conta-ocorr} -->
+<!-- # Conta ocorrências de zeros -->
+<!-- pima %>% summarise(count = sum(diastolic_pb == 0)) -->
+<!-- ``` -->
 
-Temos um total de 35 observações faltantes para a variável `diastolic_pb`. Podemos, ainda, identificar quantos valores únicos há para essa variável (neste caso, 47).
+<!-- Temos um total de 35 observações faltantes para a variável `diastolic_pb`. Podemos, ainda, identificar quantos valores únicos há para essa variável (neste caso, 47). -->
 
 
 
 
-```{r ch1-conta-distintos}
-# Conta quantidade de valores distintos
-pima %>% summarise(n = n_distinct(diastolic_pb))
-```
+<!-- ```{r ch1-conta-distintos} -->
+<!-- # Conta quantidade de valores distintos -->
+<!-- pima %>% summarise(n = n_distinct(diastolic_pb)) -->
+<!-- ``` -->
 
-É possível realizar procedimento análogo para as demais variáveis.
+<!-- É possível realizar procedimento análogo para as demais variáveis. -->
 
-Vamos recodificar os zeros para representar valores não observados, onde couber e, em seguida, podemos verificar novamente o resumo dos dados.
+<!-- Vamos recodificar os zeros para representar valores não observados, onde couber e, em seguida, podemos verificar novamente o resumo dos dados. -->
 
-```{r ch1-recodifica-na}
-# Recodifica dados faltantes como 'NA' (not available)
-pima <- pima %>%
-  mutate(diastolic_pb = replace(diastolic_pb, diastolic_pb == 0, NA)) %>%
-  mutate(glucose_tot = replace(glucose_tot, glucose_tot == 0, NA)) %>%
-  mutate(triceps = replace(triceps, triceps == 0, NA)) %>%
-  mutate(insulin = replace(insulin, insulin == 0, NA)) %>%
-  mutate(mass_index = replace(mass_index, mass_index == 0, NA))
-summary(pima) # resumo
-```
+<!-- ```{r ch1-recodifica-na} -->
+<!-- # Recodifica dados faltantes como 'NA' (not available) -->
+<!-- pima <- pima %>% -->
+<!--   mutate(diastolic_pb = replace(diastolic_pb, diastolic_pb == 0, NA)) %>% -->
+<!--   mutate(glucose_tot = replace(glucose_tot, glucose_tot == 0, NA)) %>% -->
+<!--   mutate(triceps = replace(triceps, triceps == 0, NA)) %>% -->
+<!--   mutate(insulin = replace(insulin, insulin == 0, NA)) %>% -->
+<!--   mutate(mass_index = replace(mass_index, mass_index == 0, NA)) -->
+<!-- summary(pima) # resumo -->
+<!-- ``` -->
 
-Aparentemente, o problema foi resolvido. Podemos agora construir alguns resumos gráficos.
+<!-- Aparentemente, o problema foi resolvido. Podemos agora construir alguns resumos gráficos. -->
 
 
 
 
-#### Resumos Gráficos {-}
+<!-- #### Resumos Gráficos {-} -->
 
-**Boxplots**  
+<!-- **Boxplots**   -->
 
-O *boxplot* é uma ferramenta gráfica, que fornece um resumo da distribuição dos valores da variável sendo analisada. O *boxplot* nos dá 5 estatísticas e também mostra possíveis valores extremos (os chamados *outliers*). A linha no centro da caixa corresponde à mediana.  A caixa é delimitada pelos quartis inferior e superior.  Portanto, 50% das observações se encontram entre os valores que determinam as extremidades da caixa. O comprimento da caixa é chamado distância ou amplitude inter-quartis (ou IQR) e corresponde à diferença entre os quartis superior e inferior.
+<!-- O *boxplot* é uma ferramenta gráfica, que fornece um resumo da distribuição dos valores da variável sendo analisada. O *boxplot* nos dá 5 estatísticas e também mostra possíveis valores extremos (os chamados *outliers*). A linha no centro da caixa corresponde à mediana.  A caixa é delimitada pelos quartis inferior e superior.  Portanto, 50% das observações se encontram entre os valores que determinam as extremidades da caixa. O comprimento da caixa é chamado distância ou amplitude inter-quartis (ou IQR) e corresponde à diferença entre os quartis superior e inferior. -->
 
-As linhas horizontais que se afastam da caixa são os *whiskers*, cujo comprimento máximo vale 1,5 * IQR em cada direção, de forma que a distância máxima entre as extremidades dos *whiskers* vale 4 * IQR (comprimento máximo do *whisker* inferior vale 1,5 IQR, a caixa tem largura IQR e o comprimento máximo do *whisker* superior vale 1,5 IQR). Se a observação mais extrema em qualquer das direções estiver a uma distância da caixa menor que 1,5 * IQR, então o alcance do respectivo *whisker* vai até essa observação. Qualquer valor além dos *whiskers* é marcado como um ponto extremo, ou outlier.
+<!-- As linhas horizontais que se afastam da caixa são os *whiskers*, cujo comprimento máximo vale 1,5 * IQR em cada direção, de forma que a distância máxima entre as extremidades dos *whiskers* vale 4 * IQR (comprimento máximo do *whisker* inferior vale 1,5 IQR, a caixa tem largura IQR e o comprimento máximo do *whisker* superior vale 1,5 IQR). Se a observação mais extrema em qualquer das direções estiver a uma distância da caixa menor que 1,5 * IQR, então o alcance do respectivo *whisker* vai até essa observação. Qualquer valor além dos *whiskers* é marcado como um ponto extremo, ou outlier. -->
 
-<!--IMG-->
-```{r ch1-elementos-boxplot, echo=FALSE, fig.cap='Elementos de um boxplot.', out.width = '100%', fig.height= 2, message=FALSE, warning=FALSE}
-knitr::include_graphics("img/boxplot-outliers.png")
-```
+<!-- <!--IMG--> -->
+<!-- ```{r ch1-elementos-boxplot, echo=FALSE, fig.cap='Elementos de um boxplot.', out.width = '100%', fig.height= 2, message=FALSE, warning=FALSE} -->
+<!-- knitr::include_graphics("img/boxplot-outliers.png") -->
+<!-- ``` -->
 
 
 
-Vamos construir boxplots para a variável `insulin`, utilizando a função `boxplot.` 
+<!-- Vamos construir boxplots para a variável `insulin`, utilizando a função `boxplot.`  -->
 
-```{r ch1-boxplot-isulin, out.width='100%',  fig.height= 2, message=FALSE, warning=FALSE}
-ggplot(pima, aes(x = insulin)) +
-  geom_boxplot() +
-  labs(x = "insulin")
-```
+<!-- ```{r ch1-boxplot-isulin, out.width='100%',  fig.height= 2, message=FALSE, warning=FALSE} -->
+<!-- ggplot(pima, aes(x = insulin)) + -->
+<!--   geom_boxplot() + -->
+<!--   labs(x = "insulin") -->
+<!-- ``` -->
 
-No gráfico, percebemos alguns valores de insulina bastante elevados (e pode até valer a pena uma análise mais cuidadosa em um momento posterior). Para o exemplo, já tínhamos calculado anteriormente na tabela de resumos numéricos o valor do 1o quartil, que vale Q1 = 76.25. Esse valor está representado pela extremidade inferior da caixa (localizada à esquerda). A mediana vale Q2 = 125 e está representada graficamente pela linha no interior da caixa. O 3o quartil, cujo valor é Q3 = 190 corresponde à extremidade superior da caixa (à direita). A amplitude interquartis é dada pela diferença entre o 3o e o 1o quartil e vale IQR =  Q3(190) - Q1(76,25) = 113,75. Esse é o comprimento da caixa. Como não há pontos extremos à esquerda, o whisker inferior corresponde ao menor valor observado para os dados, o valor mínimo, igual 14. No caso do whisker superior, há alguns possíveis outliers à direita, portanto, o whisker superior  vale 1,5*IQR igual a  360,625. O valor máximo observado para esses dados é 846, e está representado como o ponto mais extremo à direita.
+<!-- No gráfico, percebemos alguns valores de insulina bastante elevados (e pode até valer a pena uma análise mais cuidadosa em um momento posterior). Para o exemplo, já tínhamos calculado anteriormente na tabela de resumos numéricos o valor do 1o quartil, que vale Q1 = 76.25. Esse valor está representado pela extremidade inferior da caixa (localizada à esquerda). A mediana vale Q2 = 125 e está representada graficamente pela linha no interior da caixa. O 3o quartil, cujo valor é Q3 = 190 corresponde à extremidade superior da caixa (à direita). A amplitude interquartis é dada pela diferença entre o 3o e o 1o quartil e vale IQR =  Q3(190) - Q1(76,25) = 113,75. Esse é o comprimento da caixa. Como não há pontos extremos à esquerda, o whisker inferior corresponde ao menor valor observado para os dados, o valor mínimo, igual 14. No caso do whisker superior, há alguns possíveis outliers à direita, portanto, o whisker superior  vale 1,5*IQR igual a  360,625. O valor máximo observado para esses dados é 846, e está representado como o ponto mais extremo à direita. -->
 
-É importante examinar os dados com relação à existência de possíveis outliers pois eles podem indicar:
+<!-- É importante examinar os dados com relação à existência de possíveis outliers pois eles podem indicar: -->
 
-(1) forte assimetria na distribuição das observações;    
-(2) erros (de medida, de registro ou leitura);   
-(3) ou mesmo, podem revelar propriedades interessantes e inesperadas da massa de dados (talvez a observação pertença a uma outra população).  
+<!-- (1) forte assimetria na distribuição das observações;     -->
+<!-- (2) erros (de medida, de registro ou leitura);    -->
+<!-- (3) ou mesmo, podem revelar propriedades interessantes e inesperadas da massa de dados (talvez a observação pertença a uma outra população).   -->
 
 
 
-**Histogramas**
+<!-- **Histogramas** -->
 
-Uma outra maneira de representar a distribuição dos valores observados para  uma variável é através de um histograma, que pode ser gerado utilizando a função `hist`. O histograma é útil para descrever a forma da distribuição.
+<!-- Uma outra maneira de representar a distribuição dos valores observados para  uma variável é através de um histograma, que pode ser gerado utilizando a função `hist`. O histograma é útil para descrever a forma da distribuição. -->
 
-Por exemplo, vemos que a distribuição de insulina é assimétrica; a maioria das mulheres observadas apresenta valores de insulina abaixo de 250, mas há algumas poucas observações com valores de insulina bastante elevados. A distribuição de insulina apresenta cauda longa à direita. Já a distribuição de glicose apresenta maior simetria.
+<!-- Por exemplo, vemos que a distribuição de insulina é assimétrica; a maioria das mulheres observadas apresenta valores de insulina abaixo de 250, mas há algumas poucas observações com valores de insulina bastante elevados. A distribuição de insulina apresenta cauda longa à direita. Já a distribuição de glicose apresenta maior simetria. -->
 
-```{r ch1-hist-insulin, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-ggplot(pima, aes(x = insulin)) +
-  geom_histogram() +
-  labs(x = "insulin")
+<!-- ```{r ch1-hist-insulin, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- ggplot(pima, aes(x = insulin)) + -->
+<!--   geom_histogram() + -->
+<!--   labs(x = "insulin") -->
 
-ggplot(pima, aes(x = glucose_tot)) +
-  geom_histogram() +
-  labs(x = "glucose_tot")
+<!-- ggplot(pima, aes(x = glucose_tot)) + -->
+<!--   geom_histogram() + -->
+<!--   labs(x = "glucose_tot") -->
 
-```
+<!-- ``` -->
 
-Podemos adicionar marcações nos gráficos. Por exemplo, vamos adicionar uma reta vertical marcando o valor da média dos valores observados para cada uma das variáveis analisadas. 
+<!-- Podemos adicionar marcações nos gráficos. Por exemplo, vamos adicionar uma reta vertical marcando o valor da média dos valores observados para cada uma das variáveis analisadas.  -->
 
 
 
 
-Aqui, a média está sinalizada pelas retas verticais vermelhas:
+<!-- Aqui, a média está sinalizada pelas retas verticais vermelhas: -->
 
-```{r ch1-hist-insulin-retas, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-xbar <- mean(pima$insulin, na.rm = TRUE)
-ggplot(pima, aes(x = insulin)) +
-  geom_histogram() +
-  labs(x = "insulin") +
-  geom_vline(aes(xintercept = xbar), col = 'red')                            #<<
+<!-- ```{r ch1-hist-insulin-retas, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- xbar <- mean(pima$insulin, na.rm = TRUE) -->
+<!-- ggplot(pima, aes(x = insulin)) + -->
+<!--   geom_histogram() + -->
+<!--   labs(x = "insulin") + -->
+<!--   geom_vline(aes(xintercept = xbar), col = 'red')                            #<< -->
 
-xbar <- mean(pima$glucose_tot, na.rm = TRUE)
-ggplot(pima, aes(x = glucose_tot)) +
-  geom_histogram() +
-  labs(x = "glucose_tot") +
-  geom_vline(aes(xintercept = xbar), col = 'red')                            #<<
-```
+<!-- xbar <- mean(pima$glucose_tot, na.rm = TRUE) -->
+<!-- ggplot(pima, aes(x = glucose_tot)) + -->
+<!--   geom_histogram() + -->
+<!--   labs(x = "glucose_tot") + -->
+<!--   geom_vline(aes(xintercept = xbar), col = 'red')                            #<< -->
+<!-- ``` -->
 
-**Histogramas e Gráficos de Densidade**
+<!-- **Histogramas e Gráficos de Densidade** -->
 
-Que tal obter um pouco mais de detalhes com a função `rug()`, que nos mostra cada uma das observações? Aqui, além de adicionarmos as observações na margem inferior, também ajustamos a largura das bandas. Note que o histograma é muito sensível à largura (ou discretização) das bandas, de forma que se não for adequadamente ajustado, pode trazer informações enganosas. No caso de glicose, o histograma resultante perdeu muito de sua informação. Tente gerar outros histogramas, variando o valor de `binwidth`. 
+<!-- Que tal obter um pouco mais de detalhes com a função `rug()`, que nos mostra cada uma das observações? Aqui, além de adicionarmos as observações na margem inferior, também ajustamos a largura das bandas. Note que o histograma é muito sensível à largura (ou discretização) das bandas, de forma que se não for adequadamente ajustado, pode trazer informações enganosas. No caso de glicose, o histograma resultante perdeu muito de sua informação. Tente gerar outros histogramas, variando o valor de `binwidth`.  -->
 
 
 
 
 
-Também temos sobreposição a cada histograma da respectiva curva de densidade, que corresponde a uma suavização do histograma. Para isso, também foi modificado o eixo vertical que, em vez de representar o número de observações em cada faixa, agora apresenta a frequencia relativa (isto é, o no. de observações na faixa, didivido pelo no. total de observações).
+<!-- Também temos sobreposição a cada histograma da respectiva curva de densidade, que corresponde a uma suavização do histograma. Para isso, também foi modificado o eixo vertical que, em vez de representar o número de observações em cada faixa, agora apresenta a frequencia relativa (isto é, o no. de observações na faixa, didivido pelo no. total de observações). -->
 
-```{r ch1-hist-insulin-anotado, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-xbar <- mean(pima$insulin, na.rm = TRUE)
-ggplot(pima, aes(x = insulin)) +
-  geom_histogram(aes(y = ..density..),                                       #<<
-                 binwidth = 45) +                                            #<<
-  labs(x = "insulin") +
-  geom_vline(aes(xintercept = xbar), col = 'red') + 
-  geom_rug(sides = 'b', col = 'blue') +                                      #<<
-  geom_density(alpha = 0.1, fill = 'blue')                                   #<<
-```
+<!-- ```{r ch1-hist-insulin-anotado, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- xbar <- mean(pima$insulin, na.rm = TRUE) -->
+<!-- ggplot(pima, aes(x = insulin)) + -->
+<!--   geom_histogram(aes(y = ..density..),                                       #<< -->
+<!--                  binwidth = 45) +                                            #<< -->
+<!--   labs(x = "insulin") + -->
+<!--   geom_vline(aes(xintercept = xbar), col = 'red') +  -->
+<!--   geom_rug(sides = 'b', col = 'blue') +                                      #<< -->
+<!--   geom_density(alpha = 0.1, fill = 'blue')                                   #<< -->
+<!-- ``` -->
 
-```{r ch1-density-insulin, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-xbar <- mean(pima$glucose_tot, na.rm = TRUE)
-ggplot(pima, aes(x = glucose_tot)) +
-  geom_histogram(aes(y = ..density..),                                       #<<
-                 binwidth = 45) +                                            #<<
-  labs(x = "glucose_tot") +
-  geom_vline(aes(xintercept = xbar), col = 'red') + 
-  geom_rug(sides = 'b', col = 'blue') +                                      #<<
-  geom_density(alpha = 0.1, fill = 'blue')                                   #<<
-```
+<!-- ```{r ch1-density-insulin, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- xbar <- mean(pima$glucose_tot, na.rm = TRUE) -->
+<!-- ggplot(pima, aes(x = glucose_tot)) + -->
+<!--   geom_histogram(aes(y = ..density..),                                       #<< -->
+<!--                  binwidth = 45) +                                            #<< -->
+<!--   labs(x = "glucose_tot") + -->
+<!--   geom_vline(aes(xintercept = xbar), col = 'red') +  -->
+<!--   geom_rug(sides = 'b', col = 'blue') +                                      #<< -->
+<!--   geom_density(alpha = 0.1, fill = 'blue')                                   #<< -->
+<!-- ``` -->
 
 
 
 
 
-**Resumos Multidimensionais**
+<!-- **Resumos Multidimensionais** -->
 
-Podemos também utilizar boxplots para comparar duas distribuições. Por exemplo, podemos querer saber como se comparam os valores de insulina para mulheres diabéticas e não-diabéticas.
+<!-- Podemos também utilizar boxplots para comparar duas distribuições. Por exemplo, podemos querer saber como se comparam os valores de insulina para mulheres diabéticas e não-diabéticas. -->
 
-```{r ch1-boxplot-insulin-class, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-ggplot(pima, aes(x = insulin, y = class, fill = class)) +
-  geom_boxplot() +
-  labs(x = "insulin", x = "class")
-```
+<!-- ```{r ch1-boxplot-insulin-class, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- ggplot(pima, aes(x = insulin, y = class, fill = class)) + -->
+<!--   geom_boxplot() + -->
+<!--   labs(x = "insulin", x = "class") -->
+<!-- ``` -->
 
-Podemos perceber que a mediana observada para os valores de insulina para mulheres diabéticas é um pouco maior que aquela para mulheres não-diabéticas. Embora não seja possível afirmar que existe uma diferença estatisticamente significativa entre os dois grupos, esta é uma hipótese interessante, que pode ser testada formalmente posteriormente. Vamos adicionar uma reta no valor de glicose igual a 200 mg/dl (valor de referência no TTOG):
+<!-- Podemos perceber que a mediana observada para os valores de insulina para mulheres diabéticas é um pouco maior que aquela para mulheres não-diabéticas. Embora não seja possível afirmar que existe uma diferença estatisticamente significativa entre os dois grupos, esta é uma hipótese interessante, que pode ser testada formalmente posteriormente. Vamos adicionar uma reta no valor de glicose igual a 200 mg/dl (valor de referência no TTOG): -->
 
-```{r ch1-boxplot-insulin-anotado, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-ggplot(pima, aes(x = insulin, y = class, fill = class)) +
-  geom_boxplot() +
-  labs(x = "insulin", x = "class") +
-  geom_vline(aes(xintercept = 200), lwd = 1, lty = 'dashed', col = 1)
-```
+<!-- ```{r ch1-boxplot-insulin-anotado, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- ggplot(pima, aes(x = insulin, y = class, fill = class)) + -->
+<!--   geom_boxplot() + -->
+<!--   labs(x = "insulin", x = "class") + -->
+<!--   geom_vline(aes(xintercept = 200), lwd = 1, lty = 'dashed', col = 1) -->
+<!-- ``` -->
 
-É possível modificar a cor, espessura e tipo dessa reta. Fica como exercício.
+<!-- É possível modificar a cor, espessura e tipo dessa reta. Fica como exercício. -->
 
-Pode ser útil construir múltiplos histogramas ou curvas de densidade, para diferentes categorias. Podemos sobrepor as duas distribuições, para tornar a comparação imediata.
+<!-- Pode ser útil construir múltiplos histogramas ou curvas de densidade, para diferentes categorias. Podemos sobrepor as duas distribuições, para tornar a comparação imediata. -->
 
-```{r ch1-density-insulin-mult, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-ggplot(pima, aes(insulin, fill = class)) + 
-  geom_histogram(aes(y = ..density..), binwidth = 40) 
+<!-- ```{r ch1-density-insulin-mult, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- ggplot(pima, aes(insulin, fill = class)) +  -->
+<!--   geom_histogram(aes(y = ..density..), binwidth = 40)  -->
 
-ggplot(pima,  aes(insulin, fill = class)) + 
-  geom_density(alpha = 0.2) 
-```
+<!-- ggplot(pima,  aes(insulin, fill = class)) +  -->
+<!--   geom_density(alpha = 0.2)  -->
+<!-- ``` -->
 
 
-**Relações entre Variáveis**
+<!-- **Relações entre Variáveis** -->
 
-Para variáveis contínuas, é interessante observar gráficos de dispersão, a fim de avaliar relações entre pares de variáveis:
+<!-- Para variáveis contínuas, é interessante observar gráficos de dispersão, a fim de avaliar relações entre pares de variáveis: -->
 
-```{r ch1-dispersao-2d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-ggplot(pima, aes(x = insulin, y = glucose_tot)) + 
-  geom_point() +
-  labs(x = "insulin", x = "glucose_tot")
-```
+<!-- ```{r ch1-dispersao-2d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- ggplot(pima, aes(x = insulin, y = glucose_tot)) +  -->
+<!--   geom_point() + -->
+<!--   labs(x = "insulin", x = "glucose_tot") -->
+<!-- ``` -->
 
-Podemos adicionar mais informação ao gráfico, com retas:
+<!-- Podemos adicionar mais informação ao gráfico, com retas: -->
 
-```{r ch1-dispersao-2d-reta, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-ggplot(pima, aes(x = insulin, y = glucose_tot)) +  
-  geom_point() +
-  geom_vline(aes(xintercept = 200), col = 1) +                               #<<
-  labs(x = "insulin", x = "glucose_tot")
-```
+<!-- ```{r ch1-dispersao-2d-reta, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- ggplot(pima, aes(x = insulin, y = glucose_tot)) +   -->
+<!--   geom_point() + -->
+<!--   geom_vline(aes(xintercept = 200), col = 1) +                               #<< -->
+<!--   labs(x = "insulin", x = "glucose_tot") -->
+<!-- ``` -->
 
-Podemos adicionar uma terceira dimensão, utilizando cores:
+<!-- Podemos adicionar uma terceira dimensão, utilizando cores: -->
 
-```{r ch1-dispersao-3d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-ggplot(pima, aes(x = insulin, y = glucose_tot, 
-                 color = class)) +                                           #<<
-  geom_point() +
-  labs(x = "insulin", x = "glucose_tot")
-```
+<!-- ```{r ch1-dispersao-3d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- ggplot(pima, aes(x = insulin, y = glucose_tot,  -->
+<!--                  color = class)) +                                           #<< -->
+<!--   geom_point() + -->
+<!--   labs(x = "insulin", x = "glucose_tot") -->
+<!-- ``` -->
 
-Podemos adicionar uma quarta dimensão com diferentes tamanhos para os pontos: 
+<!-- Podemos adicionar uma quarta dimensão com diferentes tamanhos para os pontos:  -->
 
-```{r ch1-dispersao-4d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
-ggplot(pima, aes(x = insulin, y = glucose_tot,                               #<<
-                 color = class, size = age)) +                               #<<
-  geom_point() +
-  labs(x = "insulin", x = "glucose_tot")
-```
+<!-- ```{r ch1-dispersao-4d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
+<!-- ggplot(pima, aes(x = insulin, y = glucose_tot,                               #<< -->
+<!--                  color = class, size = age)) +                               #<< -->
+<!--   geom_point() + -->
+<!--   labs(x = "insulin", x = "glucose_tot") -->
+<!-- ``` -->
 
-Assim, chegamos ao fim de nossa primeira análise exploratória de dados.   
-E este é apenas o começo...
+<!-- Assim, chegamos ao fim de nossa primeira análise exploratória de dados.    -->
+<!-- E este é apenas o começo... -->
