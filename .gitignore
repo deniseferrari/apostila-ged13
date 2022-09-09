@@ -1,5 +1,14 @@
+# RStudio
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 
+# Bookdown
+_book/
+_bookdown_files/
+
+
+# Env
+.DS_Store
+.vscode
