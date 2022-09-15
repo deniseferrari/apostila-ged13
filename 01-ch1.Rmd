@@ -293,331 +293,331 @@ knitr::include_graphics("img/pima.png")
 ```
 
 
-<!-- Este conjunto de dados foi obtido a partir do repositório de dados da Universidade da Californa Irvine, que contém uma grande quandidade de conjuntos de dados disponíveis para diversos tipos de análise. O objetivo inicial desse estudo era construir um algoritmo capaz de prever se a paciente mostra sinais de diabetes mellitus, de acordo com os critérios estabelecidos pela OMS, isto é se o teste oral de tolerância a glicose, ou TTOG, apresenta resultado igual ou superior a 200mg/dl. Os dados disponíveis foram pré-selecionados a partir de uma massa de dados que continha um número maior de observações. -->
+Este conjunto de dados foi obtido a partir do repositório de dados da Universidade da Californa Irvine, que contém uma grande quandidade de conjuntos de dados disponíveis para diversos tipos de análise. O objetivo inicial desse estudo era construir um algoritmo capaz de prever se a paciente mostra sinais de diabetes mellitus, de acordo com os critérios estabelecidos pela OMS, isto é se o teste oral de tolerância a glicose, ou TTOG, apresenta resultado igual ou superior a 200mg/dl. Os dados disponíveis foram pré-selecionados a partir de uma massa de dados que continha um número maior de observações.
 
-<!-- Temos aqui algumas informações preliminares: Há um total de 768 observações registradas para 8 variáveis de interesse. E precisamos estar preparados para lidar com dados faltantes, conforme nos informa o resumo dos dados. -->
+Temos aqui algumas informações preliminares: Há um total de 768 observações registradas para 8 variáveis de interesse. E precisamos estar preparados para lidar com dados faltantes, conforme nos informa o resumo dos dados.
 
 
 
-<!-- **Variáveis** -->
+**Variáveis**
 
-<!-- `times_pregnant`: número de gravidezes   -->
-<!-- `glucose_tot`: concentração de glicose no plasma a 2h no TTOG   -->
-<!-- `diastolic_pb`: pressão sanguínea diastólica (mmHg)   -->
-<!-- `triceps`: espessura de dobra cutânea de tríceps (mm)   -->
-<!-- `insulin`: dosagem de insulina 2h em soro (µU/ml)   -->
-<!-- `mass_index`: índice de massa corporal (kg/m^2)   -->
-<!-- `pedigree`: função de pedigree para diabetes    -->
-<!-- `age`: idade (anos)   -->
-<!-- `class`: diabetes (0 ou 1)  -->
+`times_pregnant`: número de gravidezes  
+`glucose_tot`: concentração de glicose no plasma a 2h no TTOG  
+`diastolic_pb`: pressão sanguínea diastólica (mmHg)  
+`triceps`: espessura de dobra cutânea de tríceps (mm)  
+`insulin`: dosagem de insulina 2h em soro (µU/ml)  
+`mass_index`: índice de massa corporal (kg/m^2)  
+`pedigree`: função de pedigree para diabetes   
+`age`: idade (anos)  
+`class`: diabetes (0 ou 1) 
 
-<!-- As variáveis são estas. A princípio podemos identificar algumas variáveis numéricas e uma variável categórica (que corresponde à classificação da paciente em diabética ou não).  -->
+As variáveis são estas. A princípio podemos identificar algumas variáveis numéricas e uma variável categórica (que corresponde à classificação da paciente em diabética ou não). 
 
-<!-- #### Análise Exploratória da Base da Dados `pima` {-} -->
+#### Análise Exploratória da Base da Dados `pima` {-}
 
-<!-- O primeiro passo consiste em limpar a área de trabalho, utilizando o comando `rm(list = ls())`, para então ler os dados que se encontram no arquivo `pima-indians-diabetes.data`. Nota que os dados estão dentro de uma pasta chamada `pima-indians-diabetes`, que por sua vez, encontra-se dentro de uma pasta chamada `data`, que é o local onde eu armazeno minhas massas de dados. -->
-<!-- Eu leio esses dados e os armazeno em um objeto do tipo tabela, chamada `pima`. Eu sei, de antemão, que não há cabeçalho no arquivo de entrada, ou seja, a primeira linha do arquivo não corresponde aos nomes das variáveis; as colunas não têm nomes - por isso, faço `col_names = FALSE`. -->
+O primeiro passo consiste em limpar a área de trabalho, utilizando o comando `rm(list = ls())`, para então ler os dados que se encontram no arquivo `pima-indians-diabetes.data`. Nota que os dados estão dentro de uma pasta chamada `pima-indians-diabetes`, que por sua vez, encontra-se dentro de uma pasta chamada `data`, que é o local onde eu armazeno minhas massas de dados.
+Eu leio esses dados e os armazeno em um objeto do tipo tabela, chamada `pima`. Eu sei, de antemão, que não há cabeçalho no arquivo de entrada, ou seja, a primeira linha do arquivo não corresponde aos nomes das variáveis; as colunas não têm nomes - por isso, faço `col_names = FALSE`.
 
-<!-- ```{r ch1-inicializa, out.width = '100%', message=FALSE} -->
-<!-- # Limpa área de trabalho -->
-<!-- rm(list=ls()) -->
+```{r ch1-inicializa, out.width = '100%', message=FALSE}
+# Limpa área de trabalho
+rm(list=ls())
 
-<!-- library(tidyverse) -->
+library(tidyverse)
 
-<!-- # Carrega os dados e armazena em um objeto do tipo tabela -->
-<!-- pima <- read_csv("data/pima-indians-diabetes/pima-indians-diabetes.data",  -->
-<!--                  col_names = FALSE) -->
-<!-- ``` -->
+# Carrega os dados e armazena em um objeto do tipo tabela
+pima <- read_csv("data/pima-indians-diabetes/pima-indians-diabetes.data", 
+                 col_names = FALSE)
+```
 
-<!-- Veja que podemos obter algumas informações do objeto `pima`, simplesmente digitando `pima`. Verificamos que há um total de 768 linhas e 9 colunas. Cada coluna da tabela corresponde a uma variável (atributo) e as linhas correspondem a diferentes observações, ou seja, toda informação coletada para cada um dos indivíduos avaliados. As variáveis não tem nomes que façam sentido e todas foram codificadas como variáveis numéricas contínuas, doubles, ou números reais `<dbl>`.  -->
+Veja que podemos obter algumas informações do objeto `pima`, simplesmente digitando `pima`. Verificamos que há um total de 768 linhas e 9 colunas. Cada coluna da tabela corresponde a uma variável (atributo) e as linhas correspondem a diferentes observações, ou seja, toda informação coletada para cada um dos indivíduos avaliados. As variáveis não tem nomes que façam sentido e todas foram codificadas como variáveis numéricas contínuas, doubles, ou números reais `<dbl>`. 
 
 
-<!-- ```{r ch1-obj-pima} -->
-<!-- pima -->
-<!-- ``` -->
+```{r ch1-obj-pima}
+pima
+```
 
-<!-- Vamos dar nomes às variáveis. Para isso, utilizamos o comando `colnames` no objeto `pima` e atribuímos a esse objeto o vetor contendo os nomes das variáveis. -->
+Vamos dar nomes às variáveis. Para isso, utilizamos o comando `colnames` no objeto `pima` e atribuímos a esse objeto o vetor contendo os nomes das variáveis.
 
-<!-- ```{r ch1-nomeia-col} -->
-<!-- # Atribui nomes às colunas da tabela -->
-<!-- colnames(pima) <- c("times_pregnant","glucose_tot", "diastolic_pb", -->
-<!--                     "triceps", "insulin", "mass_index", "pedigree", -->
-<!--                     "age", "class") -->
-<!-- pima -->
-<!-- ``` -->
+```{r ch1-nomeia-col}
+# Atribui nomes às colunas da tabela
+colnames(pima) <- c("times_pregnant","glucose_tot", "diastolic_pb",
+                    "triceps", "insulin", "mass_index", "pedigree",
+                    "age", "class")
+pima
+```
 
-<!-- Também percebemos que há valores medidos para as variáveis `diastolic_pb`, `insulin`, `triceps` e `mass_index` iguais a zero. Será que correspondem a erro de codificação? Valores não observados? Há mais um problema com os dados: a variável `class` é categórica e precisa ser codificada adequadamente como fator; precisamos corrigir isto, bem como os outros problemas com a massa de dados. -->
+Também percebemos que há valores medidos para as variáveis `diastolic_pb`, `insulin`, `triceps` e `mass_index` iguais a zero. Será que correspondem a erro de codificação? Valores não observados? Há mais um problema com os dados: a variável `class` é categórica e precisa ser codificada adequadamente como fator; precisamos corrigir isto, bem como os outros problemas com a massa de dados.
 
 
 
-<!-- ```{r ch1-recodifica-class} -->
-<!-- # recodifica `class` como sendo fator -->
-<!-- pima$class <- as.factor(pima$class)  -->
+```{r ch1-recodifica-class}
+# recodifica `class` como sendo fator
+pima$class <- as.factor(pima$class) 
 
-<!-- # muda os rótulos dos níveis do fator -->
-<!-- levels(pima$class) <- c("neg", "pos") -->
+# muda os rótulos dos níveis do fator
+levels(pima$class) <- c("neg", "pos")
 
-<!-- # Verifica recodificação   -->
-<!-- pima -->
-<!-- ``` -->
+# Verifica recodificação  
+pima
+```
 
-<!-- #### Resumos numéricos {-} -->
+#### Resumos numéricos {-}
 
-<!-- Um resumo numérico simples pode ser obtido utilizando a função `summary`: -->
+Um resumo numérico simples pode ser obtido utilizando a função `summary`:
 
-<!-- ```{r ch1-summary-pima} -->
-<!-- summary(pima) -->
-<!-- ``` -->
+```{r ch1-summary-pima}
+summary(pima)
+```
 
-<!-- Para a variável categórica, a função `summary` retorna o número de observações em cada classe. -->
+Para a variável categórica, a função `summary` retorna o número de observações em cada classe.
 
-<!-- Para as variáveis quantitativas, a função `summary` fornece o chamado resumo de 5-números (mais a média) . Temos valores mínimo, máximo, 1o. e 3o. quartis, mediana e média. Para os dados analisados, observamos 5 variáveis com valor mínimo igual a zero: `times_pregnant`, `glucose_tot`, `diastolic_pb`, `triceps`, `insulin`, `mass_index`. -->
+Para as variáveis quantitativas, a função `summary` fornece o chamado resumo de 5-números (mais a média) . Temos valores mínimo, máximo, 1o. e 3o. quartis, mediana e média. Para os dados analisados, observamos 5 variáveis com valor mínimo igual a zero: `times_pregnant`, `glucose_tot`, `diastolic_pb`, `triceps`, `insulin`, `mass_index`.
 
 
-<!-- Num exercício de validação externa, podemos concluir que possivelmente há algo de errado com as variáveis `glucose_tot`, `diastolic_pb`, `triceps`, `insulin`, `mass_index`, pois não seria natural observar valores iguais a zero para essas quantidades. Provavalmente há erro na codificação de valores faltantes. Antes de corrigir este problema, vejamos como utilizar ferramentas gráficas para visualizar dados qualitativos. -->
+Num exercício de validação externa, podemos concluir que possivelmente há algo de errado com as variáveis `glucose_tot`, `diastolic_pb`, `triceps`, `insulin`, `mass_index`, pois não seria natural observar valores iguais a zero para essas quantidades. Provavalmente há erro na codificação de valores faltantes. Antes de corrigir este problema, vejamos como utilizar ferramentas gráficas para visualizar dados qualitativos.
 
 
 
 
-<!-- **Tabela de Frequência e Barplot**   -->
+**Tabela de Frequência e Barplot**  
 
-<!-- Podemos também contar as ocorrências de todos os valores que a variável assume e incluir uma representação gráfica. -->
+Podemos também contar as ocorrências de todos os valores que a variável assume e incluir uma representação gráfica.
 
-<!-- Essa visualização é especialmente útil quando temos uma variável categórica com mais de duas classes. -->
+Essa visualização é especialmente útil quando temos uma variável categórica com mais de duas classes.
 
-<!-- ```{r ch1-tabela-freq-barplot, eval=FALSE } -->
-<!-- # Conta ocorrências em cada uma das classes -->
-<!-- pima %>% -->
-<!--   select(class) %>%  -->
-<!--   table %>% -->
-<!--   print %>% -->
-<!--   barplot -->
-<!-- ``` -->
+```{r ch1-tabela-freq-barplot, eval=FALSE }
+# Conta ocorrências em cada uma das classes
+pima %>%
+  select(class) %>% 
+  table %>%
+  print %>%
+  barplot
+```
 
-<!-- ```{r bar-plot-pima, echo=FALSE, fig.cap='Número de ocorrências em cada classe.', out.width='33%'} -->
-<!-- par(mar=c(2,2,1,0)) -->
-<!-- # Conta ocorrências em cada uma das classes -->
-<!-- pima %>% -->
-<!--   select(class) %>%  -->
-<!--   table %>% -->
-<!--   print %>% -->
-<!--   barplot -->
-<!-- ``` -->
+```{r bar-plot-pima, echo=FALSE, fig.cap='Número de ocorrências em cada classe.', out.width='33%'}
+par(mar=c(2,2,1,0))
+# Conta ocorrências em cada uma das classes
+pima %>%
+  select(class) %>% 
+  table %>%
+  print %>%
+  barplot
+```
 
-<!-- **Não utilize gráficos de pizza para visualizar dados!** Gráficos de pizza não são muito úteis para gerar visualizações de dados, pois é mais difícil comparar os tamanhos dos grupos em uma escala não linear do que utilizando um barplot, especialmente quando as categorias têm proporções muito parecidas. -->
+**Não utilize gráficos de pizza para visualizar dados!** Gráficos de pizza não são muito úteis para gerar visualizações de dados, pois é mais difícil comparar os tamanhos dos grupos em uma escala não linear do que utilizando um barplot, especialmente quando as categorias têm proporções muito parecidas.
 
-<!-- Vamos analisar agora as variáveis quantitativas. Iniciemos com a  investigação da variável `diastolic_pb`: -->
+Vamos analisar agora as variáveis quantitativas. Iniciemos com a  investigação da variável `diastolic_pb`:
 
-<!-- ```{r ch1-conta-ocorr} -->
-<!-- # Conta ocorrências de zeros -->
-<!-- pima %>% summarise(count = sum(diastolic_pb == 0)) -->
-<!-- ``` -->
+```{r ch1-conta-ocorr}
+# Conta ocorrências de zeros
+pima %>% summarise(count = sum(diastolic_pb == 0))
+```
 
-<!-- Temos um total de 35 observações faltantes para a variável `diastolic_pb`. Podemos, ainda, identificar quantos valores únicos há para essa variável (neste caso, 47). -->
+Temos um total de 35 observações faltantes para a variável `diastolic_pb`. Podemos, ainda, identificar quantos valores únicos há para essa variável (neste caso, 47).
 
 
 
 
-<!-- ```{r ch1-conta-distintos} -->
-<!-- # Conta quantidade de valores distintos -->
-<!-- pima %>% summarise(n = n_distinct(diastolic_pb)) -->
-<!-- ``` -->
+```{r ch1-conta-distintos}
+# Conta quantidade de valores distintos
+pima %>% summarise(n = n_distinct(diastolic_pb))
+```
 
-<!-- É possível realizar procedimento análogo para as demais variáveis. -->
+É possível realizar procedimento análogo para as demais variáveis.
 
-<!-- Vamos recodificar os zeros para representar valores não observados, onde couber e, em seguida, podemos verificar novamente o resumo dos dados. -->
+Vamos recodificar os zeros para representar valores não observados, onde couber e, em seguida, podemos verificar novamente o resumo dos dados.
 
-<!-- ```{r ch1-recodifica-na} -->
-<!-- # Recodifica dados faltantes como 'NA' (not available) -->
-<!-- pima <- pima %>% -->
-<!--   mutate(diastolic_pb = replace(diastolic_pb, diastolic_pb == 0, NA)) %>% -->
-<!--   mutate(glucose_tot = replace(glucose_tot, glucose_tot == 0, NA)) %>% -->
-<!--   mutate(triceps = replace(triceps, triceps == 0, NA)) %>% -->
-<!--   mutate(insulin = replace(insulin, insulin == 0, NA)) %>% -->
-<!--   mutate(mass_index = replace(mass_index, mass_index == 0, NA)) -->
-<!-- summary(pima) # resumo -->
-<!-- ``` -->
+```{r ch1-recodifica-na}
+# Recodifica dados faltantes como 'NA' (not available)
+pima <- pima %>%
+  mutate(diastolic_pb = replace(diastolic_pb, diastolic_pb == 0, NA)) %>%
+  mutate(glucose_tot = replace(glucose_tot, glucose_tot == 0, NA)) %>%
+  mutate(triceps = replace(triceps, triceps == 0, NA)) %>%
+  mutate(insulin = replace(insulin, insulin == 0, NA)) %>%
+  mutate(mass_index = replace(mass_index, mass_index == 0, NA))
+summary(pima) # resumo
+```
 
-<!-- Aparentemente, o problema foi resolvido. Podemos agora construir alguns resumos gráficos. -->
+Aparentemente, o problema foi resolvido. Podemos agora construir alguns resumos gráficos.
 
 
 
 
-<!-- #### Resumos Gráficos {-} -->
+#### Resumos Gráficos {-}
 
-<!-- **Boxplots**   -->
+**Boxplots**  
 
-<!-- O *boxplot* é uma ferramenta gráfica, que fornece um resumo da distribuição dos valores da variável sendo analisada. O *boxplot* nos dá 5 estatísticas e também mostra possíveis valores extremos (os chamados *outliers*). A linha no centro da caixa corresponde à mediana.  A caixa é delimitada pelos quartis inferior e superior.  Portanto, 50% das observações se encontram entre os valores que determinam as extremidades da caixa. O comprimento da caixa é chamado distância ou amplitude inter-quartis (ou IQR) e corresponde à diferença entre os quartis superior e inferior. -->
+O *boxplot* é uma ferramenta gráfica, que fornece um resumo da distribuição dos valores da variável sendo analisada. O *boxplot* nos dá 5 estatísticas e também mostra possíveis valores extremos (os chamados *outliers*). A linha no centro da caixa corresponde à mediana.  A caixa é delimitada pelos quartis inferior e superior.  Portanto, 50% das observações se encontram entre os valores que determinam as extremidades da caixa. O comprimento da caixa é chamado distância ou amplitude inter-quartis (ou IQR) e corresponde à diferença entre os quartis superior e inferior.
 
-<!-- As linhas horizontais que se afastam da caixa são os *whiskers*, cujo comprimento máximo vale 1,5 * IQR em cada direção, de forma que a distância máxima entre as extremidades dos *whiskers* vale 4 * IQR (comprimento máximo do *whisker* inferior vale 1,5 IQR, a caixa tem largura IQR e o comprimento máximo do *whisker* superior vale 1,5 IQR). Se a observação mais extrema em qualquer das direções estiver a uma distância da caixa menor que 1,5 * IQR, então o alcance do respectivo *whisker* vai até essa observação. Qualquer valor além dos *whiskers* é marcado como um ponto extremo, ou outlier. -->
+As linhas horizontais que se afastam da caixa são os *whiskers*, cujo comprimento máximo vale 1,5 * IQR em cada direção, de forma que a distância máxima entre as extremidades dos *whiskers* vale 4 * IQR (comprimento máximo do *whisker* inferior vale 1,5 IQR, a caixa tem largura IQR e o comprimento máximo do *whisker* superior vale 1,5 IQR). Se a observação mais extrema em qualquer das direções estiver a uma distância da caixa menor que 1,5 * IQR, então o alcance do respectivo *whisker* vai até essa observação. Qualquer valor além dos *whiskers* é marcado como um ponto extremo, ou outlier.
 
-<!-- <!--IMG--> -->
-<!-- ```{r ch1-elementos-boxplot, echo=FALSE, fig.cap='Elementos de um boxplot.', out.width = '100%', fig.height= 2, message=FALSE, warning=FALSE} -->
-<!-- knitr::include_graphics("img/boxplot-outliers.png") -->
-<!-- ``` -->
+<!--IMG-->
+```{r ch1-elementos-boxplot, echo=FALSE, fig.cap='Elementos de um boxplot.', out.width = '100%', fig.height= 2, message=FALSE, warning=FALSE}
+knitr::include_graphics("img/boxplot-outliers.png")
+```
 
 
 
-<!-- Vamos construir boxplots para a variável `insulin`, utilizando a função `boxplot.`  -->
+Vamos construir boxplots para a variável `insulin`, utilizando a função `boxplot.` 
 
-<!-- ```{r ch1-boxplot-isulin, out.width='100%',  fig.height= 2, message=FALSE, warning=FALSE} -->
-<!-- ggplot(pima, aes(x = insulin)) + -->
-<!--   geom_boxplot() + -->
-<!--   labs(x = "insulin") -->
-<!-- ``` -->
+```{r ch1-boxplot-isulin, out.width='100%',  fig.height= 2, message=FALSE, warning=FALSE}
+ggplot(pima, aes(x = insulin)) +
+  geom_boxplot() +
+  labs(x = "insulin")
+```
 
-<!-- No gráfico, percebemos alguns valores de insulina bastante elevados (e pode até valer a pena uma análise mais cuidadosa em um momento posterior). Para o exemplo, já tínhamos calculado anteriormente na tabela de resumos numéricos o valor do 1o quartil, que vale Q1 = 76.25. Esse valor está representado pela extremidade inferior da caixa (localizada à esquerda). A mediana vale Q2 = 125 e está representada graficamente pela linha no interior da caixa. O 3o quartil, cujo valor é Q3 = 190 corresponde à extremidade superior da caixa (à direita). A amplitude interquartis é dada pela diferença entre o 3o e o 1o quartil e vale IQR =  Q3(190) - Q1(76,25) = 113,75. Esse é o comprimento da caixa. Como não há pontos extremos à esquerda, o whisker inferior corresponde ao menor valor observado para os dados, o valor mínimo, igual 14. No caso do whisker superior, há alguns possíveis outliers à direita, portanto, o whisker superior  vale 1,5*IQR igual a  360,625. O valor máximo observado para esses dados é 846, e está representado como o ponto mais extremo à direita. -->
+No gráfico, percebemos alguns valores de insulina bastante elevados (e pode até valer a pena uma análise mais cuidadosa em um momento posterior). Para o exemplo, já tínhamos calculado anteriormente na tabela de resumos numéricos o valor do 1o quartil, que vale Q1 = 76.25. Esse valor está representado pela extremidade inferior da caixa (localizada à esquerda). A mediana vale Q2 = 125 e está representada graficamente pela linha no interior da caixa. O 3o quartil, cujo valor é Q3 = 190 corresponde à extremidade superior da caixa (à direita). A amplitude interquartis é dada pela diferença entre o 3o e o 1o quartil e vale IQR =  Q3(190) - Q1(76,25) = 113,75. Esse é o comprimento da caixa. Como não há pontos extremos à esquerda, o whisker inferior corresponde ao menor valor observado para os dados, o valor mínimo, igual 14. No caso do whisker superior, há alguns possíveis outliers à direita, portanto, o whisker superior  vale 1,5*IQR igual a  360,625. O valor máximo observado para esses dados é 846, e está representado como o ponto mais extremo à direita.
 
-<!-- É importante examinar os dados com relação à existência de possíveis outliers pois eles podem indicar: -->
+É importante examinar os dados com relação à existência de possíveis outliers pois eles podem indicar:
 
-<!-- (1) forte assimetria na distribuição das observações;     -->
-<!-- (2) erros (de medida, de registro ou leitura);    -->
-<!-- (3) ou mesmo, podem revelar propriedades interessantes e inesperadas da massa de dados (talvez a observação pertença a uma outra população).   -->
+(1) forte assimetria na distribuição das observações;    
+(2) erros (de medida, de registro ou leitura);   
+(3) ou mesmo, podem revelar propriedades interessantes e inesperadas da massa de dados (talvez a observação pertença a uma outra população).  
 
 
 
-<!-- **Histogramas** -->
+**Histogramas**
 
-<!-- Uma outra maneira de representar a distribuição dos valores observados para  uma variável é através de um histograma, que pode ser gerado utilizando a função `hist`. O histograma é útil para descrever a forma da distribuição. -->
+Uma outra maneira de representar a distribuição dos valores observados para  uma variável é através de um histograma, que pode ser gerado utilizando a função `hist`. O histograma é útil para descrever a forma da distribuição.
 
-<!-- Por exemplo, vemos que a distribuição de insulina é assimétrica; a maioria das mulheres observadas apresenta valores de insulina abaixo de 250, mas há algumas poucas observações com valores de insulina bastante elevados. A distribuição de insulina apresenta cauda longa à direita. Já a distribuição de glicose apresenta maior simetria. -->
+Por exemplo, vemos que a distribuição de insulina é assimétrica; a maioria das mulheres observadas apresenta valores de insulina abaixo de 250, mas há algumas poucas observações com valores de insulina bastante elevados. A distribuição de insulina apresenta cauda longa à direita. Já a distribuição de glicose apresenta maior simetria.
 
-<!-- ```{r ch1-hist-insulin, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- ggplot(pima, aes(x = insulin)) + -->
-<!--   geom_histogram() + -->
-<!--   labs(x = "insulin") -->
+```{r ch1-hist-insulin, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+ggplot(pima, aes(x = insulin)) +
+  geom_histogram() +
+  labs(x = "insulin")
 
-<!-- ggplot(pima, aes(x = glucose_tot)) + -->
-<!--   geom_histogram() + -->
-<!--   labs(x = "glucose_tot") -->
+ggplot(pima, aes(x = glucose_tot)) +
+  geom_histogram() +
+  labs(x = "glucose_tot")
 
-<!-- ``` -->
+```
 
-<!-- Podemos adicionar marcações nos gráficos. Por exemplo, vamos adicionar uma reta vertical marcando o valor da média dos valores observados para cada uma das variáveis analisadas.  -->
+Podemos adicionar marcações nos gráficos. Por exemplo, vamos adicionar uma reta vertical marcando o valor da média dos valores observados para cada uma das variáveis analisadas. 
 
 
 
 
-<!-- Aqui, a média está sinalizada pelas retas verticais vermelhas: -->
+Aqui, a média está sinalizada pelas retas verticais vermelhas:
 
-<!-- ```{r ch1-hist-insulin-retas, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- xbar <- mean(pima$insulin, na.rm = TRUE) -->
-<!-- ggplot(pima, aes(x = insulin)) + -->
-<!--   geom_histogram() + -->
-<!--   labs(x = "insulin") + -->
-<!--   geom_vline(aes(xintercept = xbar), col = 'red')                            #<< -->
+```{r ch1-hist-insulin-retas, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+xbar <- mean(pima$insulin, na.rm = TRUE)
+ggplot(pima, aes(x = insulin)) +
+  geom_histogram() +
+  labs(x = "insulin") +
+  geom_vline(aes(xintercept = xbar), col = 'red')                            #<<
 
-<!-- xbar <- mean(pima$glucose_tot, na.rm = TRUE) -->
-<!-- ggplot(pima, aes(x = glucose_tot)) + -->
-<!--   geom_histogram() + -->
-<!--   labs(x = "glucose_tot") + -->
-<!--   geom_vline(aes(xintercept = xbar), col = 'red')                            #<< -->
-<!-- ``` -->
+xbar <- mean(pima$glucose_tot, na.rm = TRUE)
+ggplot(pima, aes(x = glucose_tot)) +
+  geom_histogram() +
+  labs(x = "glucose_tot") +
+  geom_vline(aes(xintercept = xbar), col = 'red')                            #<<
+```
 
-<!-- **Histogramas e Gráficos de Densidade** -->
+**Histogramas e Gráficos de Densidade**
 
-<!-- Que tal obter um pouco mais de detalhes com a função `rug()`, que nos mostra cada uma das observações? Aqui, além de adicionarmos as observações na margem inferior, também ajustamos a largura das bandas. Note que o histograma é muito sensível à largura (ou discretização) das bandas, de forma que se não for adequadamente ajustado, pode trazer informações enganosas. No caso de glicose, o histograma resultante perdeu muito de sua informação. Tente gerar outros histogramas, variando o valor de `binwidth`.  -->
+Que tal obter um pouco mais de detalhes com a função `rug()`, que nos mostra cada uma das observações? Aqui, além de adicionarmos as observações na margem inferior, também ajustamos a largura das bandas. Note que o histograma é muito sensível à largura (ou discretização) das bandas, de forma que se não for adequadamente ajustado, pode trazer informações enganosas. No caso de glicose, o histograma resultante perdeu muito de sua informação. Tente gerar outros histogramas, variando o valor de `binwidth`. 
 
 
 
 
 
-<!-- Também temos sobreposição a cada histograma da respectiva curva de densidade, que corresponde a uma suavização do histograma. Para isso, também foi modificado o eixo vertical que, em vez de representar o número de observações em cada faixa, agora apresenta a frequencia relativa (isto é, o no. de observações na faixa, didivido pelo no. total de observações). -->
+Também temos sobreposição a cada histograma da respectiva curva de densidade, que corresponde a uma suavização do histograma. Para isso, também foi modificado o eixo vertical que, em vez de representar o número de observações em cada faixa, agora apresenta a frequencia relativa (isto é, o no. de observações na faixa, didivido pelo no. total de observações).
 
-<!-- ```{r ch1-hist-insulin-anotado, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- xbar <- mean(pima$insulin, na.rm = TRUE) -->
-<!-- ggplot(pima, aes(x = insulin)) + -->
-<!--   geom_histogram(aes(y = ..density..),                                       #<< -->
-<!--                  binwidth = 45) +                                            #<< -->
-<!--   labs(x = "insulin") + -->
-<!--   geom_vline(aes(xintercept = xbar), col = 'red') +  -->
-<!--   geom_rug(sides = 'b', col = 'blue') +                                      #<< -->
-<!--   geom_density(alpha = 0.1, fill = 'blue')                                   #<< -->
-<!-- ``` -->
+```{r ch1-hist-insulin-anotado, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+xbar <- mean(pima$insulin, na.rm = TRUE)
+ggplot(pima, aes(x = insulin)) +
+  geom_histogram(aes(y = ..density..),                                       #<<
+                 binwidth = 45) +                                            #<<
+  labs(x = "insulin") +
+  geom_vline(aes(xintercept = xbar), col = 'red') + 
+  geom_rug(sides = 'b', col = 'blue') +                                      #<<
+  geom_density(alpha = 0.1, fill = 'blue')                                   #<<
+```
 
-<!-- ```{r ch1-density-insulin, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- xbar <- mean(pima$glucose_tot, na.rm = TRUE) -->
-<!-- ggplot(pima, aes(x = glucose_tot)) + -->
-<!--   geom_histogram(aes(y = ..density..),                                       #<< -->
-<!--                  binwidth = 45) +                                            #<< -->
-<!--   labs(x = "glucose_tot") + -->
-<!--   geom_vline(aes(xintercept = xbar), col = 'red') +  -->
-<!--   geom_rug(sides = 'b', col = 'blue') +                                      #<< -->
-<!--   geom_density(alpha = 0.1, fill = 'blue')                                   #<< -->
-<!-- ``` -->
+```{r ch1-density-insulin, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+xbar <- mean(pima$glucose_tot, na.rm = TRUE)
+ggplot(pima, aes(x = glucose_tot)) +
+  geom_histogram(aes(y = ..density..),                                       #<<
+                 binwidth = 45) +                                            #<<
+  labs(x = "glucose_tot") +
+  geom_vline(aes(xintercept = xbar), col = 'red') + 
+  geom_rug(sides = 'b', col = 'blue') +                                      #<<
+  geom_density(alpha = 0.1, fill = 'blue')                                   #<<
+```
 
 
 
 
 
-<!-- **Resumos Multidimensionais** -->
+**Resumos Multidimensionais**
 
-<!-- Podemos também utilizar boxplots para comparar duas distribuições. Por exemplo, podemos querer saber como se comparam os valores de insulina para mulheres diabéticas e não-diabéticas. -->
+Podemos também utilizar boxplots para comparar duas distribuições. Por exemplo, podemos querer saber como se comparam os valores de insulina para mulheres diabéticas e não-diabéticas.
 
-<!-- ```{r ch1-boxplot-insulin-class, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- ggplot(pima, aes(x = insulin, y = class, fill = class)) + -->
-<!--   geom_boxplot() + -->
-<!--   labs(x = "insulin", x = "class") -->
-<!-- ``` -->
+```{r ch1-boxplot-insulin-class, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+ggplot(pima, aes(x = insulin, y = class, fill = class)) +
+  geom_boxplot() +
+  labs(x = "insulin", x = "class")
+```
 
-<!-- Podemos perceber que a mediana observada para os valores de insulina para mulheres diabéticas é um pouco maior que aquela para mulheres não-diabéticas. Embora não seja possível afirmar que existe uma diferença estatisticamente significativa entre os dois grupos, esta é uma hipótese interessante, que pode ser testada formalmente posteriormente. Vamos adicionar uma reta no valor de glicose igual a 200 mg/dl (valor de referência no TTOG): -->
+Podemos perceber que a mediana observada para os valores de insulina para mulheres diabéticas é um pouco maior que aquela para mulheres não-diabéticas. Embora não seja possível afirmar que existe uma diferença estatisticamente significativa entre os dois grupos, esta é uma hipótese interessante, que pode ser testada formalmente posteriormente. Vamos adicionar uma reta no valor de glicose igual a 200 mg/dl (valor de referência no TTOG):
 
-<!-- ```{r ch1-boxplot-insulin-anotado, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- ggplot(pima, aes(x = insulin, y = class, fill = class)) + -->
-<!--   geom_boxplot() + -->
-<!--   labs(x = "insulin", x = "class") + -->
-<!--   geom_vline(aes(xintercept = 200), lwd = 1, lty = 'dashed', col = 1) -->
-<!-- ``` -->
+```{r ch1-boxplot-insulin-anotado, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+ggplot(pima, aes(x = insulin, y = class, fill = class)) +
+  geom_boxplot() +
+  labs(x = "insulin", x = "class") +
+  geom_vline(aes(xintercept = 200), lwd = 1, lty = 'dashed', col = 1)
+```
 
-<!-- É possível modificar a cor, espessura e tipo dessa reta. Fica como exercício. -->
+É possível modificar a cor, espessura e tipo dessa reta. Fica como exercício.
 
-<!-- Pode ser útil construir múltiplos histogramas ou curvas de densidade, para diferentes categorias. Podemos sobrepor as duas distribuições, para tornar a comparação imediata. -->
+Pode ser útil construir múltiplos histogramas ou curvas de densidade, para diferentes categorias. Podemos sobrepor as duas distribuições, para tornar a comparação imediata.
 
-<!-- ```{r ch1-density-insulin-mult, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- ggplot(pima, aes(insulin, fill = class)) +  -->
-<!--   geom_histogram(aes(y = ..density..), binwidth = 40)  -->
+```{r ch1-density-insulin-mult, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+ggplot(pima, aes(insulin, fill = class)) + 
+  geom_histogram(aes(y = ..density..), binwidth = 40) 
 
-<!-- ggplot(pima,  aes(insulin, fill = class)) +  -->
-<!--   geom_density(alpha = 0.2)  -->
-<!-- ``` -->
+ggplot(pima,  aes(insulin, fill = class)) + 
+  geom_density(alpha = 0.2) 
+```
 
 
-<!-- **Relações entre Variáveis** -->
+**Relações entre Variáveis**
 
-<!-- Para variáveis contínuas, é interessante observar gráficos de dispersão, a fim de avaliar relações entre pares de variáveis: -->
+Para variáveis contínuas, é interessante observar gráficos de dispersão, a fim de avaliar relações entre pares de variáveis:
 
-<!-- ```{r ch1-dispersao-2d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- ggplot(pima, aes(x = insulin, y = glucose_tot)) +  -->
-<!--   geom_point() + -->
-<!--   labs(x = "insulin", x = "glucose_tot") -->
-<!-- ``` -->
+```{r ch1-dispersao-2d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+ggplot(pima, aes(x = insulin, y = glucose_tot)) + 
+  geom_point() +
+  labs(x = "insulin", x = "glucose_tot")
+```
 
-<!-- Podemos adicionar mais informação ao gráfico, com retas: -->
+Podemos adicionar mais informação ao gráfico, com retas:
 
-<!-- ```{r ch1-dispersao-2d-reta, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- ggplot(pima, aes(x = insulin, y = glucose_tot)) +   -->
-<!--   geom_point() + -->
-<!--   geom_vline(aes(xintercept = 200), col = 1) +                               #<< -->
-<!--   labs(x = "insulin", x = "glucose_tot") -->
-<!-- ``` -->
+```{r ch1-dispersao-2d-reta, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+ggplot(pima, aes(x = insulin, y = glucose_tot)) +  
+  geom_point() +
+  geom_vline(aes(xintercept = 200), col = 1) +                               #<<
+  labs(x = "insulin", x = "glucose_tot")
+```
 
-<!-- Podemos adicionar uma terceira dimensão, utilizando cores: -->
+Podemos adicionar uma terceira dimensão, utilizando cores:
 
-<!-- ```{r ch1-dispersao-3d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- ggplot(pima, aes(x = insulin, y = glucose_tot,  -->
-<!--                  color = class)) +                                           #<< -->
-<!--   geom_point() + -->
-<!--   labs(x = "insulin", x = "glucose_tot") -->
-<!-- ``` -->
+```{r ch1-dispersao-3d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+ggplot(pima, aes(x = insulin, y = glucose_tot, 
+                 color = class)) +                                           #<<
+  geom_point() +
+  labs(x = "insulin", x = "glucose_tot")
+```
 
-<!-- Podemos adicionar uma quarta dimensão com diferentes tamanhos para os pontos:  -->
+Podemos adicionar uma quarta dimensão com diferentes tamanhos para os pontos: 
 
-<!-- ```{r ch1-dispersao-4d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE} -->
-<!-- ggplot(pima, aes(x = insulin, y = glucose_tot,                               #<< -->
-<!--                  color = class, size = age)) +                               #<< -->
-<!--   geom_point() + -->
-<!--   labs(x = "insulin", x = "glucose_tot") -->
-<!-- ``` -->
+```{r ch1-dispersao-4d, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE}
+ggplot(pima, aes(x = insulin, y = glucose_tot,                               #<<
+                 color = class, size = age)) +                               #<<
+  geom_point() +
+  labs(x = "insulin", x = "glucose_tot")
+```
 
-<!-- Assim, chegamos ao fim de nossa primeira análise exploratória de dados.    -->
-<!-- E este é apenas o começo... -->
+Assim, chegamos ao fim de nossa primeira análise exploratória de dados.   
+E este é apenas o começo...
