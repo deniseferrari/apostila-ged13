@@ -9,7 +9,9 @@ rsconnect
 # Bookdown
 _book/
 _bookdown_files/
-
+libs/
+*.md
+packages.bib
 
 # Env
 .DS_Store
