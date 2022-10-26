@@ -68,8 +68,9 @@ Note que quando $x=0$, $f_X(x) = q = 1-p$; e, quando $x=1$, $f_X(x)= p$, em que 
 Apesar de sua simplicidade, processos de Bernoulli podem ser utilizados para representar processos aleatórios interessantes, como veremos a seguir.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Vamos considerar a seguinte situação... completamente fictícia, claro!
@@ -81,8 +82,9 @@ Só que tem um problema: o aluno esqueceu que tinha de fazer esta prova e está 
 Se o aluno adotar essa estratégia desesperada, qual a probabilidade de que ele passe no curso?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
   
 
 Em primeiro lugar, precisamos identificar a variável aleatória associada a este experimento. Note que a resposta a cada questão consiste em um experimento de Bernoulli, já que o aluno pode marcar a resposta certa (o que equivale a obter sucesso) ou a resposta errada (obtendo, assim, um fracasso). Desta forma, resposta a cada questão pode ser, então modelada por uma v.a. $X_i$, que tem distribuição de Bernoulli. $X_i$ assume valor 1, se a resposta à questão $i$ é correta; e 0, se a resposta à questão $i$ é errada. A probabilidade de o aluno acertar a resposta de cada uma das questões é sempre a mesma e vale 1/4.
@@ -216,8 +218,9 @@ A v.a. $X$ pode assumir qualquer valor inteiro de 0 até o número de experiment
 Vejamos um exemplo.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Se a probabilidade de um paciente se recuperar de uma doença grave for de 40% e tivermos o conhecimento de 15 pacientes portadores dessa doença, podemos estar interessados em obter algumas respostas, tais como
@@ -231,8 +234,9 @@ Note que, se pudermos assumir que a resposta de cada paciente ao tratamento da d
 Podemos então utilizar a distribuição Binomial para calcular essas probabilidades de maneira exata. E vamos comparar este resultado exato com aquele que seria obtido de maneira aproximada utilizando a desigualdade de Chebyshev.
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Temos: $X \sim \textsf{Bin}(n,p)$, onde n = 15 (pacientes); p = 0,4 (probabilidade de cura).

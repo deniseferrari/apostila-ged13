@@ -229,8 +229,9 @@ Da simetria:
 + $P[-z_{\alpha/2} < Z < z_{\alpha/2}] = 1 - \alpha$
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 A tabela de distribuição normal nos dá as probabilidades acumuladas, ou seja, no miolo da tabela temos os valores de $P[Z \leq z] = \Phi(z)$. Podemos utilizá-la para calcular valores de probabilidades:
@@ -373,8 +374,9 @@ Precisamos garantir que a probabilidade de observar um valor negativo seja despr
 $$CV = \frac{\sigma}{\mu} <  0,3$$
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Peças em projeto aeronáutico comumente são unidas através de rebitagem. O cliente define a especificação do diâmetro dos rebites em 3,0 $\pm$ 0,01 mm. Qualquer rebite cujo diâmetro se encontre dentro da especificação será aceitável. 
@@ -382,8 +384,9 @@ Peças em projeto aeronáutico comumente são unidas através de rebitagem. O cl
 Considerando o diâmetro dos rebites uma v.a. normalmente distribuída com média $\mu =$ 3,0 e desvio-padrão $\sigma =$ 0,005, que proporção de rebites será rejeitada?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 São aceitáveis os rebites cujos diâmetros se encontram no intervalo (2,99; 3,01).  
@@ -473,8 +476,9 @@ $$X \sim Bin(n, p) \longrightarrow N(\mu = np, \sigma^2 = npq) \\ \frac{X - np}{
 Nestas circunstâncias, a distribuição binomial apresenta forma de sino, com média  $pq$ e variância $npq$, de forma que, ao aplicar a transformação de padronização à v.a. $X$, a distribuição da v.a. resultante é aproximadamente normal padronizada.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Companhias aéreas costumam praticar "overbooking", vendendo um número de passagens  superior ao número de assentos disponíveis na aeronave, a fim de maximizar seu retorno, já que existe a expectativa de que nem todos os passageiros se apresentem na hora do embarque. Tais passageiros são classificados como "no-show".
@@ -484,8 +488,9 @@ Suponha que tenham sido emitidas 200 passagens para um voo com capacidade para 1
 Qual a probabilidade de que haja *overbooking* para este voo, de forma que nem todos os passageiros que se apresentarem para embarque poderão viajar?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Se considerarmos que os passageiros viajam sozinhos, sem acompanhantes, e que chegaram de maneira independente ao aeroporto, podemos modelar o número de "shows", isto é, o número de passageiros que se apresentam para o embarque como uma v.a. com distribuição Binomial, com parâmetros $n= 200$ e $p = 0.98$:
@@ -702,8 +707,9 @@ E finalmente, o método descritivo mais utilizado para avaliar normalidade é o 
 Vejamos a aplicação desses métodos em um conjunto de dados.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Os dados se referem a 100 medidas de consumo de combustível de um tipo de automóvel de passeio. O primeiro passo consiste em carregar os dados e analisar o resumo numérico.

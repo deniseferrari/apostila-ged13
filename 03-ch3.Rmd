@@ -14,8 +14,10 @@ Sendo assim, probabilidades condicionais nos permitem analisar os resultados de 
 Nos exemplos a seguir, os eventos condicionantes, ou os acontecimentos prévios estão ressaltados em negrito. Esses eventos constituem informação adicional a respeito dos experimentos aleatórios investigados.
 
    
-```{example}
-```
+::: {.example} 
+<br />
+:::
+
 
 
 Um dado é lançado duas vezes e **sabe-se que a soma dos resultados vale 9**. Qual a probabilidade de que o primeiro resultado tenha sido 6? 
@@ -39,8 +41,10 @@ Ao fornecer a informação adicional de que a soma dos dois resultados vale '9',
 Veja que, pelo fato de ter uma informação adicional, não é mais possível calcular a probabilidade de que o primeiro resultado tenha sido '6', com base no universo original, no espaço amostral associado ao experimento de lançar o dado duas vezes e observar o resultado do primeiro dado... agora, é necessário **condicionar** ao fato de que agora sabe-se que a soma dos dois resultados vale '9'.
 
 
-```{example}
-``` 
+::: {.example} 
+<br />
+:::
+
 
 
 **Um objeto é detectado por um radar**. Qual a probabilidade de que seja um avião?
@@ -54,8 +58,10 @@ Portanto, o espaço amostral original sofre uma alteração, já que eliminamos 
 Agora, sabendo que houve a detecção (e conhecendo com que probabilidade isto ocorre), resta calcular a probabilidade de que o objeto detectado seja um avião.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
+
 
 
 Qual a probabilidade de que o paciente esteja doente, **dado que o teste deu negativo?**
@@ -211,8 +217,9 @@ Para finalizar, é importante a atenção para um ponto que pode causar confusã
 Eventos independentes são aqueles para os quais a ocorrência de um não exerce nenhuma influencia na ocorrência do outro; já eventos mutuamente exclusivos são aqueles em que há dependência perfeita, ou seja, a ocorrência de um garante (dá a certeza da)  impossibilidade da ocorrência do outro. Eles nunca podem ocorrer simultaneamente.
 
 
-```{example name="Aplicação: Confiabilidade de Sistemas"}
-```
+::: {.example name="Aplicação: Confiabilidade de Sistemas"} 
+<br />
+:::
 
 
 Uma aplicação interessante de independência de eventos é a análise de confiabilidade de sistemas. A confiabilidade é medida pela probabilidade de que o sistema não falhe, ou em outras palavras, de que o sistema continue a operar.
@@ -250,8 +257,9 @@ Por outro lado, para o sistema em paralelo, o sistema só falha se for observada
 Por esse motivo, os sistemas em paralelo são chamados sistemas redundantes!
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Um certo avião com quatro turbinas precisa de duas ou mais turbinas funcionando para garantir a segurança de vôo. Um outro avião tem duas turbinas e precisa de pelo menos uma turbina funcionando para voar em segurança. Considere que as turbinas sejam independentes e cada uma tem uma probabilidade $p$ de funcionar corretamente durante um vôo. *Qual avião é mais seguro e em que condições?*

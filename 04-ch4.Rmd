@@ -88,8 +88,9 @@ $P[A_j|B]:$ prob. de que a causa ${A_j}$ esteja presente, dado que o efeito ${B}
 No teorema de Bayes, a probabilidade conjunta do numerador foi reescrita com o auxílio da regra do produto como sendo a probabilidade condicional do efeito B dado que a causa $A_j$ estava presente vezes a probabilidade de a causa $A_j$ estar presente; no denominador, a probabilidade de $B$ foi reescrita na forma do teorema da probabilidade total, ou seja, em termos da partição do espaço amostral como função das possíveis causas.
 
 
-```{example name="Utilizando os teoremas fundamentais da probabilidade para realizar inferência"}
-```
+::: {.example name="Utilizando os teoremas fundamentais da probabilidade para realizar inferência"} 
+<br />
+:::
 
 
 Vamos supor que um paciente tenha sido submetido a um exame de raio-X e que uma mancha tenha sido observada. Esta é a evidência, o efeito que foi observado, o evento $B$.

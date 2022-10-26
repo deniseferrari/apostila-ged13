@@ -214,8 +214,9 @@ Se $\bar{X}$ for utilizado como estimador de $\mu$:
 Note que, para determinar o tamanho de amostra, é necessário conhecer o valor da variância populacional, $\sigma^2$. Dificilmente isso ocorrerá na prática. Sendo assim, geralmente realiza-se um experimento piloto, coletando-se uma amostra contendo pelo menos 30 observações e, a partir dela estima-se o valor de $\sigma$. Utilizando a estimativa de $\sigma$ é possível determinar aproximadamente o número necessário de observações para garantir o nível de acurácia desejado.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 A concentração de uma determinada substância presente na água distruibuída para o consumo dos habitantes de uma cidade foi medida em 36 pontos, obtendo-se o valor médio de 2,6mg/l. Assuma que o desvio-padrão populacional seja conhecido e valha 0,3.
@@ -225,8 +226,9 @@ A concentração de uma determinada substância presente na água distruibuída 
 + Qual deve ser o menor tamanho de amostra para que tenhamos 95% de confiança de que o erro na estimativa encontrada para $\mu$ seja no máximo 0,05?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 emos: $n = 36; \; \bar{x} = 2,6; \; \sigma = 0,3$.
@@ -301,8 +303,9 @@ Recomenda-se utilizar o seguinte IC $100(1-\alpha)\%$ para a $\mu$:
 $$\overline{x}_n \pm z_{\alpha/2} \frac{{s_n}}{\sqrt{n}}$$
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Um fabricante de um certo tipo de dispositivo eletrônico deseja avaliar o desempenho de seu produto. Uma medida de desempenho corresponde ao tempo médio entre falhas do dispositivo. A fim de estimar o valor desta quantidade, um engenheiro registrou o tempo entre falhas para uma a.a. contendo 45 unidades deste dispositivo. As seguintes estatísticas foram calculadas:
@@ -313,8 +316,9 @@ $$\bar{x} = 1762 h \quad \textsf{e} \quad s = 215h$$
 + Sabe-se que se o dispositivo estiver funcionando corretamente, o tempo médio real entre falhas deverá ser de pelo menos 1700h. Com base no intervalo calculado no item anterior, o que se pode inferir a respeito da qualidade dos dispositivos fabricados?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Temos: $n = 45; \; \bar{x} = 1762h; \; s = 215h$. No entanto, nada foi afirmado a respeito da distribuição original. No entanto, já que n > 30, a média amostral studentizada tem distribuição t-Student com n-1 = 44 graus de liberdade.
@@ -362,8 +366,9 @@ $$\widehat{p} \pm  z_{\alpha/2} \sqrt{\frac{\hat{p}\hat{q}}{n}}$$
 + Regra de bolso: deve-se ter $n\hat{p} \geq 5$ e $n\hat{q} \geq 5$.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Em uma a.a. de tamanho n = 500 de famílias assinantes de TV a cabo em SJC, um total de x = 340 possuíam assinatura de um canal de filmes.
@@ -373,8 +378,9 @@ Em uma a.a. de tamanho n = 500 de famílias assinantes de TV a cabo em SJC, um 
 + Qual o tamanho da amostra mínimo que garanta confiança de 95% de que o erro máximo desta estimativa seja de 0,02?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Temos: $n = 500; \; x = 340;\; \hat{p} = 340/500 = 0,68$. 
@@ -446,8 +452,9 @@ Substituindo o valor de $Q^2$ e isolando $\sigma^2$, obtemos o seguinte IC $100(
 $$\frac{(n-1)S^2_n}{\chi^2_{\alpha/2}} < \sigma^2 < \frac{(n-1)S^2_n}{\chi^2_{1-\alpha/2}}$$
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 O sistema indicador de combustível de uma aeronave baseia-se na utilização de sensores, cujas medidas de resistência elétrica são convertidas para a quantidade de combustível equivalente através de uma curva de calibração característica.
@@ -460,8 +467,9 @@ Qual o IC 95% para a variância do sistema indicador, para a quantidade de comb
 Assuma população normalmente distribuída.
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Temos: $n = 10; \; s_n^2 = 0,286$. Vamos supor X ~ Normal.

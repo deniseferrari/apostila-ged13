@@ -35,8 +35,9 @@ Existe outro tipo de inferência também, chamada de **inferência dedutiva**.
 Este tipo de inferência tem como exemplo clássico o silogismo, que consiste em um processo dedutivo em que se chega a uma conclusão lógica a partir de duas proposições consideradas verdadeiras.
 
 
-```{example name="Silogismo"}
-```
+::: {.example name="Silogismo"} 
+<br />
+:::
 
 
 I. Afirmação Geral  
@@ -155,8 +156,9 @@ A distribuição amostral de uma estatística $W$ depende do:
 + tamanho da população; e  
 + método de amostragem (ou seja, de como foi realizada a coleta dos dados).
 
-```{example name= "Medidas de Antebraço"} 
-```
+::: {.example name="Medidas de Antebraço"} 
+<br />
+:::
 
 Fonte: Hand, D et al. (1993). Handbook of Small Data Sets, CRC Press.
 
@@ -313,8 +315,9 @@ Este teorema foi provado pela primeira vez por Jakob Bernoulli em 1713 (para o c
 Sendo assim, a Lei dos Grandes Números é de fundamental importância para a prática científica em geral. Se considerarmos que dados são obtidos a partir de um grande número de replicações independentes de um experimento (que pode ter sido realizado através de simulação ou em um laboratório, ou observado no mundo real), cada vez que utilizamos a frequência relativa de ocorrências de um evento de interesse para estimar sua probabilidade, estamos implicitamente invocando a Lei dos Grandes Números.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Vamos ilustrar a Lei dos Grandes Números através de um exemplo computacional. Primeiro, devemos escolher uma população idealizada. Em seguida, fingindo não conhecer esta população, vamos retirar amostras (de diferentes tamanhos) desta população, e calcular as respectivas médias amostrais. A Lei dos Grandes Números garante que, conforme o tamanho da amostra aumenta, a média amostral deve se aproximar da média populacional.
@@ -580,8 +583,9 @@ Sendo assim, este resultado nos permite aproximar uma variedade de probabilidade
 Vamos ilustrar o TLC através de um exemplo computacional, assim como fizemos para a LGN. Vamos considerar três populações idealizadas: Uniforme, Exponencial e Normal.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Simular a distribuição amostral de $\overline{X}_n$ para as seguintes amostras aleatórias:
@@ -724,15 +728,17 @@ A beleza do TLC consiste no fato de que, a partir de praticamente nenhuma hipót
 Embora o TLC não assuma normalidade da população que originou a amostra, essa hipótese é necessária para obter a distribuição amostral de outras estatísticas que não a média amostral, como veremos mais adiante.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Um pacote de granola tem peso aproximadamente normalmente distribuído com média 800g e desvio-padrão 40g. Qual a probabilidade de que uma a.a. contendo 16 pacotes tenha peso médio inferior a 775g?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Dados do problema:  
@@ -763,8 +769,9 @@ pnorm(775, mean = 800, sd = 10)
 ```
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Um determinado processo de fabricação produz peças cilíndricas para uso na indústria aeronáutica. O engenheiro responsável acredita que o diâmetro médio de todas as peças produzidas por tal processo esteja de acordo com a especificação e seja de 5cm.  Sabe-se ainda que o desvio-padrão do processo vale 0,1cm. 
@@ -775,8 +782,9 @@ Um experimento é conduzido em que 100 peças produzidas por tal processo são e
 A informação obtida através da análise da amostra valida ou refuta a conjectura do engenheiro responsável? 
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Seja $X$ = diâmetro de uma peça cilíndrica  tq. $\mu =$ 5cm; $\sigma =$ 0,1cm   
@@ -918,7 +926,7 @@ A distribuição $\chi^2$ tem algumas propriedades interessantes:
 
 ```{r ch9-distr-chi2, echo=FALSE,  fig.align='center', out.width = '50%', message=FALSE, warning=FALSE}
 knitr::include_graphics("img/distr-chi2.png")
-```  
+```
 
 
 + 95% da área da distribuição encontra-se entre $\chi^2_{0,975}$ e $\chi^2_{0,025}$:  
@@ -933,8 +941,9 @@ Portanto, para um certo número de graus de liberdade, $\nu$:
 Podemos utilizar esta distribuição para realizar inferência a respeito da variância populacional. Para um certo número de graus de liberdade, $\nu$: se o valor observado da estatística $Q^2$ se encontrar à direita do percentil 2,5% temos um resultado bastante improvável (já que a área à direita do valor da estatística é inferior a 2,5%), a menos que a variância populacional seja menor que o imaginado. Um raciocínio análogo se aplica para valores observados da estatística $Q^2$ menores que o percentil 97,5%. Isso significa que é possível observar $Q^2$ à esquerda de do percentil 97,5% e à direita do percentil 2,5%, quando $\sigma^2$ está correto, mas é mais provável que nossa ideia a respeito deste parâmetro esteja errada.
   
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Uma companhia produz medicamentos que contém 8g de um determinado composto em um frasco do medicamento. Engenheiros da qualidade determinaram que o processo estará operando em conformidade com o especificado se a variabilidade real $\sigma^2$ do composto por frasco for menos que 0,0025. 
@@ -946,8 +955,9 @@ Estamos interessados na variância amostral, $Sn^2$.
 Se, de fato, $\sigma^2 =$ 0,001, qual a probabilidade de que $S_n^2$ exceda 0,0025? 
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Temos: $X_1, X_2, \ldots, X_{n=10} \sim N(\mu, \sigma^2)$.  
@@ -995,7 +1005,7 @@ $$T = \frac{\overline{X}_n - \mu}{S_n/\sqrt{n}}   \sim t_\nu$$
 
 ```{r ch9-distr-t-Student, echo=FALSE,  fig.align='center', out.width = '50%', message=FALSE, warning=FALSE}
 knitr::include_graphics("img/distr-t-Student.png")
-```  
+```
 
 
 onde: 
@@ -1015,8 +1025,9 @@ Em suma, a distribuição t−Student é útil para realizar inferências a
 É importante observar que, para amostras de tamanho pequen,o a variância amostral $S_n^2$ flutua muito de amostra para amostra, de forma que a distribuição $t$ correspondente é muito mais achatada que a distribuição normal padronizada. Conforme o tamanho da amostra aumenta, a distribuição t se aproxima da distribuição normal padronizada, de forma que é indiferente utilizar a distribuição t ou normal padronizada para realizar inferência a respeito da média populacional com base em amostras grandes. Para amostras pequenas (com n < 30), deve-se utilizar a distribuição t-Student.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Determine o valor de $k$ de forma que 
@@ -1025,8 +1036,9 @@ para uma a.a. $X_1, \ldots, X_n$ de tamanho $n=15$ selecionada a partir de uma d
 $$T = \frac{\overline{X}_n - \mu}{S_n/\sqrt{n}}.$$
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Se a população é normal, então a estatística $T \sim t_\nu$ onde:  $\nu = n -1 = 14$ g.d.l.  
@@ -1050,8 +1062,9 @@ pt(-1.761, 14) - pt(-2.977, 14)
 ```
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Um engenheiro afirma que a concentração média (populacional) de uma determinada substância química é de 500mg/ml de solução. Considere  que a distribuição da concentração desta substância seja aproximadamente normal.
@@ -1061,8 +1074,9 @@ A fim de avaliar esta conjectura, todo mês ele mede a concentração média de 
 A que conclusão pode-se chegar a partir de uma amostra cuja concentração média vale $\overline{x} = 518$mg/ml, com desvio-padrão de $s=40$mg/ml? 
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Temos:
