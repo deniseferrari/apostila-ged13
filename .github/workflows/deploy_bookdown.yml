@@ -1,0 +1,61 @@
+name: Deploy bookdown
+
+on:
+  push:
+    branches: ["master"]
+
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v1
+      - name: Setup Pandoc
+        uses: r-lib/actions/setup-pandoc@v1
+      # Note: this should be done with r-lib/actions/setup-r-dependencies@v2
+      - name: Install dependencies
+        run: Rscript -e 'install.packages(c("rmarkdown","bookdown", "tidyverse"))'
+      - name: Render book
+        run: Rscript -e 'bookdown::render_book("index.Rmd")'
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: _book/
+    
+
+    
+
+  # Deployment job
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
