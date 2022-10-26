@@ -67,8 +67,9 @@ Esta distribuição foi desenvolvida por Poisson em 1837 em um livro que escreve
 A distribuição de Poisson começou a ganhar notoriedade apenas depois da publicação,  em 1898, de um trabalho desenvolvido pelo estatístico russo Ladislaus Bortkiewicz (1868-1931), que mostrou pela primeira vez como esta distribuição poderia ser utilizada para explicar a regularidade estatística observada na ocorrência de certos eventos raros, como nós veremos no exemplo a seguir.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 No final do século XIX, unidades de cavalaria estavam presentes em grande parte dos exércitos e, vez por outra, alguém em uma dessas unidades acabava morrendo como consequência de um coice de cavalo recebido. Bortkiewicz registrou as ocorrências de tais mortes para 14 unidades de cavalaria do exército prussiano durante o período de 20 anos de 1875 a 1894, obtendo um total de 280 observações, e analisou os dados estatisticamente. 
@@ -340,8 +341,9 @@ O caso de função taxa de falha crescente é bastante intuitivo e representa si
 Vejamos alguns exemplos.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Suponha que é razoável modelar o tempo de espera por atendimento em um banco por uma v.a. com distribuição exponencial, com média 10 min (isto é, $\lambda = 1/10$). 
@@ -351,8 +353,9 @@ Suponha que é razoável modelar o tempo de espera por atendimento em um banco p
 + Qual a probabilidade de que um cliente espere por um tempo maior do que 15 min, dado que já está esperando há 10 min?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Representamos o tempo que o cliente espera na fila do banco por uma v.a. $X$ com distribuição Exponencial. O tempo médio de espera é de 10 min, portanto o parâmetro $\lambda$ da distribuição vale 1/10.
@@ -381,8 +384,9 @@ Os comandos para obter esses valores de probabilidade utilizando o software R, s
 O próximo exemplo traz uma ilustração simples de aplicação de distribuição exponencial em confiabilidade.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Um sistema contém componentes cuja vida (em anos) é dada pela v.a. $T$, que segue distribuição exponencial com média 5.
@@ -390,8 +394,9 @@ Um sistema contém componentes cuja vida (em anos) é dada pela v.a. $T$, que se
 Se 5 desses componentes são instalados em diferentes sistemas, qual a probabilidade de que pelo menos 2 deles continuem funcionando ao final de 8 anos?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Sabemos que o tempo de falha de cada um dos componentes pode ser adequadamente modelado por uma va exponencial com média 5, de forma que a taxa de falha, $\lambda$ vale 1/5. Portanto, temos: $T \sim Exp(\lambda = 1/5)$.
@@ -421,8 +426,9 @@ A probabilidade de que pelo menos 2 dos 5 componentes instalados continuem funci
 Vejamos, agora, um outro exercício interessante que faz uso da propriedade de ausência de memória.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Em um pronto-atendimento oftalmológico há dois consultórios médicos e os pacientes podem ser atendidos por qualquer um dos dois plantonistas. Quando o paciente C chega até a clínica, descobre que os dois consultórios já estão ocupados, um pelo paciente A e o outro, pelo B. O paciente C é informado que será atendido assim que terminar a consulta de um dos pacientes A ou B. 
@@ -432,8 +438,9 @@ Suponha que o tempo de duração de uma consulta seja uma v.a. com distribuiçã
 *Qual a probabilidade de que, dos três pacientes, C seja o último a deixar a clínica?*
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 A resposta pode se obtida utilizando a propriedade de ausência de memória, seguindo este raciocínio: no momento em que um dos consultórios for liberado e o paciente C iniciar o atendimento, um dos outros dois pacientes A ou B, digamos B, terá deixado a clínica enquanto o paciente A ainda estará sendo atendido. No entanto, devido à propriedade de ausência de memória, o tempo remanescente de atendimento do paciente A tem distribuição exponencial com média $1/\lambda$, independentemente do tempo que a consulta já durou. Ou seja, a situação aleatória se comporta como se o atendimento do paciente A tivesse acabado de iniciar, no mesmo instante em que o atendimento do paciente C foi iniciado. Sendo assim, a probabilidade de que o paciente A deixe a clínica antes do paciente C é de 50%.
@@ -474,8 +481,9 @@ A distribuição gama tem valor esperado $\alpha \beta$ (o mesmo que $\alpha/\la
 Obviamente, quando $\alpha = 1$, temos a distribuição exponencial. Quando $\alpha$ é um número inteiro positivo, a distribuição resultante também é chamada de distribuição de Erlang, em referência ao engenheiro dinamarquês Agner Erlang (1878-1929), que deu contribuições pioneiras para o desenvolvimento da teoria de filas.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Suponha que chamadas chegando a uma central de atendimento sigam um processo de Poisson com taxa de 5 telefonemas por minuto.
@@ -483,8 +491,9 @@ Suponha que chamadas chegando a uma central de atendimento sigam um processo de 
 Qual a probabilidade de que não mais que um minuto se passe até dois telefonemas sejam recebidos?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Seja $X=$ tempo até que 2 chamadas sejam recebidas.  
@@ -502,8 +511,9 @@ pgamma(1, shape = 2, scale = 1/5)
 ```
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Vejamos agora uma aplicação da distribuição Gama a um problema de tomada de decisão:
@@ -515,8 +525,9 @@ Não satisfeito com essa situação, o fabricante implementou modificações no 
 Antes que essa modificação seja implementada em outras plantas da empresa, é necessário determinar se este aparente aumento no tempo de espera até a primeira reclamação  foi resultado das modificações no processo produtivo, ou seja, queremos saber se o novo controle de qualidade foi efetivo.
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Antes de modelar o problema matematicamente, precisamos identificar que aspecto desse problema nos ajuda a tomar essa decisão.

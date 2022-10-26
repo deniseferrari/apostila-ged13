@@ -105,8 +105,9 @@ Uma v.a. $X$ é dita **contínua** quando está associada a um espaço amostral 
 Vejamos alguns exemplos de variáveis aleatórias discretas e contínuas:
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Componentes eletrônicos fabricados em uma linha de produção são submetidos a inspeção, sendo classificados como defeituosos ou não-defeituosos (só existem essas duas possibilidades). Suponha que a probabilidade de um item defeituoso seja 0,1.
@@ -131,8 +132,9 @@ $P[D] = P[X = 0] = 0,1$
 $P[N] = P[X = 1] = 0,9$
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Vamos imaginar que estejamos interessados agora em outro aspecto do mesmo experimento aleatório: monitorar o número de itens produzidos até observar o primeiro defeituoso. Isto define a variável aleatória de interesse.
@@ -145,8 +147,9 @@ O espaço amostral, nesse caso, é formado pelos seguintes eventos: se o primeir
 + ${X(\underbrace{NNN \ldots N}_{i-1}D) = i}$
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Seja a v.a. definida pelo tempo de espera (em segundos) para que duas mensagens cheguem a uma caixa de email. Esta é uma medida de tempo e vamos assumir que nosso cronômetro tenha precisão infinita. Então, o espaço amostral é definido por um intervalo, que tem uma quantidade infinita e não enumerável de possibilidades. Portanto, a va. $X$ associada a esse espaço amostral é contínua. 
@@ -154,8 +157,9 @@ Seja a v.a. definida pelo tempo de espera (em segundos) para que duas mensagens 
 + Espaço amostral: ${\Omega = \{ x \in \Re: x \geq0\}}$ (contínuo)
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Sabe-se que uma máquina de envase de suco de laranja preenche os recipientes com um volume entre 0,9L e 1,1L. Seja $X$ a v.a. que registra o volume de suco no recipiente. Novamente, assumiremos que nosso instrumento de medição tem precisão infinita. O espaço amostral é definido por todos os volumes possíveis entre 0,9 e 1,1L. Esse é um espaço amostral com um número infinito e incontável de possbilidades e, portanto, a variável $X$ é uma v.a. contínua.
@@ -204,8 +208,9 @@ Precisamos garantir que a fdp seja uma função probabilidade, ou seja, que resp
 3. ${\sum_j f_X(x_j) = 1}$
 
 
-```{example name="Computadores defeituosos"}
-```
+::: {.example name="Computadores defeituosos"} 
+<br />
+:::
 
 
 Um lote de 8 computadores em uma loja contém 3 defeituosos.
@@ -213,8 +218,9 @@ Um cliente seleciona 2 destes computadores ao acaso para comprar.
 Qual a distribuição de probabilidade para o número de computadores defeituosos comprados?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Em primeiro lugar, precisamos identificar qual é a v.a. de interesse e quais os valores que essa variável aleatória pode assumir. Às vezes, essa tarefa se torna mais fácil identificando o espaço amostral associado ao experimento aleatório em questão. 
@@ -309,11 +315,11 @@ Para um intervalo de comprimento $2\epsilon$ centrado em $a$, conforme a largura
 
 ```{r ch5-fdp-cont-2, echo=FALSE, out.width = '60%', message=FALSE, warning=FALSE}
 knitr::include_graphics("img/fdp-cont-2.png")
-``` 
-
-
-```{example name="Projétil"}
 ```
+
+::: {.example name="Projétil"} 
+<br />
+:::
 
 
 Queremos construir um modelo probabilístico para o seguinte experimento:
@@ -335,8 +341,9 @@ um projétil atinge um disco de raio $r$ de maneira completamente arbitrária (i
 2. Calcule $P[0 < X \leq r/2]$.  
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 1. Condição (2): $\int_{-\infty}^{\infty} f_X(x) dx = 1$
@@ -375,16 +382,10 @@ A FDA precisa ser uma função monotônica não decrescente, de forma que, dados
 Seguem algumas consequências dessas condições:
 
 
-```{theorem}
-```
-
-
+::: {.theorem} 
 Dado ${x}$ qualquer,
     $${P[X > x] = 1- F_X(x)}$$
-
-
-```{theorem}
-```
+:::
 
 
 Dados ${x_1}$ e ${x_2}$ tais que ${x_1 < x_2}$,
@@ -396,7 +397,7 @@ Esta situação é ilustrada na figura pela área em vermelho menos a área em a
 
 ```{r ch5-FDA, echo=FALSE, out.width = '60%', message=FALSE, warning=FALSE}
 knitr::include_graphics("img/FDA.png")
-``` 
+```
 
 
 + ${F_X(\cdot)}$ pode ser obtida a partir de ${f_X(\cdot)}$ e vice-versa.
@@ -426,8 +427,9 @@ Para o caso contínuo, dada a fdp, a FDA em $x$ é dada pela integral de -infini
 A seguir, são apresentados alguns exemplos de aplicação imediata desses conceitos.
 
 
-```{example name="Computadores defeituosos, continuação"}
-```
+::: {.example name="Computadores defeituosos, continuação"} 
+<br />
+:::
 
 
 a. Determine a FDA para a v.a.  
@@ -436,8 +438,9 @@ $X$ = no. de  computadores defeituosos comprados pelo cliente
 b. Usando $F_X(x)$, verifique que $f_X(2) = 3/28$
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 a. FDA de $X$:
@@ -445,7 +448,7 @@ a. FDA de $X$:
 
 ```{r ch5-comp-FDA, echo=FALSE, out.width = '60%', message=FALSE, warning=FALSE}
 knitr::include_graphics("img/comp-fda.png")
-``` 
+```
 
 
 Resposta: 
@@ -463,8 +466,9 @@ Resposta:
 b. ${f_X(2) = F_X(2) - F_X(1) = 1 - 25/28 = 3/28 \qquad \therefore}$ OK!
 
 
-```{example name="Projétil, continuação"}
-```
+::: {.example name="Projétil, continuação"} 
+<br />
+:::
 
 
 + Determine a FDA para a v.a.  $X$ = distância do projétil ao alvo
@@ -472,8 +476,9 @@ b. ${f_X(2) = F_X(2) - F_X(1) = 1 - 25/28 = 3/28 \qquad \therefore}$ OK!
 + Usando ${F_X(x)}$, calcule ${P[r/2 < X \leq r]}$
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 + FDA de $X$:  
@@ -529,8 +534,9 @@ ${E[X] = \int_{-\infty}^\infty x\cdot f_X(x) d(x)}, \quad$ onde ${f_X(x)}$ é a 
 Vejamos, a seguir, alguns exemplos.
 
 
-```{example name="Computadores defeituosos, continuação"}
-```
+::: {.example name="Computadores defeituosos, continuação"} 
+<br />
+:::
 
 
 Vamos retomar o exemplo dos computadores defeituosos. A loja tem um total de 8 computadores, dos quais 3 são defeituosos. Um cliente compra dois dos computadores disponíveis. Qual o número de computadores defeituosos que se espera observar na compra do cliente?
@@ -538,8 +544,9 @@ Vamos retomar o exemplo dos computadores defeituosos. A loja tem um total de 8 c
 A v.a. de interesse é o número de computadores defeituosos que o cliente acaba comprando. 
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Temos:  
@@ -551,7 +558,7 @@ i. Distribuição de probabilidade:
 
 ```{r ch5-comp-fdp-2, echo=FALSE, out.width = '50%', message=FALSE, warning=FALSE}
 knitr::include_graphics("img/comp-fdp.png")
-``` 
+```
 
 
 ii. Valor esperado:  
@@ -568,15 +575,17 @@ Portanto, chegamos a conclusão de que o valor esperado vale 0,75, ou seja, se u
 Algumas observações são importantes: pode ser que para uma certa compra, todos os computadores sejam defeituosos; ou, ainda, na situação do extremo oposto, que o comprador tenha tido sorte e que tenha adquirido apenas computadores em perfeito estado, ou seja, em uma certa realização desse experimento aleatório, observaremos um dos valores possíveis para a variável aleatória $X$.No entanto, se esta compra for repetida muitas e muitas vezes, o número de computadores defeituosos dentre os dois adquiridos converge, em média para 0,75. Note que o valor esperado não precisa necessariamente ser igual a um dos valores possíveis para $X$. **O valor esperado corresponde ao valor para o qual converge a média de um número muito grande de observações de uma v.a.**
 
 
-```{example name="Projétil, continuação"}
-```
+::: {.example name="Projétil, continuação"} 
+<br />
+:::
 
 
 Aqui, reconsideraremos o exemplo do projétil a fim de determinar a que distância do centro espera-se que o projétil atinja o disco. A v.a. de interesse é $X$, que corresponde à distância ao centro do disco atingida pelo projétil.
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
   
 
 Calculamos a fdp para essa variável aleatória anteriormente. E, como a v.a. é contínua, o valor esperado é obtido integrando em todo o domínio (que, neste caso corresponde aos valores de $x$ que vão de zero a $r$) o produto de $x$ por $f_X(x)$:
@@ -783,8 +792,9 @@ $${P[g(X) \geq k] \leq \frac{E[g(X)]}{k};  \quad \forall k>0}$$
 A desigualdade de Markov, que é mais comumente enunciada na forma do corolário abaixo.
 
 
-```{corollary}
-```
+::: {.corollary} 
+<br />
+:::
 
 
 Dada a v.a. $X$, para ${g(X) = X: \qquad P[X \geq k] \leq \frac{E[X]}{k};  \quad \forall k>0}$
@@ -823,15 +833,17 @@ A desigualdade de Chebyshev nos diz que a probabilidade de que $X$ se afaste de 
 Assim, a desigualdade de Chebyshev nos diz, em particular, que para qualquer conjunto de dados, independentemente da distribuição de probabilidade associada à v.a. em análise, pelo menos 75% das observações se encontram a uma distância máxima de dois desvios de sua média; e pelo menos 89% de todas as observações se encontram a uma distância máxima de três desvios de sua média.
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Suponha que, em média, a demanda diária por um certo item seja de 28 unidades, com variância 16. Quantos itens devem ser disponibilizados diariamente para atender à demanda diária em pelo menos 90% das vezes?
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 Seja a v.a. $X$ = demanda diária, tal que ${\mu = E[X] = 28}$ e ${\sigma^2 = Var[X] = 16}$. Queremos $k$ tal que ${P[X \leq k] \geq 0.90}$, que equivale a ${P[X \geq k] \leq 0.10}$.

@@ -7,7 +7,7 @@ institute: "Instituto Tecnológico de Aeronáutica"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography: [packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: "Apostila do curso de GED-13: Probabilidade e Estatística."
@@ -16,9 +16,7 @@ description: "Apostila do curso de GED-13: Probabilidade e Estatística."
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
+knitr::write_bib(c(.packages(), 'bookdown', 'knitr', 'rmarkdown'), 'packages.bib')
 ```
 
 # Objetivos do Curso {-}

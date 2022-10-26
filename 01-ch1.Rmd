@@ -273,9 +273,9 @@ Por vezes, observações inconsistentes estão presentes da massa de dados. Essa
 
 O método mais usual para detecção de *outliers* é o cálculo do escore-z. Desta maneira, *outliers* apresentam valores absolutos de escore-z maiores que 3. Outro procedimento é baseado na ferramenta gráfica chamada *boxplot*, que veremos com mais detalhes em seguida.    
 
-```{exm name="Prevalência de Diabetes Mellitus entre as mulheres indígenas Pima"}
-
-```
+::: {.example name="Prevalência de Diabetes Mellitus entre as mulheres indígenas Pima"} 
+<br />
+:::
 
 
 Fonte: Smith, JW; Everhat, JE; Dickson, WC; Knowler, WC; Johhannes, RS (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In: *Proceedings of the Symposium on Computer Applications and Medical Care (pp. 261-265).*

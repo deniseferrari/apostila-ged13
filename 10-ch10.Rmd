@@ -478,8 +478,9 @@ abline(h = po, col = 2,          # po "real"
 ```
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Seja $X_1, X_2, \ldots, X_n$ uma a.a. de uma distribuição com média $\mu$ e variância $\sigma^2$.
@@ -496,8 +497,9 @@ Se $\hat{\Theta}$ é um estimador não-viesado de $\theta$, $g(\hat{\Theta})$ n�
 Para o caso particular em que $g(\hat{\Theta}) = a\hat{\Theta} + b$, a não-tendenciosidade é transmitida. 
 
 
-```{solution}
-```
+::: {.solution} 
+<br />
+:::
 
 
 **1)**   
@@ -554,8 +556,9 @@ knitr::include_graphics("img/MSE.png")
 ```
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Sejam $\Theta_1$ e $\Theta_2$ estimadores independentes não-tendenciosos de $\theta$, com variâncias conhecidas dadas por $\sigma_1^2$ e $\sigma_2^2$.
@@ -594,8 +597,9 @@ O método dos momentos consiste em igualar os $k$ primeiros momentos amostrais a
 O Método dos Momentos é capaz de gerar estimadores de maneira simples e intuitiva que, na maioria dos casos, são consistentes, ou seja, convergem em probabilidade para o valor real do parâmetro, conforme aumenta o tamanho da amostra. No entanto, em muitos casos, os estimadores obtidos através do método dos momentos não apresentam características desejáveis, podendo ser viesados ou ineficientes. Apesar desses inconvenientes, o método dos momentos é uma ferramenta bastante útil e amplamente utilizada, podendo ser empregado quando outros métodos de estimação de parâmetros mostram-se inviáveis.
 
 
-```{example name="Distribuição Normal"}
-```
+::: {.example name="Distribuição Normal"} 
+<br />
+:::
 
 
 Vejamos um exemplo de como obter os estimadores para a média e variância populacionais a partir de uma amostra aleatória obtida a partir de uma distribuição Normal, utilizando para isso o Método dos Momentos. Como a distribuição Normal possui dois parâmetros desconhecidos, precisaremos utilizar os dois primeiros momentos.
@@ -652,8 +656,9 @@ Uma observação final, digna de nota, é a seguinte: ao utilizar o princípio d
 Para observações independentes, como vimos, a função de verossimilhança consiste no produto das distribuições marginais. O máximo desta função pode ser obtido igualando as diferenciais parciais de $L$ com relação a cada parâmetro desconhecido a zero. Obter esta solução pode ser difícil, mesmo quando temos apenas um parâmetro a ser estimado. Como o $\log L$ é uma função monotônica crescente de $L$, resolver a equação obtida igualando a derivada do logaritmo da função de verossimilhança a zero é uma tarefa mais simples, que resulta na mesma solução. Assim, para maximizar a função de verossimilhança, é comum fazer $\partial\log L(\theta)/\partial\theta_i = 0$, em vez de $\partial L(\theta)/\partial \theta_i = 0, \; i = 1, \ldots, k$.
 
 
-```{example name ="Distribuição Normal"}
-```
+::: {.example name="Distribuição Normal"} 
+<br />
+:::
 
 
 Assim como fizemos para o método dos momentos, vejamos um exemplo de como obter os estimadores de máxima verossimilhança para a média e variância populacionais a partir de uma amostra aleatória obtida a partir de uma distribuição Normal.

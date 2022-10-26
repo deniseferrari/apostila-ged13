@@ -106,9 +106,9 @@ Esses eventos podem ser simples (quando não podem ser decompostos em eventos ma
 - partição do espaço amostral  
 
 
-```{example}
-```
-  
+::: {.example} 
+<br />
+:::
 
 Experimento Aleatório:  E = lançar um dado e observar o resultado  
 Eventos simples: 1, 2, 3, 4, 5, 6  
@@ -131,8 +131,9 @@ Descrevemos o espaço amostral em termos da definição matemática de conjunto.
 Mesmo para um experimento aleatório trivial, é importante identificar corretamente os eventos simples. Por exemplo, imagine o experimento aleatório que consiste em lançar duas moedas e registrar todos os eventos simples associados a esse experimento. A primeira impressão é de que os eventos possíveis são observar duas caras, observar duas coroas e observar uma cara e uma coroa. No entanto, o último evento pode ser decomposto em dois eventos simples: (Cara e Coroa) e (Coroa e Cara). Portanto, os eventos simples associados a este experimento são: (cara,cara), (coroa, coroa), (cara, coroa) e (coroa, cara).
 
 
-```{example}
-```
+::: {.example} 
+<br />
+:::
 
 
 Experimento Aleatório:  E = lançar duas moedas e observar os resultados
@@ -650,7 +651,7 @@ plot(frel.E1, pch = "*", cex.axis = 0.7, las = 1,
      ylim = c(0,1), yaxp = c(0, 1, 20),
      ylab = "freq. relativa de ganhos: E1", xlab = "Realizações do Experimento")
 abline(h = 1 - (5/6)^n1,  lty = "dashed", lwd = 2, col = "red")
-``` 
+```
 
 
 ```{r ch2-demere-experimento1-res,  echo = FALSE, eval=TRUE, cache=TRUE, out.width='100%',  fig.height= 3, warning=FALSE, message=FALSE, fig.cap='Evolução dos valores de frequência relativa de ganhos para E1.'}
@@ -678,7 +679,7 @@ plot(frel.E1, pch = "*",
 mtext("Realizações do Experimento", side = 1, line = 2)
 abline(h = 1 - (5/6)^n1, 
        lty = "dashed", lwd = 2, col = "red")
-``` 
+```
 
 
 Observe o gráfico que mostra a evolução do valores de frequência relativa calculados. Há uma grande variabilidade para os valores de frequência relativa, correspondendo a um número pequeno de replicações do experimento, mas a frequência relativa tende a estabilizar-se, conforme o número de replicações aumenta. Este limite é o valor que aproxima a probabilidade que desejamos calcular. A reta vermelha horizontal mostra o valor de probabilidade teórico calculado anteriormente, utilizando a definição clássica.
